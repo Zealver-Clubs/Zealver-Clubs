@@ -1,0 +1,244 @@
+@import "tailwindcss";
+
+/*
+  Zealver Clubs design system.
+  Palette taken from the live site: warm orange primary, deep indigo secondary,
+  slate text, cream backgrounds. Tuned for senior-friendly legibility.
+*/
+
+@theme {
+  /* Brand */
+  --color-primary: #f5760a;          /* orange, slightly deepened for AA contrast on white text */
+  --color-primary-hover: #dc6604;
+  --color-primary-foreground: #ffffff;
+  --color-primary-soft: #fff1e6;     /* orange tint for backgrounds */
+
+  --color-secondary: #2e3194;        /* indigo */
+  --color-secondary-hover: #24276f;
+  --color-secondary-foreground: #ffffff;
+  --color-secondary-soft: #ececf7;
+
+  --color-link: #045fbd;             /* accessible blue link */
+
+  /* Surfaces, cleaner, softer warm neutrals (less peach), flatter feel */
+  --color-background: #faf9f6;       /* soft warm off-white page */
+  --color-card: #ffffff;
+  --color-muted: #f3f1ec;            /* neutral warm panel */
+  --color-muted-foreground: #63605a;
+
+  /* Text */
+  --color-foreground: #2b2a27;
+  --color-heading: #201f1c;
+
+  /* Lines + focus */
+  --color-border: #e8e4dc;
+  --color-border-strong: #d8d2c8;
+  --color-ring: #f5760a;
+
+  /* One restrained soft shadow, used sparingly */
+  --shadow-soft: 0 1px 2px rgba(30, 25, 18, 0.04);
+
+  /* Radii */
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 1.75rem;
+
+  /* Typography (point Tailwind tokens at the next/font sources) */
+  --font-sans: var(--font-body-src);
+  --font-display: var(--font-display-src);
+}
+
+/* Keep the spacing scale at a normal 16px base so layout rhythm stays tight,
+   but set body text larger for senior-friendly readability. */
+:root {
+  font-size: 16px;
+  color-scheme: light;
+}
+
+/* Accessibility: reader-controlled text size (A / A+ / A++). Scales the whole
+   UI up on explicit request. */
+:root[data-text="large"] {
+  font-size: 18px;
+}
+:root[data-text="larger"] {
+  font-size: 20px;
+}
+
+/* Accessibility: dark theme. Secondary flips to a light tint with dark text so
+   solid secondary surfaces (buttons, strips) stay readable, while text-secondary
+   reads light on dark. Orange stays the primary. */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-background: #151310;
+  --color-card: #1f1b16;
+  --color-muted: #29231a;
+  --color-muted-foreground: #b7afa2;
+  --color-foreground: #f1ece3;
+  --color-heading: #fdfaf4;
+  --color-border: #342e25;
+  --color-border-strong: #473f34;
+  --color-primary: #ff8a2b;
+  --color-primary-hover: #ff9c4d;
+  --color-primary-soft: #3a2a1a;
+  --color-secondary: #c7cbfb;
+  --color-secondary-hover: #d6d9ff;
+  --color-secondary-foreground: #1c1e42;
+  --color-secondary-soft: #26264a;
+  --color-link: #9db4ff;
+  --color-ring: #ff8a2b;
+}
+
+/* Accessibility: high-contrast, black & orange. */
+:root[data-theme="contrast"] {
+  color-scheme: dark;
+  --color-background: #000000;
+  --color-card: #0b0b0b;
+  --color-muted: #161616;
+  --color-muted-foreground: #f0f0f0;
+  --color-foreground: #ffffff;
+  --color-heading: #ffffff;
+  --color-border: #7a7a7a;
+  --color-border-strong: #a6a6a6;
+  --color-primary: #ff8a1f;
+  --color-primary-hover: #ffa445;
+  --color-primary-foreground: #000000;
+  --color-primary-soft: #241706;
+  --color-secondary: #ffffff;
+  --color-secondary-hover: #e8e8e8;
+  --color-secondary-foreground: #000000;
+  --color-secondary-soft: #1c1c1c;
+  --color-link: #ffb057;
+  --color-ring: #ff8a1f;
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: 1.0625rem; /* ~17px body for readability, normal spacing scale */
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* In @layer base so Tailwind text-color utilities can override the heading
+   colour when a heading sits on a coloured surface. */
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display), var(--font-sans), system-ui, sans-serif;
+    color: var(--color-heading);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Strong, always-visible focus ring for keyboard users. */
+:focus-visible {
+  outline: 3px solid var(--color-ring);
+  outline-offset: 2px;
+  border-radius: 0.35rem;
+}
+
+/* Utility: horizontal swipe rail with comfortable snap. */
+.rail {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  padding-bottom: 0.5rem;
+}
+.rail > * {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+}
+
+/* Hide scrollbar only where a visible affordance already exists. */
+.rail::-webkit-scrollbar {
+  height: 8px;
+}
+.rail::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 999px;
+}
+
+/* Slow keyword ticker (marquee). Track holds two identical lists; shifting by
+   -50% loops seamlessly. Pauses on hover; static for reduced motion. */
+.ticker-mask {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 8%,
+    #000 92%,
+    transparent
+  );
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: ticker-scroll 75s linear infinite;
+  will-change: transform;
+}
+.ticker-mask:hover .ticker-track,
+.ticker-mask:focus-within .ticker-track {
+  animation-play-state: paused;
+}
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ticker-track {
+    animation: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  left: 0.75rem;
+  top: -3rem;
+  z-index: 100;
+  background: var(--color-secondary);
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 0.6rem;
+  transition: top 0.15s ease;
+}
+.skip-link:focus {
+  top: 0.75rem;
+}

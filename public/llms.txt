@@ -1,0 +1,39 @@
+# Zealver Clubs
+
+> Zealver Clubs runs joyful, chair-based Zealver Seated Dance Fitness for women 60+, online and in person from Mumbai (Andheri), alongside a growing Knowledge Hub of activity-first guidance for healthy ageing. Tagline: "Healthy Ageing, Done Together, Fun. Friendship. Fitness."
+
+Key facts:
+- Who it is for: women 60+ (seniors). Younger people are welcome by choice, but everything is designed for older adults.
+- What it offers: (1) Experiences, Zealver Seated Dance Fitness classes online and in person, plus clubs and paid events/workshops; (2) Knowledge Hub, trusted, activity-first (non-medical) reading on healthy ageing.
+- Approach: the 4Ms, Movement, Music, Memory, Meaning, in a simple weekly rhythm. Chair-based and music-led; no dance or fitness experience needed.
+- Sessions: typically twice weekly. Online batches run worldwide (members join from across India and abroad); in-person clubs are based in Mumbai (Andheri), with a South Bombay branch planned.
+- Content model: each Knowledge Hub subject is a "Topic" (one subject) or a "Guide" (a step-by-step walkthrough that links several Topics). Many topics are video-first (YouTube) with a readable write-up and a listen (read-aloud) option.
+- Contact: WhatsApp +91 91521 58933, email info@zealverclubs.com.
+- Instagram: https://www.instagram.com/zealverclubs/
+
+## Experiences
+- [Experiences](https://zealverclubs.com/experience): choose In-Person or Online seated dance fitness; browse clubs, events and instructors.
+
+## Knowledge Hub
+- [Knowledge Hub](https://zealverclubs.com/knowledge-hub): activity-first topics and guides for healthy ageing.
+
+Topics:
+- [Fall prevention](https://zealverclubs.com/knowledge-hub/topics/fall-prevention)
+- [Balance exercises for seniors](https://zealverclubs.com/knowledge-hub/topics/balance-exercises)
+- [Dementia-friendly movement](https://zealverclubs.com/knowledge-hub/topics/dementia-friendly-movement)
+- [Home safety checklist](https://zealverclubs.com/knowledge-hub/topics/home-safety-checklist)
+- [Footwear & mobility](https://zealverclubs.com/knowledge-hub/topics/footwear-and-mobility)
+- [Nutrition basics](https://zealverclubs.com/knowledge-hub/topics/nutrition-basics)
+- [Movement & blood sugar](https://zealverclubs.com/knowledge-hub/topics/movement-and-blood-sugar)
+- [Sleep & recovery](https://zealverclubs.com/knowledge-hub/topics/sleep-and-recovery)
+- [Anti-inflammatory basics](https://zealverclubs.com/knowledge-hub/topics/anti-inflammatory-basics)
+
+Guides:
+- [Fall prevention guide](https://zealverclubs.com/knowledge-hub/guides/fall-prevention-guide)
+- [Lower your blood sugar guide](https://zealverclubs.com/knowledge-hub/guides/lower-your-blood-sugar-guide)
+- [Anti-inflammatory diet guide](https://zealverclubs.com/knowledge-hub/guides/anti-inflammatory-diet-guide)
+
+## Contact
+- WhatsApp: https://wa.me/919152158933
+- Email: info@zealverclubs.com
+- Full content for AI: https://zealverclubs.com/llms-full.txt
