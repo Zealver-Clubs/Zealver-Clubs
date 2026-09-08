@@ -3,7 +3,11 @@
 export const site = {
   name: "Zealver Clubs",
   legalName: "Zealver Living Pvt. Ltd.",
-  url: "https://zealverclubs.com",
+  url: "https://zealver-clubs.vercel.app",
+  legal: {
+    privacy: "https://www.zealver.life/privacy-policy/",
+    terms: "https://www.zealver.life/terms-conditions/",
+  },
   tagline: "Healthy Ageing, Done Together",
   subTagline: "Fun. Friendship. Fitness. For Women 60+",
   positioning:

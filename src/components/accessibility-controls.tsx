@@ -35,7 +35,14 @@ export function AccessibilityControls() {
 
   useEffect(() => {
     if (!open) return;
-    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
+    // Move focus into the panel so keyboard and screen-reader users land there.
+    panelRef.current?.querySelector<HTMLButtonElement>("button")?.focus();
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setOpen(false);
+        buttonRef.current?.focus();
+      }
+    };
     const onClick = (e: MouseEvent) => {
       if (
         panelRef.current &&

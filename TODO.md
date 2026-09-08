@@ -72,8 +72,9 @@ Activity-oriented, **not** medical. One place per subject with read / listen / w
 
 ## 7. Performance & hosting
 
-- [ ] **(P1)** Keep it fast and light (good PageSpeed): optimize images, self-host/loop short video, lazy-load embeds
-- [ ] **(P1)** Deploy on GitHub + Vercel with the custom domain; static in nature, so no AWS needed for the marketing site
+- [x] **(P1)** Fast and light: `next/image` optimization, self-hosted looping hero MP4, and Instagram/YouTube embeds deferred until scrolled near (IntersectionObserver) so they stay off the initial load
+- [~] **(P1)** Deploy on GitHub + Vercel: pushed to github.com/premraval010/Zealver-Clubs (main); Vercel connect + custom domain done by Prem
+- [ ] **(P2)** Run a live PageSpeed/Lighthouse pass on the Vercel URL and tune from real numbers
 - [ ] **(P3)** Optional later migration alongside the rest of the Ziva stack
 
 ## 8. Future (post-launch)

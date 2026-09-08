@@ -91,9 +91,27 @@ export function Footer() {
       </div>
 
       <div className="border-t border-border">
-        <div className="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-6 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between sm:px-6">
+        <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-6 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between sm:px-6">
           <p>© {new Date().getFullYear()} {site.name}. All rights reserved.</p>
-          <p>By {site.legalName}</p>
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
+            <a
+              href={site.legal.privacy}
+              target="_blank"
+              rel="noreferrer"
+              className="underline-offset-4 hover:text-secondary hover:underline"
+            >
+              Privacy Policy
+            </a>
+            <a
+              href={site.legal.terms}
+              target="_blank"
+              rel="noreferrer"
+              className="underline-offset-4 hover:text-secondary hover:underline"
+            >
+              Terms &amp; Conditions
+            </a>
+            <span>By {site.legalName}</span>
+          </div>
         </div>
       </div>
     </footer>

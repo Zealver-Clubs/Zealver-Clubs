@@ -47,11 +47,20 @@ export const metadata: Metadata = {
     title: "Zealver Clubs | Healthy Ageing, Done Together",
     description: site.description,
     locale: "en_IN",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Zealver Clubs seated dance fitness class for women 60+",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Zealver Clubs | Healthy Ageing, Done Together",
     description: site.description,
+    images: ["/og.png"],
   },
 };
 

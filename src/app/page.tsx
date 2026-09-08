@@ -85,6 +85,8 @@ export default function HomePage() {
             alt="A Zealver instructor leading a seated class"
             label="Photo, Knowledge Hub, trainer explaining"
             ratio="16/9"
+            priority
+            sizes="(max-width: 768px) 100vw, 50vw"
             className="border-b"
           />
           <CardBody className="flex flex-1 flex-col">
