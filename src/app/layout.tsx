@@ -73,7 +73,12 @@ const orgSchema = {
   email: site.contact.email,
   telephone: site.contact.whatsapp,
   areaServed: site.areaServed,
-  sameAs: [site.social.instagram],
+  sameAs: [
+    site.social.instagram,
+    site.social.facebook,
+    site.social.youtube,
+    site.social.linkedin,
+  ],
   slogan: site.tagline,
   parentOrganization: {
     "@type": "Organization",

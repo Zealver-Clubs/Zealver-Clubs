@@ -43,9 +43,9 @@ export const site = {
     "https://wa.me/919152158933?text=Hi%2C%20tell%20me%20more%20about%20Zealver%20Clubs",
   social: {
     instagram: "https://www.instagram.com/zealverclubs/",
-    facebook: "https://facebook.com",
-    youtube: "https://youtube.com",
-    linkedin: "https://linkedin.com",
+    facebook: "https://www.facebook.com/p/Zealver-Clubs-61586015622824/",
+    youtube: "https://www.youtube.com/@ZealverClubs",
+    linkedin: "https://www.linkedin.com/company/zealverlife/",
   },
   instagramHandle: "zealverclubs",
 } as const;
@@ -55,6 +55,8 @@ export const parentOrg = {
   name: "Zealver",
   description:
     "Zealver is one of India's established SeniorCare brands, supporting older adults and their families through preventive health solutions, care ecosystems and age-appropriate engagement.",
+  nameOrigin:
+    "Zealver is a made-up word: zeal and silver, joined. It is about living your silver years with zeal.",
   clubsLine:
     "Zealver Clubs is the community wellbeing vertical of Zealver, created to support healthy ageing through socialisation with a purpose, bringing seniors together regularly to move, connect and thrive in their neighbourhoods.",
 } as const;

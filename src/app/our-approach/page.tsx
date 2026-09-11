@@ -9,6 +9,8 @@ import {
   FlaskConical,
   CheckCircle2,
 } from "lucide-react";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { Section, SectionHeading } from "@/components/section";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { Card, CardBody } from "@/components/ui/card";
@@ -27,21 +29,25 @@ const pillars = [
     label: "Movement",
     Icon: Activity,
     text: "Chair-based, guided movement that builds strength, balance and everyday confidence.",
+    href: "/knowledge-hub/topics/movement-healthy-aging",
   },
   {
     label: "Music",
     Icon: Music,
     text: "Joyful, music-led sessions that make taking part feel easy, familiar and uplifting.",
+    href: "/knowledge-hub/topics/music-brain-health-seniors",
   },
   {
     label: "Memory",
     Icon: Brain,
     text: "Well-loved songs and gentle routines that keep the mind active and engaged.",
+    href: "/knowledge-hub/topics/memory-cognitive-health-seniors",
   },
   {
     label: "Meaning",
     Icon: HeartHandshake,
     text: "Belonging, friendship and purpose in a group that knows you by name.",
+    href: "/knowledge-hub/topics/meaning-belonging-healthy-aging",
   },
 ];
 
@@ -132,16 +138,40 @@ export default function OurApproachPage() {
           title="Four pillars, one integrated system"
           intro="Movement, Music, Memory and Meaning work together in a simple weekly rhythm."
         />
+        <p className="mt-4 text-lg text-foreground">
+          Read the full explanation in{" "}
+          <Link
+            href="/knowledge-hub/topics/4m-framework-healthy-aging"
+            className="font-bold text-secondary underline decoration-primary decoration-2 underline-offset-4"
+          >
+            the Zealver 4M Framework
+          </Link>
+          , or see{" "}
+          <Link
+            href="/knowledge-hub/topics/monthly-activities-zealver-clubs"
+            className="font-bold text-secondary underline decoration-primary decoration-2 underline-offset-4"
+          >
+            how the 4Ms come alive through our activities
+          </Link>
+          .
+        </p>
         <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {pillars.map(({ label, Icon, text }) => (
+          {pillars.map(({ label, Icon, text, href }) => (
             <li key={label}>
-              <Card className="h-full">
+              <Card className="relative h-full transition-colors hover:border-secondary/40">
                 <CardBody className="flex h-full flex-col">
                   <span className="grid h-12 w-12 place-items-center rounded-full bg-primary-soft text-primary">
                     <Icon className="h-6 w-6" aria-hidden />
                   </span>
-                  <h3 className="mt-4 text-xl font-extrabold text-heading">{label}</h3>
+                  <h3 className="mt-4 text-xl font-extrabold text-heading">
+                    <Link href={href} className="after:absolute after:inset-0">
+                      {label}
+                    </Link>
+                  </h3>
                   <p className="mt-2 text-muted-foreground">{text}</p>
+                  <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-bold text-secondary">
+                    Read more <ArrowRight className="h-4 w-4 shrink-0" aria-hidden />
+                  </span>
                 </CardBody>
               </Card>
             </li>

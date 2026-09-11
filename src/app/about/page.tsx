@@ -56,6 +56,7 @@ export default function AboutPage() {
       <div className="mt-8">
         <h2 className="text-2xl font-extrabold text-heading">Who we are</h2>
         <div className="mt-3 flex flex-col gap-4 text-lg leading-relaxed text-foreground">
+          <p>{parentOrg.nameOrigin}</p>
           <p>{parentOrg.description}</p>
           <p>{parentOrg.clubsLine}</p>
         </div>
