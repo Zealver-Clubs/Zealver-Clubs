@@ -10,44 +10,55 @@ import type { Recipe } from "@/content/recipes";
 
 const firstLetter = (s: string) => s.trim().charAt(0).toUpperCase();
 
-/** How many cards each section shows before the reader asks for more. */
-const PREVIEW_COUNT = 3;
+/** Cards shown initially, and added each time the reader asks for more. */
+const STEP = 3;
 
 /**
- * Reveal for a section that has more than a handful of entries. With three
- * sections and over fifty entries between them, showing everything at once
- * made the page unusable on a phone.
+ * Incremental reveal. Three more each press rather than the whole list at
+ * once, so the page grows at the reader's pace. Anyone who wants to jump
+ * straight to a subject has the A-Z strip above.
  */
 function ShowMore({
-  expanded,
+  shown,
   total,
   noun,
-  onToggle,
+  onMore,
+  onReset,
 }: {
-  expanded: boolean;
+  shown: number;
   total: number;
   noun: string;
-  onToggle: () => void;
+  onMore: () => void;
+  onReset: () => void;
 }) {
-  if (total <= PREVIEW_COUNT) return null;
-  return (
-    <button
-      type="button"
-      onClick={onToggle}
-      aria-expanded={expanded}
-      className="mt-5 inline-flex min-h-12 items-center gap-2 rounded-full border-2 border-border px-6 text-lg font-bold text-secondary transition-colors hover:border-primary hover:bg-secondary-soft"
-    >
-      {expanded ? (
-        <>
+  if (total <= STEP) return null;
+  const remaining = total - shown;
+  const cls =
+    "mt-5 inline-flex min-h-12 items-center gap-2 rounded-full border-2 border-border px-6 text-lg font-bold text-secondary transition-colors hover:border-primary hover:bg-secondary-soft";
+
+  if (remaining <= 0) {
+    return (
+      <div className="mt-1">
+        <p className="mt-4 text-muted-foreground">
+          All {total} {noun} shown.
+        </p>
+        <button type="button" onClick={onReset} className={cls}>
           Show fewer <ChevronUp className="h-5 w-5 shrink-0" aria-hidden />
-        </>
-      ) : (
-        <>
-          See all {total} {noun}{" "}
-          <ChevronDown className="h-5 w-5 shrink-0" aria-hidden />
-        </>
-      )}
-    </button>
+        </button>
+      </div>
+    );
+  }
+
+  return (
+    <div className="mt-1">
+      <p className="mt-4 text-muted-foreground">
+        Showing {shown} of {total} {noun}.
+      </p>
+      <button type="button" onClick={onMore} className={cls}>
+        See {Math.min(STEP, remaining)} more
+        <ChevronDown className="h-5 w-5 shrink-0" aria-hidden />
+      </button>
+    </div>
   );
 }
 
@@ -64,9 +75,9 @@ export function HubBrowser({
   const [topicLetter, setTopicLetter] = useState<string | null>(null);
   const [guideLetter, setGuideLetter] = useState<string | null>(null);
   const [recipeLetter, setRecipeLetter] = useState<string | null>(null);
-  const [allGuides, setAllGuides] = useState(false);
-  const [allTopics, setAllTopics] = useState(false);
-  const [allRecipes, setAllRecipes] = useState(false);
+  const [guideCount, setGuideCount] = useState(STEP);
+  const [topicCount, setTopicCount] = useState(STEP);
+  const [recipeCount, setRecipeCount] = useState(STEP);
 
   const q = query.trim().toLowerCase();
 
@@ -159,7 +170,7 @@ export function HubBrowser({
         {filteredGuides.length > 0 ? (
           <>
             <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {(allGuides ? filteredGuides : filteredGuides.slice(0, PREVIEW_COUNT)).map(
+              {filteredGuides.slice(0, guideCount).map(
                 (g) => (
                   <li key={g.slug} className="relative">
                     <GuideCard guide={g} />
@@ -168,10 +179,11 @@ export function HubBrowser({
               )}
             </ul>
             <ShowMore
-              expanded={allGuides}
+              shown={Math.min(guideCount, filteredGuides.length)}
               total={filteredGuides.length}
               noun="guides"
-              onToggle={() => setAllGuides((v) => !v)}
+              onMore={() => setGuideCount((n) => n + STEP)}
+              onReset={() => setGuideCount(STEP)}
             />
           </>
         ) : (
@@ -198,7 +210,7 @@ export function HubBrowser({
         {filteredTopics.length > 0 ? (
           <>
             <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {(allTopics ? filteredTopics : filteredTopics.slice(0, PREVIEW_COUNT)).map(
+              {filteredTopics.slice(0, topicCount).map(
                 (t) => (
                   <li key={t.slug} className="relative">
                     <TopicCard topic={t} />
@@ -207,10 +219,11 @@ export function HubBrowser({
               )}
             </ul>
             <ShowMore
-              expanded={allTopics}
+              shown={Math.min(topicCount, filteredTopics.length)}
               total={filteredTopics.length}
               noun="topics"
-              onToggle={() => setAllTopics((v) => !v)}
+              onMore={() => setTopicCount((n) => n + STEP)}
+              onReset={() => setTopicCount(STEP)}
             />
           </>
         ) : (
@@ -238,7 +251,7 @@ export function HubBrowser({
         {filteredRecipes.length > 0 ? (
           <>
             <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {(allRecipes ? filteredRecipes : filteredRecipes.slice(0, PREVIEW_COUNT)).map(
+              {filteredRecipes.slice(0, recipeCount).map(
                 (r) => (
                   <li key={r.slug} className="relative">
                     <RecipeCard recipe={r} />
@@ -247,10 +260,11 @@ export function HubBrowser({
               )}
             </ul>
             <ShowMore
-              expanded={allRecipes}
+              shown={Math.min(recipeCount, filteredRecipes.length)}
               total={filteredRecipes.length}
               noun="recipes"
-              onToggle={() => setAllRecipes((v) => !v)}
+              onMore={() => setRecipeCount((n) => n + STEP)}
+              onReset={() => setRecipeCount(STEP)}
             />
           </>
         ) : (
