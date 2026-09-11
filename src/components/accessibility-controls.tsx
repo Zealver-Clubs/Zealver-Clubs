@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Glasses, Type, Sun, Moon, Contrast, X, Check } from "lucide-react";
+import { Glasses, Type, Sun, Moon, Contrast, X, Check, Languages } from "lucide-react";
+import { LANGUAGES, currentLanguage, setLanguage } from "@/components/translate";
 import { cn } from "@/lib/utils";
 
 type Theme = "light" | "dark" | "contrast";
@@ -22,6 +23,7 @@ const SIZES: { value: TextSize; label: string; sample: string }[] = [
 export function AccessibilityControls() {
   const [open, setOpen] = useState(false);
   const [theme, setThemeState] = useState<Theme>("light");
+  const [lang, setLang] = useState("en");
   const [size, setSizeState] = useState<TextSize>("normal");
   const panelRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
@@ -30,6 +32,7 @@ export function AccessibilityControls() {
   useEffect(() => {
     const root = document.documentElement;
     setThemeState((root.dataset.theme as Theme) || "light");
+    setLang(currentLanguage());
     setSizeState((root.dataset.text as TextSize) || "normal");
   }, []);
 
@@ -166,6 +169,40 @@ export function AccessibilityControls() {
                 </button>
               ))}
             </div>
+          </div>
+
+          {/* Language */}
+          <div className="mt-4">
+            <p className="flex items-center gap-2 text-sm font-bold text-foreground">
+              <Languages className="h-4 w-4 text-primary" aria-hidden /> Language
+            </p>
+            <div className="mt-2 grid grid-cols-2 gap-2" role="group" aria-label="Language">
+              {LANGUAGES.map((l) => (
+                <button
+                  key={l.code}
+                  type="button"
+                  lang={l.code}
+                  translate="no"
+                  aria-pressed={lang === l.code}
+                  onClick={() => setLanguage(l.code)}
+                  className={cn(
+                    "notranslate min-h-12 rounded-xl border-2 px-2 font-bold transition-colors",
+                    lang === l.code
+                      ? "border-primary bg-primary-soft text-primary"
+                      : "border-border text-foreground hover:border-primary/50",
+                  )}
+                >
+                  {l.native}
+                  {l.native !== l.label && (
+                    <span className="sr-only"> ({l.label})</span>
+                  )}
+                </button>
+              ))}
+            </div>
+            <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
+              Translated automatically by Google. Wording may not be exact, so
+              the English page stays the original.
+            </p>
           </div>
         </div>
       )}
