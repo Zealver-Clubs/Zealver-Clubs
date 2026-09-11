@@ -2178,6 +2178,77 @@ export const topics: Topic[] = [
     ],
     guides: ["diabetes-management-guide", "stay-strong-after-menopause-guide"],
   },
+  {
+    slug: "rice-and-roti",
+    title: "Rice and roti: you do not have to give them up",
+    category: "Food & energy",
+    youtubeId: null,
+    summary:
+      "Neither is the villain. What matters is the portion, what you eat alongside, and the order you eat it in.",
+    keyPoints: [
+      "Rice and roti are both carbohydrate. Neither is inherently better than the other.",
+      "Millets are carbohydrate too. Jowar, bajra and ragi are not free foods.",
+      "Brown or red rice is not automatically better for you than white. Responses differ.",
+      "Eating order helps: protein first, then vegetables, then fats, carbohydrate last.",
+      "One roti, or a small serving of rice, with the rest of the plate doing the work.",
+      "Cooled and reheated rice, and a little vinegar with the meal, both nudge the response down.",
+    ],
+    sections: [
+      {
+        heading: "Start with the permission",
+        body: [
+          "You do not have to give up rice or roti. A great deal of dietary advice arrives as prohibition, people cannot keep to it, and they conclude they have failed rather than that the advice was unliveable.",
+          "Both are carbohydrate, and neither is inherently superior to the other. Which you eat is mostly culture and preference, and those are good reasons. The question worth asking is not which to abandon but how much, alongside what, and in what order.",
+        ],
+      },
+      {
+        heading: "The millet misunderstanding",
+        body: [
+          "This one is worth saying plainly, because there is a great deal of enthusiasm for millets at the moment and it has hardened into a belief that they are somehow free.",
+          "Jowar, bajra, ragi, rajgira and makka are all carbohydrate. They bring useful fibre and minerals with them, which is a genuine advantage, and they will still raise your blood sugar. A large plate of bajra rotis is a large plate of carbohydrate. Swapping the grain is worth doing; swapping the grain and then eating twice as much is not.",
+          "The same caution applies to rice. Brown and red rice are not automatically better for you than white, and people respond differently to all of them. Long-grain tends to raise blood sugar less than short-grain, but that is a tendency rather than a rule about you.",
+        ],
+      },
+      {
+        heading: "What to eat instead, if you want alternatives",
+        body: [
+          "For roti, a moong dal or gram flour pancake is filling, high in protein and genuinely quick. Moong dal khakhra works as a lighter option. Almond flour roti is low in starch and high in protein, bound with a little psyllium husk, and it is considerably more expensive, so treat it as a nice option rather than the standard to aim for.",
+          "For rice, cauliflower rice and konjac rice are both very low in carbohydrate, though neither tastes like rice and it is worth knowing that before you buy a packet.",
+          "There is also a small trick with ordinary rice: cooking it, cooling it properly, and reheating it changes some of the starch into a form your body absorbs less readily. The effect is modest rather than transformative, and it costs nothing to do with yesterday's rice.",
+        ],
+      },
+      {
+        heading: "Order matters more than people expect",
+        body: [
+          "This is the most useful thing on this page and it requires you to give up nothing at all. Eat the protein first, then the vegetables or salad, then the fats, and leave the rice or roti until last.",
+          "The same meal, eaten in that order, tends to produce a smaller rise in blood sugar than the same food eaten carbohydrate-first. You are not eating less; you are eating it in a different sequence. For anyone who has found every other piece of advice unbearable, start here.",
+        ],
+      },
+      {
+        heading: "Portion, and what fills the rest of the plate",
+        body: [
+          "If you want ordinary wheat roti, have one, and let protein, vegetables and a sensible fat do the rest of the work. If you want rice, take a modest serving and build the plate around it rather than under it.",
+          "That is really the plate method said another way: half vegetables, a quarter protein, a quarter the grain you like. The grain is not removed, it is just no longer the largest thing on the plate.",
+        ],
+      },
+      {
+        heading: "Two more things, with caveats",
+        body: [
+          "Some people find a little vinegar taken with a carbohydrate-rich meal blunts the rise afterwards. In Japan rice is often prepared with rice vinegar, which is one way to get it in without it tasting like medicine. It suits some people and not others, and if you have reflux or sensitive teeth it may not suit you at all, so treat it as an experiment.",
+          "And the honest answer to which grain is best for you is that nobody can tell you from a page. Responses genuinely differ between people. Some use a continuous glucose monitor for a few weeks to find out what their own body does with different meals, which is a conversation to have with your doctor rather than something to order on impulse.",
+          "The principle that holds all of this together: the best approach is the one you can keep up, that fits how you actually eat, and that your own body responds well to. This is general food guidance, not medical advice.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "diabetes-what-is-happening",
+      "anti-inflammatory-swaps-indian-kitchen",
+      "nutrition-basics",
+      "movement-and-blood-sugar",
+    ],
+    guides: ["diabetes-management-guide", "lower-your-blood-sugar-guide"],
+  },
 ];
 
 /** Every paragraph of a topic, whichever shape it uses. */
