@@ -24,7 +24,7 @@ export type Guide = {
   image?: string; // real club photo; falls back to a placeholder if absent
   imageAlt?: string; // describe the image itself; defaults to the guide title
   imageCredit?: string; // visible credit / provenance line under the image
-  imageRatio?: "16/9" | "4/3" | "3/2" | "1/1"; // hero aspect; defaults to 16/9
+  imageRatio?: "16/9" | "4/3" | "3/2" | "1/1" | "6/5"; // hero aspect; defaults to 16/9
   steps: GuideStep[];
   topics: string[]; // topic slugs covered
   relatedGuides: string[]; // guide slugs

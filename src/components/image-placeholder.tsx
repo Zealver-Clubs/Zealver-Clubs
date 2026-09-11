@@ -13,7 +13,7 @@ export function ImagePlaceholder({
 }: {
   label: string;
   className?: string;
-  ratio?: "16/9" | "4/3" | "1/1" | "3/2";
+  ratio?: "16/9" | "4/3" | "1/1" | "3/2" | "6/5";
 }) {
   return (
     <div

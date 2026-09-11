@@ -17,7 +17,7 @@ export type Topic = {
   youtubeId: string | null;
   image?: string; // used when there is no video; can be a web/CC photo
   imageAlt?: string; // describe the image itself; defaults to the topic title
-  imageRatio?: "16/9" | "4/3" | "3/2" | "1/1"; // hero aspect; defaults to 16/9
+  imageRatio?: "16/9" | "4/3" | "3/2" | "1/1" | "6/5"; // hero aspect; defaults to 16/9
   imageCredit?: string; // visible credit / provenance line under the image
   summary: string;
   /** Scannable takeaways, shown in an "In short" box above the article. */

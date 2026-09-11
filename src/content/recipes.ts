@@ -17,6 +17,7 @@ export type Recipe = {
   keyPoints?: string[];
   image?: string;
   imageAlt?: string;
+  imageRatio?: "16/9" | "4/3" | "3/2" | "1/1" | "6/5"; // hero aspect; defaults to 16/9
   imageCredit?: string;
   serves: string;
   prepTime: string;
@@ -1436,6 +1437,12 @@ export const recipes: Recipe[] = [
     category: "Food & energy",
     summary:
       "Orange, cucumber and toasted walnuts with a lemon dressing. Vitamin C and good fats rather than protein, and pleasant to eat.",
+    image: "/images/orange-cucumber-walnut-salad.webp",
+    imageAlt:
+      "Orange, cucumber and walnut salad in a speckled bowl: orange segments, chunks of cucumber, toasted walnuts, crumbled white cheese and mint leaves, with a small jar of lemon and olive oil dressing beside it. Notes alongside say vitamin C helps the body absorb non-haem iron from plant foods, walnuts provide ALA, a plant-based omega-3 fatty acid, no cooking is needed apart from toasting the walnuts, and that it is not a protein dish so it is best eaten alongside a protein-rich food. Serves 2, 15 minutes.",
+    imageRatio: "6/5",
+    imageCredit:
+      "Illustration created for Zealver Clubs with ChatGPT (OpenAI), reviewed by Dr Namrata Bagaria.",
     keyPoints: [
       "Vitamin C from the orange can help the body absorb iron from plant foods in the meal.",
       "Walnuts provide ALA, a plant-based omega-3 fatty acid.",

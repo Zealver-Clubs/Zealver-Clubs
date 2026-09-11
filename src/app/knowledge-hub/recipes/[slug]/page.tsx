@@ -118,7 +118,7 @@ export default async function RecipePage({
             src={recipe.image}
             alt={recipe.imageAlt ?? recipe.title}
             label={`Photo, ${recipe.title}`}
-            ratio="16/9"
+            ratio={recipe.imageRatio ?? "16/9"}
             className="rounded-xl"
             sizes="(max-width: 768px) 100vw, 768px"
           />

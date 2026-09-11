@@ -7,6 +7,7 @@ const ratioValue: Record<string, string> = {
   "4/3": "4 / 3",
   "3/2": "3 / 2",
   "1/1": "1 / 1",
+  "6/5": "6 / 5",
 };
 
 /**
@@ -25,7 +26,7 @@ export function MediaImage({
   src?: string | null;
   alt?: string;
   label: string;
-  ratio?: "16/9" | "4/3" | "3/2" | "1/1";
+  ratio?: "16/9" | "4/3" | "3/2" | "1/1" | "6/5";
   className?: string;
   priority?: boolean;
   sizes?: string;
