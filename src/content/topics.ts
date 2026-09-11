@@ -157,10 +157,14 @@ export const topics: Topic[] = [
     ],
     body: [
       "Eating well later in life is less about strict rules and more about steady, everyday habits: enough protein, plenty of colour on the plate, and staying comfortably hydrated through the day.",
-      "Try to include a protein source at each meal, lentils, beans, eggs, dairy, cheese, fish or chicken, to help maintain muscle and strength. Fill half the plate with vegetables and fruit for fibre and vitamins, and keep a glass of water in sight, since the feeling of thirst fades as we age.",
+      "Try to include a protein source at each meal, paneer, curd, tofu, eggs, cheese, fish or chicken, to help maintain muscle and strength. Dal, rajma and chole count towards it but contain more carbohydrate than protein, so they work best with something else alongside rather than as the protein on their own. Fill half the plate with vegetables and fruit for fibre and vitamins, and keep a glass of water in sight, since the feeling of thirst fades as we age.",
       "Small, regular meals often sit better than one large one, and sharing food with company makes it more enjoyable. This is general healthy-eating guidance; for specific dietary needs, your doctor or a dietitian can tailor it to you.",
     ],
-    relatedTopics: ["movement-and-blood-sugar", "anti-inflammatory-basics"],
+    relatedTopics: [
+      "protein-at-every-meal",
+      "movement-and-blood-sugar",
+      "anti-inflammatory-basics",
+    ],
     guides: ["lower-your-blood-sugar-guide", "anti-inflammatory-diet-guide"],
   },
   {
@@ -3092,8 +3096,137 @@ export const topics: Topic[] = [
       },
     ],
   },
+  {
+    slug: "protein-at-every-meal",
+    title: "Protein at every meal: how to actually get enough",
+    category: "Food & energy",
+    youtubeId: null,
+    summary:
+      "Most people eat nearly all their protein at dinner and almost none at breakfast. Here is how to spread it out, and why dal on its own does not count for as much as you think.",
+    keyPoints: [
+      "Spread protein across all three meals rather than saving it for dinner.",
+      "Rajma, chole and dal contain more carbohydrate than protein. Pair them with paneer, tofu or curd.",
+      "Breakfast is where most people fall shortest, and it is the easiest meal to fix.",
+      "Eat one whole fruit with nuts, cheese or curd rather than a bowl of fruit salad alone.",
+      "Nuts, seeds, olive oil and ghee all belong on the plate. Ghee and coconut oil in smaller amounts.",
+      "Build lunch and dinner as a bowl: protein first, half vegetables, a small portion of grain.",
+    ],
+    sections: [
+      {
+        heading: "Why this matters more after 60",
+        body: [
+          "Muscle gets harder to hold on to with age, and protein is the material it is rebuilt from. Eating the same amount you always did is often no longer enough, and a lot of people are eating considerably less than they think.",
+          "The other half of the problem is timing. A typical day has almost no protein at breakfast, a little at lunch and most of it at dinner. The body can only use so much at once, so protein loaded into one meal does less good than the same amount spread across three.",
+        ],
+      },
+      {
+        heading: "About rajma, chole and dal",
+        body: [
+          "This is the correction worth making first, because it undoes a belief almost everybody holds.",
+          "Rajma, chole and dals are mainly complex carbohydrates. They do contain protein, and it is real protein, but gram for gram there is more carbohydrate in them than protein. A bowl of dal is a good food. It is not, on its own, the protein in your meal.",
+          "This is not a reason to stop eating them. It is a reason to add something alongside: paneer, tofu, curd, a boiled egg, or a piece of fish. Rajma with a side of curd, or chole with paneer in it, is a genuinely different meal from rajma alone.",
+          "The same applies to gram flour. Besan and roasted chana get talked about as protein foods, and they are more than half carbohydrate.",
+        ],
+      },
+      {
+        heading: "Build lunch and dinner as a bowl",
+        body: [
+          "The simplest way to get a balanced meal without measuring anything is to think of it as a bowl and fill it in a fixed order.",
+          "Protein first: paneer, tofu, eggs, fish or chicken. Then vegetables, at least half the bowl, stir-fried or roasted rather than boiled to nothing. Then a small portion of grain last, rather than starting with rice and adding to it.",
+          "Good grain choices are brown rice, millets, oats, or ordinary rice cooked the day before and reheated. Keep the portion modest. People respond differently to the same carbohydrate, so pay attention to which meals leave you sluggish an hour later and which do not.",
+          "Meals that work: stir-fried vegetables with tofu or paneer and a little rice. Kadhi with a small portion of rice and a vegetable. Besan or moong dal chilla with sauteed vegetables. Rajma or chole with plenty of vegetables and curd alongside. A salad topped with paneer or tofu.",
+        ],
+      },
+      {
+        heading: "Breakfast is where most people fall short",
+        body: [
+          "Tea and a biscuit, or toast, or poha on its own, is a breakfast with almost no protein in it. Fixing this one meal usually makes a bigger difference than anything else on this page.",
+          "Straightforward options: sprouts chaat. Moong dal idli. Besan or moong dal chilla stuffed with paneer or tofu. Pesarattu with a light paneer filling. Paneer or tofu on toast. Curd with fruit. Chia pudding made the night before.",
+          "None of these take longer than what you make now, and several can be prepared in advance.",
+        ],
+      },
+      {
+        heading: "Snacks that are actually protein",
+        body: [
+          "Peanuts. Pistachios, unsalted or lightly salted. Mixed nuts. Roasted chana, in moderation if chickpeas leave you bloated. Roasted edamame. A boiled egg. Chia pudding made ahead and kept in the fridge. These all travel, which matters if you are out for the day.",
+          "Bhel can be rebuilt as a protein snack rather than a carbohydrate one: a small amount of puffed rice, then roasted chana, chana jor garam and roasted edamame doing most of the work, with onion, tomato, coriander, lemon and spices.",
+          "If you want a samosa or some popcorn, have it. Keep the portion to one, and have it after something with protein in it rather than on an empty stomach, so you are not eating it hungry.",
+        ],
+      },
+      {
+        heading: "One fruit with something, not a bowl of fruit alone",
+        body: [
+          "A large bowl of mixed fruit on its own is a lot of sugar arriving at once with nothing to slow it down. You are hungry again before long.",
+          "Have one whole fruit and pair it with protein and fat: a handful of nuts, cubes of paneer or cheese, a spoon of peanut butter, or curd. The same fruit keeps you full for longer and the rise in blood sugar is gentler.",
+        ],
+      },
+      {
+        heading: "Fats belong on the plate",
+        body: [
+          "Fat is not the enemy of this way of eating. It is part of what makes a meal satisfying enough that you are not looking for a snack an hour later.",
+          "Good everyday choices: extra virgin olive oil for dressings and low heat, cold-pressed groundnut oil, mustard oil, sesame oil, avocado, and nuts and seeds.",
+          "Ghee and coconut oil are worth being accurate about. Both are largely saturated fat, which puts them in a different category from olive oil whatever else is said about them. A little ghee on a roti is a normal part of eating well. Cooking everything in it is not.",
+          "What to genuinely minimise: vanaspati and other hardened fats, deep-fried food as a regular habit, and the refined oils that come in ultra-processed packaged food.",
+        ],
+      },
+      {
+        heading: "Where protein shakes fit",
+        body: [
+          "A protein shake is a convenient way to add protein, and it is most useful in the situations where food is not working: a poor appetite, a day with no time, or after a morning walk when you are not hungry yet but should eat something.",
+          "It is a supplement to food rather than a substitute for it. If your meals already have paneer, curd, eggs or fish in them, you very likely do not need one.",
+          "If you have kidney disease, protein intake is something your doctor needs to set rather than a general guide, and that includes shakes.",
+        ],
+      },
+      {
+        heading: "What a good meal looks like, in one line",
+        body: [
+          "High in protein, plenty of fibre, some healthy fat, built on whole foods rather than packaged ones, and with carbohydrates present in a moderate portion and complex rather than refined.",
+          "This is general healthy-eating guidance. If you have diabetes, kidney disease, or have been given a specific diet, your doctor or dietitian should be the one to tailor it.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "nutrition-basics",
+      "muscle-as-your-bodys-engine",
+      "eating-before-and-after-exercise",
+      "anti-inflammatory-swaps-indian-kitchen",
+      "classic-indian-dishes-for-seniors",
+    ],
+    guides: [
+      "stay-strong-after-menopause-guide",
+      "lower-your-blood-sugar-guide",
+      "anti-inflammatory-diet-guide",
+    ],
+    references: [
+      {
+        title:
+          "Protein intake and exercise for optimal muscle function with aging: recommendations from the ESPEN Expert Group",
+        publisher: "Clinical Nutrition",
+        year: "2014",
+        url: "https://pubmed.ncbi.nlm.nih.gov/24814383/",
+        supports:
+          "That older adults need more protein than younger adults, and that spreading it across meals is more effective than concentrating it in one.",
+      },
+      {
+        title: "Dietary Guidelines for Indians",
+        publisher: "ICMR\u2013National Institute of Nutrition",
+        year: "2024",
+        url: "https://www.nin.res.in/dietaryguidelines/index.html",
+        supports:
+          "The composition of Indian pulses and cereals, and the food group balance recommended here.",
+      },
+      {
+        title: "Dietary fat and cardiovascular disease: a presidential advisory",
+        publisher: "American Heart Association",
+        year: "2017",
+        url: "https://www.ahajournals.org/doi/10.1161/CIR.0000000000000510",
+        supports:
+          "That coconut oil and ghee are largely saturated fat and are not equivalent to olive oil.",
+      },
+    ],
+  },
 ];
-
 /** Every paragraph of a topic, whichever shape it uses. */
 export function topicParagraphs(t: Topic): string[] {
   return t.sections?.length ? t.sections.flatMap((sec) => sec.body) : t.body;
