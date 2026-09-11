@@ -3011,6 +3011,87 @@ export const topics: Topic[] = [
     ],
     guides: ["vitamin-d-guide", "questions-for-your-doctor-guide"],
   },
+  {
+    slug: "classic-indian-dishes-for-seniors",
+    title: "Classic Indian dishes: which suit you at 60+, and which need a change",
+    category: "Food & energy",
+    youtubeId: null,
+    summary:
+      "Avial, appam, idli, upma, poha and the rest, judged honestly. Almost nothing needs giving up; a good deal needs protein adding.",
+    keyPoints: [
+      "One question settles most of it: where is the protein in this meal?",
+      "Sambar, rasam with dal, curd rice and khichdi are sound as they are.",
+      "Idli, dosa, appam, upma and poha are mostly carbohydrate and need something with them.",
+      "Avial is excellent, and the coconut and curd are the point rather than the problem.",
+      "Fried and sweet dishes are for occasions, and India has plenty of occasions.",
+      "Almost nothing here needs giving up. It needs balancing."],
+    sections: [
+      {
+        heading: "The one question worth asking",
+        body: [
+          "Indian vegetarian cooking is extraordinary, and it has one recurring weakness on the plate: a great many complete-looking meals are almost entirely carbohydrate. Idli with coconut chutney. Poha and tea. Upma. Two parathas with pickle. Rice with a thin sabzi.",
+          "So the question to ask of any meal is simply: where is the protein in this? If the honest answer is nowhere, the meal needs something adding rather than the dish needing abandoning. That is nearly always the fix.",
+        ],
+      },
+      {
+        heading: "Sound as they are",
+        body: [
+          "Sambar earns its place at the top. It is built on toor dal, it carries vegetables, and it turns an idli breakfast from carbohydrate into a balanced meal. If you eat idli or dosa with coconut chutney only, this is the single change worth making.",
+          "Curd rice is better than its reputation, providing protein and helpful bacteria, and it is soft and soothing when appetite is poor. Khichdi is sound if the dal is generous rather than a handful. Dal with rice or roti is the everyday meal that already works. Rasam made properly with dal counts too; the thin, dal-free version is a flavoured drink rather than a course.",
+          "Avial deserves a mention of its own. Mixed vegetables in curd and coconut is a genuinely good dish: plenty of vegetables, the curd adds protein and the coconut gives fat that helps you absorb what is in them. Coconut has been treated as a villain for years and in a dish like this it is doing useful work.",
+        ],
+      },
+      {
+        heading: "Good, once something is added",
+        body: [
+          "Idli and dosa are fermented, easily digested and very soft, which makes them excellent for older adults. They are also mostly rice. Eat them with sambar, or add moong or urad dal to the batter, and they become a proper meal.",
+          "Appam is the same story with less dal in it: fermented rice and coconut, lovely, and almost no protein. It needs a stew of vegetables and pulses beside it rather than eating it with coconut milk alone.",
+          "Upma and poha are quick and comforting and they are refined carbohydrate at heart. A handful of peanuts, roasted chana, peas or sprouts stirred in, or a bowl of curd alongside, changes what they do to your blood sugar and how long they hold you. Thepla and plain paratha the same: fine with curd, thin company with pickle alone.",
+        ],
+      },
+      {
+        heading: "Worth modifying",
+        body: [
+          "Pongal is good when made with generous moong dal and much less so when it is mostly rice and ghee. The ratio is the whole thing.",
+          "Vada, pakoda and samosa are deep fried, and the answer is method rather than abstinence. Steamed moong dal vada, baked or air-fried versions, or dhokla instead, keep the occasion and drop the oil.",
+          "Biryani and pulao are largely rice. A portion half the size you would have taken, with a bowl of raita and a salad, is a different meal from a heaped plate with a token gravy.",
+        ],
+      },
+      {
+        heading: "For occasions, and that is fine",
+        body: [
+          "Puran poli, halwa, kheer, laddoo, jalebi and the rest belong to festivals and celebrations, and India has a great many of those. That is not a problem; eating them on ordinary Tuesdays is.",
+          "There is no need for a page like this to tell you to give up sweets. The useful version is simply that a portion at a wedding is an occasion, and a portion most afternoons is a habit, and only one of those is worth changing.",
+        ],
+      },
+      {
+        heading: "Four rules that cover almost everything",
+        body: [
+          "Put dal, curd, paneer, tofu, sprouts, nuts or eggs somewhere in every meal. Fill half the plate with vegetables. Eat the protein and vegetables before the rice or roti, which lowers the rise in blood sugar without changing what you eat. And steam, bake or roast where you used to fry.",
+          "None of this requires abandoning the food you grew up with, which is just as well, because diets that ask people to do that fail within a month.",
+          "This is general food guidance, not medical advice. If you have diabetes, kidney disease or another condition affecting your diet, your own doctor or dietitian should shape it around you.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "rice-and-roti",
+      "anti-inflammatory-swaps-indian-kitchen",
+      "nutrition-basics",
+      "diabetes-what-is-happening",
+    ],
+    guides: ["diabetes-management-guide", "cholesterol-guide"],
+    references: [
+      {
+        title: "Dietary Guidelines for Indians",
+        publisher: "ICMR\u2013National Institute of Nutrition",
+        year: "2024",
+        url: "https://www.nin.res.in/dietaryguidelines/index.html",
+        supports:
+          "Indian food group and portion guidance underlying the balance recommended here.",
+      },
+    ],
+  },
 ];
 
 /** Every paragraph of a topic, whichever shape it uses. */
