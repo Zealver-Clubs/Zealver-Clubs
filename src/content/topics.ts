@@ -322,6 +322,28 @@ export const topics: Topic[] = [
     ],
     guides: [],
   },
+  {
+    slug: "soy-milk-and-plant-milks",
+    title: "Soy milk and other plant milks",
+    category: "Food & energy",
+    youtubeId: null,
+    summary:
+      "What soy milk actually is, why it is the one plant milk with real protein, and what to look for on the label.",
+    body: [
+      "Soy milk is made by soaking soybeans, grinding them with water and straining the result. That is the whole process. You will sometimes see it written as soy mylk on a carton, which is a spelling some brands use to mark a drink out as plant-based rather than dairy. It is the same thing.",
+      "What makes it worth knowing about is protein. A glass of soy milk gives you somewhere around seven to nine grams, which puts it close to dairy milk and well ahead of every other plant milk on the shelf. Almond, oat, rice and coconut drinks are pleasant and useful in cooking, but most of them carry very little protein, often less than a gram a glass. If you are reaching for a plant milk partly to help you hold on to muscle, soy is the one that does that job.",
+      "Two things are worth checking on the label. The first is whether it is fortified, because calcium and vitamin B12 are added to many soy milks but not all, and the fortified ones are considerably more useful if you are not getting much dairy. The second is sugar. A lot of what sells is sweetened, sometimes quite heavily, and unsweetened is the sensible everyday choice with sweetened kept as a treat.",
+      "It slots into an Indian kitchen easily enough. It works in chai, over oats or muesli, in kheer and in most places you would use milk, though it behaves a little differently when heated hard. Soy will already be familiar to you in other forms, as tofu, soy chunks and soya granules, and those count towards your protein just as the drink does.",
+      "None of this is an argument for giving up dairy. If dahi, milk and paneer suit you, they are excellent sources of protein and calcium and there is no reason to replace them. Soy milk is genuinely useful if you are avoiding dairy, if it does not agree with you, or if you simply want another way to get protein into the day. This is general food guidance, not medical advice, and any specific concerns about soy in your own diet are worth raising with your doctor.",
+    ],
+    relatedTopics: [
+      "muscle-strength-and-ageing",
+      "bone-health-after-menopause",
+      "nutrition-basics",
+      "synbiotics-explained",
+    ],
+    guides: [],
+  },
 ];
 
 export const topicsBySlug = new Map(topics.map((t) => [t.slug, t]));
