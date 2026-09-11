@@ -34,8 +34,13 @@ export function HubBrowser({
     () => new Set(guides.map((g) => firstLetter(g.title))),
     [guides],
   );
+  // Two letters per recipe: the dish name, and the tag, so every salad is
+  // reachable from S whatever the dish happens to be called.
   const recipeLetters = useMemo(
-    () => new Set(recipes.map((r) => firstLetter(r.title))),
+    () =>
+      new Set(
+        recipes.flatMap((r) => [firstLetter(r.title), firstLetter(r.tag)]),
+      ),
     [recipes],
   );
 
@@ -43,8 +48,12 @@ export function HubBrowser({
     const matchesQuery =
       !q ||
       r.title.toLowerCase().includes(q) ||
-      r.summary.toLowerCase().includes(q);
-    const matchesLetter = !recipeLetter || firstLetter(r.title) === recipeLetter;
+      r.summary.toLowerCase().includes(q) ||
+      r.tag.toLowerCase().includes(q);
+    const matchesLetter =
+      !recipeLetter ||
+      firstLetter(r.title) === recipeLetter ||
+      firstLetter(r.tag) === recipeLetter;
     return matchesQuery && matchesLetter;
   });
 
@@ -118,35 +127,6 @@ export function HubBrowser({
         )}
       </div>
 
-      {/* Recipes */}
-      <div className="mt-14">
-        <h2 className="text-2xl font-extrabold text-heading">Recipes</h2>
-        <p className="mt-1 text-muted-foreground">
-          Simple, senior-friendly cooking. All filed under R.
-        </p>
-        <div className="mt-4">
-          <AZStrip
-            idPrefix="recipes"
-            active={recipeLetter}
-            available={recipeLetters}
-            onSelect={setRecipeLetter}
-          />
-        </div>
-        {filteredRecipes.length > 0 ? (
-          <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {filteredRecipes.map((r) => (
-              <li key={r.slug} className="relative">
-                <RecipeCard recipe={r} />
-              </li>
-            ))}
-          </ul>
-        ) : (
-          <p className="mt-6 rounded-xl bg-muted p-6 text-muted-foreground">
-            No recipes match your search yet.
-          </p>
-        )}
-      </div>
-
       {/* Topics, stacked below Guides, equal visual weight */}
       <div className="mt-14">
         <h2 className="text-2xl font-extrabold text-heading">Topics</h2>
@@ -172,6 +152,36 @@ export function HubBrowser({
         ) : (
           <p className="mt-6 rounded-xl bg-muted p-6 text-muted-foreground">
             No topics match your search yet.
+          </p>
+        )}
+      </div>
+
+      {/* Recipes */}
+      <div className="mt-14">
+        <h2 className="text-2xl font-extrabold text-heading">Recipes</h2>
+        <p className="mt-1 text-muted-foreground">
+          Simple, senior-friendly cooking. Filed by dish name, and by type,
+          so every salad is under S.
+        </p>
+        <div className="mt-4">
+          <AZStrip
+            idPrefix="recipes"
+            active={recipeLetter}
+            available={recipeLetters}
+            onSelect={setRecipeLetter}
+          />
+        </div>
+        {filteredRecipes.length > 0 ? (
+          <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {filteredRecipes.map((r) => (
+              <li key={r.slug} className="relative">
+                <RecipeCard recipe={r} />
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p className="mt-6 rounded-xl bg-muted p-6 text-muted-foreground">
+            No recipes match your search yet.
           </p>
         )}
       </div>

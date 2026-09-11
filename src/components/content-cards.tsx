@@ -111,7 +111,7 @@ export function RecipeCard({ recipe }: { recipe: Recipe }) {
       />
       <CardBody className="flex h-full flex-col">
         <span className="inline-flex w-fit items-center gap-1.5 rounded-full bg-primary-soft px-3 py-1 text-sm font-bold text-primary">
-          <CookingPot className="h-4 w-4" aria-hidden /> Recipe
+          <CookingPot className="h-4 w-4" aria-hidden /> {recipe.tag}
         </span>
         <h3 className="mt-2 text-lg font-extrabold text-heading">
           <Link

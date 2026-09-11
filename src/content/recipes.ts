@@ -3,12 +3,15 @@ import type { Reference } from "./references";
 /**
  * Knowledge Hub recipes.
  *
- * Titles begin with "Recipe:" so they file under R in the A-Z, alongside the
- * topics and guides, rather than scattering across the alphabet by dish name.
+ * Each recipe files under its own dish name in the A-Z, and also under the
+ * first letter of its `tag`, so every salad is reachable from S whatever it
+ * is called.
  */
 export type Recipe = {
   slug: string;
   title: string;
+  /** Dish type, e.g. "Salad". Also gives the recipe a second letter in the A-Z. */
+  tag: string;
   category: string;
   summary: string;
   keyPoints?: string[];
@@ -31,7 +34,8 @@ export type Recipe = {
 export const recipes: Recipe[] = [
   {
     slug: "cucumber-potato-dill-salad",
-    title: "Recipe: cucumber, potato and dill salad",
+    title: "Cucumber, potato and dill salad",
+    tag: "Salad",
     category: "Food & energy",
     summary:
       "A cool, no-fuss salad for a hot afternoon. Nothing to cook but the potatoes, and it is better made ahead.",

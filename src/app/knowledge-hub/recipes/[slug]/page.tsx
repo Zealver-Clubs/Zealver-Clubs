@@ -51,14 +51,14 @@ export default async function RecipePage({
   const schema = {
     "@context": "https://schema.org",
     "@type": "Recipe",
-    name: recipe.title.replace(/^Recipe:\s*/, ""),
+    name: recipe.title,
     description: recipe.summary,
     inLanguage: "en",
     mainEntityOfPage: url,
     url,
     recipeYield: `${recipe.serves} servings`,
     prepTime: recipe.prepTimeIso,
-    recipeCategory: "Salad",
+    recipeCategory: recipe.tag,
     recipeCuisine: "European",
     author: { "@type": "Organization", name: site.name },
     publisher: { "@type": "Organization", name: site.name },
@@ -96,6 +96,9 @@ export default async function RecipePage({
       <ReviewedBy />
 
       <div className="mt-3 flex flex-wrap items-center gap-3">
+        <span className="inline-flex items-center gap-1.5 rounded-full bg-primary-soft px-3 py-1 text-sm font-bold text-primary">
+          {recipe.tag}
+        </span>
         <span className="inline-flex items-center gap-1.5 rounded-full bg-secondary-soft px-3 py-1 text-sm font-bold text-secondary">
           <Users className="h-4 w-4" aria-hidden /> Serves {recipe.serves}
         </span>
