@@ -467,8 +467,24 @@ export const topics: Topic[] = [
         ],
       },
       {
+        heading: "Every movement is rehearsing something",
+        body: [
+          "This is the part worth saying to anyone who thinks a chair dance class is only dancing. Nearly every movement in a session is a rehearsal for something you need to do anyway.",
+          "Standing up and sitting down is getting off the toilet and out of an armchair. Marching is walking more safely. Stepping to the side is what saves you when you catch your foot. Reaching overhead is the top shelf. Twisting is turning over in bed, and looking behind you. Arm movements are carrying the shopping in from the car. Holding yourself upright through all of it is the posture that keeps your back from aching.",
+          "So you are not simply exercising. You are practising the movements that independence is actually made of, which is why the effect shows up in daily life rather than only in a class.",
+        ],
+      },
+      {
+        heading: "It works the brain as well",
+        body: [
+          "A session asks more of you than the movements suggest. Remembering what comes next, keeping to a rhythm, coordinating arms with legs, moving while talking or counting, reacting when the pattern changes. That is attention, memory and coordination being used together.",
+          "Doing two things at once, thinking while moving, is closer to real life than either on its own, and it is a large part of why music-led movement suits this age group so well.",
+        ],
+      },
+      {
         heading: "Where it fits",
         body: [
+          "A way of putting it that tends to land: muscle is your retirement savings, and every session is a deposit. What you build and keep now is what you will have to spend on independence later.",
           "So the way to think about chair dance is as the foundation and the habit, with strength work built on top of it rather than instead of it. This is general activity guidance, not a treatment plan. If you have osteoporosis, have had a fracture, or are unsure what is safe for you, ask your doctor or a physiotherapist to help shape it around you.",
         ],
       },
@@ -1478,6 +1494,135 @@ export const topics: Topic[] = [
       "understanding-stress",
     ],
     guides: ["acid-reflux-guide"],
+  },
+  {
+    slug: "bones-that-matter-most",
+    title: "Bones to protect after 60, and why these five",
+    category: "Bones & strength",
+    youtubeId: null,
+    summary:
+      "Not every bone carries the same consequences. The five that most often break, and what each one costs you if it does.",
+    keyPoints: [
+      "Adults have 206 bones. Five of them account for most of the trouble after 60.",
+      "Hip: the one that most often ends independence rather than just causing pain.",
+      "Spine: collapses quietly, causing height loss, stooped posture and back pain.",
+      "Wrist: usually the first to go, and often the first sign that bone has thinned.",
+      "Shoulder and pelvis: less talked about, and both make daily life very hard.",
+      "The five share one protection: stronger legs, steadier balance and stronger bone.",
+    ],
+    sections: [
+      {
+        heading: "Why five bones and not all 206",
+        body: [
+          "An adult skeleton has 206 bones, and a baby is born with around 270, many of which fuse as they grow. Most of them will never give you a moment's trouble.",
+          "A small number account for nearly all the serious consequences after 60, because of where they sit and what they let you do. Knowing which they are makes prevention feel less like a vague instruction and more like protecting something specific.",
+        ],
+      },
+      {
+        heading: "The hip",
+        body: [
+          "The thigh bone is the strongest bone in the body, which tells you something about what it takes to break one. A hip fracture is the injury that most often changes a life rather than interrupting it: hospital, surgery, a long recovery, and a great many people never return to the independence they had before it.",
+          "This is the one behind almost all fall-prevention advice, and it is why leg strength and balance matter more than they sound like they should.",
+        ],
+      },
+      {
+        heading: "The spine",
+        body: [
+          "Spinal fractures are different from the others because they often happen without a fall at all. A weakened vertebra can simply compress under everyday load, sometimes without a dramatic moment to point to.",
+          "What follows is gradual and easy to mistake for ordinary ageing: losing height, a rounded upper back, persistent back pain, and eventually less room for the lungs to work in. If someone has lost noticeable height or their posture has changed, that is worth mentioning to a doctor rather than accepting.",
+        ],
+      },
+      {
+        heading: "The wrist",
+        body: [
+          "This is the one that comes first. Falling forward, the hand goes out, and the wrist takes the whole weight. It is often the earliest fracture of the group and frequently the first real sign that bone has been thinning quietly for years.",
+          "A broken wrist is rarely life-changing in itself, and it is worth treating as a warning rather than bad luck. It is the moment to ask about bone health, not simply to wait for it to heal.",
+        ],
+      },
+      {
+        heading: "The shoulder and the pelvis",
+        body: [
+          "These two get talked about least and cause more difficulty than people expect. The upper arm bone breaks readily in a sideways fall, and a shoulder you cannot use makes dressing, washing, cooking and reaching almost impossible, all at once.",
+          "The pelvis is what you stand, walk and balance on. Pelvic fractures in older adults can take months to settle, and that length of reduced movement costs muscle and confidence on its own.",
+        ],
+      },
+      {
+        heading: "One set of protections for all five",
+        body: [
+          "The encouraging part is that you do not need five different plans. Every one of these breaks in the same circumstances: a fall onto bone that has thinned.",
+          "So the protection is shared. Stronger legs and better balance mean fewer falls. Weight-bearing movement, enough protein and calcium-rich food keep the bone underneath more able to take a knock. Safe floors, decent light and sensible shoes remove the trips in the first place.",
+          "This page is for understanding what is at stake, not for diagnosing yourself. Any concern about your own bone health belongs with your doctor.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "bone-health-after-menopause",
+      "osteopenia-and-osteoporosis",
+      "muscle-strength-and-ageing",
+      "fall-prevention",
+    ],
+    guides: ["stay-strong-after-menopause-guide", "fall-prevention-guide"],
+  },
+  {
+    slug: "muscle-as-your-bodys-engine",
+    title: "Muscle as your body's engine, not just for moving",
+    category: "Bones & strength",
+    youtubeId: null,
+    summary:
+      "Muscle burns your fuel, steadies your blood sugar and sends chemical messages round the body. Why losing it costs far more than strength.",
+    keyPoints: [
+      "You have around 600 to 650 skeletal muscles. Together they are your largest metabolic organ.",
+      "Muscle is where glucose goes after a meal, so more muscle means steadier blood sugar.",
+      "Working muscle releases myokines: chemical messengers that calm inflammation and signal bone to build.",
+      "Losing muscle slows metabolism, raises blood sugar and worsens balance all at once.",
+      "Sarcopenia and osteoporosis usually arrive together, and each makes the other worse.",
+    ],
+    sections: [
+      {
+        heading: "More than something that moves you",
+        body: [
+          "Muscle gets thought of as the thing that lifts the shopping, and that undersells it considerably. Taken together, your skeletal muscles are the largest metabolic organ you have: they burn fuel, store it, generate heat, hold your joints together, keep you upright, and steady your balance.",
+          "Which means losing muscle is not simply becoming weaker. It changes how your whole body runs.",
+        ],
+      },
+      {
+        heading: "Where your blood sugar goes",
+        body: [
+          "After a meal, much of the glucose in your blood is taken up by muscle and stored there for later. Muscle is the largest place it can go.",
+          "So the more muscle you keep, the more room there is for that glucose, and the steadier blood sugar tends to be. This is the direct link between strength work and blood sugar control, and it is why the two subjects keep turning up together.",
+        ],
+      },
+      {
+        heading: "Muscle talks to the rest of you",
+        body: [
+          "This is the part that has changed how researchers think about it. Contracting muscle releases chemical messengers called myokines, which travel round the body and do a surprising amount: calming inflammation, improving how well insulin works, supporting the brain, and signalling bone to build.",
+          "Bone answers back with signals of its own. Muscle and bone are increasingly treated as one connected system rather than two neighbouring ones, which is why the same session pays into both.",
+        ],
+      },
+      {
+        heading: "What it runs on",
+        body: [
+          "Muscle draws on different fuels depending on what you are asking of it. A sudden effort of a few seconds runs on energy already sitting in the cell. A longer, brisker effort mostly burns glucose. At rest and during gentle, sustained activity, fat does most of the work.",
+          "Protein is the exception. It is meant for building and repairing muscle, not for burning, and the body only turns to it for fuel when food or protein has been short for a long while. That is worth knowing, because eating too little protein means taking apart the very thing you are trying to keep.",
+        ],
+      },
+      {
+        heading: "Why the two losses travel together",
+        body: [
+          "Muscle loss with age has a name, sarcopenia, and so does bone loss, osteoporosis. They very often arrive in the same person, and they feed each other: less muscle means less pull on bone and less signal to stay strong, while weaker bone and poorer balance make people move less, which costs more muscle.",
+          "Together they raise the risk of falls, fractures and losing independence far more than either would alone. The cheering news is that the same things address both: regular movement, work against some resistance, and enough protein to build with. This is general guidance on staying strong, not medical advice.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "muscle-strength-and-ageing",
+      "bones-that-matter-most",
+      "chair-dance-for-bone-and-muscle",
+      "movement-and-blood-sugar",
+    ],
+    guides: ["stay-strong-after-menopause-guide", "diabetes-management-guide"],
   },
 ];
 
