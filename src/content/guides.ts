@@ -145,7 +145,12 @@ export const guides: Guide[] = [
     introMore: [
       "You do not need to change everything at once. A few simple swaps can make your everyday meals more nourishing.",
     ],
-    image: "/images/community-celebration.jpg",
+    image: "/images/anti-inflammatory-eating.webp",
+    imageAlt:
+      "Anti-inflammatory eating. A large bowl holding dal, brown rice, sauteed greens, broccoli, peppers, carrots and a chopped cucumber and tomato salad, with side bowls of curd, orange and pomegranate, and walnuts and almonds. Fresh turmeric, ginger, garlic and olive oil sit alongside. Notes read: more whole foods, meaning vegetables, fruit, whole grains, beans, nuts and seeds; everyday flavour from turmeric, ginger, garlic and other spices; and less processed food, meaning sugary snacks, packaged foods and refined carbohydrates. Small changes make a big difference.",
+    imageRatio: "3/2",
+    imageCredit:
+      "Illustration created for Zealver Clubs with ChatGPT (OpenAI), reviewed by Dr Namrata Bagaria.",
     steps: [
       {
         n: 1,
