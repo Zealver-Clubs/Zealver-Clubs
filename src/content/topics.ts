@@ -1839,6 +1839,84 @@ export const topics: Topic[] = [
     ],
     guides: ["blood-pressure-guide"],
   },
+  {
+    slug: "arthritis-three-kinds",
+    title: "Arthritis: the three common kinds, and telling them apart",
+    category: "Bones & strength",
+    youtubeId: null,
+    summary:
+      "Osteoarthritis, rheumatoid and gout are different conditions needing different things. Which is which, and the signs that mean see a doctor now.",
+    keyPoints: [
+      "Arthritis is not one disease. The three common kinds need different treatment.",
+      "Osteoarthritis is no longer thought of as simple wear and tear. It affects the whole joint, with low-grade inflammation contributing.",
+      "Rheumatoid is autoimmune: inflammation comes first, and early treatment prevents permanent damage.",
+      "Morning stiffness under about 30 minutes suggests osteoarthritis; over an hour suggests rheumatoid.",
+      "Gout is sudden, severe, often the big toe, often at night, with a red and hot joint.",
+      "Movement helps all of them. Complete rest makes them worse.",
+    ],
+    sections: [
+      {
+        heading: "Arthritis is not one thing",
+        body: [
+          "The word covers several quite different conditions, and lumping them together is how people end up managing the wrong one. The three you will hear about most are osteoarthritis, rheumatoid arthritis and gout. They start differently, they look somewhat different, and they need different things done about them.",
+        ],
+      },
+      {
+        heading: "Osteoarthritis, and why the old explanation was too simple",
+        body: [
+          "This is much the most common kind. For decades it was described as a wear and tear disease, as though a joint were a tyre wearing thin. That explanation is still what most people have been told, and current understanding has moved on from it.",
+          "It is better described as a disease of the whole joint. The cartilage does gradually break down, but the bone beneath it, the joint lining, the ligaments and the surrounding muscle are all involved, and a low level of ongoing inflammation contributes to how it progresses. It is a more active process than simply wearing out.",
+          "What raises the risk: getting older, menopause, carrying extra weight, weak muscle around the joint, an injury years ago, and family history. Typical signs are pain going up stairs or getting out of a chair, a grating or cracking sound, reduced movement, and morning stiffness that eases within about half an hour.",
+        ],
+      },
+      {
+        heading: "Rheumatoid arthritis, where inflammation comes first",
+        body: [
+          "This one is different in kind. It is an autoimmune disease: the immune system attacks the lining of the joint, and the damage to cartilage and bone follows from that inflammation rather than causing it.",
+          "The pattern differs too. It usually affects the same joints on both sides, often the small joints of the hands. Morning stiffness lasts well over an hour rather than easing quickly. Joints look swollen and feel warm. There is often real fatigue, and sometimes a low fever or weight loss.",
+          "This is the one where timing genuinely matters. Early treatment can prevent permanent joint damage, and the window for that is not indefinite. If this pattern sounds like yours, that is a reason to see a doctor soon rather than to try exercising your way through it.",
+        ],
+      },
+      {
+        heading: "Gout",
+        body: [
+          "Gout is caused by uric acid forming crystals inside a joint. It announces itself unmistakably: sudden, severe pain, very often in the big toe and very often at night, with the joint red, hot and swollen enough that even a bedsheet hurts.",
+          "It comes in attacks rather than grumbling along, and it is managed through diet, medication and bringing uric acid down, so it is worth being diagnosed properly rather than guessed at.",
+        ],
+      },
+      {
+        heading: "Why women, and why after menopause",
+        body: [
+          "Arthritis is more common in women, and the gap widens after menopause. Falling oestrogen appears to accelerate cartilage damage, and it arrives alongside muscle loss, bone loss and weight gain, each of which adds to the load a joint carries.",
+          "Which is also why the same things keep coming up: keeping muscle, keeping weight sensible, and keeping moving.",
+        ],
+      },
+      {
+        heading: "Motion is lotion, and other things worth knowing",
+        body: [
+          "The single most useful idea here is that movement nourishes a joint rather than wearing it out. Cartilage has no blood supply of its own and depends on gentle use to stay fed. Complete rest makes arthritis worse, not better.",
+          "Weight matters more than it sounds like it should, because of leverage. Every extra kilogram you carry puts roughly three to four kilograms of additional load through the knee with each step. Losing five to ten per cent of body weight, where there is weight to lose, makes a genuine difference to pain.",
+          "On monsoon: many people are certain their joints are worse in damp weather, and the evidence for weather directly worsening arthritis is genuinely mixed. What is likely is that cold muscles tighten, people move less, and there is less sunlight. Those are worth addressing whatever the cause of the feeling.",
+          "Three beliefs worth setting down. Pain does not mean you should rest completely; safe movement is treatment. Arthritis is not simply old age, since weight, muscle, hormones, injury and genetics all play their part. And sensible exercise does not wear joints out; it nourishes them and strengthens the muscle that protects them.",
+        ],
+      },
+      {
+        heading: "When to see a doctor rather than manage it",
+        body: [
+          "Some things should be looked at rather than worked around: a joint that is hot and red, marked swelling, morning stiffness lasting over an hour, sudden unbearable pain, joint pain with a fever, pain that has gone on more than six weeks, or a joint that has visibly changed shape.",
+          "Several of those point towards rheumatoid arthritis or gout rather than osteoarthritis, and both are treated quite differently. Getting the right name for it is what gets you the right treatment. This page is to help you understand the differences, not to diagnose yourself.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "muscle-strength-and-ageing",
+      "bone-health-after-menopause",
+      "chair-dance-for-bone-and-muscle",
+      "anti-inflammatory-basics",
+    ],
+    guides: ["arthritis-and-joint-comfort-guide"],
+  },
 ];
 
 /** Every paragraph of a topic, whichever shape it uses. */

@@ -404,13 +404,13 @@ export const guides: Guide[] = [
     title: "Arthritis and joint pain: living well",
     meta: "5-step guide",
     intro:
-      "Gentle, practical habits for women 60+ living with arthritis or everyday joint stiffness. Moving well rather than resting more.",
+      "Gentle, practical habits for women 60+ living with osteoarthritis or everyday joint stiffness. Moving well rather than resting more.",
     image: "/images/instructor-class.jpg",
     steps: [
       {
         n: 1,
         heading: "Move the joint, gently, most days",
-        text: "The instinct with a sore joint is to rest it, and resting it more than a day or two usually makes it worse. Joints are fed by movement: cartilage has no blood supply and relies on gentle use to stay nourished. Small, frequent, comfortable movement beats either pushing through pain or stopping altogether.",
+        text: "The instinct with a sore joint is to rest it, and resting it more than a day or two usually makes it worse. Joints are fed by movement: cartilage has no blood supply and relies on gentle use to stay nourished. Small, frequent, comfortable movement beats either pushing through pain or stopping altogether. This guide is written for osteoarthritis and everyday stiffness; rheumatoid arthritis and gout are different conditions needing different treatment, so it is worth knowing which you have.",
         topicSlug: "movement-healthy-aging",
         topicLabel: "Movement as a community habit",
       },
@@ -431,19 +431,20 @@ export const guides: Guide[] = [
       {
         n: 4,
         heading: "Eat in a way that helps rather than hinders",
-        text: "No food cures arthritis, and anyone promising that is selling something. What is worth doing is the ordinary pattern: plenty of vegetables and fruit, whole grains, beans and lentils, nuts, oily fish and sensible oils, with less deep-fried and packaged food. Carrying less weight also takes real load off knees and hips.",
+        text: "No food cures arthritis, and anyone promising that is selling something. What is worth doing is the ordinary pattern: plenty of vegetables and fruit, whole grains, beans and lentils, nuts, oily fish and sensible oils, with less deep-fried and packaged food. Weight matters here more than it sounds like it should: every extra kilogram puts roughly three to four kilograms of additional load through the knee with each step, so losing five to ten per cent makes a real difference to pain.",
         topicSlug: "anti-inflammatory-swaps-indian-kitchen",
         topicLabel: "Anti-inflammatory swaps for an Indian kitchen",
       },
       {
         n: 5,
         heading: "Protect your sleep, and know when to ask",
-        text: "Pain disrupts sleep and poor sleep makes pain feel worse, which is a circle worth breaking early. Keep regular sleep times and wind down properly. And see your doctor rather than managing alone if a joint is hot, swollen or suddenly much worse, if pain wakes you nightly, or if stiffness lasts well past the morning.",
+        text: "Pain disrupts sleep and poor sleep makes pain feel worse, which is a circle worth breaking early. Keep regular sleep times and wind down properly. And see your doctor rather than managing alone if a joint is hot and red, markedly swollen or suddenly unbearable, if morning stiffness lasts over an hour, if there is fever alongside the pain, if it has gone on more than six weeks, or if a joint has changed shape. Several of those point to rheumatoid arthritis or gout, which are treated quite differently.",
         topicSlug: "sleep-and-recovery",
         topicLabel: "Sleep & recovery",
       },
     ],
     topics: [
+      "arthritis-three-kinds",
       "movement-healthy-aging",
       "chair-dance-for-bone-and-muscle",
       "muscle-strength-and-ageing",
