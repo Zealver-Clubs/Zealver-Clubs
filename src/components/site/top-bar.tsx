@@ -7,6 +7,7 @@ import { nav, site } from "@/content/site";
 import { ButtonLink } from "@/components/ui/button";
 import { Logo } from "@/components/site/logo";
 import { AccessibilityControls } from "@/components/accessibility-controls";
+import { LanguageControls } from "@/components/language-controls";
 import { cn } from "@/lib/utils";
 
 export function TopBar() {
@@ -33,8 +34,9 @@ export function TopBar() {
           </ul>
         </nav>
 
-        {/* Right controls: accessibility always, plus Join (desktop) / menu (mobile) */}
+        {/* Right controls: language and text size always, plus Join (desktop) / menu (mobile) */}
         <div className="flex items-center gap-1">
+          <LanguageControls />
           <AccessibilityControls />
           <div className="hidden lg:block">
             <ButtonLink href={site.joinHref} target="_blank" rel="noreferrer">

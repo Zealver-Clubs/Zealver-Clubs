@@ -1,8 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Type, Sun, Moon, Contrast, X, Check, Languages, Globe } from "lucide-react";
-import { LANGUAGES, currentLanguage, setLanguage } from "@/components/translate";
+import { Type, Sun, Moon, Contrast, X, Check } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 type Theme = "light" | "dark" | "contrast";
@@ -23,7 +22,6 @@ const SIZES: { value: TextSize; label: string; sample: string }[] = [
 export function AccessibilityControls() {
   const [open, setOpen] = useState(false);
   const [theme, setThemeState] = useState<Theme>("light");
-  const [lang, setLang] = useState("en");
   const [size, setSizeState] = useState<TextSize>("normal");
   const panelRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
@@ -32,7 +30,6 @@ export function AccessibilityControls() {
   useEffect(() => {
     const root = document.documentElement;
     setThemeState((root.dataset.theme as Theme) || "light");
-    setLang(currentLanguage());
     setSizeState((root.dataset.text as TextSize) || "normal");
   }, []);
 
@@ -90,9 +87,9 @@ export function AccessibilityControls() {
         type="button"
         aria-haspopup="dialog"
         aria-expanded={open}
-        aria-label="Text size, language and colour options"
+        aria-label="Text size and colour options"
         onClick={() => setOpen((v) => !v)}
-        title="Text size, language and colour"
+        title="Text size and colour"
         className="inline-flex min-h-12 items-center gap-1.5 rounded-full border-2 border-border px-3 text-secondary transition-colors hover:border-primary hover:bg-secondary-soft"
       >
         {/* "A" for text size, globe for language: two things people recognise
@@ -100,9 +97,11 @@ export function AccessibilityControls() {
         <span className="text-lg font-extrabold leading-none" aria-hidden>
           A
         </span>
-        <Globe className="h-5 w-5 shrink-0" aria-hidden />
+        <span className="text-sm font-extrabold leading-none" aria-hidden>
+          A
+        </span>
         <span className="hidden whitespace-nowrap text-sm font-bold xl:inline">
-          Text &amp; language
+          Text size
         </span>
       </button>
 
@@ -110,11 +109,11 @@ export function AccessibilityControls() {
         <div
           ref={panelRef}
           role="dialog"
-          aria-label="Text size, language and colour options"
+          aria-label="Text size and colour options"
           className="absolute right-0 z-50 mt-2 w-72 rounded-2xl border border-border bg-card p-4 shadow-lg"
         >
           <div className="flex items-center justify-between">
-            <h2 className="text-base font-extrabold text-heading">Text &amp; language</h2>
+            <h2 className="text-base font-extrabold text-heading">Text size &amp; colour</h2>
             <button
               type="button"
               aria-label="Close"
@@ -180,39 +179,6 @@ export function AccessibilityControls() {
             </div>
           </div>
 
-          {/* Language */}
-          <div className="mt-4">
-            <p className="flex items-center gap-2 text-sm font-bold text-foreground">
-              <Languages className="h-4 w-4 text-primary" aria-hidden /> Language
-            </p>
-            <div className="mt-2 grid grid-cols-2 gap-2" role="group" aria-label="Language">
-              {LANGUAGES.map((l) => (
-                <button
-                  key={l.code}
-                  type="button"
-                  lang={l.code}
-                  translate="no"
-                  aria-pressed={lang === l.code}
-                  onClick={() => setLanguage(l.code)}
-                  className={cn(
-                    "notranslate min-h-12 rounded-xl border-2 px-2 font-bold transition-colors",
-                    lang === l.code
-                      ? "border-primary bg-primary-soft text-primary"
-                      : "border-border text-foreground hover:border-primary/50",
-                  )}
-                >
-                  {l.native}
-                  {l.native !== l.label && (
-                    <span className="sr-only"> ({l.label})</span>
-                  )}
-                </button>
-              ))}
-            </div>
-            <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
-              Translated automatically by Google. Wording may not be exact, so
-              the English page stays the original.
-            </p>
-          </div>
         </div>
       )}
     </div>
