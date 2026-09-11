@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Search } from "lucide-react";
+import { Search, ChevronDown, ChevronUp } from "lucide-react";
 import { AZStrip } from "@/components/az-strip";
 import { TopicCard, GuideCard, RecipeCard } from "@/components/content-cards";
 import type { Topic } from "@/content/topics";
@@ -9,6 +9,47 @@ import type { Guide } from "@/content/guides";
 import type { Recipe } from "@/content/recipes";
 
 const firstLetter = (s: string) => s.trim().charAt(0).toUpperCase();
+
+/** How many cards each section shows before the reader asks for more. */
+const PREVIEW_COUNT = 3;
+
+/**
+ * Reveal for a section that has more than a handful of entries. With three
+ * sections and over fifty entries between them, showing everything at once
+ * made the page unusable on a phone.
+ */
+function ShowMore({
+  expanded,
+  total,
+  noun,
+  onToggle,
+}: {
+  expanded: boolean;
+  total: number;
+  noun: string;
+  onToggle: () => void;
+}) {
+  if (total <= PREVIEW_COUNT) return null;
+  return (
+    <button
+      type="button"
+      onClick={onToggle}
+      aria-expanded={expanded}
+      className="mt-5 inline-flex min-h-12 items-center gap-2 rounded-full border-2 border-border px-6 text-lg font-bold text-secondary transition-colors hover:border-primary hover:bg-secondary-soft"
+    >
+      {expanded ? (
+        <>
+          Show fewer <ChevronUp className="h-5 w-5 shrink-0" aria-hidden />
+        </>
+      ) : (
+        <>
+          See all {total} {noun}{" "}
+          <ChevronDown className="h-5 w-5 shrink-0" aria-hidden />
+        </>
+      )}
+    </button>
+  );
+}
 
 export function HubBrowser({
   topics,
@@ -23,6 +64,9 @@ export function HubBrowser({
   const [topicLetter, setTopicLetter] = useState<string | null>(null);
   const [guideLetter, setGuideLetter] = useState<string | null>(null);
   const [recipeLetter, setRecipeLetter] = useState<string | null>(null);
+  const [allGuides, setAllGuides] = useState(false);
+  const [allTopics, setAllTopics] = useState(false);
+  const [allRecipes, setAllRecipes] = useState(false);
 
   const q = query.trim().toLowerCase();
 
@@ -113,13 +157,23 @@ export function HubBrowser({
           />
         </div>
         {filteredGuides.length > 0 ? (
-          <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {filteredGuides.map((g) => (
-              <li key={g.slug} className="relative">
-                <GuideCard guide={g} />
-              </li>
-            ))}
-          </ul>
+          <>
+            <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {(allGuides ? filteredGuides : filteredGuides.slice(0, PREVIEW_COUNT)).map(
+                (g) => (
+                  <li key={g.slug} className="relative">
+                    <GuideCard guide={g} />
+                  </li>
+                ),
+              )}
+            </ul>
+            <ShowMore
+              expanded={allGuides}
+              total={filteredGuides.length}
+              noun="guides"
+              onToggle={() => setAllGuides((v) => !v)}
+            />
+          </>
         ) : (
           <p className="mt-6 rounded-xl bg-muted p-6 text-muted-foreground">
             No guides match your search yet.
@@ -142,13 +196,23 @@ export function HubBrowser({
           />
         </div>
         {filteredTopics.length > 0 ? (
-          <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {filteredTopics.map((t) => (
-              <li key={t.slug} className="relative">
-                <TopicCard topic={t} />
-              </li>
-            ))}
-          </ul>
+          <>
+            <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {(allTopics ? filteredTopics : filteredTopics.slice(0, PREVIEW_COUNT)).map(
+                (t) => (
+                  <li key={t.slug} className="relative">
+                    <TopicCard topic={t} />
+                  </li>
+                ),
+              )}
+            </ul>
+            <ShowMore
+              expanded={allTopics}
+              total={filteredTopics.length}
+              noun="topics"
+              onToggle={() => setAllTopics((v) => !v)}
+            />
+          </>
         ) : (
           <p className="mt-6 rounded-xl bg-muted p-6 text-muted-foreground">
             No topics match your search yet.
@@ -172,13 +236,23 @@ export function HubBrowser({
           />
         </div>
         {filteredRecipes.length > 0 ? (
-          <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {filteredRecipes.map((r) => (
-              <li key={r.slug} className="relative">
-                <RecipeCard recipe={r} />
-              </li>
-            ))}
-          </ul>
+          <>
+            <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {(allRecipes ? filteredRecipes : filteredRecipes.slice(0, PREVIEW_COUNT)).map(
+                (r) => (
+                  <li key={r.slug} className="relative">
+                    <RecipeCard recipe={r} />
+                  </li>
+                ),
+              )}
+            </ul>
+            <ShowMore
+              expanded={allRecipes}
+              total={filteredRecipes.length}
+              noun="recipes"
+              onToggle={() => setAllRecipes((v) => !v)}
+            />
+          </>
         ) : (
           <p className="mt-6 rounded-xl bg-muted p-6 text-muted-foreground">
             No recipes match your search yet.
