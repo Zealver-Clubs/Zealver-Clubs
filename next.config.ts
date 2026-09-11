@@ -1,7 +1,20 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  /**
+   * Permanent redirects for pages that have been renamed after publishing.
+   * A recipe's slug follows its title, so retitling one changes its URL; this
+   * keeps the old address working for anyone who already has the link.
+   */
+  async redirects() {
+    return [
+      {
+        source: "/knowledge-hub/recipes/walnut-and-orange-salad",
+        destination: "/knowledge-hub/recipes/orange-cucumber-and-walnut-salad",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
