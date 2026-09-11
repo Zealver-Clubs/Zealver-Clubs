@@ -92,25 +92,24 @@ export function Footer() {
 
       <div className="border-t border-border">
         <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-6 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between sm:px-6">
-          <p>© {new Date().getFullYear()} {site.name}. All rights reserved.</p>
+          <p>
+            © {new Date().getFullYear()} {site.legalName} All rights reserved.
+            <br />
+            Zealver Clubs™ is a brand operated by {site.legalName}
+          </p>
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
-            <a
+            <Link
               href={site.legal.privacy}
-              target="_blank"
-              rel="noreferrer"
               className="underline-offset-4 hover:text-secondary hover:underline"
             >
               Privacy Policy
-            </a>
-            <a
+            </Link>
+            <Link
               href={site.legal.terms}
-              target="_blank"
-              rel="noreferrer"
               className="underline-offset-4 hover:text-secondary hover:underline"
             >
               Terms &amp; Conditions
-            </a>
-            <span>By {site.legalName}</span>
+            </Link>
           </div>
         </div>
       </div>
