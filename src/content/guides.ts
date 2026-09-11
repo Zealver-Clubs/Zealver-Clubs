@@ -910,7 +910,7 @@ export const guides: Guide[] = [
       {
         n: 5,
         heading: "Ask for help sooner than you think you should",
-        text: "Please treat this as the most important step. Low mood that lasts more than two weeks, worry you cannot switch off, losing interest in everything, not eating or sleeping, or any thought of harming yourself or not wanting to be here, all need a doctor rather than a website. Depression and anxiety are common, treatable, and not a weakness of character. Nothing here is treatment for either. If you are in crisis, contact your doctor or a mental health helpline today.",
+        text: "Please treat this as the most important step. Low mood that lasts more than two weeks, worry you cannot switch off, losing interest in everything, not eating or sleeping, or any thought of harming yourself or not wanting to be here, all need a doctor rather than a website. Depression and anxiety are common, treatable, and not a weakness of character. Nothing here is treatment for either. If you are in crisis, tell your doctor today, or ask someone you trust to take you to the nearest hospital. Please do not sit with it alone.",
         topicSlug: "understanding-stress",
         topicLabel: "Stress: what it is, and why not all of it is bad",
       },
