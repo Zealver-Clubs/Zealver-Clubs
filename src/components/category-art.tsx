@@ -343,4 +343,16 @@ export const hubCategories: {
     blurb: "Simple habits and activities that support memory and a sharp mind.",
     Art: MemoryArt,
   },
+  {
+    category: "Bones & strength",
+    blurb:
+      "Keeping bone and muscle strong after menopause, and staying steady on your feet.",
+    Art: BonesStrengthArt,
+  },
+  {
+    category: "Healthy ageing",
+    blurb:
+      "The 4Ms behind everything we do: Movement, Music, Memory and Meaning.",
+    Art: HealthyAgeingArt,
+  },
 ];
