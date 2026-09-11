@@ -3,22 +3,26 @@
 import { useMemo, useState } from "react";
 import { Search } from "lucide-react";
 import { AZStrip } from "@/components/az-strip";
-import { TopicCard, GuideCard } from "@/components/content-cards";
+import { TopicCard, GuideCard, RecipeCard } from "@/components/content-cards";
 import type { Topic } from "@/content/topics";
 import type { Guide } from "@/content/guides";
+import type { Recipe } from "@/content/recipes";
 
 const firstLetter = (s: string) => s.trim().charAt(0).toUpperCase();
 
 export function HubBrowser({
   topics,
   guides,
+  recipes,
 }: {
   topics: Topic[];
   guides: Guide[];
+  recipes: Recipe[];
 }) {
   const [query, setQuery] = useState("");
   const [topicLetter, setTopicLetter] = useState<string | null>(null);
   const [guideLetter, setGuideLetter] = useState<string | null>(null);
+  const [recipeLetter, setRecipeLetter] = useState<string | null>(null);
 
   const q = query.trim().toLowerCase();
 
@@ -30,6 +34,19 @@ export function HubBrowser({
     () => new Set(guides.map((g) => firstLetter(g.title))),
     [guides],
   );
+  const recipeLetters = useMemo(
+    () => new Set(recipes.map((r) => firstLetter(r.title))),
+    [recipes],
+  );
+
+  const filteredRecipes = recipes.filter((r) => {
+    const matchesQuery =
+      !q ||
+      r.title.toLowerCase().includes(q) ||
+      r.summary.toLowerCase().includes(q);
+    const matchesLetter = !recipeLetter || firstLetter(r.title) === recipeLetter;
+    return matchesQuery && matchesLetter;
+  });
 
   const filteredTopics = topics.filter((t) => {
     const matchesQuery =
@@ -59,14 +76,14 @@ export function HubBrowser({
           aria-hidden
         />
         <label htmlFor="hub-search" className="sr-only">
-          Search topics and guides
+          Search topics, guides and recipes
         </label>
         <input
           id="hub-search"
           type="search"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search topics & guides…"
+          placeholder="Search topics, guides & recipes…"
           className="min-h-14 w-full rounded-full border-2 border-border bg-card pl-13 pr-5 text-lg text-foreground placeholder:text-muted-foreground focus-visible:border-primary focus-visible:outline-none"
           style={{ paddingLeft: "3.25rem" }}
         />
@@ -97,6 +114,35 @@ export function HubBrowser({
         ) : (
           <p className="mt-6 rounded-xl bg-muted p-6 text-muted-foreground">
             No guides match your search yet.
+          </p>
+        )}
+      </div>
+
+      {/* Recipes */}
+      <div className="mt-14">
+        <h2 className="text-2xl font-extrabold text-heading">Recipes</h2>
+        <p className="mt-1 text-muted-foreground">
+          Simple, senior-friendly cooking. All filed under R.
+        </p>
+        <div className="mt-4">
+          <AZStrip
+            idPrefix="recipes"
+            active={recipeLetter}
+            available={recipeLetters}
+            onSelect={setRecipeLetter}
+          />
+        </div>
+        {filteredRecipes.length > 0 ? (
+          <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {filteredRecipes.map((r) => (
+              <li key={r.slug} className="relative">
+                <RecipeCard recipe={r} />
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p className="mt-6 rounded-xl bg-muted p-6 text-muted-foreground">
+            No recipes match your search yet.
           </p>
         )}
       </div>

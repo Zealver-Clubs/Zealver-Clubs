@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { site } from "@/content/site";
 import { topics } from "@/content/topics";
 import { guides } from "@/content/guides";
+import { recipes } from "@/content/recipes";
 import { experienceItems } from "@/content/experience";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -19,6 +20,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: u("/terms-conditions"), lastModified: now, changeFrequency: "yearly", priority: 0.3 },
     { url: u("/participant-agreement"), lastModified: now, changeFrequency: "yearly", priority: 0.3 },
     { url: u("/about/editorial-review"), lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    ...recipes.map((r) => ({
+      url: u(`/knowledge-hub/recipes/${r.slug}`),
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
   ];
 
   const experienceRoutes: MetadataRoute.Sitemap = experienceItems.map((e) => ({

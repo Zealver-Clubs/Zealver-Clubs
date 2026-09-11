@@ -2,6 +2,7 @@ import { site, parentOrg, reviewer, contentPolicy, vision, mission, values, team
 import { topics, topicParagraphs } from "@/content/topics";
 import { guides } from "@/content/guides";
 import { experienceItems } from "@/content/experience";
+import { recipes } from "@/content/recipes";
 
 /**
  * /llms-full.txt — the whole Knowledge Hub as plain text, so an assistant can
@@ -73,6 +74,32 @@ ${g.steps.map((s) => `### Step ${s.n}. ${s.heading}\n${s.text}\nRelated topic: $
   )
   .join("\n\n")}`;
 
+  const recipeText = `
+
+---
+
+# Knowledge Hub — Recipes
+
+${recipes
+  .map(
+    (r) => `## ${r.title}
+URL: ${u(`/knowledge-hub/recipes/${r.slug}`)}
+Serves ${r.serves}. ${r.prepTime}.
+
+${r.summary}
+
+${r.intro.join("\n\n")}
+
+Ingredients:
+${r.ingredients.map((grp) => `${grp.group ? `${grp.group}:\n` : ""}${grp.items.map((i) => `- ${i}`).join("\n")}`).join("\n")}
+
+Method:
+${r.method.map((m, i) => `${i + 1}. ${m}`).join("\n")}${
+      r.notes?.length ? `\n\nGood to know:\n${r.notes.map((n) => `- ${n}`).join("\n")}` : ""
+    }`,
+  )
+  .join("\n\n")}`;
+
   const topicText = `
 
 ---
@@ -100,7 +127,7 @@ ${
   .join("\n\n")}
 `;
 
-  return new Response(head + experience + guideText + topicText, {
+  return new Response(head + experience + guideText + recipeText + topicText, {
     headers: { "content-type": "text/plain; charset=utf-8" },
   });
 }

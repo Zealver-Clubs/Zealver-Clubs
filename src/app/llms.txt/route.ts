@@ -2,6 +2,7 @@ import { site, parentOrg, reviewer, nav } from "@/content/site";
 import { topics } from "@/content/topics";
 import { guides } from "@/content/guides";
 import { experienceItems } from "@/content/experience";
+import { recipes } from "@/content/recipes";
 
 /**
  * /llms.txt — the index an assistant reads first.
@@ -44,6 +45,9 @@ ${experienceItems.map((e) => `- [${e.title}](${u(`/experience/${e.slug}`)}): ${e
 
 ## Knowledge Hub — Guides (${guides.length})
 ${guides.map((g) => `- [${g.title}](${u(`/knowledge-hub/guides/${g.slug}`)}): ${g.intro}`).join("\n")}
+
+## Knowledge Hub — Recipes (${recipes.length})
+${recipes.map((r) => `- [${r.title}](${u(`/knowledge-hub/recipes/${r.slug}`)}): ${r.summary} Serves ${r.serves}.`).join("\n")}
 
 ## Knowledge Hub — Topics (${topics.length})
 ${[...byCategory.entries()]
