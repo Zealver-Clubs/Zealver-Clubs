@@ -672,6 +672,173 @@ export const topics: Topic[] = [
     ],
     guides: [],
   },
+  {
+    slug: "understanding-stress",
+    title: "Understanding stress (\u0924\u0928\u093e\u0935), and why not all of it is bad",
+    category: "Rest",
+    youtubeId: null,
+    summary:
+      "The different kinds of stress, in plain terms, and the surprising idea that too little going on can trouble you as much as too much.",
+    keyPoints: [
+      "Stress, \u0924\u0928\u093e\u0935, is what happens when something feels bigger than what you feel able to handle.",
+      "It shows up in the body, in the mind, and in the way the body reacts to what the mind is carrying.",
+      "Not all stress is bad. The useful kind has a name: eustress.",
+      "Too little going on leaves you flat. Too much overwhelms. Somewhere in between is where you feel alive.",
+      "The aim is not a life with no stress in it. It is having ways to meet it.",
+    ],
+    sections: [
+      {
+        heading: "What we mean by stress",
+        body: [
+          "Stress, \u0924\u0928\u093e\u0935, is not a bad word and it is not a character flaw. It is simply what happens when something in front of you feels bigger than what you feel able to handle at that moment. Everybody meets it, at every age.",
+          "It helps to notice that it arrives in more than one form, because the thing that helps is different for each.",
+        ],
+      },
+      {
+        heading: "Stress in the body",
+        body: [
+          "Sometimes the load is physical. Too much housework, standing for too long, pain or stiffness that will not settle, too little sleep, or simply doing more in a day than the body had in it.",
+          "What the body wants here is movement, not punishment. A few shoulder rolls, some slow neck and ankle movement, a proper stretch and a few deep breaths will do more than pushing through will.",
+        ],
+      },
+      {
+        heading: "Stress in the mind",
+        body: [
+          "Often there is nothing in front of you at all, and the whole thing is running in your head. What will happen to the children. What will happen to my health. Nobody listens to me any more. I am not the person I used to be.",
+          "Worry about people you love, a house that has gone quiet, friends you have lost, the feeling of being less useful than you were: these weigh a great deal, and they weigh more when carried alone.",
+        ],
+      },
+      {
+        heading: "When the mind shows up in the body",
+        body: [
+          "The two are not separate, and this catches people out. When the mind feels under pressure, the body answers: the heart goes faster, breathing shortens, shoulders and jaw tighten, sleep breaks up, digestion changes.",
+          "It is why you can say quite honestly that nothing has happened today, and still be exhausted by evening. Nothing did happen. You were carrying something anyway.",
+        ],
+      },
+      {
+        heading: "The good kind of stress",
+        body: [
+          "Here is the part that surprises people. There is a word for stress that does you good: eustress. The nervousness before you go on stage, the flutter before a wedding, the excitement before a journey, the challenge of learning something new, the small thrill of a competition. Your body is doing many of the same things it does under bad stress. What differs is the meaning it carries and whether you feel able to meet it.",
+          "So the goal is not to strip life back until nothing is happening. Too little going on leaves people flat and disengaged, and that does its own harm. Too much overwhelms. Somewhere in between is where you feel awake, interested and alive, and that is the place worth aiming for.",
+          "This is general wellbeing guidance, not medical advice. If low mood, worry or sleeplessness has been with you for weeks, or is getting in the way of ordinary life, please talk to your doctor.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "stop-breathe-notice-choose",
+      "music-memory-and-mood",
+      "sleep-and-recovery",
+      "dementia-friendly-movement",
+    ],
+    guides: ["five-minutes-a-day-for-stress-guide"],
+  },
+  {
+    slug: "stop-breathe-notice-choose",
+    title: "When your mind will not stop: a four-step pause",
+    category: "Rest",
+    youtubeId: null,
+    summary:
+      "A short, portable way to interrupt worry that is going round and round, in four steps you can remember.",
+    keyPoints: [
+      "Stop. Just pause where you are for a moment.",
+      "Saans. Four or five slow breaths, with the breath out longer than the breath in.",
+      "Notice. Ask yourself plainly what is going round in your mind.",
+      "Choose. Can I do something about this right now?",
+      "If yes, one small thing. If no, you do not have to keep carrying it this minute.",
+    ],
+    sections: [
+      {
+        heading: "Why a pause helps",
+        body: [
+          "Worry has a way of circling. The same thought comes round, then round again, and each time it feels a little heavier though nothing new has been added. What breaks the circle is rarely an answer. It is usually an interruption.",
+          "This is a small one you can do anywhere, sitting where you are, without anyone noticing.",
+        ],
+      },
+      {
+        heading: "Stop, and Saans",
+        body: [
+          "First, stop. Whatever you are doing, let it wait for a moment. You are not solving anything yet, you are only stepping out of the circle.",
+          "Then breathe. Four or five slow breaths, and let the breath out be longer than the breath in. That longer breath out is the part that settles the body, and the body settling is what gives the mind room.",
+        ],
+      },
+      {
+        heading: "Notice what is actually there",
+        body: [
+          "Now ask yourself plainly: what is going round in my mind just now? Name it in ordinary words, the way you would to a friend. Worry that has been named is easier to hold than worry that has only been felt.",
+          "You may find it is one thing wearing several disguises, which is often the case.",
+        ],
+      },
+      {
+        heading: "Choose what happens next",
+        body: [
+          "Then one question, and it is the whole point of the exercise. Can I do something about this right now?",
+          "If you can, do one small thing. Make the call, write the note, ask the question. Small is fine; small is usually enough to break the spell.",
+          "If you cannot, and very often you cannot, then this: I do not have to carry this right this minute. It is not being ignored and it is not being solved. You are setting it down for now, which you are allowed to do.",
+          "Like anything, this works better with practice than on the first try. This is general wellbeing guidance, not medical advice, and worry that will not lift over weeks is worth raising with your doctor.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "understanding-stress",
+      "sleep-and-recovery",
+      "music-memory-and-mood",
+    ],
+    guides: ["five-minutes-a-day-for-stress-guide"],
+  },
+  {
+    slug: "music-memory-and-mood",
+    title: "Why an old song does so much",
+    category: "Memory",
+    youtubeId: null,
+    summary:
+      "A familiar song from your younger years does several things at once, which is why it lifts a room the way it does.",
+    keyPoints: [
+      "A song from your youth arrives with the time attached to it, not just the tune.",
+      "It works on several things at once: the senses, memory, feeling, movement and conversation.",
+      "That is why music gets people moving when an instruction to exercise does not.",
+      "Sharing the memory matters as much as hearing the song.",
+      "This is an activity for wellbeing and enjoyment, not a treatment for any condition.",
+    ],
+    sections: [
+      {
+        heading: "More than a tune",
+        body: [
+          "Play a song somebody loved at twenty and something happens that does not happen with a song they heard last week. It arrives with the time attached: where they were, who they were with, what they were hoping for. The tune is only the doorway.",
+        ],
+      },
+      {
+        heading: "Several things at once",
+        body: [
+          "That is really why music earns its place in a session. In three or four minutes it is doing the work of several different activities at the same time. There is something to hear. There is a memory coming back. There is feeling attached to it. Feet and hands start moving almost without asking. And then there is someone beside you who remembers the same song.",
+          "Very few activities manage all of that together, and none of them feel as little like an exercise class.",
+        ],
+      },
+      {
+        heading: "Why it gets people moving",
+        body: [
+          "Ask a room to do ten minutes of exercise and you will see what you expect. Put on a song they grew up with and the same room is clapping, swaying and tapping before anybody has been asked to. The movement arrives as a by-product of enjoyment, which is the most reliable way to get it.",
+        ],
+      },
+      {
+        heading: "The part people skip",
+        body: [
+          "The memory is worth as much as the music, and it needs a question to come out. What does this song remind you of? How old were you when you used to hear it? What was life like then?",
+          "Then let two people share what came up. That turns a song into a conversation, and a conversation into company, which is very often the thing that was actually missing.",
+          "This is an activity for enjoyment and wellbeing. It is not a treatment for dementia, depression or any medical condition, and it is not offered as one.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "dementia-friendly-movement",
+      "understanding-stress",
+      "chair-dance-for-bone-and-muscle",
+      "balance-exercises",
+    ],
+    guides: ["five-minutes-a-day-for-stress-guide"],
+  },
 ];
 
 /** Every paragraph of a topic, whichever shape it uses. */
