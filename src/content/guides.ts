@@ -21,6 +21,7 @@ export type Guide = {
   intro: string;
   image?: string; // real club photo; falls back to a placeholder if absent
   imageAlt?: string; // describe the image itself; defaults to the guide title
+  imageCredit?: string; // visible credit / provenance line under the image
   imageRatio?: "16/9" | "4/3" | "3/2" | "1/1"; // hero aspect; defaults to 16/9
   steps: GuideStep[];
   topics: string[]; // topic slugs covered
@@ -31,7 +32,7 @@ export const guides: Guide[] = [
   {
     slug: "fall-prevention-guide",
     title: "Fall prevention guide",
-    meta: "3-step guide · reviewed by trainer",
+    meta: "3-step guide",
     intro:
       "A gentle, practical plan to help you stay steady and confident on your feet, one small step at a time.",
     image: "/images/instructor-class.jpg",
@@ -64,7 +65,7 @@ export const guides: Guide[] = [
   {
     slug: "lower-your-blood-sugar-guide",
     title: "Lower your blood sugar guide",
-    meta: "3-step guide · reviewed by trainer",
+    meta: "3-step guide",
     intro:
       "Everyday habits around food, movement and rest that work together to help keep your blood sugar steady.",
     image: "/images/class-seated-dance.jpg",
@@ -97,7 +98,7 @@ export const guides: Guide[] = [
   {
     slug: "anti-inflammatory-diet-guide",
     title: "Anti-inflammatory diet guide",
-    meta: "2-step guide · reviewed by trainer",
+    meta: "2-step guide",
     intro:
       "Simple, food-first swaps that help calm inflammation and support how you feel day to day.",
     image: "/images/community-celebration.jpg",
@@ -123,13 +124,15 @@ export const guides: Guide[] = [
   {
     slug: "diabetes-management-guide",
     title: "Diabetes management guide for seniors",
-    meta: "6-step guide \u00b7 general lifestyle guidance",
+    meta: "6-step guide",
     intro:
       "Everyday food, movement and rest habits that help women 60+ keep blood sugar steady, with chair-based movement at the centre. General lifestyle guidance, not medical advice.",
     image: "/images/healthy-plate-diagram.jpg",
     imageAlt:
       "Healthy plate diagram for diabetes: half the plate non-starchy vegetables and salad such as leafy greens, cucumber, tomato, carrot, capsicum, broccoli, cabbage, beans and beetroot; a quarter protein-rich foods such as paneer, tofu, dal, beans, lentils, eggs, fish, chicken and Greek yogurt; a quarter complex carbohydrates such as brown rice, quinoa, millets, oats, whole wheat roti and sweet potato; plus daily healthy fats from avocado, nuts and seeds, olive oil and ghee.",
     imageRatio: "1/1",
+    imageCredit:
+      "Illustration created for Zealver Clubs with ChatGPT (OpenAI), reviewed by Dr Namrata Bagaria.",
     steps: [
       {
         n: 1,

@@ -35,6 +35,36 @@ export const site = {
   instagramHandle: "zealverclubs",
 } as const;
 
+/**
+ * Medical reviewer. Knowledge Hub content is written by the Zealver Clubs team
+ * (with AI assistance) and reviewed by a qualified clinician before publishing.
+ * `lastReviewed` is the date of the most recent review pass, in ISO form.
+ */
+export const reviewer = {
+  honorificPrefix: "Dr",
+  name: "Namrata Bagaria",
+  fullName: "Dr Namrata Bagaria",
+  credentials: "MBBS, MPH (Harvard)",
+  jobTitle: "Founder and medical reviewer, Zealver Clubs",
+  href: "/about/medical-review",
+  lastReviewed: "2026-09-11",
+  lastReviewedLabel: "11 September 2026",
+  bio: [
+    "Dr Namrata Bagaria is the founder of Zealver Clubs and reviews every article and guide in the Knowledge Hub before it is published.",
+    "She holds an MBBS and a Master of Public Health from Harvard, and her work focuses on active ageing: helping women 60+ stay strong, steady and connected through movement, community and practical everyday habits.",
+    "Zealver Clubs runs chair-based Seated Dance Fitness online and in person, alongside a growing library of activity-first guidance for healthy ageing.",
+  ],
+} as const;
+
+/** Shown at the end of every Knowledge Hub article and guide. */
+export const contentPolicy = {
+  disclaimerHeading: "About this article",
+  disclaimer:
+    "This article is for general information and education. It is not a substitute for professional medical advice, diagnosis or treatment. Always seek the advice of your doctor or another qualified health provider with any questions you have about a medical condition. Never disregard professional medical advice, or delay seeking it, because of something you have read here.",
+  aiNote:
+    "Written by the Zealver Clubs team with AI assistance, and medically reviewed before publishing.",
+} as const;
+
 export const nav = [
   { label: "Home", href: "/" },
   { label: "Our Approach", href: "/our-approach" },

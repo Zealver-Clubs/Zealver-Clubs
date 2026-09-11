@@ -10,7 +10,9 @@ import { MediaImage } from "@/components/media-image";
 import { categoryArt } from "@/components/category-art";
 import { ListenButton } from "@/components/listen-button";
 import { JsonLd } from "@/components/json-ld";
-import { site } from "@/content/site";
+import { site, reviewer } from "@/content/site";
+import { ReviewedBy } from "@/components/reviewed-by";
+import { ContentDisclaimer } from "@/components/content-disclaimer";
 import { topics, getTopic } from "@/content/topics";
 import { getGuide } from "@/content/guides";
 
@@ -59,6 +61,14 @@ export default async function TopicPage({
     url,
     author: { "@type": "Organization", name: site.name },
     publisher: { "@type": "Organization", name: site.name },
+    reviewedBy: {
+      "@type": "Person",
+      honorificPrefix: reviewer.honorificPrefix,
+      name: reviewer.name,
+      jobTitle: reviewer.jobTitle,
+      url: `${site.url}${reviewer.href}`,
+    },
+    lastReviewed: reviewer.lastReviewed,
     ...(topic.youtubeId
       ? {
           video: {
@@ -87,6 +97,7 @@ export default async function TopicPage({
       <h1 className="text-3xl font-extrabold text-heading sm:text-4xl">
         {topic.title}
       </h1>
+      <ReviewedBy />
       <div className="mt-3 flex flex-wrap items-center gap-3">
         <span className="inline-flex items-center gap-1.5 rounded-full bg-secondary-soft px-3 py-1 text-sm font-bold text-secondary">
           {topic.category}
@@ -187,6 +198,7 @@ export default async function TopicPage({
           </ul>
         </div>
       )}
+      <ContentDisclaimer />
     </Section>
   );
 }

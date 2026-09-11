@@ -8,7 +8,9 @@ import { Card, CardBody } from "@/components/ui/card";
 import { MediaImage } from "@/components/media-image";
 import { ListenButton } from "@/components/listen-button";
 import { JsonLd } from "@/components/json-ld";
-import { site } from "@/content/site";
+import { site, reviewer } from "@/content/site";
+import { ReviewedBy } from "@/components/reviewed-by";
+import { ContentDisclaimer } from "@/components/content-disclaimer";
 import { guides, getGuide } from "@/content/guides";
 import { getTopic } from "@/content/topics";
 
@@ -53,6 +55,14 @@ export default async function GuidePage({
     mainEntityOfPage: url,
     url,
     publisher: { "@type": "Organization", name: site.name },
+    reviewedBy: {
+      "@type": "Person",
+      honorificPrefix: reviewer.honorificPrefix,
+      name: reviewer.name,
+      jobTitle: reviewer.jobTitle,
+      url: `${site.url}${reviewer.href}`,
+    },
+    lastReviewed: reviewer.lastReviewed,
     ...(guide.image ? { image: `${site.url}${guide.image}` } : {}),
     step: guide.steps.map((s) => ({
       "@type": "HowToStep",
@@ -77,6 +87,7 @@ export default async function GuidePage({
       <h1 className="text-3xl font-extrabold text-heading sm:text-4xl">
         {guide.title}
       </h1>
+      <ReviewedBy />
       <div className="mt-3 flex flex-wrap items-center gap-3">
         <span className="inline-flex items-center gap-1.5 rounded-full bg-primary-soft px-3 py-1 text-sm font-bold text-primary">
           <Compass className="h-4 w-4" aria-hidden /> {guide.meta}
@@ -90,13 +101,20 @@ export default async function GuidePage({
 
       {/* Intro photo above the text */}
       <div className="mt-6 overflow-hidden rounded-xl">
-        <MediaImage
-          src={guide.image}
-          alt={guide.imageAlt ?? guide.title}
-          label={`Photo, ${guide.title}`}
-          ratio={guide.imageRatio ?? "16/9"}
-          sizes="(max-width: 768px) 100vw, 768px"
-        />
+        <figure>
+          <MediaImage
+            src={guide.image}
+            alt={guide.imageAlt ?? guide.title}
+            label={`Photo, ${guide.title}`}
+            ratio={guide.imageRatio ?? "16/9"}
+            sizes="(max-width: 768px) 100vw, 768px"
+          />
+          {guide.image && guide.imageCredit ? (
+            <figcaption className="mt-2 text-sm text-muted-foreground">
+              {guide.imageCredit}
+            </figcaption>
+          ) : null}
+        </figure>
       </div>
       <p className="mt-5 text-xl text-foreground">{guide.intro}</p>
 
@@ -192,6 +210,7 @@ export default async function GuidePage({
           </ul>
         </div>
       )}
+      <ContentDisclaimer />
     </Section>
   );
 }
