@@ -2047,6 +2047,7 @@ export const topics: Topic[] = [
         body: [
           "Some are the ones you would expect: high blood pressure, diabetes, high cholesterol, obesity, smoking, heavy drinking, physical inactivity, depression, head injury.",
           "Others surprise people. Untreated hearing loss is one of the larger ones, and hearing aids are the remedy nobody thinks of as brain care. Vision loss is on the list too, and much of it is correctable. So are air pollution, loneliness and social isolation, and poor sleep.",
+          "Loneliness deserves a line of its own, because it is the one most often dismissed as merely sad. Long-term studies have associated it with something like a thirty per cent higher risk of dementia. How much of that is cause and how much is company that a declining memory drives away is still being worked out, but it is more than enough reason to treat company as part of looking after your brain rather than a pleasant extra.",
           "Hearing and vision are worth acting on precisely because they are so fixable. If you are straining to follow conversation, that is not merely inconvenient; it withdraws you from company and understimulates the brain at the same time.",
         ],
       },

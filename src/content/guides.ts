@@ -670,7 +670,7 @@ export const guides: Guide[] = [
       {
         n: 1,
         heading: "Take it as seriously as exercise",
-        text: "Loneliness is not simply sad, it affects health in the way that smoking and inactivity do. Social connection supports motivation, self-worth, mood and the will to keep doing everything else on this list. If you would not skip your walk for a month, do not let a month go by without company either.",
+        text: "Loneliness is not simply sad, it affects health in the way that smoking and inactivity do, and longitudinal studies have linked it to something in the region of a thirty per cent higher risk of dementia. The association is consistent, though researchers are still working out how much of it is cause. Social connection supports motivation, self-worth, mood and the will to keep doing everything else on this list. If you would not skip your walk for a month, do not let a month go by without company either.",
         topicSlug: "meaning-belonging-healthy-aging",
         topicLabel: "Meaning and belonging in healthy ageing",
       },
@@ -935,7 +935,7 @@ export const guides: Guide[] = [
       {
         n: 1,
         heading: "Take it as seriously as a physical symptom",
-        text: "Persistent loneliness affects health in ways comparable to well-known physical risks, and it is associated with poorer sleep, low mood, and worse outcomes across the board. Naming it as a health matter rather than a private embarrassment is the first useful thing, because it makes it something to act on rather than hide.",
+        text: "Persistent loneliness affects health in ways comparable to well-known physical risks, and it is associated with poorer sleep, low mood, and worse outcomes across the board. Naming it as a health matter rather than a private embarrassment is the first useful thing. There is also a finding worth knowing, because of what it does to the shame: brain imaging work has shown that a spell of social isolation produces activity strikingly like the craving you feel when hungry. Wanting company appears to be wired in as a signal, much as hunger and thirst are. Feeling lonely is not a failure of character or a sign you are poor company. It is a body asking for something it needs.",
         topicSlug: "meaning-belonging-healthy-aging",
         topicLabel: "Meaning and belonging in healthy ageing",
       },
