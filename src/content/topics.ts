@@ -1706,6 +1706,139 @@ export const topics: Topic[] = [
     ],
     guides: ["diabetes-management-guide", "lower-your-blood-sugar-guide"],
   },
+  {
+    slug: "blood-pressure-in-women",
+    title: "Blood pressure in women, and why it changes after 55",
+    category: "Bones & strength",
+    youtubeId: null,
+    summary:
+      "Menopause changes your blood vessels, your salt sensitivity and your risk. What the numbers mean, and why women were studied last.",
+    keyPoints: [
+      "Around 120/80 or below is the usual target; 130/80 and above is generally treated as high.",
+      "Much of the original research was done in men. Women's risk may begin rising at lower numbers.",
+      "After menopause, arteries stiffen, belly fat rises and the body holds on to salt more readily.",
+      "After 60 the top number matters more than the bottom one for predicting stroke.",
+      "Pregnancy complications decades ago still predict risk today, and few women are told this.",
+      "High blood pressure damages the brain as well as the heart. There are usually no symptoms.",
+    ],
+    sections: [
+      {
+        heading: "It is not really a number, it is a report on your blood vessels",
+        body: [
+          "Blood pressure gets treated as a score you pass or fail. It is better understood as a reading on how flexible and healthy your arteries are, which is why it matters far beyond the heart.",
+          "As a rough guide, around 120/80 or below is where most people want to be. Between about 120 and 129 on the top number is usually called elevated, a signal to change something rather than a diagnosis. From 130/80 upward is generally treated as high blood pressure. Your own targets may differ, and your doctor sets them, not a website.",
+        ],
+      },
+      {
+        heading: "Women were studied last, and it shows",
+        body: [
+          "For a long time the research that shaped these thresholds was done largely in men, and the numbers were applied to everyone. More recent work suggests women's cardiovascular risk may begin climbing at lower pressures than men's, somewhere nearer 110 than 120 on the top number.",
+          "The official thresholds have not changed on the back of that. The practical message has: if you have been told your blood pressure is only slightly high, that is not a reason to relax about it.",
+        ],
+      },
+      {
+        heading: "What menopause changes",
+        body: [
+          "Oestrogen keeps blood vessels relaxed and flexible. When it falls, arteries stiffen, and several other things shift at the same time: more fat carried around the middle, muscle quietly lost year on year, the body responding less well to insulin, and the kidneys holding on to salt more readily than they used to.",
+          "That last one is worth dwelling on. Two women can eat identical amounts of salt and see very different effects on their blood pressure, and salt sensitivity generally rises after menopause. If cutting salt seems to matter more to you than it used to, you are not imagining it.",
+          "Stiffer arteries also change the shape of the reading. A widening gap between the two numbers, something like 160 over 70, is itself a sign of stiffness rather than a reassuringly low bottom number.",
+        ],
+      },
+      {
+        heading: "After 60, watch the top number",
+        body: [
+          "Many older women have a high top number with a perfectly ordinary bottom one, and it gets dismissed on the strength of the second figure. That is the wrong way round.",
+          "Past about 60, the top number is the better predictor of stroke, heart failure and cognitive decline. If yours is high and the bottom is fine, that still deserves attention.",
+        ],
+      },
+      {
+        heading: "What happened in pregnancy still counts",
+        body: [
+          "This is the fact that surprises women most, and almost nobody is told it. High blood pressure during pregnancy, pre-eclampsia, or diabetes that appeared while you were pregnant all predict a higher lifetime risk of high blood pressure, stroke, heart and kidney disease, decades later.",
+          "Pregnancy works rather like a stress test for the heart and blood vessels. If yours flagged something forty years ago, that information is still relevant now, and it is worth telling your doctor even if nobody has ever asked.",
+        ],
+      },
+      {
+        heading: "Why it is called the silent killer",
+        body: [
+          "You will usually feel completely well while high blood pressure is doing its damage, which is why it can only be caught by measuring rather than by noticing.",
+          "And it is not only about the heart. Sustained high pressure damages the brain, raising the risk of stroke, vascular dementia and gradual cognitive decline, as well as the kidneys and the small vessels in the eyes. What is good for your heart really is good for your brain.",
+          "Sleep belongs here too. Broken sleep and sleep apnoea become more common after menopause, often without the loud snoring people expect, and poor sleep pushes morning pressure up.",
+        ],
+      },
+      {
+        heading: "Five things to hold on to",
+        body: [
+          "Move, most days, and in company if you can manage it. Build and keep muscle, because working muscle releases messengers that relax blood vessels and improve how insulin works. Eat for it: enough protein, plenty of fibre and potassium from vegetables, fruit and pulses, and less salt from packets. Mind your sleep and your stress. And measure, because nothing else on this list tells you where you stand.",
+          "Home readings are worth taking, since clinic readings can run high simply because you are at the clinic. Take them at the same time of day, sitting, after a few minutes of rest, and write them down.",
+          "This page is for understanding your readings, not for diagnosing or treating yourself. If you take medication for blood pressure, none of this replaces it, and stopping is a decision only your doctor should make.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "heart-attack-signs-in-women",
+      "muscle-as-your-bodys-engine",
+      "bone-health-after-menopause",
+      "sleep-and-recovery",
+    ],
+    guides: ["blood-pressure-guide"],
+  },
+  {
+    slug: "heart-attack-signs-in-women",
+    title: "Heart attack signs in women, and why they are missed",
+    category: "Bones & strength",
+    youtubeId: null,
+    summary:
+      "A heart attack in a woman often does not look like the one in films. The signs that get mistaken for acidity, and why waiting costs you.",
+    keyPoints: [
+      "Chest discomfort is still the commonest sign, but it is often pressure or tightness rather than pain.",
+      "Women more often also get breathlessness, unusual exhaustion, nausea, sweating or dizziness.",
+      "Pain in the jaw, neck, shoulder, upper back or between the shoulder blades counts too.",
+      "These get mistaken for acidity, stress or tiredness, which is why women reach hospital later.",
+      "Heart muscle dies while you wait. Call for an ambulance rather than driving or waiting to see.",
+      "It is better to be wrong and sent home than right and too late.",
+    ],
+    sections: [
+      {
+        heading: "Why the picture in your head is the wrong one",
+        body: [
+          "Most of us carry a mental image of a heart attack from films: a man clutching his chest and collapsing. For a great many women it does not look like that, and that mismatch is dangerous, because people wait for the dramatic version before taking themselves seriously.",
+          "Part of the reason is physical. Women's coronary arteries are smaller, and women more often have disease in the very small vessels rather than a single obvious blockage in a large one. That can mean real, damaging reduced blood flow even when the usual scans look reassuring.",
+        ],
+      },
+      {
+        heading: "What to actually look for",
+        body: [
+          "Chest discomfort remains the most common sign in women, so do not dismiss it. But it may be pressure, tightness, squeezing or a heaviness rather than sharp pain, and it may be mild.",
+          "Alongside it, or sometimes instead of it, women more often have: breathlessness out of proportion to what you are doing; exhaustion that is sudden and unlike ordinary tiredness; nausea or vomiting; a cold sweat; light-headedness; and pain or discomfort in the jaw, neck, one or both shoulders, an arm, the upper back or between the shoulder blades.",
+          "A great many of these are put down to acidity, indigestion, stress or simply being run down. That is precisely the confusion that delays treatment.",
+        ],
+      },
+      {
+        heading: "Why waiting is the thing that costs you",
+        body: [
+          "During a heart attack, heart muscle is dying, and how much of it survives depends largely on how quickly blood flow is restored. Every half hour of delay means more permanent damage.",
+          "Women tend to arrive at hospital later than men do, and a large part of that is not wanting to make a fuss, or being fairly sure it is only acidity. Doctors would far rather see a hundred women with indigestion than miss one heart attack. Being sent home is a good outcome, not an embarrassment.",
+        ],
+      },
+      {
+        heading: "What to do",
+        body: [
+          "If these signs come on suddenly, are severe, or are simply not like you, treat it as an emergency. Call for an ambulance straight away rather than waiting to see whether it passes, and do not drive yourself.",
+          "Sit down, stay as calm as you can, and unlock the door so help can get in. If you are with someone who has these signs, stay with them and make the call yourself rather than leaving it to them to decide.",
+          "This page is to help you recognise an emergency, not to diagnose or treat one. If in doubt at all, make the call.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "blood-pressure-in-women",
+      "muscle-as-your-bodys-engine",
+      "movement-healthy-aging",
+    ],
+    guides: ["blood-pressure-guide"],
+  },
 ];
 
 /** Every paragraph of a topic, whichever shape it uses. */

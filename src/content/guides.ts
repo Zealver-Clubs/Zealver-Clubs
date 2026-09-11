@@ -457,7 +457,7 @@ export const guides: Guide[] = [
     title: "Blood pressure: everyday habits that help",
     meta: "5-step guide",
     intro:
-      "The daily things that help keep blood pressure steady: salt, movement, sleep, stress and weight. Lifestyle guidance, not a substitute for your doctor.",
+      "Move, muscle, meals, mind and measure: the five everyday things that keep blood pressure steady. Lifestyle guidance, not a substitute for your doctor.",
     image: "/images/community-celebration.jpg",
     steps: [
       {
@@ -497,6 +497,8 @@ export const guides: Guide[] = [
       },
     ],
     topics: [
+      "blood-pressure-in-women",
+      "heart-attack-signs-in-women",
       "anti-inflammatory-swaps-indian-kitchen",
       "movement-and-blood-sugar",
       "nutrition-basics",
