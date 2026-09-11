@@ -16,7 +16,9 @@ export type Topic = {
   category: string;
   youtubeId: string | null;
   image?: string; // used when there is no video; can be a web/CC photo
-  imageCredit?: string; // required visible credit for CC-BY images
+  imageAlt?: string; // describe the image itself; defaults to the topic title
+  imageRatio?: "16/9" | "4/3" | "3/2" | "1/1"; // hero aspect; defaults to 16/9
+  imageCredit?: string; // visible credit / provenance line under the image
   summary: string;
   /** Scannable takeaways, shown in an "In short" box above the article. */
   keyPoints?: string[];
@@ -610,11 +612,17 @@ export const topics: Topic[] = [
     title: "Soy milk and other plant milks",
     category: "Food & energy",
     youtubeId: null,
+    image: "/images/soy-milk-comparison.png",
+    imageAlt:
+      "Soy milk infographic. A glass of soy milk with soybeans, noting that it is made from whole soybeans, is a high-quality plant protein, is often fortified with calcium and vitamin B12, and is naturally dairy-free. A comparison of protein per 240 to 250 ml glass shows soy milk at 7 to 9 grams, almond milk about 1 gram, oat milk 2 to 4 grams, and rice milk 0 to 1 gram.",
+    imageRatio: "1/1",
+    imageCredit:
+      "Illustration created for Zealver Clubs with ChatGPT (OpenAI), reviewed by Dr Namrata Bagaria.",
     summary:
       "What soy milk actually is, why it is the one plant milk with real protein, and what to look for on the label.",
     keyPoints: [
       "Soy milk is soaked soybeans ground with water and strained. \u201cMylk\u201d on a carton is a brand spelling for the same drink.",
-      "It carries roughly seven to nine grams of protein a glass, close to dairy. Almond, oat and rice drinks are usually under one gram.",
+      "It carries roughly seven to nine grams of protein a glass, close to dairy. Oat is well behind at two to four, and almond and rice barely register.",
       "Check two things on the label: whether it is fortified with calcium and B12, and how much sugar has been added.",
       "Unsweetened fortified soy milk is the most useful everyday choice.",
       "If dahi, milk and paneer suit you, there is no reason to switch.",
@@ -629,7 +637,7 @@ export const topics: Topic[] = [
       {
         heading: "Why soy stands apart from other plant milks",
         body: [
-          "What makes it worth knowing about is protein. A glass of soy milk gives you somewhere around seven to nine grams, which puts it close to dairy milk and well ahead of every other plant milk on the shelf. Almond, oat, rice and coconut drinks are pleasant and useful in cooking, but most of them carry very little protein, often less than a gram a glass.",
+          "What makes it worth knowing about is protein. A glass of soy milk gives you somewhere around seven to nine grams, which puts it close to dairy milk and well ahead of every other plant milk on the shelf. Oat drinks come next and are some way behind at roughly two to four grams, while almond and rice drinks barely register, often around a gram or less.",
           "If you are reaching for a plant milk partly to help you hold on to muscle, soy is the one that does that job. The others are fine as drinks; they are simply not doing much for your protein.",
         ],
       },

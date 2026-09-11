@@ -134,9 +134,9 @@ export default async function TopicPage({
           <figure>
             <MediaImage
               src={topic.image}
-              alt={topic.title}
+              alt={topic.imageAlt ?? topic.title}
               label={`Video, ${topic.title} (Zealver channel)`}
-              ratio="16/9"
+              ratio={topic.imageRatio ?? "16/9"}
               className="rounded-xl"
               sizes="(max-width: 768px) 100vw, 768px"
             />
