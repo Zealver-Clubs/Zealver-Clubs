@@ -850,7 +850,7 @@ export const topics: Topic[] = [
       "Biscuits and namkeen \u2192 roasted chana, makhana, peanuts, nuts and seeds.",
       "Samosa and pakoda \u2192 baked or air-fried versions, or steamed dhokla and idli.",
       "Sweet chai \u2192 unsweetened or barely sweetened, with cinnamon, ginger or elaichi.",
-      "Maida \u2192 besan, moong, oats and less refined flours.",
+      "Maida \u2192 besan, moong, oats and less refined flours, or almond flour if the budget allows.",
       "A carb-heavy plate \u2192 half vegetables, a quarter protein, a quarter grain.",
       "No single food is automatically inflammatory. It is the overall pattern that counts.",
     ],
@@ -866,6 +866,7 @@ export const topics: Topic[] = [
         heading: "Flours and grains",
         body: [
           "Maida is the one worth looking at first, because it turns up everywhere: naan, bhatura, biscuits, white bread, most bakery items. Besan and moong are excellent in its place, and a chilla made from either is quicker than most people expect. Oats and less refined flours work well for rotis.",
+          "Almond flour makes a very good roti too, low in starch and high in protein, and it is worth trying if you can afford it. It costs a good deal more than besan or moong, so treat it as a nice option rather than the one to aim for. Besan, moong and oats do the same job on an ordinary budget, and a swap you can keep up every week beats a better one you cannot.",
           "Rice is not the villain it is sometimes made out to be. It is usually the portion rather than the grain. A smaller serving alongside plenty of vegetables and dal does a very different thing from a plate that is mostly rice. Hand-pounded and brown rice are worth trying if they suit you.",
         ],
       },
