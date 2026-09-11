@@ -94,6 +94,63 @@ export const recipes: Recipe[] = [
     ],
     guides: [],
   },
+  {
+    slug: "coffee-chocolate-mug-cake",
+    title: "Coffee and chocolate mug cake",
+    tag: "Dessert",
+    category: "Food & energy",
+    summary:
+      "Eggless, made with rice flour, and ready in about five minutes in a mug. A treat, and honestly labelled as one.",
+    keyPoints: [
+      "Serves one, and about five minutes from cupboard to spoon.",
+      "Eggless, and gluten-free if your rice flour is.",
+      "Baking powder gives the best rise. Baking soda on its own will not work here.",
+      "No oven needed: a microwave, or steamed in a dosa maker or covered pan.",
+      "This is a treat rather than an everyday food. One mug, now and then.",
+    ],
+    serves: "1",
+    prepTime: "5 minutes",
+    prepTimeIso: "PT5M",
+    intro: [
+      "Sometimes you want something sweet and you want it now, and the alternative is a packet of biscuits. This takes about five minutes, uses what is already in most Indian kitchens, needs no oven and no eggs, and it comes out as a single portion, which is rather the point.",
+      "It is a treat. There is sugar in it and rice flour is a refined carbohydrate, so this belongs with the sweets that are for occasions rather than with everyday eating. Having it in a mug settles the portion question by itself.",
+    ],
+    ingredients: [
+      {
+        items: [
+          "1/2 cup rice flour",
+          "1 tbsp cocoa powder",
+          "1 tsp instant coffee",
+          "2 tbsp sugar, or less to taste",
+          "1 tsp baking powder",
+          "A pinch of salt",
+          "1/4 cup milk",
+          "1 tbsp ghee or butter, melted",
+          "2 to 3 tbsp water, as needed",
+        ],
+      },
+    ],
+    method: [
+      "Mix the rice flour, cocoa, coffee, sugar, baking powder and salt in a greased mug or small microwave-safe bowl.",
+      "Add the milk and the melted ghee, then enough water to make a smooth, thick batter. Thick, not runny: it should drop off the spoon rather than pour.",
+      "Microwave for two to three minutes, checking at two. It is done when the top is set and a knife comes out clean.",
+      "Or steam it instead: cover and steam on low to medium heat for twenty to twenty-five minutes, in a dosa maker or a covered pan.",
+      "Eat it warm, out of the mug.",
+    ],
+    notes: [
+      "On the raising agent: baking powder is the one to use, and it works on its own. Baking soda will not, because it needs an acid to react with and there is none in this batter. If baking soda is all you have, add a teaspoon of lemon juice or vinegar with it, and stir it in at the last moment before cooking. Without that you get a flat cake with a faintly soapy taste.",
+      "For the lightest result, use half a teaspoon of baking powder plus a quarter teaspoon of Eno, stirring the Eno in right at the end and cooking immediately.",
+      "The microwave gives a softer, fluffier cake. Steaming gives a denser, more traditional one. Rice flour is denser than wheat either way, so do not expect a sponge.",
+      "A little vanilla improves it considerably if you have some. Chocolate chips or chopped nuts on top are worth the trouble.",
+      "If you are watching your blood sugar, halve the sugar, add nuts for a little protein and fat, and have it after a meal rather than on an empty stomach.",
+    ],
+    relatedTopics: [
+      "rice-and-roti",
+      "anti-inflammatory-swaps-indian-kitchen",
+      "diabetes-what-is-happening",
+    ],
+    guides: [],
+  },
 ];
 
 export const recipesBySlug = new Map(recipes.map((r) => [r.slug, r]));
