@@ -37,7 +37,7 @@ export function GuideCard({ guide }: { guide: Guide }) {
     <Card className="relative h-full transition-colors hover:border-secondary/40">
       <MediaImage
         src={guide.image}
-        alt={guide.title}
+        alt={guide.imageAlt ?? guide.title}
         label={`Photo, ${guide.title}`}
         ratio="3/2"
         className="border-b"

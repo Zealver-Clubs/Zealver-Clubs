@@ -53,6 +53,7 @@ export default async function GuidePage({
     mainEntityOfPage: url,
     url,
     publisher: { "@type": "Organization", name: site.name },
+    ...(guide.image ? { image: `${site.url}${guide.image}` } : {}),
     step: guide.steps.map((s) => ({
       "@type": "HowToStep",
       position: s.n,
@@ -91,9 +92,9 @@ export default async function GuidePage({
       <div className="mt-6 overflow-hidden rounded-xl">
         <MediaImage
           src={guide.image}
-          alt={guide.title}
+          alt={guide.imageAlt ?? guide.title}
           label={`Photo, ${guide.title}`}
-          ratio="16/9"
+          ratio={guide.imageRatio ?? "16/9"}
           sizes="(max-width: 768px) 100vw, 768px"
         />
       </div>
@@ -168,7 +169,7 @@ export default async function GuidePage({
                 <Card className="relative h-full transition-colors hover:border-secondary/40">
                   <MediaImage
                     src={g.image}
-                    alt={g.title}
+                    alt={g.imageAlt ?? g.title}
                     label={`Photo, ${g.title}`}
                     ratio="3/2"
                     className="border-b"

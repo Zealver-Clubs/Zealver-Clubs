@@ -20,6 +20,8 @@ export type Guide = {
   meta: string;
   intro: string;
   image?: string; // real club photo; falls back to a placeholder if absent
+  imageAlt?: string; // describe the image itself; defaults to the guide title
+  imageRatio?: "16/9" | "4/3" | "3/2" | "1/1"; // hero aspect; defaults to 16/9
   steps: GuideStep[];
   topics: string[]; // topic slugs covered
   relatedGuides: string[]; // guide slugs
@@ -124,7 +126,10 @@ export const guides: Guide[] = [
     meta: "6-step guide \u00b7 general lifestyle guidance",
     intro:
       "Everyday food, movement and rest habits that help women 60+ keep blood sugar steady, with chair-based movement at the centre. General lifestyle guidance, not medical advice.",
-    image: "/images/home-experience.jpg",
+    image: "/images/healthy-plate-diagram.jpg",
+    imageAlt:
+      "Healthy plate diagram for diabetes: half the plate non-starchy vegetables and salad such as leafy greens, cucumber, tomato, carrot, capsicum, broccoli, cabbage, beans and beetroot; a quarter protein-rich foods such as paneer, tofu, dal, beans, lentils, eggs, fish, chicken and Greek yogurt; a quarter complex carbohydrates such as brown rice, quinoa, millets, oats, whole wheat roti and sweet potato; plus daily healthy fats from avocado, nuts and seeds, olive oil and ghee.",
+    imageRatio: "1/1",
     steps: [
       {
         n: 1,
