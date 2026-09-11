@@ -2854,7 +2854,7 @@ export const topics: Topic[] = [
   },
   {
     slug: "xerostomia-dry-mouth",
-    title: "Xerostomia: dry mouth, and why it is not trivial",
+    title: "Xerostomia: a dry mouth, and why it matters",
     category: "Food & energy",
     youtubeId: null,
     summary:
