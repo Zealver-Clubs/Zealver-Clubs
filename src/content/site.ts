@@ -7,6 +7,7 @@ export const site = {
   legal: {
     privacy: "/privacy-policy",
     terms: "/terms-conditions",
+    participantAgreement: "/participant-agreement",
   },
   tagline: "Healthy Ageing, Done Together",
   subTagline: "Fun. Friendship. Fitness. For Women 60+",

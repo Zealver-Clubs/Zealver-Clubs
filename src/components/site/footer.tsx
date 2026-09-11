@@ -110,6 +110,12 @@ export function Footer() {
             >
               Terms &amp; Conditions
             </Link>
+            <Link
+              href={site.legal.participantAgreement}
+              className="underline-offset-4 hover:text-secondary hover:underline"
+            >
+              Participant Agreement
+            </Link>
           </div>
         </div>
       </div>
