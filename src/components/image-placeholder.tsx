@@ -1,5 +1,6 @@
 import { ImageIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { type AspectRatio, aspectRatioValue } from "@/lib/aspect-ratio";
 
 /**
  * Labelled image placeholder. Shows exactly where a real photo will go,
@@ -13,7 +14,7 @@ export function ImagePlaceholder({
 }: {
   label: string;
   className?: string;
-  ratio?: "16/9" | "4/3" | "1/1" | "3/2" | "6/5" | "4/5";
+  ratio?: AspectRatio;
 }) {
   return (
     <div
@@ -24,7 +25,7 @@ export function ImagePlaceholder({
         className,
       )}
       style={{
-        aspectRatio: ratio.replace("/", " / "),
+        aspectRatio: aspectRatioValue(ratio),
         backgroundImage:
           "repeating-linear-gradient(45deg, rgba(0,0,0,0.035) 0, rgba(0,0,0,0.035) 12px, transparent 12px, transparent 24px)",
       }}

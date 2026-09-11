@@ -1,15 +1,7 @@
 import Image from "next/image";
 import { ImagePlaceholder } from "./image-placeholder";
 import { cn } from "@/lib/utils";
-
-const ratioValue: Record<string, string> = {
-  "16/9": "16 / 9",
-  "4/3": "4 / 3",
-  "3/2": "3 / 2",
-  "1/1": "1 / 1",
-  "6/5": "6 / 5",
-  "4/5": "4 / 5",
-};
+import { type AspectRatio, aspectRatioValue } from "@/lib/aspect-ratio";
 
 /**
  * Renders a real photo when `src` is provided (all photos are the club's own,
@@ -27,7 +19,7 @@ export function MediaImage({
   src?: string | null;
   alt?: string;
   label: string;
-  ratio?: "16/9" | "4/3" | "3/2" | "1/1" | "6/5" | "4/5";
+  ratio?: AspectRatio;
   className?: string;
   priority?: boolean;
   sizes?: string;
@@ -38,7 +30,7 @@ export function MediaImage({
   return (
     <div
       className={cn("relative overflow-hidden bg-muted", className)}
-      style={{ aspectRatio: ratioValue[ratio] }}
+      style={{ aspectRatio: aspectRatioValue(ratio) }}
     >
       <Image
         src={src}

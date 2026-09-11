@@ -1,3 +1,4 @@
+import type { AspectRatio } from "@/lib/aspect-ratio";
 import type { Reference } from "./references";
 
 /**
@@ -17,7 +18,7 @@ export type Recipe = {
   keyPoints?: string[];
   image?: string;
   imageAlt?: string;
-  imageRatio?: "16/9" | "4/3" | "3/2" | "1/1" | "6/5" | "4/5"; // hero aspect; defaults to 16/9
+  imageRatio?: AspectRatio; // hero aspect; defaults to 16/9
   imageCredit?: string;
   serves: string;
   prepTime: string;

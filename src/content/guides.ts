@@ -20,6 +20,7 @@ export type GuideStep = {
   topicLabel?: string;
 };
 
+import type { AspectRatio } from "@/lib/aspect-ratio";
 import type { Reference } from "./references";
 
 export type Guide = {
@@ -37,7 +38,7 @@ export type Guide = {
   image?: string; // real club photo; falls back to a placeholder if absent
   imageAlt?: string; // describe the image itself; defaults to the guide title
   imageCredit?: string; // visible credit / provenance line under the image
-  imageRatio?: "16/9" | "4/3" | "3/2" | "1/1" | "6/5" | "4/5"; // hero aspect; defaults to 16/9
+  imageRatio?: AspectRatio; // hero aspect; defaults to 16/9
   steps: GuideStep[];
   /**
    * Sections after the steps. For closing advice that belongs in the guide
@@ -984,7 +985,12 @@ export const guides: Guide[] = [
     meta: "5-step guide",
     intro:
       "Everyday changes to when and how you eat that settle reflux, and the signs that mean you should see your doctor rather than manage it yourself.",
-    image: "/images/home-experience.jpg",
+    image: "/images/acidity-and-reflux.webp",
+    imageAlt:
+      "Acidity and reflux: settling it. An illustration of a woman resting a hand on her chest, with the burning path from stomach to throat shown behind her. A five-step guide is set out. One, eat smaller and earlier. Two, stay upright after eating. Three, find your own triggers, such as coffee, chilli, tomato, chocolate and citrus. Four, raise the head of the bed. Five, know what is not ordinary heartburn. Small changes, big relief.",
+    imageRatio: "1223/1286",
+    imageCredit:
+      "Illustration created for Zealver Clubs with ChatGPT (OpenAI), reviewed by Dr Namrata Bagaria.",
     steps: [
       {
         n: 1,
