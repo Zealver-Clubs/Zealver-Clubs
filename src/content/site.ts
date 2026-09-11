@@ -86,11 +86,13 @@ export const team = [
   {
     name: "Rajan Mehta",
     role: "Chief Executive Officer, Zealver",
+    linkedin: "https://www.linkedin.com/in/rajanbmehta/",
     bio: "An entrepreneur with more than 25 years of experience building and scaling businesses. Founder of MyCare Health, Rajan has worked extensively across healthcare, operations and long-term care delivery in India.",
   },
   {
     name: "Dr Namrata Bagaria",
     role: "President, Zealver Clubs",
+    linkedin: "https://www.linkedin.com/in/namrata-bagaria/",
     credentials: "MBBS, MPH (Harvard University)",
     bio: "A physician and health-tech researcher with extensive international experience in ageing and longevity research, including several years of work in Canada. Namrata reviews every article and guide in the Knowledge Hub before it is published.",
     href: "/about/editorial-review",
@@ -111,6 +113,7 @@ export const reviewer = {
   credentials: "MBBS, MPH (Harvard)",
   jobTitle: "President, Zealver Clubs",
   href: "/about/editorial-review",
+  linkedin: "https://www.linkedin.com/in/namrata-bagaria/",
   lastReviewed: "2026-09-11",
   lastReviewedLabel: "11 September 2026",
   bio: [

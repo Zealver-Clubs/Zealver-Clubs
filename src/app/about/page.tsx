@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Compass, Target, Heart } from "lucide-react";
+import { LinkedinIcon } from "@/components/icons/social";
 import { Section, SectionHeading } from "@/components/section";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { Card, CardBody } from "@/components/ui/card";
@@ -36,6 +37,7 @@ export default function AboutPage() {
         jobTitle: m.role,
         description: m.bio,
         ...("href" in m && m.href ? { url: `${site.url}${m.href}` } : {}),
+        sameAs: [m.linkedin],
       })),
     },
   };
@@ -125,7 +127,22 @@ export default function AboutPage() {
               <Card className="h-full">
                 <CardBody>
                   <h3 className="text-xl font-extrabold text-heading">
-                    {m.name}
+                    <a
+                      href={m.linkedin}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-baseline gap-2 underline decoration-primary decoration-2 underline-offset-4 hover:text-secondary"
+                    >
+                      {m.name}
+                      <LinkedinIcon
+                        className="h-4 w-4 shrink-0 self-center"
+                        aria-hidden
+                      />
+                      <span className="sr-only">
+                        {" "}
+                        on LinkedIn (opens in a new tab)
+                      </span>
+                    </a>
                   </h3>
                   <p className="mt-1 font-bold text-secondary">{m.role}</p>
                   {"credentials" in m && m.credentials ? (

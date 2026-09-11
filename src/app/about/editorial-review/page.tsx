@@ -30,6 +30,7 @@ export default function EditorialReviewPage() {
         credentialCategory: c,
       })),
     worksFor: { "@type": "Organization", name: site.name, url: site.url },
+    sameAs: [reviewer.linkedin],
   };
 
   return (
