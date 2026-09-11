@@ -72,37 +72,8 @@ export function HubBrowser({
         />
       </div>
 
-      {/* Topics */}
+      {/* Guides */}
       <div className="mt-10">
-        <h2 className="text-2xl font-extrabold text-heading">Topics</h2>
-        <p className="mt-1 text-muted-foreground">
-          One subject at a time. Browse A–Z or search above.
-        </p>
-        <div className="mt-4">
-          <AZStrip
-            idPrefix="topics"
-            active={topicLetter}
-            available={topicLetters}
-            onSelect={setTopicLetter}
-          />
-        </div>
-        {filteredTopics.length > 0 ? (
-          <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {filteredTopics.map((t) => (
-              <li key={t.slug} className="relative">
-                <TopicCard topic={t} />
-              </li>
-            ))}
-          </ul>
-        ) : (
-          <p className="mt-6 rounded-xl bg-muted p-6 text-muted-foreground">
-            No topics match your search yet.
-          </p>
-        )}
-      </div>
-
-      {/* Guides, stacked below Topics, equal visual weight */}
-      <div className="mt-14">
         <h2 className="text-2xl font-extrabold text-heading">Guides</h2>
         <p className="mt-1 text-muted-foreground">
           Step-by-step walkthroughs that bring several topics together.
@@ -126,6 +97,35 @@ export function HubBrowser({
         ) : (
           <p className="mt-6 rounded-xl bg-muted p-6 text-muted-foreground">
             No guides match your search yet.
+          </p>
+        )}
+      </div>
+
+      {/* Topics, stacked below Guides, equal visual weight */}
+      <div className="mt-14">
+        <h2 className="text-2xl font-extrabold text-heading">Topics</h2>
+        <p className="mt-1 text-muted-foreground">
+          One subject at a time. Browse A–Z or search above.
+        </p>
+        <div className="mt-4">
+          <AZStrip
+            idPrefix="topics"
+            active={topicLetter}
+            available={topicLetters}
+            onSelect={setTopicLetter}
+          />
+        </div>
+        {filteredTopics.length > 0 ? (
+          <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {filteredTopics.map((t) => (
+              <li key={t.slug} className="relative">
+                <TopicCard topic={t} />
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p className="mt-6 rounded-xl bg-muted p-6 text-muted-foreground">
+            No topics match your search yet.
           </p>
         )}
       </div>
