@@ -10,7 +10,7 @@ import { CategoryCarousel } from "@/components/category-carousel";
 import { VideoSlider } from "@/components/video-slider";
 import { InstagramFeed } from "@/components/instagram-feed";
 import { InView } from "@/components/in-view";
-import { site } from "@/content/site";
+import { site, parentOrg } from "@/content/site";
 
 export default function HomePage() {
   return (
@@ -178,7 +178,10 @@ export default function HomePage() {
       {/* Positioning strip */}
       <Section className="py-10">
         <div className="rounded-2xl bg-secondary px-6 py-10 text-center text-secondary-foreground sm:px-10">
-          <p className="mx-auto max-w-3xl text-2xl font-extrabold sm:text-3xl">
+          <p className="text-lg font-bold opacity-90 sm:text-xl">
+            {parentOrg.nameOriginShort}
+          </p>
+          <p className="mx-auto mt-4 max-w-3xl text-2xl font-extrabold sm:text-3xl">
             {site.positioning}
           </p>
           <div className="mt-6">
