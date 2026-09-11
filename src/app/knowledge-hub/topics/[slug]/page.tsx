@@ -240,6 +240,18 @@ export default async function TopicPage({
         </div>
       )}
       <HubCta />
+      {topic.cta ? (
+        <div className="mt-10">
+          <Link
+            href={topic.cta.href}
+            className="inline-flex min-h-14 items-center gap-2 rounded-full bg-primary px-7 text-lg font-extrabold text-white transition-transform hover:scale-[1.02]"
+          >
+            {topic.cta.label}
+            <ArrowRight className="h-5 w-5 shrink-0" aria-hidden />
+          </Link>
+        </div>
+      ) : null}
+
       <ReferencesList references={topic.references} />
       <ContentDisclaimer />
     </Section>

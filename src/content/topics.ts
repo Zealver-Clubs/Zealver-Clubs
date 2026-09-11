@@ -32,6 +32,8 @@ export type Topic = {
   relatedTopics: string[]; // slugs
   guides: string[]; // guide slugs this topic appears in
   references?: Reference[];
+  /** Optional next step, shown after the write-up. */
+  cta?: { label: string; href: string };
 };
 
 export const topics: Topic[] = [
@@ -928,6 +930,483 @@ export const topics: Topic[] = [
           "Indian food, oil and portion guidance behind the swaps throughout.",
       },
     ],
+  },
+  {
+    slug: "4m-framework-healthy-aging",
+    title: "The 4Ms of healthy ageing",
+    category: "Healthy ageing",
+    youtubeId: null,
+    summary:
+      "Movement, Music, Memory and Meaning, and why the four together do what none of them manage alone.",
+    keyPoints: [
+      "Healthy ageing usually fails for want of structure, not information.",
+      "Ageing well happens when physical, cognitive, emotional and social systems are activated together, repeatedly, somewhere familiar.",
+      "Movement builds strength, balance and the conditions for a healthy brain.",
+      "Music opens a direct path to the brain and makes taking part feel easy.",
+      "Memory is about how experience is encoded, not only what is recalled.",
+      "Meaning is what decides whether anybody comes back next week.",
+    ],
+    sections: [
+      {
+        heading: "Why healthy ageing needs a framework, not just activities",
+        body: [
+          "Advice about ageing well tends to arrive in pieces. Exercise more. Eat better. Stay positive. Keep the mind busy. Each piece is sound, and almost none of it lasts, because a list of good intentions is not a structure.",
+          "What is missing is rarely information. It is a shape that holds the pieces together. Our work with older adults rests on one idea drawn from gerontology, behavioural science and neuroscience: ageing well happens when the physical, cognitive, emotional and social systems are activated together, repeatedly, in a place that feels familiar.",
+          "That idea is what the Zealver 4M Framework is built on.",
+        ],
+      },
+      {
+        heading: "Movement: the foundation of body and brain",
+        body: [
+          "Movement supports strength, balance and mobility, coordination and gait, and the brain's capacity to keep adapting. Regular movement improves thinking and mood through better blood flow to the brain and the release of the chemistry that helps brain cells maintain themselves.",
+          "The point that surprises people is how little it takes. Low-intensity, seated or supported movement gives older adults measurable benefit. In practice that means chair-based yoga and stretching, dance-based mobility, posture and balance work, and movement games that ask for a little coordination and attention at once.",
+          "Movement here is not about intensity. It is about consistency and confidence.",
+        ],
+      },
+      {
+        heading: "Music: a direct path to the brain",
+        body: [
+          "Music supports thinking, emotional steadiness and social bonding, and it does so by lighting up several parts of the brain at once, including those handling memory, language, emotion and movement. Work on music in older populations consistently reports better mood, better recall, and groups that move together more readily.",
+          "In a session that looks like rhythm-based warm-ups, singing together, clapping and call-and-response, music paired with movement, and games built on melody and recall.",
+          "Music's real contribution is that it lowers the barrier. It makes joining in feel like less of an effort than it is.",
+        ],
+      },
+      {
+        heading: "Memory: more than recall",
+        body: [
+          "Memory supports attention, emotional steadiness, the handling of stress and the resilience to keep going. It is not simply remembering facts: it is about how an experience gets stored and what feeling gets attached to it.",
+          "Engagement paired with positive emotion strengthens the pathways involved, and memory does its best work where things feel safe, familiar and enjoyable. In practice that is number and word games, rhythm and pattern recognition, reminiscence prompted by music and stories, small rituals with feeling attached, and a proper wind-down at the end.",
+        ],
+      },
+      {
+        heading: "Meaning: the part that decides whether anyone returns",
+        body: [
+          "Meaning supports motivation, self-worth and emotional resilience, and a strong sense of purpose in later life is associated with less depression, greater life satisfaction and more consistent health behaviour.",
+          "The practical version of that is blunt. People do not come back to something because it is good for them. They come back because they feel valued and needed. So a session carries storytelling and shared reflection, cultural expression through songs and traditions, roles and responsibilities for members, skill-sharing, and celebration of the things that matter to individuals.",
+          "Meaning is what turns taking part into belonging.",
+        ],
+      },
+      {
+        heading: "Why the four work together",
+        body: [
+          "Separately each of the four helps. Together they compound. When movement, music, memory and meaning arrive in one shared social setting, effort feels lighter, taking part becomes a habit, joy becomes something that lasts, and health improves quietly in the background.",
+          "That is not wellbeing by accident. It is designed for.",
+        ],
+      },
+      {
+        heading: "From interventions to environments",
+        body: [
+          "Most attempts to improve ageing focus on adding effort. This framework focuses on removing friction.",
+          "Where the routine is predictable, the faces are familiar, the activities feel culturally comfortable and nobody is under pressure, healthy ageing becomes something people live into rather than something they chase.",
+          "Longevity is not only about adding years to life. It is about adding movement, memory, meaning and connection to those years. This is general guidance on ageing well, not medical advice.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "movement-healthy-aging",
+      "music-brain-health-seniors",
+      "memory-cognitive-health-seniors",
+      "meaning-belonging-healthy-aging",
+      "monthly-activities-zealver-clubs",
+    ],
+    guides: [],
+  },
+  {
+    slug: "movement-healthy-aging",
+    title: "Movement as a community habit",
+    category: "Movement",
+    youtubeId: null,
+    summary:
+      "Why consistency beats intensity after 60, and how a chair makes movement possible for almost everybody.",
+    keyPoints: [
+      "For older adults, how often you move matters more than how hard.",
+      "Seated and supported movement gives real, measurable benefit.",
+      "Muscle pulling on bone is one of the strongest signals bone gets to stay strong.",
+      "Confidence is the quiet outcome: fear of moving is itself a risk.",
+      "Movement done with other people, on a fixed day, is the movement that actually happens.",
+    ],
+    sections: [
+      {
+        heading: "Consistency over intensity",
+        body: [
+          "The instruction most older adults have absorbed about exercise is the wrong one. It is about effort, sweat and pushing through, and it puts a great many people off entirely, which is the worst possible outcome.",
+          "What the body responds to after 60 is regularity. Ten unhurried minutes on most days does more than an hour once a fortnight, because strength, balance and confidence are all built by repetition rather than by intensity.",
+        ],
+      },
+      {
+        heading: "Why a chair changes who can take part",
+        body: [
+          "A chair removes the two things that stop people: the fear of falling and the fear of being the one who cannot keep up. Seated and chair-supported movement lets someone with poor balance, low stamina or sore joints do the same session as everybody else, at their own depth.",
+          "That is not a lesser version of exercise. Rising from a chair without using your hands is the single most functional leg exercise there is, and it is the movement that decides whether someone can get themselves out of a chair at 85.",
+        ],
+      },
+      {
+        heading: "What movement is doing underneath",
+        body: [
+          "Movement supports strength, balance, mobility, coordination and gait, and it improves mood and thinking through better blood flow to the brain.",
+          "It is also the main signal bone receives. When muscle contracts it pulls on bone, and that pull is what tells bone it is being used and should stay strong. So the same session pays into both systems at once, which matters a great deal after menopause.",
+        ],
+      },
+      {
+        heading: "How it shows up in a session",
+        body: [
+          "Chair-based yoga and stretching for joint mobility, flexibility and breathing. Dance-based mobility for coordination and circulation. Posture and balance work for steadiness. Light resistance with bands or small weights for strength, posture and grip. Movement games that ask for coordination and attention together.",
+          "Following a sequence is itself cognitive work, so structured movement quietly engages attention and working memory alongside the body.",
+        ],
+      },
+      {
+        heading: "Why doing it together is the whole point",
+        body: [
+          "Movement you intend to do alone is movement that gets postponed. A fixed day, a familiar room and people who notice whether you came is what turns intention into habit, and habit is the only thing that produces results over years.",
+          "Confidence is the outcome people mention most. Fear of movement leads to less movement, which leads to weaker legs and worse balance, which justifies the fear. Doing it in a group, supported, breaks that circle. This is general movement guidance, not a treatment plan; check with your doctor before starting something new if you have a health condition.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "4m-framework-healthy-aging",
+      "chair-dance-for-bone-and-muscle",
+      "muscle-strength-and-ageing",
+      "balance-exercises",
+      "monthly-activities-zealver-clubs",
+    ],
+    guides: ["stay-strong-after-menopause-guide"],
+  },
+  {
+    slug: "music-brain-health-seniors",
+    title: "How music supports brain health in seniors",
+    category: "Memory",
+    youtubeId: null,
+    summary:
+      "Music is not entertainment around the edges of a session. It is the thing that makes the rest of it possible.",
+    keyPoints: [
+      "Music activates memory, language, emotion, attention and movement at once.",
+      "It lowers the barrier to taking part more effectively than encouragement does.",
+      "Familiar songs reach long-term and emotional memory, even where recall is fading.",
+      "Singing together supports lyrical recall, breath and confidence.",
+      "Its real job is making movement joyful, which is what makes people come back.",
+    ],
+    sections: [
+      {
+        heading: "A brain tool, not a backing track",
+        body: [
+          "Music in a session for older adults is often treated as atmosphere. That undersells it considerably. Music reaches the brain by a direct and unusually wide route, waking cognitive, emotional and motor systems at the same moment, which makes it one of the most useful and most accessible things available.",
+          "It earns its place for three reasons: it lowers the barrier to joining in, it makes effort feel lighter than it is, and it turns something that could feel like a health intervention into something that feels like an afternoon worth having.",
+        ],
+      },
+      {
+        heading: "Several parts of the brain at once",
+        body: [
+          "Most activities ask one thing of the brain at a time. Music asks several. Memory, language, emotion, attention and motor coordination are all engaged together, which is why a song can get a room moving when an instruction cannot.",
+          "Paired with movement and with remembering, that wide activation is what makes a session more than the sum of its parts.",
+        ],
+      },
+      {
+        heading: "Nostalgia reaches what nothing else does",
+        body: [
+          "A song somebody loved at twenty arrives with the time attached to it. Familiar music reaches long-term and emotional memory in a way that new material does not, and it often keeps working where other kinds of recall have begun to fade.",
+          "That is why the music chosen matters. Songs a person grew up with do the work; unfamiliar music, however pleasant, does not.",
+        ],
+      },
+      {
+        heading: "Singing, recall and fluency",
+        body: [
+          "Singing involves language processing, lyric recall and keeping to a sequence, all of which support verbal fluency and mental agility. Karaoke encourages recall and expression in front of a friendly group. Antakshari asks for rapid recall, language and teamwork at speed, wrapped in enough laughter that nobody notices they are working.",
+          "Devotional singing adds something else again: emotional steadiness, breath control, and for many people a deep cultural familiarity that makes participation feel natural rather than performed.",
+        ],
+      },
+      {
+        heading: "Movement, made joyful",
+        body: [
+          "Rhythm supports timing, coordination, balance and gentle cardiovascular work. Seated dance to familiar music improves circulation and coordination while feeling like enjoyment rather than exercise.",
+          "This is the most important sentence about music in this context: joy is what drives consistency. People return to what they enjoyed. Everything else in a session depends on their coming back, so making movement joyful is not decoration, it is the mechanism.",
+          "This is an activity for wellbeing and enjoyment. It is not a treatment for dementia, depression or any medical condition.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "4m-framework-healthy-aging",
+      "music-memory-and-mood",
+      "memory-cognitive-health-seniors",
+      "dementia-friendly-movement",
+      "monthly-activities-zealver-clubs",
+    ],
+    guides: ["five-things-you-can-do-for-stress-guide"],
+  },
+  {
+    slug: "memory-cognitive-health-seniors",
+    title: "How social clubs strengthen memory and cognition",
+    category: "Memory",
+    youtubeId: null,
+    summary:
+      "Cognitive health is not built alone with a puzzle book. It grows through routine, emotion, movement and company.",
+    keyPoints: [
+      "Memory does its best work where things feel safe, familiar and enjoyable.",
+      "Gentle, regular engagement beats demanding exercises nobody keeps up.",
+      "Attention comes first: you cannot recall what you never properly took in.",
+      "Predictable routine lowers stress, and lower stress supports memory.",
+      "Positive emotion is not a bonus. It is part of how memory forms.",
+    ],
+    sections: [
+      {
+        heading: "Why a puzzle book is not enough",
+        body: [
+          "The standard advice for an ageing memory is to do puzzles. Puzzles are fine, and they are also solitary, silent and easy to abandon after a fortnight.",
+          "What the evidence keeps pointing at is combination: thinking, moving, feeling and being with people, activated together and repeatedly in a setting that has become familiar. That combination is hard to arrange alone and straightforward in a group that meets on the same day every week.",
+        ],
+      },
+      {
+        heading: "Attention comes before memory",
+        body: [
+          "Nothing is recalled that was never properly taken in, so attention is where memory work actually starts. Activities built on focused listening do more for recall than they appear to.",
+          "Housie is the clearest example. Listening for a number, holding it, finding it, and doing that repeatedly in a room full of people is sustained attention training that nobody experiences as training.",
+        ],
+      },
+      {
+        heading: "Movement and thinking, together",
+        body: [
+          "Following a sequence of movements is a cognitive task as much as a physical one. Remembering what comes next, coordinating limbs, keeping to a rhythm: attention and working memory are all engaged.",
+          "That is why movement and cognitive work are not separate halves of a session. Chair-based dance, yoga sequences and structured strength work all carry thinking inside them.",
+        ],
+      },
+      {
+        heading: "Reminiscence, language and expression",
+        body: [
+          "Memory strengthens when paired with positive emotion and shared experience. Music listening and guided conversation draw out reminiscence and storytelling, which reinforces recall while building the relationships that make people return.",
+          "Language-based recall matters too. Singing and word games support fluency and confidence, and reading and discussion support comprehension, expression and a sense of one's own mind still being interesting, which is not a small thing after retirement.",
+        ],
+      },
+      {
+        heading: "Routine, safety and feeling",
+        body: [
+          "Familiar routine lowers stress, and stress is bad for memory. A club that meets on the same days, in the same room, with the same faces and a recognisable shape to the session, makes engagement possible for people who would find a new environment each week too much to manage.",
+          "The last part is the one most easily missed: memory is strengthened by how an experience felt, not only by repetition. Friendship, laughter and being pleased to be somewhere are not the pleasant surround to the cognitive work. They are part of how it works.",
+          "This is general guidance on staying mentally engaged, not medical advice or a treatment for any condition.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "4m-framework-healthy-aging",
+      "music-brain-health-seniors",
+      "dementia-friendly-movement",
+      "meaning-belonging-healthy-aging",
+      "monthly-activities-zealver-clubs",
+    ],
+    guides: [],
+  },
+  {
+    slug: "meaning-belonging-healthy-aging",
+    title: "Why meaning and belonging matter in healthy ageing",
+    category: "Healthy ageing",
+    youtubeId: null,
+    summary:
+      "Purpose is not a soft extra. It is the thing that determines whether anybody shows up next week.",
+    keyPoints: [
+      "Purpose in later life is linked to less depression and greater life satisfaction.",
+      "People return to a place because they feel valued, not because it is good for them.",
+      "Predictable rituals and familiar faces are what build trust.",
+      "Dignity is a design decision: a room can be warm or it can feel clinical.",
+      "Belonging needs accessibility. If someone cannot join in, they cannot belong.",
+    ],
+    sections: [
+      {
+        heading: "The part that decides everything else",
+        body: [
+          "Meaning supports motivation, self-worth and emotional resilience, and a strong sense of purpose in later life is associated with lower depression, greater life satisfaction and steadier health behaviour.",
+          "Stated plainly: meaning is not the reward for participating. It is the reason participation continues. Every other benefit of a weekly club depends on people coming back, and people come back to places where they feel wanted.",
+        ],
+      },
+      {
+        heading: "Social first",
+        body: [
+          "Doing things alone is hard, and doing them without anybody to do them with has very little joy in it. Social connection supports motivation, self-worth and emotional health more reliably than any individual activity.",
+          "Small, neighbourhood groups where the same faces appear each week let friendship, trust and small rituals form on their own. Given time, the group stops being an activity and becomes people you know.",
+        ],
+      },
+      {
+        heading: "Ritual, rhythm and familiarity",
+        body: [
+          "Routine brings comfort and confidence, and predictability lowers the effort of deciding. Knowing what day it is, what the room will look like and roughly how the hour will go removes most of the anxiety that stops people attending anything new.",
+          "Shared rituals do something more: they turn a series of activities into something that feels like ours rather than something being delivered to us.",
+        ],
+      },
+      {
+        heading: "Dignity, culture and being recognised",
+        body: [
+          "Fear and embarrassment end participation faster than anything physical. A room that feels like a gym or a clinic tells people they are a problem being managed; a warm, ordinary, non-clinical room tells them they are people meeting people.",
+          "Meaning deepens where culture and identity can be expressed: the songs, the traditions, the devotional music that carries decades of association. And recognition matters plainly, through birthdays and celebrations that mark a person as somebody whose milestones are worth noticing.",
+        ],
+      },
+      {
+        heading: "Belonging requires access",
+        body: [
+          "There is no belonging without accessibility. If the movement is too hard, the room too far, or the format too fast, the message is that this place is for other people.",
+          "Chair-based and inclusive design means someone with poor balance or low stamina takes part alongside everyone else, without apology. That is the whole of it: everybody belongs, or the word means nothing.",
+          "This is general guidance on wellbeing and community, not medical advice.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "4m-framework-healthy-aging",
+      "memory-cognitive-health-seniors",
+      "music-brain-health-seniors",
+      "monthly-activities-zealver-clubs",
+      "10-essentials-healthy-aging-social-clubs",
+    ],
+    guides: [],
+  },
+  {
+    slug: "monthly-activities-zealver-clubs",
+    title: "Activities at Zealver Clubs",
+    category: "Healthy ageing",
+    youtubeId: null,
+    summary:
+      "What actually happens in a session, and which of the four Ms each activity is quietly working on.",
+    keyPoints: [
+      "Activities are the delivery mechanism for the four Ms, not entertainment around them.",
+      "Clubs meet three times a week, with one movement activity and one cognitive or social one each session.",
+      "Activities rotate across the month, so no single session has to do everything.",
+      "Chair yoga, chair dance and chair strength carry the movement.",
+      "Music listening, bhajans, karaoke and antakshari carry music and memory together.",
+      "Housie, puzzles, quizzes, reading and celebrations carry memory and meaning.",
+    ],
+    sections: [
+      {
+        heading: "Activities are the method, not the add-on",
+        body: [
+          "Activities here are not chosen because they pass the time. Each one is the means by which one or more of the four Ms actually reaches a person, and the mix is deliberate.",
+          "Healthy ageing does not come from doing one activity well. It comes from meeting the right mix, repeatedly, among people you know.",
+        ],
+      },
+      {
+        heading: "How a week is shaped",
+        body: [
+          "Clubs meet three times a week and every session pairs one chair-based movement activity with one cognitive or social one. Activities rotate through the month rather than repeating identically, and no single session tries to cover everything.",
+          "The benefit comes from familiarity, repetition, rhythm and shared experience, not from novelty.",
+        ],
+      },
+      {
+        heading: "Movement: chair yoga, chair dance, chair strength",
+        body: [
+          "Chair yoga works on joint mobility, flexibility, balance and breathing, and its predictability is part of the point: a calm, familiar ritual is what makes people comfortable enough to return.",
+          "Chair dance pairs seated rhythmic movement with familiar retro film music, which lifts circulation, coordination and mood, and pulls memory and emotion along with it.",
+          "Chair strength uses light resistance, bands or small dumbbells, for muscle, posture, grip and the functional confidence that keeps daily life independent. Following the sequence engages attention and working memory too.",
+        ],
+      },
+      {
+        heading: "Music and memory: listening, bhajans, karaoke, antakshari",
+        body: [
+          "Curated retro film music listening draws out reminiscence, conversation and emotional expression, strengthening recall and social bonds at the same time.",
+          "Bhajans and devotional singing support emotional regulation, breath control and collective participation, and for many members carry deep cultural meaning.",
+          "Karaoke encourages lyrical recall and vocal confidence in a supportive room. Antakshari asks for rapid recall, language processing and teamwork, and generates a great deal of laughter while doing it.",
+        ],
+      },
+      {
+        heading: "Cognitive and social: housie, games, quizzes, reading",
+        body: [
+          "Housie engages attention, listening and number recognition, and works as a social ritual as much as a game.",
+          "Games, puzzles and quizzes stimulate logic, pattern recognition and recall without stress or competition, which keeps them open to every ability level.",
+          "Reading and discussion support comprehension, recall, language and self-expression, and reinforce intellectual identity, which matters particularly after retirement.",
+        ],
+      },
+      {
+        heading: "Celebration",
+        body: [
+          "Birthdays and community celebrations mark personal milestones with music, conversation and shared ritual. Being recognised strengthens emotional wellbeing and makes belonging concrete rather than theoretical.",
+        ],
+      },
+      {
+        heading: "Why the mix is the point",
+        body: [
+          "No single activity produces healthy ageing. The effect comes because activities repeat, faces stay familiar, the feeling is positive, and effort stays light.",
+          "Across a month a member gets movement with safety, music with joy, memory with comfort, and meaning through belonging. These are not classes to attend. They are anchors in a weekly rhythm, which is how healthy ageing stops feeling like a task and starts feeling like somewhere you belong.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "4m-framework-healthy-aging",
+      "movement-healthy-aging",
+      "music-brain-health-seniors",
+      "memory-cognitive-health-seniors",
+      "meaning-belonging-healthy-aging",
+    ],
+    guides: [],
+    cta: { label: "See our classes, clubs and events", href: "/experience" },
+  },
+  {
+    slug: "10-essentials-healthy-aging-social-clubs",
+    title: "10 essentials of healthy ageing, and how clubs make them stick",
+    category: "Healthy ageing",
+    youtubeId: null,
+    summary:
+      "The things that consistently matter for ageing well, and why doing them with other people is what makes them last.",
+    keyPoints: [
+      "Consistency beats intensity: regular gentle movement outperforms occasional effort.",
+      "Cognitive engagement works best alongside movement and company, not alone.",
+      "Social connection supports motivation, self-worth and emotional health.",
+      "A predictable weekly rhythm removes the friction that ends good intentions.",
+      "Music makes participation feel effortless; meaning makes people return.",
+      "Dignity, accessibility and being close to home decide who can take part at all.",
+    ],
+    sections: [
+      {
+        heading: "Not doing more, doing it together",
+        body: [
+          "Ageing well is not about attempting more. It is about doing a few right things consistently, with other people. Individual effort matters, but what sustains it is a repeatable pattern somebody enjoys enough to come back to.",
+          "Most advice gives the ingredients and leaves out the structure. A club built around integration is that structure.",
+        ],
+      },
+      {
+        heading: "Move often, not hard",
+        body: [
+          "Regular movement supports strength, balance, mobility and the brain's adaptability, and for older adults how often matters more than how hard. Seated and low-impact movement delivers measurable benefit.",
+          "Chair yoga, chair dance and chair strength three times a week build a reliable rhythm, and with it the confidence that keeps people moving.",
+        ],
+      },
+      {
+        heading: "Keep the mind engaged, in company",
+        body: [
+          "Ongoing cognitive engagement supports memory, attention and emotional resilience, and does more when paired with positive feeling.",
+          "That is why every session carries a thinking or social component alongside the movement: housie, puzzles, quizzes, guided conversation. Gentle and familiar, rather than demanding.",
+        ],
+      },
+      {
+        heading: "Connection, rhythm and music",
+        body: [
+          "Social connection is not a nice extra; doing things without people has little joy and less staying power. Small neighbourhood groups where the same faces appear let trust and friendship form on their own.",
+          "Routine does the rest. Predictable schedules reduce decision fatigue, and a clear weekly shape turns healthy behaviour into habit. Music lowers the resistance further, making effort feel lighter and participation feel natural.",
+        ],
+      },
+      {
+        heading: "Purpose, dignity and strength",
+        body: [
+          "A sense of purpose in later life is linked with lower depression, greater satisfaction and better longevity, and it is built through shared routines, friendships, rituals and celebration rather than announced.",
+          "Environments matter just as much. Fear or embarrassment ends participation quickly, so sessions need to feel gentle, familiar and non-clinical. And functional strength deserves naming on its own: light resistance work and balance practice are what keep daily independence intact.",
+        ],
+      },
+      {
+        heading: "Integration, and keeping it close to home",
+        body: [
+          "Ageing well happens when systems are activated together rather than in isolation, which is why a session blends movement, music, memory and meaning: chair yoga followed by housie, chair dance paired with karaoke.",
+          "The last essential is the most practical. Habits survive when they are near home and emotionally familiar. A club in your own neighbourhood, with faces you recognise, removes the friction that quietly ends most good intentions.",
+          "Healthy ageing should not feel forced. It should feel familiar, enjoyable and worth returning to. This is general guidance on ageing well, not medical advice.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "4m-framework-healthy-aging",
+      "movement-healthy-aging",
+      "memory-cognitive-health-seniors",
+      "meaning-belonging-healthy-aging",
+      "monthly-activities-zealver-clubs",
+    ],
+    guides: [],
   },
 ];
 

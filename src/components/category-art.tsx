@@ -269,6 +269,34 @@ export function BonesStrengthArt({ className }: ArtProps) {
   );
 }
 
+/* Healthy ageing: four linked rings for the four Ms. */
+export function HealthyAgeingArt({ className }: ArtProps) {
+  return (
+    <ArtFrame
+      className={className}
+      label="Illustration: four linked circles representing movement, music, memory and meaning"
+    >
+      <defs>
+        <linearGradient id="ha-bg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stopColor="#fff3e8" />
+          <stop offset="1" stopColor="#ffe2cb" />
+        </linearGradient>
+      </defs>
+      <rect width="800" height="450" fill="url(#ha-bg)" />
+      <circle cx="400" cy="212" r="168" fill="#ffd3b0" opacity="0.42" />
+      <rect x="0" y="368" width="800" height="82" fill="#f2e2d3" />
+      <g fill="none" strokeWidth="16" strokeLinecap="round">
+        <circle cx="318" cy="176" r="74" stroke="#f5760a" opacity="0.9" />
+        <circle cx="482" cy="176" r="74" stroke="#2e3194" opacity="0.85" />
+        <circle cx="318" cy="272" r="74" stroke="#2e3194" opacity="0.6" />
+        <circle cx="482" cy="272" r="74" stroke="#f5760a" opacity="0.6" />
+      </g>
+      <circle cx="400" cy="224" r="34" fill="#ffffff" />
+      <circle cx="400" cy="224" r="20" fill="#f5760a" />
+    </ArtFrame>
+  );
+}
+
 const byCategory: Record<string, (p: ArtProps) => React.ReactElement> = {
   "balance & safety": BalanceSafetyArt,
   movement: MovementArt,
@@ -276,6 +304,7 @@ const byCategory: Record<string, (p: ArtProps) => React.ReactElement> = {
   "food & energy": FoodEnergyArt,
   rest: RestArt,
   "bones & strength": BonesStrengthArt,
+  "healthy ageing": HealthyAgeingArt,
 };
 
 /** Returns an art component for a category, or null when none applies. */
