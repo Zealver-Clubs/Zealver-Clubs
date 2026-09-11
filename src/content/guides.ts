@@ -28,6 +28,11 @@ export type Guide = {
   intro: string;
   /** Further intro paragraphs, after the lead. */
   introMore?: string[];
+  /**
+   * Search description. The intro is used when this is absent, trimmed to its
+   * first sentence if it runs long; set this where that trim reads poorly.
+   */
+  metaDescription?: string;
   image?: string; // real club photo; falls back to a placeholder if absent
   imageAlt?: string; // describe the image itself; defaults to the guide title
   imageCredit?: string; // visible credit / provenance line under the image
@@ -37,7 +42,13 @@ export type Guide = {
    * Sections after the steps. For closing advice that belongs in the guide
    * but is not itself a step to work through.
    */
-  sections?: { heading: string; body: string[]; bullets?: string[] }[];
+  sections?: {
+    heading: string;
+    body: string[];
+    bullets?: string[];
+    /** Paragraphs after the list, to close the section off. */
+    more?: string[];
+  }[];
   topics: string[]; // topic slugs covered
   relatedGuides: string[]; // guide slugs
   references?: Reference[];
@@ -477,43 +488,113 @@ export const guides: Guide[] = [
     title: "Arthritis and joint pain: living well",
     meta: "5-step guide",
     intro:
-      "Gentle, practical habits for women 60+ living with osteoarthritis or everyday joint stiffness. Moving well rather than resting more.",
-    image: "/images/instructor-class.jpg",
+      "Joint pain can make you want to move less. But for many people with osteoarthritis and everyday joint stiffness, the right kind of regular movement can actually make daily life easier.",
+    introMore: [
+      "You do not have to exercise hard or push through pain. The aim is to keep your joints moving, strengthen the muscles that support them, eat well, sleep well and know when joint pain needs medical attention.",
+      "This guide focuses mainly on osteoarthritis and general joint stiffness. Rheumatoid arthritis, gout and other inflammatory joint conditions are different and may need different treatment.",
+    ],
+    metaDescription:
+      "Gentle, practical habits for women 60+ with osteoarthritis or everyday joint stiffness: keep moving, build strength, eat and sleep well, and know when to ask.",
+    image: "/images/arthritis-joint-pain.webp",
+    imageAlt:
+      "Arthritis and joint pain: living well. A smiling older woman sits on a wooden chair in a bright room, holding one knee drawn up towards her. Five numbered points read: move the joint gently most days, to keep joints active and mobile; start seated and warm up first, with gentle moves to ease stiffness; build the muscle around the joint, because stronger muscles take load off joints; eat in a way that helps, since nourishing food and a healthy weight make a difference; and protect your sleep and know when to ask, resting well and seeking medical advice when needed.",
+    imageRatio: "3/2",
+    imageCredit:
+      "Illustration created for Zealver Clubs with ChatGPT (OpenAI), reviewed by Dr Namrata Bagaria.",
     steps: [
       {
         n: 1,
-        heading: "Move the joint, gently, most days",
-        text: "The instinct with a sore joint is to rest it, and resting it more than a day or two usually makes it worse. Joints are fed by movement: cartilage has no blood supply and relies on gentle use to stay nourished. Small, frequent, comfortable movement beats either pushing through pain or stopping altogether. This guide is written for osteoarthritis and everyday stiffness; rheumatoid arthritis and gout are different conditions needing different treatment, so it is worth knowing which you have.",
+        heading: "Keep the joint moving, gently and regularly",
+        text: "When a joint is sore, complete rest can seem like the obvious answer. But for osteoarthritis, regular gentle movement is usually more helpful than prolonged inactivity.",
+        more: [
+          "Movement helps maintain joint mobility and keeps the muscles around the joint working. Start with what feels manageable: a short walk, gentle stretching, ankle circles, knee movements or seated exercises.",
+          "You do not need to do everything at once. A few minutes several times a day still counts.",
+          "The goal is not to exercise through significant pain. If a movement causes sharp pain, makes your symptoms substantially worse or leaves you much more sore afterwards, reduce the intensity or stop and seek advice if it continues.",
+        ],
         topicSlug: "movement-healthy-aging",
         topicLabel: "Movement as a community habit",
       },
       {
         n: 2,
-        heading: "Start seated, and warm up first",
-        text: "A chair takes the load off hips, knees and ankles while still letting you move them through their range. Begin with ankle circles, knee straightening, shoulder rolls and gentle wrist and finger movement. Stiffness is usually worst in the morning, so give yourself a few unhurried minutes before expecting much of your body.",
+        heading: "Start seated if standing is uncomfortable",
+        text: "A chair can be a useful starting point when your knees, hips or ankles are painful or you are not yet confident exercising while standing. Try gentle movements such as:",
+        bullets: [
+          "Ankle circles",
+          "Straightening and bending the knees",
+          "Seated marching",
+          "Shoulder rolls",
+          "Gentle wrist and finger movements",
+        ],
+        more: [
+          "Start slowly, particularly if you feel stiff after waking or after sitting for a long time. A few easy movements can help you loosen up before doing more.",
+          "Chair-based exercise is not lesser exercise. It can be a practical way to work on mobility, coordination and strength while reducing the load on the legs.",
+        ],
         topicSlug: "chair-dance-for-bone-and-muscle",
         topicLabel: "Chair dance for bone and muscle",
       },
       {
         n: 3,
-        heading: "Build the muscle around the joint",
-        text: "Strong muscle takes load off the joint it surrounds, which is why leg strength matters so much for sore knees and hips. Light resistance a couple of days a week, within a comfortable range, does more for joint pain over months than any amount of resting. Stop at discomfort, not at pain.",
+        heading: "Strengthen the muscles around the joint",
+        text: "Strong muscles help support the joints and make everyday activities easier.",
+        more: [
+          "This is particularly important for painful knees and hips. Exercises such as seated leg extensions, sit-to-stands, heel raises and other light resistance exercises can gradually build strength.",
+          "Aim for muscle-strengthening activity at least twice a week, if it is appropriate for you. Start with a level that feels manageable and increase gradually.",
+          "You may feel your muscles working during exercise, but sharp or significant joint pain is a reason to stop or modify the movement.",
+          "If you have severe joint pain, a recent injury, major swelling or another medical condition affecting movement, ask your doctor or physiotherapist which exercises are appropriate for you.",
+        ],
         topicSlug: "muscle-strength-and-ageing",
         topicLabel: "Muscle strength and ageing",
       },
       {
         n: 4,
-        heading: "Eat in a way that helps rather than hinders",
-        text: "No food cures arthritis, and anyone promising that is selling something. What is worth doing is the ordinary pattern: plenty of vegetables and fruit, whole grains, beans and lentils, nuts, oily fish and sensible oils, with less deep-fried and packaged food. Weight matters here more than it sounds like it should: every extra kilogram puts roughly three to four kilograms of additional load through the knee with each step, so losing five to ten per cent makes a real difference to pain.",
+        heading: "Eat to support your overall health",
+        text: "There is no food that cures arthritis. Be cautious of anyone promising a particular spice, supplement or arthritis diet that will make joint pain disappear.",
+        more: [
+          "What matters more is your overall eating pattern.",
+          "Make vegetables, fruit, beans and lentils, whole grains, nuts and seeds regular parts of your diet. Include protein-rich foods such as dal, beans, curd, paneer, eggs or fish, depending on what you eat. Choose mostly unsaturated fats and keep deep-fried and highly processed foods as occasional choices.",
+          "If you are carrying extra weight, even a modest amount of weight loss can reduce symptoms and improve function in knee osteoarthritis. You do not need to aim for dramatic weight loss to see a benefit.",
+          "And remember: this is not about giving up foods you enjoy. It is about making the healthier choice more often.",
+        ],
         topicSlug: "anti-inflammatory-swaps-indian-kitchen",
         topicLabel: "Anti-inflammatory swaps for an Indian kitchen",
       },
       {
         n: 5,
-        heading: "Protect your sleep, and know when to ask",
-        text: "Pain disrupts sleep and poor sleep makes pain feel worse, which is a circle worth breaking early. Keep regular sleep times and wind down properly. And see your doctor rather than managing alone if a joint is hot and red, markedly swollen or suddenly unbearable, if morning stiffness lasts over an hour, if there is fever alongside the pain, if it has gone on more than six weeks, or if a joint has changed shape. Several of those point to rheumatoid arthritis or gout, which are treated quite differently.",
+        heading: "Sleep well and know when to ask for help",
+        text: "Pain and poor sleep can feed into each other. Pain can make it harder to sleep, while poor sleep can make pain feel harder to cope with. Keep a reasonably regular sleep and wake time, give yourself time to wind down before bed and try to stay physically active during the day. Just as importantly, know when joint pain needs medical attention. See your doctor if:",
+        bullets: [
+          "A joint becomes hot, red or markedly swollen",
+          "Pain becomes suddenly severe or unbearable",
+          "You have a fever along with joint pain",
+          "Morning stiffness is prolonged, particularly if it lasts an hour or more",
+          "Your joint has changed shape or you suddenly cannot use it normally",
+          "Pain or stiffness is persistent or interfering with your everyday activities",
+          "You are unsure whether your symptoms are osteoarthritis or another type of arthritis",
+        ],
+        more: [
+          "These symptoms can sometimes point to conditions such as rheumatoid arthritis, gout or an infection, which need different treatment.",
+          "Getting the right diagnosis matters. You do not have to simply accept persistent joint pain as an inevitable part of ageing.",
+        ],
         topicSlug: "sleep-and-recovery",
         topicLabel: "Sleep & recovery",
+      },
+    ],
+    sections: [
+      {
+        heading: "The simple takeaway",
+        body: [
+          "You do not need to protect painful joints by avoiding movement. Think:",
+        ],
+        bullets: [
+          "Move gently.",
+          "Build strength.",
+          "Eat well.",
+          "Sleep well.",
+          "Ask when something does not feel right.",
+        ],
+        more: [
+          "The aim is not to have pain-free joints every minute of the day. It is to keep doing the things that matter to you, with as much comfort, strength and independence as possible.",
+        ],
       },
     ],
     topics: [
@@ -524,7 +605,10 @@ export const guides: Guide[] = [
       "anti-inflammatory-swaps-indian-kitchen",
       "sleep-and-recovery",
     ],
-    relatedGuides: ["stay-strong-after-menopause-guide", "anti-inflammatory-diet-guide"],
+    relatedGuides: [
+      "stay-strong-after-menopause-guide",
+      "anti-inflammatory-diet-guide",
+    ],
   },
   {
     slug: "blood-pressure-guide",

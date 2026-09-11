@@ -31,9 +31,10 @@ export async function generateMetadata({
   // Search engines cut a description around 160 characters, so a long intro
   // gets trimmed to its first sentence rather than truncated mid-word.
   const description =
-    guide.intro.length > 160
+    guide.metaDescription ??
+    (guide.intro.length > 160
       ? (guide.intro.match(/^.*?[.!?](\s|$)/)?.[0] ?? guide.intro).trim()
-      : guide.intro;
+      : guide.intro);
   return { title: `${guide.title} | Knowledge Hub`, description };
 }
 
@@ -122,7 +123,12 @@ export default async function GuidePage({
             ...(guide.introMore ?? []),
             ...guide.steps.map((s) => `${s.heading}. ${stepText(s)}`),
             ...(guide.sections ?? []).map((sec) =>
-              [sec.heading, ...sec.body, ...(sec.bullets ?? [])].join(" "),
+              [
+                sec.heading,
+                ...sec.body,
+                ...(sec.bullets ?? []),
+                ...(sec.more ?? []),
+              ].join(" "),
             ),
           ].join(" ")}
         />
@@ -227,6 +233,11 @@ export default async function GuidePage({
               ))}
             </ul>
           ) : null}
+          {sec.more?.map((para, i) => (
+            <p key={i} className="mt-3 text-lg leading-relaxed text-foreground">
+              {para}
+            </p>
+          ))}
         </div>
       ))}
 
