@@ -200,9 +200,11 @@ export const topics: Topic[] = [
     body: [
       "Good sleep is built during the day as much as at night. Daylight, gentle activity, and a calm wind-down routine all tell your body when it is time to rest.",
       "Try to keep to similar sleep and wake times, get some natural light in the morning, and ease off tea and coffee in the afternoon. In the last hour before bed, dim the lights, set screens aside, and do something soothing, slow breathing, a few gentle stretches, or quiet music.",
+      "If none of that is shifting it, the reason matters more than the rules. Sleep goes wrong in several different ways, and the answer depends on which one is yours: trouble dropping off, waking repeatedly, or sleeping plenty and still waking exhausted. That last one in particular is worth a doctor rather than another remedy.",
       "If your mind is busy, a warm, dark, quiet room and a slow count of your breaths can help you drift off. This is general rest guidance; if sleep is a persistent struggle, it is worth mentioning to your doctor.",
     ],
-    relatedTopics: ["nutrition-basics", "dementia-friendly-movement"],
+    relatedTopics: [
+      "which-kind-of-poor-sleeper","nutrition-basics", "dementia-friendly-movement"],
     guides: ["lower-your-blood-sugar-guide"],
   },
   {
@@ -1916,6 +1918,89 @@ export const topics: Topic[] = [
       "anti-inflammatory-basics",
     ],
     guides: ["arthritis-and-joint-comfort-guide"],
+  },
+  {
+    slug: "which-kind-of-poor-sleeper",
+    title: "Sleep: which kind of poor sleeper are you?",
+    category: "Rest",
+    youtubeId: null,
+    summary:
+      "Sleeping badly is not one problem, so it does not have one answer. Find which of the five it is, and treat that.",
+    keyPoints: [
+      "Good sleep is judged by waking refreshed, not by eight hours or a bedtime.",
+      "Busy brain: you cannot drop off. The fix is winding down, not lying there longer.",
+      "Interrupted: you wake repeatedly. Find out what is waking you and treat that.",
+      "Unrefreshed: you sleep plenty and wake exhausted. This one needs a doctor.",
+      "Sleepy all day, or a loud snorer with pauses in breathing: both deserve investigating.",
+      "Change one thing, not ten. Pick the biggest obstacle and start there.",
+    ],
+    sections: [
+      {
+        heading: "Why the usual list of rules does not work",
+        body: [
+          "You will have read the advice: bed by ten, no screens, warm milk, no naps. If one set of rules worked for everybody, nobody would have a sleep problem.",
+          "When someone says they are not sleeping well, the useful question is not what time they go to bed. It is what actually happens during their night. The reason you sleep badly may be nothing like the reason the woman next to you does, and the same advice given to both will help at most one of you.",
+        ],
+      },
+      {
+        heading: "What good sleep actually looks like",
+        body: [
+          "Before deciding yours is poor, it helps to know what you are aiming at. Someone sleeping well tends to drop off within about fifteen to thirty minutes, stays asleep through most of the night with brief wakings that do not count against them, wakes feeling refreshed, has the energy for the day, and does not keep nodding off in a chair.",
+          "Notice what is not on that list: eight hours, and a particular bedtime. Sleep is not judged by how long you were unconscious but by whether you recovered. The first question worth asking yourself is simply whether you wake up feeling refreshed.",
+        ],
+      },
+      {
+        heading: "The busy brain",
+        body: [
+          "You get into bed and cannot drop off. The mind starts on tomorrow's list, or yesterday's conversation, or a worry that waited all day for a quiet moment.",
+          "Common reasons are stress, caffeine later in the day than you think, an irregular routine, or simply going to bed before you are actually sleepy. The answer here is winding down rather than lying there trying harder, and a four-step pause when the thoughts start circling.",
+        ],
+      },
+      {
+        heading: "The interrupted sleeper",
+        body: [
+          "You fall asleep easily enough and then wake again and again. This is the group where being a detective pays off, because the treatment depends entirely on what is waking you.",
+          "Ask yourself honestly: is it pain, needing the toilet, acidity, noise, a room too hot or too cold, or a mind that starts up the moment you surface? Each of those has its own answer, and none of them is fixed by a general instruction to sleep better.",
+        ],
+      },
+      {
+        heading: "The unrefreshed sleeper",
+        body: [
+          "You sleep seven or eight hours and wake exhausted. This is the group that matters most, and the one most often shrugged off.",
+          "Sleep that does not restore you can have real causes: sleep apnoea, thyroid problems, anaemia, depression, long-standing pain, or the medicines you take. If you are getting enough sleep and never feel refreshed, please do not simply conclude you are getting older. This is worth a doctor and possibly a blood test, rather than another herbal tea.",
+        ],
+      },
+      {
+        heading: "Sleepy all day, and the snorer",
+        body: [
+          "If you can drop off sitting on the sofa, nod off in front of the television, or feel sleepy most afternoons, your sleep is either not enough or not restoring you. Either is worth getting to the bottom of.",
+          "And this one is worth asking your family about, because you cannot observe it yourself. Do they say you snore loudly? Have they noticed you stop breathing? Do you wake choking? That is not simply hearty snoring. It may be obstructive sleep apnoea, which is common, more so with extra weight, and importantly it is treatable.",
+        ],
+      },
+      {
+        heading: "There is no perfect bedtime",
+        body: [
+          "One myth worth putting down. Some perfectly healthy people sleep nine until five, others half past ten until half past six, others half past eleven until half past seven.",
+          "What matters is getting enough, going to bed and getting up at roughly consistent times, and waking refreshed. Your body cares far more about regularity than about a particular number on the clock.",
+        ],
+      },
+      {
+        heading: "Your own one change",
+        body: [
+          "Here is a way to find where to start. Score yourself out of ten on four things: how easily you fall asleep, how well you stay asleep, how refreshed you feel on waking, and how much energy you have through the day. The lowest score is where your sleep journey begins.",
+          "Then pick one thing, not ten. Stop caffeine after lunch. Walk in the morning. Deal with the pain before bed rather than after. Keep the same waking time every day. Ask the doctor about the snoring. One targeted change beats overhauling everything, because it is the one you will still be doing in a month.",
+          "This is general guidance on sleep, not medical advice. Sleep that does not improve, daytime sleepiness, or snoring with pauses in breathing all deserve a conversation with your doctor.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "sleep-and-recovery",
+      "stop-breathe-notice-choose",
+      "understanding-stress",
+      "blood-pressure-in-women",
+    ],
+    guides: ["five-things-you-can-do-for-stress-guide"],
   },
 ];
 
