@@ -183,7 +183,7 @@ export default function HomePage() {
           </p>
           <div className="mt-6">
             <ButtonLink href={site.joinHref} target="_blank" rel="noreferrer" size="lg">
-              Join the Club
+              Join Our Club
             </ButtonLink>
           </div>
         </div>

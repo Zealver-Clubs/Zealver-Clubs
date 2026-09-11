@@ -209,7 +209,7 @@ export default function OurApproachPage() {
               Read the Knowledge Hub
             </ButtonLink>
             <ButtonLink href={site.joinHref} variant="outline" size="lg" target="_blank" rel="noreferrer">
-              Join the Club
+              Join Our Club
             </ButtonLink>
           </div>
         </div>

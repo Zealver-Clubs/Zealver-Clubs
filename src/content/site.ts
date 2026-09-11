@@ -23,7 +23,7 @@ export const site = {
     whatsappHref: "https://wa.me/919152158933",
     email: "info@zealverclubs.com",
   },
-  // "Join the Club" opens WhatsApp with a friendly prefilled message.
+  // "Join Our Club" opens WhatsApp with a friendly prefilled message.
   joinHref:
     "https://wa.me/919152158933?text=Hi%2C%20tell%20me%20more%20about%20Zealver%20Clubs",
   social: {

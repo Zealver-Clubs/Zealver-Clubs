@@ -38,7 +38,7 @@ export function TopBar() {
           <AccessibilityControls />
           <div className="hidden lg:block">
             <ButtonLink href={site.joinHref} target="_blank" rel="noreferrer">
-              Join the Club
+              Join Our Club
             </ButtonLink>
           </div>
           <button
@@ -81,7 +81,7 @@ export function TopBar() {
                 className="w-full"
                 onClick={() => setOpen(false)}
               >
-                Join the Club
+                Join Our Club
               </ButtonLink>
             </li>
           </ul>
