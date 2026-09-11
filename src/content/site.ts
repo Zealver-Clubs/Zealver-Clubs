@@ -23,6 +23,20 @@ export const site = {
     whatsappHref: "https://wa.me/919152158933",
     email: "info@zealverclubs.com",
   },
+  /**
+   * Knowledge Hub community group. Deliberately separate from `joinHref`:
+   * that one is the membership enquiry, this is the free "keep me updated"
+   * list, and they are different audiences at different stages.
+   * WhatsApp groups cap at 1000 members, so swap this link when it fills.
+   */
+  knowledgeHubCommunity: {
+    href: "https://chat.whatsapp.com/G9WNE225xi8ByRdDEr8J78?mode=gi_t",
+    name: "Zealver Clubs Knowledge Hub",
+    heading: "Join our WhatsApp Community, free",
+    blurb:
+      "Get new topics and guides as we publish them, plus healthy ageing tips, in a friendly group of women 60+. Free to join, and you can leave any time.",
+    cta: "Join the free WhatsApp Community",
+  },
   // "Join Our Club" opens WhatsApp with a friendly prefilled message.
   joinHref:
     "https://wa.me/919152158933?text=Hi%2C%20tell%20me%20more%20about%20Zealver%20Clubs",

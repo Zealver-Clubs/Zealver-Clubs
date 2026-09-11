@@ -12,6 +12,7 @@ import { site, reviewer } from "@/content/site";
 import { ReviewedBy } from "@/components/reviewed-by";
 import { ContentDisclaimer } from "@/components/content-disclaimer";
 import { ReferencesList } from "@/components/references-list";
+import { HubCta } from "@/components/hub-cta";
 import { guides, getGuide } from "@/content/guides";
 import { getTopic } from "@/content/topics";
 
@@ -222,6 +223,7 @@ export default async function GuidePage({
           </ul>
         </div>
       )}
+      <HubCta />
       <ReferencesList references={guide.references} />
       <ContentDisclaimer />
     </Section>
