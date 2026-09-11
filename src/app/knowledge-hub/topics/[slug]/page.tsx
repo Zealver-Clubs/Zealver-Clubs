@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { ArrowRight, Compass } from "lucide-react";
+import { ArrowRight, Check, Compass } from "lucide-react";
 import { Section } from "@/components/section";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { Card, CardBody } from "@/components/ui/card";
@@ -14,7 +14,7 @@ import { site, reviewer } from "@/content/site";
 import { ReviewedBy } from "@/components/reviewed-by";
 import { ContentDisclaimer } from "@/components/content-disclaimer";
 import { ReferencesList } from "@/components/references-list";
-import { topics, getTopic } from "@/content/topics";
+import { topics, getTopic, topicParagraphs } from "@/content/topics";
 import { getGuide } from "@/content/guides";
 
 export function generateStaticParams() {
@@ -55,7 +55,7 @@ export default async function TopicPage({
     "@type": "Article",
     headline: topic.title,
     description: topic.summary,
-    articleBody: topic.body.join("\n\n"),
+    articleBody: topicParagraphs(topic).join("\n\n"),
     about: topic.category,
     inLanguage: "en",
     mainEntityOfPage: url,
@@ -115,7 +115,7 @@ export default async function TopicPage({
           {topic.category}
         </span>
         <ListenButton
-          text={`${topic.title}. ${topic.summary} ${topic.body.join(" ")}`}
+          text={`${topic.title}. ${topic.summary} ${topicParagraphs(topic).join(" ")}`}
         />
       </div>
 
@@ -151,15 +151,43 @@ export default async function TopicPage({
       {/* Summary directly under the video */}
       <p className="mt-5 text-xl text-foreground">{topic.summary}</p>
 
-      {/* Full write-up */}
-      <div className="mt-8">
-        <h2 className="text-2xl font-extrabold text-heading">What to know</h2>
-        <div className="mt-3 flex flex-col gap-4 text-lg leading-relaxed text-foreground">
-          {topic.body.map((p, i) => (
-            <p key={i}>{p}</p>
-          ))}
+      {/* Scannable takeaways, and a snippet target for search */}
+      {topic.keyPoints && topic.keyPoints.length > 0 ? (
+        <aside className="mt-6 rounded-xl border-2 border-primary/25 bg-primary-soft/40 p-5">
+          <h2 className="text-xl font-extrabold text-heading">In short</h2>
+          <ul className="mt-3 flex flex-col gap-2.5">
+            {topic.keyPoints.map((k, i) => (
+              <li key={i} className="flex gap-2.5 text-lg leading-relaxed text-foreground">
+                <Check className="mt-1 h-5 w-5 shrink-0 text-primary" aria-hidden />
+                <span>{k}</span>
+              </li>
+            ))}
+          </ul>
+        </aside>
+      ) : null}
+
+      {/* Full write-up. Sections give the page a real heading outline. */}
+      {topic.sections && topic.sections.length > 0 ? (
+        topic.sections.map((sec, i) => (
+          <div key={i} className="mt-8">
+            <h2 className="text-2xl font-extrabold text-heading">{sec.heading}</h2>
+            <div className="mt-3 flex flex-col gap-4 text-lg leading-relaxed text-foreground">
+              {sec.body.map((para, j) => (
+                <p key={j}>{para}</p>
+              ))}
+            </div>
+          </div>
+        ))
+      ) : (
+        <div className="mt-8">
+          <h2 className="text-2xl font-extrabold text-heading">What to know</h2>
+          <div className="mt-3 flex flex-col gap-4 text-lg leading-relaxed text-foreground">
+            {topic.body.map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
+          </div>
         </div>
-      </div>
+      )}
 
       {/* Related topics */}
       {related.length > 0 && (
