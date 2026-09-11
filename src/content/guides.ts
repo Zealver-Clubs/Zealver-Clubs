@@ -69,7 +69,12 @@ export const guides: Guide[] = [
     meta: "5-step guide",
     intro:
       "A gentle, practical plan to help you stay steady and confident on your feet, one small step at a time.",
-    image: "/images/instructor-class.jpg",
+    image: "/images/falls-prevention.webp",
+    imageAlt:
+      "Falls: preventing them and staying steady. A smiling older woman steadies herself on a stair rail at home. Small changes make a big difference: a safer home, a stronger body and healthier bones help you stay independent. Five steps are shown. One, make your home safer: clear clutter, improve lighting and add grab rails where needed. Two, build your balance: try simple seated and standing balance moves most days. Three, choose the right footwear: wear well-fitting shoes with a non-slip sole, indoors and outdoors. Four, build leg strength: stronger legs help you stay upright and recover if you stumble. Five, keep the bone underneath strong: weight-bearing movement and enough protein and calcium-rich food help keep your bones strong.",
+    imageRatio: "3/2",
+    imageCredit:
+      "Illustration created for Zealver Clubs with ChatGPT (OpenAI), reviewed by Dr Namrata Bagaria.",
     steps: [
       {
         n: 1,
