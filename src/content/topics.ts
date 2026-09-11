@@ -2454,6 +2454,85 @@ export const topics: Topic[] = [
     guides: ["stay-strong-after-menopause-guide", "fall-prevention-guide"],
     cta: { label: "See our classes, clubs and events", href: "/experience" },
   },
+  {
+    slug: "what-makes-life-worth-living-after-60",
+    title: "Purpose, belonging and what makes life worth living after 60",
+    category: "Healthy ageing",
+    youtubeId: null,
+    summary:
+      "When the roles loosen, the question underneath is who you are without them. Five things that matter, beyond family and beyond work.",
+    keyPoints: [
+      "For most of life our identity is handed to us by roles. Then the roles loosen.",
+      "Purpose: a reason to care about the day. It need not be grand, but it must be yours.",
+      "Belonging: people who know you as you, not as somebody's mother or widow.",
+      "Growth: still learning. Ageing comes from repetition without novelty.",
+      "Contribution: being needed, not only cared for.",
+      "Courage: letting the next chapter look different from the last one.",
+    ],
+    sections: [
+      {
+        heading: "The question underneath",
+        body: [
+          "For most of our lives our identity is handed to us by roles. Somebody's daughter, somebody's wife, somebody's boss, somebody's mother. The days are shaped by responsibility and by other people's needs, and there is not much time to ask whether any of it is what you would have chosen.",
+          "Then the roles loosen. Children grow up and move. Work slows or stops. The calendar empties. The phone rings less often. And a question arrives that most people find uncomfortable enough to avoid: who am I, if I am not needed in the way I was?",
+          "It is a real question and it deserves better than being ignored. What follows are five things that tend to matter in later life, beyond family and beyond work. They are not a cure for anything. They are what a good day tends to be made of.",
+        ],
+      },
+      {
+        heading: "Purpose: a reason to care about the day",
+        body: [
+          "Not a job, not a title, not a duty somebody else has assigned you. Simply a reason to care how today goes.",
+          "People who age well almost always have something of the sort: a class they go to or teach, a group they help run, a cause they turn up for, a routine that gives the week a shape. It does not have to be grand and it does not have to impress anybody. It does have to be yours.",
+          "Without it days blur into one another. With it, time has edges again.",
+        ],
+      },
+      {
+        heading: "Belonging: people beyond your family",
+        body: [
+          "Family matters enormously and family alone is not enough. What people also need is peers: friends, a group, others who know them as themselves rather than as somebody's mother or somebody's widow.",
+          "Belonging is not something that arrives at your door. It comes from turning up somewhere regularly, often enough that you are known and, importantly, that you are missed when you do not come.",
+        ],
+      },
+      {
+        heading: "Growth: still becoming",
+        body: [
+          "Ageing has less to do with years than with repetition without anything new in it. The brain wants learning, challenge, play, unfamiliar conversation, a skill that is not yet easy.",
+          "One of the more damaging ideas about later life is that it is now only about maintaining what you have. It is not. You are still becoming somebody, and the fact that the becoming happens more quietly at seventy than at twenty does not make it less real.",
+        ],
+      },
+      {
+        heading: "Contribution: being needed, not only cared for",
+        body: [
+          "People do not only want to be looked after. They want to matter, and there is a considerable difference between the two.",
+          "Mentoring, volunteering, helping to organise something, welcoming the newcomer, being the one who notices that somebody is struggling. When people stop contributing, withdrawal and low mood often follow even when every practical need is met.",
+          "This is worth saying to families as well as to older adults. Taking every task away from someone in order to be kind can quietly remove the thing that was keeping them well.",
+        ],
+      },
+      {
+        heading: "Courage: letting the chapter be different",
+        body: [
+          "This is the hardest of the five and the least discussed. It means letting go of who you used to be, of the identity that came with the job or the household, and of the habit of making yourself smaller so as not to be a nuisance.",
+          "Brene Brown describes courage as being willing to show up and be seen when you cannot control the outcome, which is exactly what walking into a room of strangers at seventy asks of a person.",
+          "The courageous sentence in later life is a quiet one: this chapter will not look like the last one, and that is all right.",
+        ],
+      },
+      {
+        heading: "Why this matters particularly here",
+        body: [
+          "In India we are, on the whole, good at looking after older people. We are less good at making sure they have a life that feels alive.",
+          "Respect is not enough. Safety is not enough. Even family, offered with real love, is not enough on its own. What people need alongside all of that is a reason to spend the day fully.",
+          "The second half of life is not a winding down. It is a rebuilding, on freer and more honest terms than the first half usually allowed.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "meaning-belonging-healthy-aging",
+      "10-essentials-healthy-aging-social-clubs",
+      "memory-cognitive-health-seniors",
+    ],
+    guides: ["friendship-later-in-life-guide", "loneliness-guide"],
+  },
 ];
 
 /** Every paragraph of a topic, whichever shape it uses. */
