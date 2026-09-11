@@ -267,6 +267,38 @@ export const topics: Topic[] = [
     ],
     guides: ["stay-strong-after-menopause-guide", "fall-prevention-guide"],
   },
+  {
+    slug: "synbiotics-explained",
+    title: "Synbiotics: probiotics and prebiotics together",
+    category: "Food & energy",
+    youtubeId: null,
+    summary:
+      "What the word means, how the two halves work together, and the everyday food pairings that do the same job.",
+    body: [
+      "Your gut is home to an enormous community of bacteria, and most of them are doing useful work for you. Two words come up constantly when people talk about looking after that community, and they are easy to mix up. Probiotics are the helpful bacteria themselves. Prebiotics are the fibres that feed them. A synbiotic is simply both together, on the principle that sending bacteria in with something to eat gives them a better chance than sending them in alone.",
+      "The idea is straightforward once you picture it. Bacteria arrive in the gut, the fibre that came along with them gives them something to live on, and they are more likely to settle in and multiply rather than passing straight through. That is the whole of it, and it is why the two are often sold in one product.",
+      "You do not need a product to do this. The pairing happens naturally at the table, and your own kitchen is full of it. A bowl of dahi with a sliced banana is a synbiotic. So is chaas alongside a meal with onions and garlic, or idli and dosa made from properly fermented batter served with sambar full of dal and vegetables. Fermented pickles, dhokla and kanji all bring the bacteria; bananas, onions, garlic, oats, whole grains, dal and beans bring the fibre that feeds them.",
+      "It is worth being clear about what this is and is not. Some people find their digestion settles, feels more regular, or is less uncomfortable, and some find no difference at all. Responses vary a great deal from person to person, and the research is much stronger on some uses than others. These foods are not a treatment for a digestive illness, and no supplement replaces one.",
+      "For most people the sensible approach is the unglamorous one: eat fermented foods you enjoy, eat plenty of fibre from vegetables, fruit, whole grains and dal, and let the two arrive together as they naturally do in a good meal. If you have a serious medical condition or a weakened immune system, or you are thinking about a supplement rather than food, speak to your doctor first. This is general food guidance, not medical advice.",
+    ],
+    relatedTopics: [
+      "nutrition-basics",
+      "anti-inflammatory-basics",
+      "movement-and-blood-sugar",
+    ],
+    guides: [],
+    references: [
+      {
+        title:
+          "The ISAPP consensus statement on the definition and scope of synbiotics",
+        publisher: "Nature Reviews Gastroenterology & Hepatology",
+        year: "2020",
+        url: "https://www.nature.com/articles/s41575-020-0344-2",
+        supports:
+          "The definition of a synbiotic as probiotics and prebiotics combined to work together.",
+      },
+    ],
+  },
 ];
 
 export const topicsBySlug = new Map(topics.map((t) => [t.slug, t]));
