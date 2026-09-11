@@ -2002,6 +2002,100 @@ export const topics: Topic[] = [
     ],
     guides: ["five-things-you-can-do-for-stress-guide"],
   },
+  {
+    slug: "dementia-what-it-is-and-lowering-risk",
+    title: "Dementia: what it is, and what lowers the risk",
+    category: "Memory",
+    youtubeId: null,
+    summary:
+      "Not a disease but a syndrome, and not a normal part of getting older. Around 45 per cent of cases may be preventable or delayed.",
+    keyPoints: [
+      "Dementia is a syndrome, not one disease, and forgetting a name is not dementia.",
+      "Around 45 per cent of cases worldwide may be preventable or delayed by addressing known risk factors.",
+      "Hearing loss, vision loss, loneliness and air pollution are on that list, alongside blood pressure and diabetes.",
+      "Brain health starts in the body: inflammation, muscle, sleep and blood sugar all reach the brain.",
+      "Think hardware and software. Damage cannot always be repaired; the software can often be improved.",
+      "Warning signs worth a doctor: repeating questions, trouble planning, money slipping, personality change.",
+    ],
+    sections: [
+      {
+        heading: "What the word actually means",
+        body: [
+          "Dementia is not the name of a disease. It is a syndrome, a pattern: thinking, memory, judgement and the ability to manage daily life declining together, enough to interfere with ordinary living.",
+          "Two things it is not. Forgetting a name or walking into a room and losing the thread is not dementia; that happens to everybody and more so when tired or stressed. And it is not a normal part of getting older. Common at older ages, certainly. Normal, no. That distinction matters, because treating it as inevitable is what stops people acting.",
+          "There are several kinds. Alzheimer's disease is the most common. Vascular dementia follows damage to blood vessels in the brain and is closely tied to blood pressure, diabetes and stroke. There are others, including Lewy body and frontotemporal dementia, and many people have more than one kind at once.",
+        ],
+      },
+      {
+        heading: "Think of hardware and software",
+        body: [
+          "Here is a way to hold it. If a computer stops working properly, the first question is whether the trouble is hardware or software.",
+          "The brain has both. The hardware is the physical part: the cells, the blood vessels, the connections between them, and that is what Alzheimer's disease or a stroke damages. The software is how the brain runs: remembering, paying attention, finding words, planning, solving problems, and adapting when something changes.",
+          "The encouraging part is that while damaged hardware often cannot be repaired, the software can frequently be improved. The brain goes on making new connections throughout life, which is called neuroplasticity, and it does it in response to being used: moving, dancing, music, learning something unfamiliar, meeting people, playing games.",
+          "One particular kind of software is worth naming. Cognitive flexibility is the ability to adapt when things change: a new route, a new step in a routine, a plan that shifts. Finding change increasingly difficult can be an early sign, and practising it is one of the things a dance class quietly does.",
+        ],
+      },
+      {
+        heading: "Around 45 per cent may be preventable",
+        body: [
+          "This is the most hopeful number in the whole subject, and most people have never heard it. Reviewing the evidence, the Lancet Commission concluded that a large share of dementia cases worldwide, in the region of 45 per cent, could be prevented or delayed by addressing known risk factors across a lifetime.",
+          "Not all of them, and not for everybody. Age and family history are not negotiable. But nearly half is a great deal more than nothing, and it is the opposite of the fatalism most people carry about this.",
+        ],
+      },
+      {
+        heading: "What is on the list",
+        body: [
+          "Some are the ones you would expect: high blood pressure, diabetes, high cholesterol, obesity, smoking, heavy drinking, physical inactivity, depression, head injury.",
+          "Others surprise people. Untreated hearing loss is one of the larger ones, and hearing aids are the remedy nobody thinks of as brain care. Vision loss is on the list too, and much of it is correctable. So are air pollution, loneliness and social isolation, and poor sleep.",
+          "Hearing and vision are worth acting on precisely because they are so fixable. If you are straining to follow conversation, that is not merely inconvenient; it withdraws you from company and understimulates the brain at the same time.",
+        ],
+      },
+      {
+        heading: "Brain health starts in the body",
+        body: [
+          "The biggest shift in this field is that the brain is no longer thought of on its own. What happens in the rest of the body reaches it.",
+          "Chronic inflammation is a fire that never quite goes out, and over years it damages blood vessels and brain cells. Diabetes, extra weight around the middle, smoking, poor diet, inactivity, stress and bad sleep all keep it burning.",
+          "Muscle works the other way. Active muscle steadies blood sugar, lowers inflammation and releases messengers that reach the brain, which is why strength work belongs in a conversation about memory.",
+          "Sleep is when the brain does its clearing up. During deep sleep it washes out waste that has accumulated through the day, including the proteins associated with Alzheimer's disease. Poor sleep also raises blood pressure, worsens blood sugar and adds to inflammation, so it costs you twice. Untreated sleep apnoea is worth taking seriously here.",
+          "And protein supplies the raw material for the chemical messengers the brain runs on, as well as protecting the muscle that does all of the above.",
+        ],
+      },
+      {
+        heading: "Signs worth taking to a doctor",
+        body: [
+          "Asking the same question repeatedly. Putting things down and losing them regularly. Struggling to plan or follow steps that used to be automatic. Difficulty keeping track of money. A change in personality or temperament. Becoming distressed by any change in routine. Everyday tasks starting to feel hard. Withdrawing from company.",
+          "None of these proves anything on its own, and several have other explanations entirely, including depression, thyroid problems, medication and poor sleep, some of which are straightforwardly treatable. That is exactly why it is worth being looked at rather than worried about privately.",
+        ],
+      },
+      {
+        heading: "What to do about it",
+        body: [
+          "Move most days, and do something strengthening a couple of times a week. Eat enough protein. Keep blood pressure, blood sugar and cholesterol in hand. Sleep properly and get snoring checked. Get your hearing and your eyes tested and use the aids if you need them. Stay among people. Keep learning things.",
+          "Brain health does not start in the brain. It starts with the whole body, and almost everything on that list is something you can begin this week.",
+          "This is general guidance on reducing risk, not medical advice, and not a way to diagnose yourself or anybody else. Any concern about memory belongs with a doctor.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "memory-cognitive-health-seniors",
+      "dementia-friendly-movement",
+      "which-kind-of-poor-sleeper",
+      "blood-pressure-in-women",
+    ],
+    guides: ["dementia-engagement-guide", "five-things-you-can-do-for-stress-guide"],
+    references: [
+      {
+        title:
+          "Dementia prevention, intervention, and care: 2024 report of the Lancet standing Commission",
+        publisher: "The Lancet",
+        year: "2024",
+        url: "https://www.thelancet.com/commissions/dementia2024",
+        supports:
+          "The estimate that around 45 per cent of dementia cases may be preventable or delayed, and the list of modifiable risk factors including hearing and vision loss.",
+      },
+    ],
+  },
 ];
 
 /** Every paragraph of a topic, whichever shape it uses. */
