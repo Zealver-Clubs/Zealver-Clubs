@@ -13,6 +13,7 @@ import { JsonLd } from "@/components/json-ld";
 import { site, reviewer } from "@/content/site";
 import { ReviewedBy } from "@/components/reviewed-by";
 import { ContentDisclaimer } from "@/components/content-disclaimer";
+import { ReferencesList } from "@/components/references-list";
 import { topics, getTopic } from "@/content/topics";
 import { getGuide } from "@/content/guides";
 
@@ -69,6 +70,17 @@ export default async function TopicPage({
       url: `${site.url}${reviewer.href}`,
     },
     lastReviewed: reviewer.lastReviewed,
+    ...(topic.references?.length
+      ? {
+          citation: topic.references.map((r) => ({
+            "@type": "CreativeWork",
+            name: r.title,
+            publisher: { "@type": "Organization", name: r.publisher },
+            datePublished: r.year,
+            ...(r.url ? { url: r.url } : {}),
+          })),
+        }
+      : {}),
     ...(topic.youtubeId
       ? {
           video: {
@@ -198,6 +210,7 @@ export default async function TopicPage({
           </ul>
         </div>
       )}
+      <ReferencesList references={topic.references} />
       <ContentDisclaimer />
     </Section>
   );

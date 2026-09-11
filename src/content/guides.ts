@@ -14,6 +14,8 @@ export type GuideStep = {
   topicLabel: string;
 };
 
+import type { Reference } from "./references";
+
 export type Guide = {
   slug: string;
   title: string;
@@ -26,6 +28,7 @@ export type Guide = {
   steps: GuideStep[];
   topics: string[]; // topic slugs covered
   relatedGuides: string[]; // guide slugs
+  references?: Reference[];
 };
 
 export const guides: Guide[] = [
@@ -185,6 +188,49 @@ export const guides: Guide[] = [
       "anti-inflammatory-basics",
     ],
     relatedGuides: ["lower-your-blood-sugar-guide", "anti-inflammatory-diet-guide"],
+    references: [
+      {
+        title: "Standards of Care in Diabetes",
+        publisher: "American Diabetes Association",
+        year: "2025",
+        url: "https://diabetesjournals.org/care/issue/48/Supplement_1",
+        supports:
+          "The Diabetes Plate proportions in step 1, and the role of protein and carbohydrate quality in steps 1 and 2.",
+      },
+      {
+        title: "Guidelines on physical activity and sedentary behaviour",
+        publisher: "World Health Organization",
+        year: "2020",
+        url: "https://www.who.int/publications/i/item/9789240015128",
+        supports:
+          "The 150 minutes of weekly activity and two to three days of strength work in step 4, including the guidance for adults aged 65 and over.",
+      },
+      {
+        title: "Dietary Guidelines for Indians",
+        publisher: "ICMR\u2013National Institute of Nutrition",
+        year: "2024",
+        url: "https://www.nin.res.in/",
+        supports:
+          "Indian portion and food guidance across steps 1, 2 and 6, including dal, roti, rice and cooking oils.",
+      },
+      {
+        title: "Guidelines for Management of Type 2 Diabetes",
+        publisher: "Indian Council of Medical Research",
+        year: "2018",
+        url: "https://www.icmr.gov.in/",
+        supports:
+          "Lifestyle management of type 2 diabetes in Indian adults, and the monitoring schedule in step 6.",
+      },
+      {
+        title:
+          "Advice to walk after meals is more effective for lowering postprandial glycaemia than advice that does not specify timing",
+        publisher: "Diabetologia",
+        year: "2016",
+        url: "https://link.springer.com/article/10.1007/s00125-016-4085-2",
+        supports:
+          "Walking shortly after eating, rather than at any time of day, in step 3.",
+      },
+    ],
   },
 ];
 

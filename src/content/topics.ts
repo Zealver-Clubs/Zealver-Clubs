@@ -8,6 +8,8 @@
  * Zealver YouTube script as they are produced.
  */
 
+import type { Reference } from "./references";
+
 export type Topic = {
   slug: string;
   title: string;
@@ -19,6 +21,7 @@ export type Topic = {
   body: string[];
   relatedTopics: string[]; // slugs
   guides: string[]; // guide slugs this topic appears in
+  references?: Reference[];
 };
 
 export const topics: Topic[] = [

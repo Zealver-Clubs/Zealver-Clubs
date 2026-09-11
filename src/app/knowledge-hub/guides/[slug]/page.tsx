@@ -11,6 +11,7 @@ import { JsonLd } from "@/components/json-ld";
 import { site, reviewer } from "@/content/site";
 import { ReviewedBy } from "@/components/reviewed-by";
 import { ContentDisclaimer } from "@/components/content-disclaimer";
+import { ReferencesList } from "@/components/references-list";
 import { guides, getGuide } from "@/content/guides";
 import { getTopic } from "@/content/topics";
 
@@ -63,6 +64,17 @@ export default async function GuidePage({
       url: `${site.url}${reviewer.href}`,
     },
     lastReviewed: reviewer.lastReviewed,
+    ...(guide.references?.length
+      ? {
+          citation: guide.references.map((r) => ({
+            "@type": "CreativeWork",
+            name: r.title,
+            publisher: { "@type": "Organization", name: r.publisher },
+            datePublished: r.year,
+            ...(r.url ? { url: r.url } : {}),
+          })),
+        }
+      : {}),
     ...(guide.image ? { image: `${site.url}${guide.image}` } : {}),
     step: guide.steps.map((s) => ({
       "@type": "HowToStep",
@@ -210,6 +222,7 @@ export default async function GuidePage({
           </ul>
         </div>
       )}
+      <ReferencesList references={guide.references} />
       <ContentDisclaimer />
     </Section>
   );

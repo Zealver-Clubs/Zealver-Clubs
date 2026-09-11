@@ -37,7 +37,9 @@ export const site = {
 
 /**
  * Medical reviewer. Knowledge Hub content is written by the Zealver Clubs team
- * (with AI assistance) and reviewed by a qualified clinician before publishing.
+ * (with AI assistance) and reviewed by Dr Namrata Bagaria before publishing.
+ * Deliberately "reviewed by", not "medically reviewed": the Hub is
+ * activity-first guidance, not medical content.
  * `lastReviewed` is the date of the most recent review pass, in ISO form.
  */
 export const reviewer = {
@@ -45,8 +47,8 @@ export const reviewer = {
   name: "Namrata Bagaria",
   fullName: "Dr Namrata Bagaria",
   credentials: "MBBS, MPH (Harvard)",
-  jobTitle: "Founder and medical reviewer, Zealver Clubs",
-  href: "/about/medical-review",
+  jobTitle: "Founder, Zealver Clubs",
+  href: "/about/editorial-review",
   lastReviewed: "2026-09-11",
   lastReviewedLabel: "11 September 2026",
   bio: [
@@ -62,7 +64,7 @@ export const contentPolicy = {
   disclaimer:
     "This article is for general information and education. It is not a substitute for professional medical advice, diagnosis or treatment. Always seek the advice of your doctor or another qualified health provider with any questions you have about a medical condition. Never disregard professional medical advice, or delay seeking it, because of something you have read here.",
   aiNote:
-    "Written by the Zealver Clubs team with AI assistance, and medically reviewed before publishing.",
+    "Written by the Zealver Clubs team with AI assistance, and reviewed before publishing.",
 } as const;
 
 export const nav = [

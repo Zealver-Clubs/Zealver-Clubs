@@ -9,12 +9,12 @@ import { topics } from "@/content/topics";
 import { guides } from "@/content/guides";
 
 export const metadata: Metadata = {
-  title: `Medical review and ${reviewer.fullName} | Zealver Clubs`,
+  title: `How we write and review | Zealver Clubs`,
   description: `Knowledge Hub articles and guides are reviewed by ${reviewer.fullName}, ${reviewer.credentials}, before publishing. How our health content is written, reviewed and kept up to date.`,
   alternates: { canonical: `${site.url}${reviewer.href}` },
 };
 
-export default function MedicalReviewPage() {
+export default function EditorialReviewPage() {
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -36,17 +36,17 @@ export default function MedicalReviewPage() {
     <Section className="max-w-3xl py-8">
       <JsonLd data={personSchema} />
       <Breadcrumb
-        items={[{ label: "Home", href: "/" }, { label: "Medical review" }]}
+        items={[{ label: "Home", href: "/" }, { label: "How we write and review" }]}
       />
       <SectionHeading
         as="h1"
-        title="Medical review"
+        title="How we write and review"
         intro="How the Knowledge Hub is written, reviewed and kept up to date."
       />
 
       <div className="mt-8 rounded-xl border border-border bg-card p-6">
         <p className="flex items-center gap-2 text-sm font-bold text-primary">
-          <BadgeCheck className="h-5 w-5 shrink-0" aria-hidden /> Medical reviewer
+          <BadgeCheck className="h-5 w-5 shrink-0" aria-hidden /> Reviewer
         </p>
         <h2 className="mt-2 text-2xl font-extrabold text-heading">
           {reviewer.fullName}
