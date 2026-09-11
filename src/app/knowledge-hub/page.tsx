@@ -5,11 +5,13 @@ import { HubBrowser } from "@/components/hub-browser";
 import { topics } from "@/content/topics";
 import { guides } from "@/content/guides";
 import { recipes } from "@/content/recipes";
+import { site } from "@/content/site";
 
 export const metadata: Metadata = {
   title: "Knowledge Hub | Zealver Clubs",
   description:
     "Trusted health topics and step-by-step guides for healthy ageing. Browse A–Z or search for what matters to you.",
+  alternates: { canonical: `${site.url}/knowledge-hub` },
 };
 
 export default function KnowledgeHubPage() {

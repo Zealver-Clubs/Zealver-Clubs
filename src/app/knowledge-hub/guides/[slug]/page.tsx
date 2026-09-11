@@ -35,7 +35,13 @@ export async function generateMetadata({
     (guide.intro.length > 160
       ? (guide.intro.match(/^.*?[.!?](\s|$)/)?.[0] ?? guide.intro).trim()
       : guide.intro);
-  return { title: `${guide.title} | Knowledge Hub`, description };
+  return {
+    title: `${guide.title} | Knowledge Hub`,
+    description,
+    alternates: {
+      canonical: `${site.url}/knowledge-hub/guides/${guide.slug}`,
+    },
+  };
 }
 
 export default async function GuidePage({
@@ -93,7 +99,9 @@ export default async function GuidePage({
       position: s.n,
       name: s.heading,
       text: stepText(s),
-      url: `${site.url}/knowledge-hub/topics/${s.topicSlug}`,
+      ...(s.topicSlug
+        ? { url: `${site.url}/knowledge-hub/topics/${s.topicSlug}` }
+        : {}),
     })),
   };
 
@@ -127,6 +135,7 @@ export default async function GuidePage({
                 sec.heading,
                 ...sec.body,
                 ...(sec.bullets ?? []),
+                ...(sec.items ?? []).flatMap((it) => [it.heading, ...it.body]),
                 ...(sec.more ?? []),
               ].join(" "),
             ),
@@ -196,13 +205,15 @@ export default async function GuidePage({
                         {para}
                       </p>
                     ))}
-                    <Link
-                      href={`/knowledge-hub/topics/${step.topicSlug}`}
-                      className="mt-3 inline-flex min-h-11 items-center gap-1 font-bold text-link hover:underline"
-                    >
-                      Learn more: {step.topicLabel}
-                      <ArrowRight className="h-4 w-4" aria-hidden />
-                    </Link>
+                    {step.topicSlug ? (
+                      <Link
+                        href={`/knowledge-hub/topics/${step.topicSlug}`}
+                        className="mt-3 inline-flex min-h-11 items-center gap-1 font-bold text-link hover:underline"
+                      >
+                        Learn more: {step.topicLabel}
+                        <ArrowRight className="h-4 w-4" aria-hidden />
+                      </Link>
+                    ) : null}
                   </div>
                 </CardBody>
               </Card>
@@ -229,6 +240,35 @@ export default async function GuidePage({
                     className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary"
                   />
                   <span>{b}</span>
+                </li>
+              ))}
+            </ul>
+          ) : null}
+          {sec.items?.length ? (
+            <ul className="mt-5 flex flex-col gap-4">
+              {sec.items.map((item) => (
+                <li key={item.heading}>
+                  <Card>
+                    <CardBody>
+                      <h3 className="text-xl font-extrabold text-heading">
+                        {item.heading}
+                      </h3>
+                      {item.body.map((para, i) => (
+                        <p key={i} className="mt-2 text-foreground">
+                          {para}
+                        </p>
+                      ))}
+                      {item.topicSlug ? (
+                        <Link
+                          href={`/knowledge-hub/topics/${item.topicSlug}`}
+                          className="mt-3 inline-flex min-h-11 items-center gap-1 font-bold text-link hover:underline"
+                        >
+                          Learn more: {item.topicLabel}
+                          <ArrowRight className="h-4 w-4" aria-hidden />
+                        </Link>
+                      ) : null}
+                    </CardBody>
+                  </Card>
                 </li>
               ))}
             </ul>

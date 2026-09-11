@@ -30,7 +30,11 @@ export async function generateMetadata({
   const { slug } = await params;
   const topic = getTopic(slug);
   if (!topic) return { title: "Not found | Zealver Clubs" };
-  return { title: `${topic.title} | Knowledge Hub`, description: topic.summary };
+  return {
+    title: `${topic.title} | Knowledge Hub`,
+    description: topic.summary,
+    alternates: { canonical: `${site.url}/knowledge-hub/topics/${topic.slug}` },
+  };
 }
 
 export default async function TopicPage({

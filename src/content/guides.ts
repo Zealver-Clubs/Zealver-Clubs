@@ -15,8 +15,9 @@ export type GuideStep = {
   bullets?: string[];
   /** Paragraphs after the list, to close the step off. */
   more?: string[];
-  topicSlug: string;
-  topicLabel: string;
+  /** A step that stands on its own needs no onward link. */
+  topicSlug?: string;
+  topicLabel?: string;
 };
 
 import type { Reference } from "./references";
@@ -48,6 +49,13 @@ export type Guide = {
     bullets?: string[];
     /** Paragraphs after the list, to close the section off. */
     more?: string[];
+    /** Sub-blocks within the section, each able to link onward to a topic. */
+    items?: {
+      heading: string;
+      body: string[];
+      topicSlug?: string;
+      topicLabel?: string;
+    }[];
   }[];
   topics: string[]; // topic slugs covered
   relatedGuides: string[]; // guide slugs
@@ -112,35 +120,95 @@ export const guides: Guide[] = [
   {
     slug: "lower-your-blood-sugar-guide",
     title: "Blood sugar: everyday habits to keep it steady",
-    meta: "3-step guide",
+    meta: "4-step guide",
     intro:
-      "Everyday habits around food, movement and rest that work together to help keep your blood sugar steady.",
+      "The order you eat your meal can help reduce the rise in blood sugar after eating. Combined with balanced meals, movement and good sleep, this simple habit can support steadier energy throughout the day.",
+    introMore: [
+      "Eat your meal in this order: protein first, then vegetables, then healthy fats, and carbohydrates last.",
+      "Starting with protein and fibre-rich vegetables, followed by fats and then carbohydrates, can slow the rate at which glucose enters your bloodstream and may help reduce the post-meal blood sugar rise.",
+    ],
+    metaDescription:
+      "Eat protein first, then vegetables, then healthy fats, and carbohydrates last. A simple change to meal order that can steady blood sugar, plus movement and sleep.",
     image: "/images/class-seated-dance.jpg",
     steps: [
       {
         n: 1,
-        heading: "Start with nutrition basics",
-        text: "Build each meal around protein and plenty of vegetables, keep portions steady, and swap sugary drinks for water. Even, balanced meals give you even, steady energy.",
-        topicSlug: "nutrition-basics",
-        topicLabel: "Nutrition basics",
+        heading: "Start with protein",
+        text: "Begin your meal with a protein-rich food such as dal, beans, eggs, paneer, tofu, fish, chicken or Greek yoghurt.",
+        more: ["Protein helps with fullness and supports muscle health."],
       },
       {
         n: 2,
-        heading: "Move a little after meals",
-        text: "A gentle few minutes after eating helps your body use the meal. A slow stroll, seated marches, or standing to tidy up all count, aim for about ten minutes after your main meal.",
-        topicSlug: "movement-and-blood-sugar",
-        topicLabel: "Movement & blood sugar",
+        heading: "Next, eat vegetables",
+        text: "Have your salad or non-starchy vegetables next: leafy greens, cucumber, tomato, carrots, cabbage, broccoli or sprouts.",
+        more: ["Their fibre can slow digestion and carbohydrate absorption."],
       },
       {
         n: 3,
-        heading: "Rest and recover well",
-        text: "Good sleep supports steady energy the next day. Keep regular sleep times, get morning daylight, and wind down calmly in the last hour before bed.",
-        topicSlug: "sleep-and-recovery",
-        topicLabel: "Sleep & recovery",
+        heading: "Add healthy fats",
+        text: "Include foods such as nuts, seeds, avocado, olive oil or a little ghee.",
+        more: [
+          "These add staying power to the meal and make it more satisfying.",
+        ],
+      },
+      {
+        n: 4,
+        heading: "Eat carbohydrates last",
+        text: "Have your roti, rice, quinoa, millet, potatoes or other carbohydrate foods after the protein and vegetables.",
+        more: [
+          "You do not need to eliminate carbohydrates. The goal is to choose sensible portions and change the order in which you eat them.",
+          "The golden rule: protein, then vegetables, then healthy fats, then carbohydrates.",
+        ],
+      },
+    ],
+    sections: [
+      {
+        heading: "Three more everyday habits for steadier blood sugar",
+        body: [],
+        items: [
+          {
+            heading: "Move after meals",
+            body: [
+              "A gentle ten-minute walk, seated marches or simply standing and moving around after a meal can help your muscles use glucose.",
+            ],
+            topicSlug: "movement-and-blood-sugar",
+            topicLabel: "Movement & blood sugar",
+          },
+          {
+            heading: "Keep meals balanced",
+            body: [
+              "Build meals around protein, vegetables and a sensible portion of carbohydrates, and choose water instead of sugary drinks.",
+            ],
+            topicSlug: "nutrition-basics",
+            topicLabel: "Nutrition basics",
+          },
+          {
+            heading: "Sleep and recover well",
+            body: [
+              "Regular, adequate sleep supports healthy energy regulation and glucose metabolism. Keep consistent sleep times, get morning daylight and give yourself time to wind down before bed.",
+            ],
+            topicSlug: "sleep-and-recovery",
+            topicLabel: "Sleep & recovery",
+          },
+        ],
+      },
+      {
+        heading: "One small change to remember",
+        body: [
+          "You do not have to completely change what you eat. Start by changing the order:",
+        ],
+        bullets: [
+          "Protein, then vegetables, then healthy fats, then carbohydrates.",
+        ],
+        more: [
+          "Small change. Big potential impact.",
+          "If you take medication for diabetes, changes that lower your blood sugar can add to what your medication is already doing. It is worth telling your doctor what you are changing.",
+        ],
       },
     ],
     topics: [
       "diabetes-what-is-happening",
+      "protein-at-every-meal",
       "nutrition-basics",
       "movement-and-blood-sugar",
       "sleep-and-recovery",
