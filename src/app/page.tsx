@@ -179,7 +179,7 @@ export default function HomePage() {
       <Section className="py-10">
         <div className="rounded-2xl bg-secondary px-6 py-10 text-center text-secondary-foreground sm:px-10">
           <p className="text-lg font-bold opacity-90 sm:text-xl">
-            {parentOrg.nameOriginShort}
+            {parentOrg.nameOrigin}
           </p>
           <p className="mx-auto mt-4 max-w-3xl text-2xl font-extrabold sm:text-3xl">
             {site.positioning}

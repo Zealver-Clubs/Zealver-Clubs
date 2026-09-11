@@ -27,7 +27,7 @@ export function GET() {
 Key facts:
 - Who it is for: women 60+ (seniors). Everything is designed for older adults.
 - Parent brand: ${parentOrg.name}. ${parentOrg.description}
-- The name: ${parentOrg.nameOriginShort}
+- The name: ${parentOrg.nameOrigin}
 - Approach: the 4Ms — Movement, Music, Memory, Meaning — in a simple weekly rhythm. Chair-based and music-led; no dance or fitness experience needed.
 - Where: ${site.areaServed.join("; ")}.
 - Content model: a "Topic" is one subject, a "Guide" is a step-by-step walkthrough linking several Topics.

@@ -55,11 +55,12 @@ export const parentOrg = {
   name: "Zealver",
   description:
     "Zealver is one of India's established SeniorCare brands, supporting older adults and their families through preventive health solutions, care ecosystems and age-appropriate engagement.",
-  /** Fuller version, for the About page. */
+  /**
+   * The canonical line for the name. Same wording everywhere it appears, so
+   * it reads as a brand line rather than a paraphrase.
+   */
   nameOrigin:
-    "Zealver is a made-up word: zeal and silver, joined. It is about living your silver years with zeal.",
-  /** Short version, for the home page strip. Deliberately not the same sentence. */
-  nameOriginShort: "Zeal + silver. Living your silver years with zeal.",
+    "ZEALVER = Zeal + silver. It simply means living your silver years with zeal.",
   clubsLine:
     "Zealver Clubs is the community wellbeing vertical of Zealver, created to support healthy ageing through socialisation with a purpose, bringing seniors together regularly to move, connect and thrive in their neighbourhoods.",
 } as const;
