@@ -839,6 +839,95 @@ export const topics: Topic[] = [
     ],
     guides: ["five-minutes-a-day-for-stress-guide"],
   },
+  {
+    slug: "anti-inflammatory-swaps-indian-kitchen",
+    title: "Anti-inflammatory swaps for an Indian kitchen",
+    category: "Food & energy",
+    youtubeId: null,
+    summary:
+      "Practical everyday swaps using food you already cook, and an important word about what is not actually the problem.",
+    keyPoints: [
+      "Biscuits and namkeen \u2192 roasted chana, makhana, peanuts, nuts and seeds.",
+      "Samosa and pakoda \u2192 baked or air-fried versions, or steamed dhokla and idli.",
+      "Sweet chai \u2192 unsweetened or barely sweetened, with cinnamon, ginger or elaichi.",
+      "Maida \u2192 besan, moong, oats and less refined flours.",
+      "A carb-heavy plate \u2192 half vegetables, a quarter protein, a quarter grain.",
+      "No single food is automatically inflammatory. It is the overall pattern that counts.",
+    ],
+    sections: [
+      {
+        heading: "A better way to think about it",
+        body: [
+          "It is tempting to sort food into good and bad lists, but that is not really how this works. Very little is inflammatory on its own. What matters is the pattern: a lot of refined flour, added sugar, deep-fried food and heavily processed packets, eaten often, over years.",
+          "So read what follows as swaps worth making most of the time, not as a list of things you are now forbidden. A samosa at a wedding is not the problem. A samosa most afternoons is a different question.",
+        ],
+      },
+      {
+        heading: "Flours and grains",
+        body: [
+          "Maida is the one worth looking at first, because it turns up everywhere: naan, bhatura, biscuits, white bread, most bakery items. Besan and moong are excellent in its place, and a chilla made from either is quicker than most people expect. Oats and less refined flours work well for rotis.",
+          "Rice is not the villain it is sometimes made out to be. It is usually the portion rather than the grain. A smaller serving alongside plenty of vegetables and dal does a very different thing from a plate that is mostly rice. Hand-pounded and brown rice are worth trying if they suit you.",
+        ],
+      },
+      {
+        heading: "Snacks, which is where most of it happens",
+        body: [
+          "This is the swap that changes the most for the least effort. Namkeen, sev, bhujia, chips and biscuits are the things that get eaten absent-mindedly with tea, and they add up quietly. Roasted chana, makhana, peanuts, almonds, walnuts and seeds do the same job for your hands and considerably more for the rest of you.",
+          "For fried snacks, the method matters more than the item. Samosa, kachori, puri and pakoda are fine occasionally, and baked or air-fried versions are genuinely good. Dhokla, idli and chilla are steamed rather than fried and belong in the regular rotation.",
+        ],
+      },
+      {
+        heading: "Sweet things and what you drink",
+        body: [
+          "Mithai, jalebi, gulab jamun and peda are for occasions, and India has plenty of occasions. On ordinary days, fruit with a few nuts does more than you would think: apple, guava, orange, papaya, or berries if you can get them.",
+          "Sweet chai is worth attention simply because of how often it is drunk. Cutting the sugar down gradually works better than stopping outright, and cinnamon, ginger, elaichi or clove give you flavour back. One thing worth saying plainly: jaggery and honey are still sugar. They are not anti-inflammatory alternatives, whatever you may have read.",
+          "Packaged juices and soft drinks are best treated as sweets rather than drinks. Whole fruit with water, or water with lemon, does the job.",
+        ],
+      },
+      {
+        heading: "Oils, gravies and the salt question",
+        body: [
+          "Ghee and butter are not poison, and a reasonable amount of ghee in Indian cooking is entirely fine. The issue is quantity. Mustard, groundnut and olive oil in moderate amounts, plus the fats that come naturally in nuts and seeds, are a sensible base.",
+          "Cream-heavy gravies are the bigger change. A tomato and onion base, or curd, or blended nuts and seeds, gives you a rich gravy without the cream. Full-fat cheese and large amounts of paneer are worth moderating, with dal, rajma, chole and tofu carrying more of the protein.",
+          "For salt, the packets are usually the problem rather than the salt cellar. Oily, salty pickles and packaged sauces are easy to replace with a fresh kachumber, a coriander or mint chutney, or a curd-based dip. Herbs, lemon, garlic, ginger, jeera, dhania and haldi do a great deal of the work that salt was doing.",
+        ],
+      },
+      {
+        heading: "What to build the kitchen around",
+        body: [
+          "Rather than a list of things to avoid, it is easier to stock what you want to be eating. Leafy greens and methi, broccoli, cauliflower, cabbage, bhindi, baingan, lauki, tori, carrots, capsicum, tomatoes and mushrooms. Moong, masoor, chana, rajma, chole, sprouts, tofu, and curd and paneer in moderation. Walnuts, almonds, pistachios, chia, flaxseed, til and pumpkin seeds.",
+          "And the spice box you already own: haldi with a little black pepper, ginger, garlic, dalchini, jeera, dhania, laung and elaichi.",
+          "One caution about spices. Haldi and ginger belong in an anti-inflammatory way of eating, but they are not medicines and no single spice will undo the rest of the diet. The pattern is what does the work. This is general food guidance, not medical advice.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "anti-inflammatory-basics",
+      "nutrition-basics",
+      "movement-and-blood-sugar",
+      "synbiotics-explained",
+    ],
+    guides: ["anti-inflammatory-diet-guide"],
+    references: [
+      {
+        title: "Foods that fight inflammation",
+        publisher: "Harvard Health Publishing, Harvard Medical School",
+        year: "2024",
+        url: "https://www.health.harvard.edu/staying-healthy/foods-that-fight-inflammation",
+        supports:
+          "Which foods and patterns to limit, namely sweetened drinks, refined carbohydrates, fried food and saturated fats, and which to favour.",
+      },
+      {
+        title: "Dietary Guidelines for Indians",
+        publisher: "ICMR\u2013National Institute of Nutrition",
+        year: "2024",
+        url: "https://www.nin.res.in/",
+        supports:
+          "Indian food, oil and portion guidance behind the swaps throughout.",
+      },
+    ],
+  },
 ];
 
 /** Every paragraph of a topic, whichever shape it uses. */

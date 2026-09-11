@@ -121,7 +121,11 @@ export const guides: Guide[] = [
         topicLabel: "Nutrition basics",
       },
     ],
-    topics: ["anti-inflammatory-basics", "nutrition-basics"],
+    topics: [
+      "anti-inflammatory-basics",
+      "anti-inflammatory-swaps-indian-kitchen",
+      "nutrition-basics",
+    ],
     relatedGuides: ["lower-your-blood-sugar-guide"],
   },
   {
