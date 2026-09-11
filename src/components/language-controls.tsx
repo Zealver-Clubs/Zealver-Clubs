@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { Globe, Check, X } from "lucide-react";
 import { LANGUAGES, currentLanguage, setLanguage } from "@/components/translate";
 import { cn } from "@/lib/utils";
@@ -16,11 +16,20 @@ import { cn } from "@/lib/utils";
  */
 export function LanguageControls() {
   const [open, setOpen] = useState(false);
-  const [lang, setLang] = useState("en");
   const panelRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
 
-  useEffect(() => setLang(currentLanguage()), []);
+  /**
+   * The language lives in the URL, which is browser-only state. Reading it
+   * through useSyncExternalStore keeps the server render ("en") and the client
+   * render consistent without a setState-in-effect. It only ever changes via a
+   * full navigation, so there is nothing to subscribe to.
+   */
+  const lang = useSyncExternalStore(
+    () => () => {},
+    () => currentLanguage(),
+    () => "en",
+  );
 
   useEffect(() => {
     if (!open) return;
