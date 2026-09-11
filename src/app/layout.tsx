@@ -5,7 +5,7 @@ import { TopBar } from "@/components/site/top-bar";
 import { Footer } from "@/components/site/footer";
 import { JsonLd } from "@/components/json-ld";
 import { WhatsAppFab } from "@/components/whatsapp-fab";
-import { site } from "@/content/site";
+import { site, parentOrg } from "@/content/site";
 
 // Type pairing adopted from weenable.org: Manrope for confident display
 // headings, Public Sans for highly legible body text.
@@ -75,6 +75,11 @@ const orgSchema = {
   areaServed: site.areaServed,
   sameAs: [site.social.instagram],
   slogan: site.tagline,
+  parentOrganization: {
+    "@type": "Organization",
+    name: parentOrg.name,
+    description: parentOrg.description,
+  },
 };
 
 const websiteSchema = {

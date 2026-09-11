@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: u("/knowledge-hub"), lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: u("/our-approach"), lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: u("/become-a-host"), lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: u("/about"), lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: u("/about/editorial-review"), lastModified: now, changeFrequency: "monthly", priority: 0.7 },
   ];
 

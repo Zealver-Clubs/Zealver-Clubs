@@ -49,6 +49,53 @@ export const site = {
   instagramHandle: "zealverclubs",
 } as const;
 
+/** The parent brand. Zealver Clubs is one vertical within it. */
+export const parentOrg = {
+  name: "Zealver",
+  description:
+    "Zealver is one of India's established SeniorCare brands, supporting older adults and their families through preventive health solutions, care ecosystems and age-appropriate engagement.",
+  clubsLine:
+    "Zealver Clubs\u2122 is the community wellbeing vertical of Zealver, created to support healthy ageing through socialisation with a purpose, bringing seniors together regularly to move, connect and thrive in their neighbourhoods.",
+} as const;
+
+export const vision = {
+  headline:
+    "To create 1,000 Zealver Clubs across India \u2014 micro Blue Zone communities where older adults move, connect and thrive together.",
+} as const;
+
+export const mission = {
+  intro: "To build India's largest active-ageing ecosystem, where:",
+  points: [
+    "every neighbourhood has access to a Zealver Club",
+    "thousands of entrepreneurs run hyper-local wellness communities",
+    "millions of older adults experience micro Blue Zones each week",
+    "Zealver becomes the national standard for joyful ageing",
+  ],
+} as const;
+
+export const values = [
+  { name: "Dignity", text: "We honour lived wisdom and empower choice." },
+  { name: "Empathy", text: "We listen deeply and act with humanity." },
+  { name: "Belonging", text: "We create warm, trusted circles of connection." },
+  { name: "Accessibility", text: "We design for everyone, everywhere, every day." },
+  { name: "Joy", text: "We turn movement, learning and creativity into daily celebration." },
+] as const;
+
+export const team = [
+  {
+    name: "Rajan Mehta",
+    role: "Chief Executive Officer, Zealver",
+    bio: "An entrepreneur with more than 25 years of experience building and scaling businesses. Founder of MyCare Health, Rajan has worked extensively across healthcare, operations and long-term care delivery in India.",
+  },
+  {
+    name: "Dr Namrata Bagaria",
+    role: "President, Zealver Clubs\u2122",
+    credentials: "MBBS, MPH (Harvard University)",
+    bio: "A physician and health-tech researcher with extensive international experience in ageing and longevity research, including several years of work in Canada. Namrata reviews every article and guide in the Knowledge Hub before it is published.",
+    href: "/about/editorial-review",
+  },
+] as const;
+
 /**
  * Medical reviewer. Knowledge Hub content is written by the Zealver Clubs team
  * (with AI assistance) and reviewed by Dr Namrata Bagaria before publishing.
@@ -61,12 +108,12 @@ export const reviewer = {
   name: "Namrata Bagaria",
   fullName: "Dr Namrata Bagaria",
   credentials: "MBBS, MPH (Harvard)",
-  jobTitle: "Founder, Zealver Clubs",
+  jobTitle: "President, Zealver Clubs",
   href: "/about/editorial-review",
   lastReviewed: "2026-09-11",
   lastReviewedLabel: "11 September 2026",
   bio: [
-    "Dr Namrata Bagaria is the founder of Zealver Clubs and reviews every article and guide in the Knowledge Hub before it is published.",
+    "Dr Namrata Bagaria is President of Zealver Clubs and reviews every article and guide in the Knowledge Hub before it is published.",
     "She holds an MBBS and a Master of Public Health from Harvard, and her work focuses on active ageing: helping women 60+ stay strong, steady and connected through movement, community and practical everyday habits.",
     "Zealver Clubs runs chair-based Seated Dance Fitness online and in person, alongside a growing library of activity-first guidance for healthy ageing.",
   ],
@@ -87,4 +134,5 @@ export const nav = [
   { label: "Experience", href: "/experience" },
   { label: "Knowledge Hub", href: "/knowledge-hub" },
   { label: "Become a Host", href: "/become-a-host" },
+  { label: "About", href: "/about" },
 ] as const;
