@@ -226,12 +226,56 @@ export function RestArt({ className }: ArtProps) {
   );
 }
 
+/* Bones & strength: a standing figure lifting, with a strength arc. */
+export function BonesStrengthArt({ className }: ArtProps) {
+  return (
+    <ArtFrame
+      className={className}
+      label="Illustration: a person standing tall and lifting, with a strength arc"
+    >
+      <defs>
+        <linearGradient id="bs-bg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stopColor="#eef0ff" />
+          <stop offset="1" stopColor="#dcdffb" />
+        </linearGradient>
+      </defs>
+      <rect width="800" height="450" fill="url(#bs-bg)" />
+      <circle cx="400" cy="205" r="165" fill="#c9cdf5" opacity="0.45" />
+      <rect x="0" y="368" width="800" height="82" fill="#dfe1f2" />
+      {/* strength arcs */}
+      <g fill="none" stroke="#2e3194" strokeWidth="7" strokeLinecap="round" opacity="0.45">
+        <path d="M236 236 q-34 -54 -6 -110" />
+        <path d="M572 236 q34 -54 6 -110" />
+      </g>
+      {/* torso */}
+      <path d="M366 304 q-6 -78 34 -104 q34 -16 56 12 q12 46 2 92 z" fill="#2e3194" />
+      {/* arms raised, holding weights */}
+      <path d="M404 214 q34 -48 74 -62" fill="none" stroke="#2e3194" strokeWidth="21" strokeLinecap="round" />
+      <path d="M372 218 q-34 -46 -72 -60" fill="none" stroke="#2e3194" strokeWidth="21" strokeLinecap="round" />
+      <rect x="458" y="132" width="46" height="24" rx="11" fill="#f5760a" />
+      <rect x="276" y="134" width="46" height="24" rx="11" fill="#f5760a" />
+      {/* head */}
+      <circle cx="422" cy="152" r="30" fill="#f6a15a" />
+      <path d="M396 142 q26 -30 52 0 q-6 -22 -26 -22 q-20 0 -26 22 z" fill="#3a2a1f" />
+      {/* legs, planted */}
+      <path d="M374 304 q-10 42 -34 64" fill="none" stroke="#24276f" strokeWidth="23" strokeLinecap="round" />
+      <path d="M416 304 q10 42 36 64" fill="none" stroke="#24276f" strokeWidth="23" strokeLinecap="round" />
+      {/* upward chevrons */}
+      <g fill="none" stroke="#f5760a" strokeWidth="9" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M638 214 l26 -28 l26 28" />
+        <path d="M638 262 l26 -28 l26 28" opacity="0.6" />
+      </g>
+    </ArtFrame>
+  );
+}
+
 const byCategory: Record<string, (p: ArtProps) => React.ReactElement> = {
   "balance & safety": BalanceSafetyArt,
   movement: MovementArt,
   memory: MemoryArt,
   "food & energy": FoodEnergyArt,
   rest: RestArt,
+  "bones & strength": BonesStrengthArt,
 };
 
 /** Returns an art component for a category, or null when none applies. */

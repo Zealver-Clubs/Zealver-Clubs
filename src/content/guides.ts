@@ -232,6 +232,88 @@ export const guides: Guide[] = [
       },
     ],
   },
+  {
+    slug: "stay-strong-after-menopause-guide",
+    title: "Stay strong and steady after menopause",
+    meta: "5-step guide",
+    intro:
+      "Bone, muscle and balance work as one system, and all three respond to what you do each week. A practical plan for women 60+ to stay strong enough to live independently.",
+    image: "/images/instructor-class.jpg",
+    steps: [
+      {
+        n: 1,
+        heading: "Challenge your muscles twice a week",
+        text: "This is the step that does the most and the one most often skipped. Sit-to-stands, resistance bands, light weights or steady stair climbing all count. The principle is simple: your muscles need to be asked to do slightly more than they are used to, and what was hard last month should feel easier this month.",
+        topicSlug: "muscle-strength-and-ageing",
+        topicLabel: "Muscle strength and ageing",
+      },
+      {
+        n: 2,
+        heading: "Let chair dance carry the habit",
+        text: "Movement you enjoy is movement you keep doing, and consistency beats intensity over a year. Chair dance gives you rhythm, coordination and company every week, and you can build real strength into it by rising without your hands, holding a leg out longer, or adding heel raises at the chair back.",
+        topicSlug: "chair-dance-for-bone-and-muscle",
+        topicLabel: "Chair dance for bone and muscle",
+      },
+      {
+        n: 3,
+        heading: "Train your balance on purpose",
+        text: "Balance is a skill and it fades if it is never practised. A few minutes most days of heel-to-toe steps, weight shifting and standing on one foot with a chair within reach is enough. A fracture usually needs both a vulnerable bone and a fall, and this is the half of that equation you can work on directly.",
+        topicSlug: "balance-exercises",
+        topicLabel: "Balance exercises for seniors",
+      },
+      {
+        n: 4,
+        heading: "Eat enough protein to hold your muscle",
+        text: "Muscle cannot be maintained without the material to maintain it, and protein at one meal a day is not the same as protein spread across three. Dahi, milk, paneer, dal, rajma, soy and tofu all count, as do eggs, fish and chicken. Protein and strength work go together: neither does the job alone.",
+        topicSlug: "nutrition-basics",
+        topicLabel: "Nutrition basics",
+      },
+      {
+        n: 5,
+        heading: "Get calcium from food, and keep Vitamin D in perspective",
+        text: "Lean on food first for calcium: dairy, calcium-set tofu, some leafy greens, fortified foods and small fish eaten with the bones. Vitamin D helps you absorb it, but it is not a muscle builder and it is not a substitute for exercise. Whether you need testing or a supplement is a question for your own doctor.",
+        topicSlug: "vitamin-d-what-it-does",
+        topicLabel: "Vitamin D: what it does, and what it does not",
+      },
+    ],
+    topics: [
+      "muscle-strength-and-ageing",
+      "chair-dance-for-bone-and-muscle",
+      "balance-exercises",
+      "nutrition-basics",
+      "vitamin-d-what-it-does",
+      "bone-health-after-menopause",
+      "osteopenia-and-osteoporosis",
+    ],
+    relatedGuides: ["fall-prevention-guide", "diabetes-management-guide"],
+    references: [
+      {
+        title: "Guidelines on physical activity and sedentary behaviour",
+        publisher: "World Health Organization",
+        year: "2020",
+        url: "https://www.who.int/publications/i/item/9789240015128",
+        supports:
+          "Muscle-strengthening on two or more days a week, and multicomponent balance training for adults aged 65 and over, in steps 1 and 3.",
+      },
+      {
+        title:
+          "Vitamin D for the Prevention of Disease: an Endocrine Society Clinical Practice Guideline",
+        publisher: "The Journal of Clinical Endocrinology & Metabolism",
+        year: "2024",
+        url: "https://academic.oup.com/jcem/article/109/8/1907/7685305",
+        supports:
+          "Vitamin D in perspective in step 5: correcting a genuine shortfall rather than routine high-dose supplementation for everyone.",
+      },
+      {
+        title: "Vitamin D and Calcium Supplementation to Prevent Fractures",
+        publisher: "US Preventive Services Task Force",
+        year: "2024",
+        url: "https://www.uspreventiveservicestaskforce.org/",
+        supports:
+          "Why supplementation is not assumed to prevent fractures in healthy adults without deficiency, in step 5.",
+      },
+    ],
+  },
 ];
 
 export const guidesBySlug = new Map(guides.map((g) => [g.slug, g]));

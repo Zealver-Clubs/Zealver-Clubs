@@ -160,6 +160,113 @@ export const topics: Topic[] = [
     relatedTopics: ["nutrition-basics", "movement-and-blood-sugar"],
     guides: ["anti-inflammatory-diet-guide"],
   },
+  {
+    slug: "bone-health-after-menopause",
+    title: "Bone health after menopause",
+    category: "Bones & strength",
+    youtubeId: null,
+    summary:
+      "Why bone changes around menopause, and the everyday things that help you hold on to your strength.",
+    body: [
+      "Bone is not the dry, finished thing most of us picture. It is living tissue, and your skeleton is being quietly renewed all the time, a little taken away, a little rebuilt, year after year. Think of a building under continuous renovation rather than one that was finished long ago.",
+      "In younger adulthood the taking away and the building sit in rough balance. Around menopause that balance shifts, because oestrogen helps keep the taking-away side in check, and oestrogen falls. Bone is then lost faster than it is replaced. This is ordinary and it happens to everybody, so it is not a personal failing and it is not the end of the story.",
+      "What makes the difference is what happens next. Bone responds to being used. When muscle pulls on bone, the bone gets a signal that it is needed and should stay strong, which is why strength work and being on your feet matter so much here. Enough protein and calcium-rich food give your body the material to work with.",
+      "The habit to build is unhurried and regular rather than dramatic: move most days, challenge your muscles a couple of times a week, eat well, and keep your balance sharp so a stumble stays a stumble. This is general guidance on staying strong, not a diagnosis or a treatment plan. If you have questions about your own bone health, that is a conversation for your doctor.",
+    ],
+    relatedTopics: [
+      "muscle-strength-and-ageing",
+      "osteopenia-and-osteoporosis",
+      "chair-dance-for-bone-and-muscle",
+      "balance-exercises",
+    ],
+    guides: ["stay-strong-after-menopause-guide"],
+  },
+  {
+    slug: "osteopenia-and-osteoporosis",
+    title: "Osteopenia and osteoporosis explained",
+    category: "Bones & strength",
+    youtubeId: null,
+    summary:
+      "What the two words actually mean, why neither is a verdict, and what sits in your hands either way.",
+    body: [
+      "These two words come up a lot and they worry people more than they need to, usually because they sound like two separate diseases. They are better understood as points along one line. Bone strength runs from healthy, through a middle stretch where it has thinned somewhat, to a point where it has thinned enough that a fall is more likely to break something.",
+      "Osteopenia is the middle stretch. It is closer to a early notice than a diagnosis of illness: bone is not as strong as it once was, and that is worth knowing, but plenty of people with it never go on to develop anything more serious. Osteoporosis is further along the same line, where bone has become fragile enough that a modest fall could cause a fracture, most often at the hip, spine or wrist.",
+      "Two things are worth holding on to. The first is that where you sit on that line is decided by your doctor, using a scan and the whole picture of your health, not by anything you can read on a website. The second is that neither word means there is nothing to be done. Both ends of the problem can be worked on: the strength of the bone, and the likelihood of the fall that would test it.",
+      "That second half is often overlooked and it is the part most within reach. Stronger legs, steadier balance, good light on the stairs, sensible shoes and a clear floor all reduce the chance of falling in the first place. This page is for understanding the words, not for diagnosing yourself, and any decision about tests or treatment belongs with your doctor.",
+    ],
+    relatedTopics: [
+      "bone-health-after-menopause",
+      "fall-prevention",
+      "home-safety-checklist",
+      "footwear-and-mobility",
+    ],
+    guides: ["stay-strong-after-menopause-guide", "fall-prevention-guide"],
+  },
+  {
+    slug: "muscle-strength-and-ageing",
+    title: "Muscle strength and ageing",
+    category: "Movement",
+    youtubeId: null,
+    summary:
+      "Why muscle matters far beyond how you look, and the difference between strength and speed when you stumble.",
+    body: [
+      "Muscle is what lets you get out of a chair, climb the stairs, carry the shopping and hold yourself upright. It is the difference between managing your own day and needing someone else to manage it for you, which is why it deserves more attention than it usually gets.",
+      "We all lose some muscle as the years pass, and we lose strength faster than we lose size. That distinction matters: a muscle can look much the same and still have less to give. There is a further distinction worth knowing, which is between strength and power. Strength is how much force you can produce. Power is how quickly you can produce it.",
+      "Power is the one that saves you when you trip. A stumble does not give you a few seconds to gather yourself and push back; the correction has to happen almost immediately. That is why training that asks your muscles to work briskly, not only slowly and heavily, is part of staying steady on your feet.",
+      "The encouraging part is how well muscle responds at any age. It adapts to being asked to do a little more than it is used to, and it keeps adapting into later life. Alongside that, muscle pulling on bone is one of the strongest signals bone gets to stay strong, so the same work pays into both. This is general movement guidance, not a prescription, and it is worth checking with your doctor before starting something new if you have a health condition.",
+    ],
+    relatedTopics: [
+      "bone-health-after-menopause",
+      "chair-dance-for-bone-and-muscle",
+      "balance-exercises",
+      "nutrition-basics",
+    ],
+    guides: ["stay-strong-after-menopause-guide"],
+  },
+  {
+    slug: "vitamin-d-what-it-does",
+    title: "Vitamin D: what it does, and what it does not",
+    category: "Food & energy",
+    youtubeId: null,
+    summary:
+      "A clear look at what Vitamin D is actually for, and the common beliefs about it that do not hold up.",
+    body: [
+      "Vitamin D behaves more like a hormone than a standard vitamin. Its best understood job is helping your gut absorb calcium from the food you eat, and calcium is the raw material your bones are built from. Your skin can make Vitamin D from sunlight, and some comes from food and fortified products.",
+      "Muscle is part of the picture too. Muscle cells respond to Vitamin D, and where someone is genuinely short of it, weakness and difficulty getting around can be part of how that shows up. Correcting a real shortfall can help. That is a different thing from topping up someone who already has enough.",
+      "Which brings us to what Vitamin D is not. It is not a muscle-building supplement, and taking more of it will not make an already well-nourished person stronger. It is not a substitute for exercise, which remains the strongest signal you can send to both muscle and bone. And more is not better: with Vitamin D the goal is having enough, not having the highest number you can reach.",
+      "One more belief worth setting aside is that a normal Vitamin D result means your bones are fine. It does not. You can have perfectly adequate Vitamin D and still have bone that has thinned with the years, because Vitamin D is one contributor among several.",
+      "A useful way to hold all this: think of bone as the house, calcium as the bricks, Vitamin D as part of what gets the bricks delivered, and exercise as the instruction to build. You need all of it, and a great deal of one will not make up for the absence of another. Whether you need testing or a supplement is a question for your doctor, who can look at your own circumstances. Sunlight helps your body make Vitamin D, but deliberately sitting out to burn is not a sensible way to go about it.",
+    ],
+    relatedTopics: [
+      "bone-health-after-menopause",
+      "nutrition-basics",
+      "muscle-strength-and-ageing",
+      "anti-inflammatory-basics",
+    ],
+    guides: ["stay-strong-after-menopause-guide"],
+  },
+  {
+    slug: "chair-dance-for-bone-and-muscle",
+    title: "Chair dance for bone and muscle",
+    category: "Movement",
+    youtubeId: null,
+    summary:
+      "What chair-based dance genuinely does for strength, balance and bone, and how to get more out of it.",
+    body: [
+      "Chair dance earns its place for a reason that is easy to underrate: people keep doing it. Music, company and something that feels like enjoyment rather than exercise will get you moving every week in a way that a programme you dread never will, and the movement you actually do is the movement that counts.",
+      "Within a session there is more going on than it looks. Standing up and sitting down works the legs in the way you use them every day. Straightening a knee and holding it works the thigh. Ankle circles wake up the feet and help circulation. Reaching, turning and following a pattern to a beat ask your body for coordination and postural control, and ask your mind for something too.",
+      "Being honest about the limits is what makes the rest trustworthy. If a session is mostly gentle arm movements while seated, it is good mobility and good company, but it is not the same as asking your muscles to work against real resistance. Muscle grows stronger when it is regularly asked to do a bit more than it is comfortable with, and that principle does not change because the setting is friendly.",
+      "The good news is that a chair is a fine place to start building that in. Rising without using your hands, rising more slowly, adding a pause at the bottom, holding a leg out a little longer, or standing behind the chair for heel raises and weight shifts all make a session ask more of you. Done regularly, that is strength and balance work, not just movement.",
+      "So the way to think about chair dance is as the foundation and the habit, with strength work built on top of it rather than instead of it. This is general activity guidance, not a treatment plan. If you have osteoporosis, have had a fracture, or are unsure what is safe for you, ask your doctor or a physiotherapist to help shape it around you.",
+    ],
+    relatedTopics: [
+      "muscle-strength-and-ageing",
+      "balance-exercises",
+      "bone-health-after-menopause",
+      "fall-prevention",
+    ],
+    guides: ["stay-strong-after-menopause-guide", "fall-prevention-guide"],
+  },
 ];
 
 export const topicsBySlug = new Map(topics.map((t) => [t.slug, t]));
