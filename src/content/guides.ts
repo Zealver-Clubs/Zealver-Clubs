@@ -136,7 +136,7 @@ export const guides: Guide[] = [
       "Everyday food, movement and rest habits that help women 60+ keep blood sugar steady, with chair-based movement at the centre. General lifestyle guidance, not medical advice.",
     image: "/images/healthy-plate-diagram.jpg",
     imageAlt:
-      "Healthy plate diagram for diabetes: half the plate non-starchy vegetables and salad such as leafy greens, cucumber, tomato, carrot, capsicum, broccoli, cabbage, beans and beetroot; a quarter protein-rich foods such as paneer, tofu, dal, beans, lentils, eggs, fish, chicken and Greek yogurt; a quarter complex carbohydrates such as brown rice, quinoa, millets, oats, whole wheat roti and sweet potato; plus daily healthy fats from avocado, nuts and seeds, olive oil and ghee.",
+      "Healthy plate diagram for diabetes: half the plate non-starchy vegetables and salad such as leafy greens, cucumber, tomato, carrot, capsicum, broccoli, cabbage, beans and beetroot; a quarter protein-rich foods such as paneer, tofu, lentils, beans, eggs, fish, chicken and Greek yogurt; a quarter complex carbohydrates such as brown rice, quinoa, millets, oats, whole wheat flatbread and sweet potato; plus daily healthy fats from avocado, nuts and seeds, olive oil and ghee.",
     imageRatio: "1/1",
     imageCredit:
       "Illustration created for Zealver Clubs with ChatGPT (OpenAI), reviewed by Dr Namrata Bagaria.",
@@ -144,14 +144,14 @@ export const guides: Guide[] = [
       {
         n: 1,
         heading: "Build a balanced plate",
-        text: "Fill half your plate with vegetables, a quarter with protein, and a quarter with roti or rice. Choose whole fruit over juice, apple, orange, pear, guava and papaya are all good everyday choices. Keep sugar, mithai, soft drinks, white bread and maida for occasions rather than every day.",
+        text: "Fill half your plate with vegetables, a quarter with protein, and a quarter with bread or rice. Choose whole fruit over juice, apple, orange, pear, guava and papaya are all good everyday choices. Keep sugar, sweets, soft drinks, white bread and refined flour for occasions rather than every day.",
         topicSlug: "nutrition-basics",
         topicLabel: "Nutrition basics",
       },
       {
         n: 2,
         heading: "Put protein in every meal",
-        text: "Protein protects the muscle that burns glucose, and it keeps blood sugar steadier through the day. Dal, rajma, chole, paneer, tofu, soy and dahi all count, as do eggs, chicken and fish. Aim for some at breakfast, lunch and dinner rather than only at one meal.",
+        text: "Protein protects the muscle that burns glucose, and it keeps blood sugar steadier through the day. Lentils, kidney beans, chickpeas, paneer, tofu, soy and curd all count, as do eggs, chicken and fish. Aim for some at breakfast, lunch and dinner rather than only at one meal.",
         topicSlug: "nutrition-basics",
         topicLabel: "Nutrition basics",
       },
@@ -215,7 +215,7 @@ export const guides: Guide[] = [
         year: "2024",
         url: "https://www.nin.res.in/",
         supports:
-          "Indian portion and food guidance across steps 1, 2 and 6, including dal, roti, rice and cooking oils.",
+          "Indian portion and food guidance across steps 1, 2 and 6, including lentils, breads, rice and cooking oils.",
       },
       {
         title: "Guidelines for Management of Type 2 Diabetes",
@@ -268,7 +268,7 @@ export const guides: Guide[] = [
       {
         n: 4,
         heading: "Eat enough protein to hold your muscle",
-        text: "Muscle cannot be maintained without the material to maintain it, and protein at one meal a day is not the same as protein spread across three. Dahi, milk, paneer, dal, rajma, soy and tofu all count, as do eggs, fish and chicken. Protein and strength work go together: neither does the job alone.",
+        text: "Muscle cannot be maintained without the material to maintain it, and protein at one meal a day is not the same as protein spread across three. Curd, milk, paneer, lentils, kidney beans, soy and tofu all count, as do eggs, fish and chicken. Protein and strength work go together: neither does the job alone.",
         topicSlug: "nutrition-basics",
         topicLabel: "Nutrition basics",
       },
@@ -359,7 +359,7 @@ export const guides: Guide[] = [
         heading: "Tell someone",
         text: "Tell someone. A friend, a daughter, a neighbour, whoever is nearby or at the end of a phone. Share the memory the song brought back and ask what it brings back for them. A worry carried alone weighs more than the same worry spoken aloud, and this is the step people skip.",
         topicSlug: "understanding-stress",
-        topicLabel: "Understanding stress (\u0924\u0928\u093e\u0935)",
+        topicLabel: "Understanding stress",
       },
     ],
     topics: [

@@ -155,7 +155,7 @@ export const topics: Topic[] = [
     ],
     body: [
       "Eating well later in life is less about strict rules and more about steady, everyday habits: enough protein, plenty of colour on the plate, and staying comfortably hydrated through the day.",
-      "Try to include a protein source at each meal, dal, beans, eggs, dairy, paneer, fish or chicken, to help maintain muscle and strength. Fill half the plate with vegetables and fruit for fibre and vitamins, and keep a glass of water in sight, since the feeling of thirst fades as we age.",
+      "Try to include a protein source at each meal, lentils, beans, eggs, dairy, cheese, fish or chicken, to help maintain muscle and strength. Fill half the plate with vegetables and fruit for fibre and vitamins, and keep a glass of water in sight, since the feeling of thirst fades as we age.",
       "Small, regular meals often sit better than one large one, and sharing food with company makes it more enjoyable. This is general healthy-eating guidance; for specific dietary needs, your doctor or a dietitian can tailor it to you.",
     ],
     relatedTopics: ["movement-and-blood-sugar", "anti-inflammatory-basics"],
@@ -218,7 +218,7 @@ export const topics: Topic[] = [
     ],
     body: [
       "You do not need a special diet to eat in a way that is kind to your joints and energy, mostly it means leaning towards whole, colourful foods and easing back on heavily processed ones.",
-      "Build meals around vegetables and fruit, whole grains, beans and lentils, nuts, and sources of healthy fat such as olive oil. Colourful produce, herbs and spices like turmeric and ginger, and oily fish are gentle, everyday additions. Where you can, swap sugary drinks and packaged snacks for fruit, nuts or a small handful of roasted chana.",
+      "Build meals around vegetables and fruit, whole grains, beans and lentils, nuts, and sources of healthy fat such as olive oil. Colourful produce, herbs and spices like turmeric and ginger, and oily fish are gentle, everyday additions. Where you can, swap sugary drinks and packaged snacks for fruit, nuts or a small handful of roasted chickpeas.",
       "Change one meal at a time so it feels easy and lasting rather than a big overhaul. This is general food-first guidance for wellbeing, not medical or medication advice.",
     ],
     relatedTopics: ["nutrition-basics", "movement-and-blood-sugar"],
@@ -490,7 +490,7 @@ export const topics: Topic[] = [
     keyPoints: [
       "Probiotics are helpful bacteria. Prebiotics are the fibres that feed them. A synbiotic is both together.",
       "Sending bacteria in with something to eat gives them a better chance of settling in.",
-      "You do not need a product. Dahi with banana, or idli with sambar, does the same job.",
+      "You do not need a product. Curd with banana, or a fermented rice cake with lentil broth, does the same job.",
       "Responses vary a lot between people, and these foods do not treat digestive illness.",
       "Speak to your doctor first if you have a serious condition or are considering a supplement.",
     ],
@@ -510,7 +510,7 @@ export const topics: Topic[] = [
       {
         heading: "The pairings already in your kitchen",
         body: [
-          "You do not need a product to do this. The pairing happens naturally at the table, and your own kitchen is full of it. A bowl of dahi with a sliced banana is a synbiotic. So is chaas alongside a meal with onions and garlic, or idli and dosa made from properly fermented batter served with sambar full of dal and vegetables. Fermented pickles, dhokla and kanji all bring the bacteria; bananas, onions, garlic, oats, whole grains, dal and beans bring the fibre that feeds them.",
+          "You do not need a product to do this. The pairing happens naturally at the table, and your own kitchen is full of it. A bowl of curd with a sliced banana is a synbiotic. So is buttermilk alongside a meal with onions and garlic, or steamed rice cakes and pancakes made from properly fermented batter served with a lentil and vegetable broth. Fermented pickles and other fermented foods all bring the bacteria; bananas, onions, garlic, oats, whole grains, lentils and beans bring the fibre that feeds them.",
         ],
       },
       {
@@ -522,7 +522,7 @@ export const topics: Topic[] = [
       {
         heading: "A sensible approach",
         body: [
-          "For most people the sensible approach is the unglamorous one: eat fermented foods you enjoy, eat plenty of fibre from vegetables, fruit, whole grains and dal, and let the two arrive together as they naturally do in a good meal. If you have a serious medical condition or a weakened immune system, or you are thinking about a supplement rather than food, speak to your doctor first. This is general food guidance, not medical advice.",
+          "For most people the sensible approach is the unglamorous one: eat fermented foods you enjoy, eat plenty of fibre from vegetables, fruit, whole grains and lentils, and let the two arrive together as they naturally do in a good meal. If you have a serious medical condition or a weakened immune system, or you are thinking about a supplement rather than food, speak to your doctor first. This is general food guidance, not medical advice.",
         ],
       },
     ],
@@ -625,7 +625,7 @@ export const topics: Topic[] = [
       "It carries roughly seven to nine grams of protein a glass, close to dairy. Oat is well behind at two to four, and almond and rice barely register.",
       "Check two things on the label: whether it is fortified with calcium and B12, and how much sugar has been added.",
       "Unsweetened fortified soy milk is the most useful everyday choice.",
-      "If dahi, milk and paneer suit you, there is no reason to switch.",
+      "If curd, milk and cheese suit you, there is no reason to switch.",
     ],
     sections: [
       {
@@ -651,14 +651,14 @@ export const topics: Topic[] = [
       {
         heading: "Using it in an Indian kitchen",
         body: [
-          "It slots in easily enough. Soy milk works in chai, over oats or muesli, in kheer and in most places you would use milk, though it behaves a little differently when heated hard.",
+          "It slots in easily enough. Soy milk works in tea, over oats or muesli, in rice pudding and in most places you would use milk, though it behaves a little differently when heated hard.",
           "Soy will already be familiar to you in other forms, as tofu, soy chunks and soya granules, and those count towards your protein just as the drink does.",
         ],
       },
       {
         heading: "Where dairy still fits",
         body: [
-          "None of this is an argument for giving up dairy. If dahi, milk and paneer suit you, they are excellent sources of protein and calcium and there is no reason to replace them.",
+          "None of this is an argument for giving up dairy. If curd, milk and cheese suit you, they are excellent sources of protein and calcium and there is no reason to replace them.",
           "Soy milk is genuinely useful if you are avoiding dairy, if it does not agree with you, or if you simply want another way to get protein into the day. This is general food guidance, not medical advice, and any specific concerns about soy in your own diet are worth raising with your doctor.",
         ],
       },
@@ -674,13 +674,13 @@ export const topics: Topic[] = [
   },
   {
     slug: "understanding-stress",
-    title: "Understanding stress (\u0924\u0928\u093e\u0935), and why not all of it is bad",
+    title: "Understanding stress, and why not all of it is bad",
     category: "Rest",
     youtubeId: null,
     summary:
       "The different kinds of stress, in plain terms, and the surprising idea that too little going on can trouble you as much as too much.",
     keyPoints: [
-      "Stress, \u0924\u0928\u093e\u0935, is what happens when something feels bigger than what you feel able to handle.",
+      "Stress is what happens when something feels bigger than what you feel able to handle.",
       "It shows up in the body, in the mind, and in the way the body reacts to what the mind is carrying.",
       "Not all stress is bad. The useful kind has a name: eustress.",
       "Too little going on leaves you flat. Too much overwhelms. Somewhere in between is where you feel alive.",
@@ -690,7 +690,7 @@ export const topics: Topic[] = [
       {
         heading: "What we mean by stress",
         body: [
-          "Stress, \u0924\u0928\u093e\u0935, is not a bad word and it is not a character flaw. It is simply what happens when something in front of you feels bigger than what you feel able to handle at that moment. Everybody meets it, at every age.",
+          "Stress is not a bad word and it is not a character flaw. It is simply what happens when something in front of you feels bigger than what you feel able to handle at that moment. Everybody meets it, at every age.",
           "It helps to notice that it arrives in more than one form, because the thing that helps is different for each.",
         ],
       },
@@ -742,7 +742,7 @@ export const topics: Topic[] = [
       "A short, portable way to interrupt worry that is going round and round, in four steps you can remember.",
     keyPoints: [
       "Stop. Just pause where you are for a moment.",
-      "Saans. Four or five slow breaths, with the breath out longer than the breath in.",
+      "Breathe. Four or five slow breaths, with the breath out longer than the breath in.",
       "Notice. Ask yourself plainly what is going round in your mind.",
       "Choose. Can I do something about this right now?",
       "If yes, one small thing. If no, you do not have to keep carrying it this minute.",
@@ -756,7 +756,7 @@ export const topics: Topic[] = [
         ],
       },
       {
-        heading: "Stop, and Saans",
+        heading: "Stop, and breathe",
         body: [
           "First, stop. Whatever you are doing, let it wait for a moment. You are not solving anything yet, you are only stepping out of the circle.",
           "Then breathe. Four or five slow breaths, and let the breath out be longer than the breath in. That longer breath out is the part that settles the body, and the body settling is what gives the mind room.",
@@ -847,10 +847,10 @@ export const topics: Topic[] = [
     summary:
       "Practical everyday swaps using food you already cook, and an important word about what is not actually the problem.",
     keyPoints: [
-      "Biscuits and namkeen \u2192 roasted chana, makhana, peanuts, nuts and seeds.",
-      "Samosa and pakoda \u2192 baked or air-fried versions, or steamed dhokla and idli.",
-      "Sweet chai \u2192 unsweetened or barely sweetened, with cinnamon, ginger or elaichi.",
-      "Maida \u2192 besan, moong, oats and less refined flours, or almond flour if the budget allows.",
+      "Biscuits and savoury packet snacks \u2192 roasted chickpeas, puffed lotus seeds, peanuts, nuts and seeds.",
+      "Deep-fried snacks \u2192 baked or air-fried versions, or steamed ones instead.",
+      "Sweet tea \u2192 unsweetened or barely sweetened, with cinnamon, ginger or cardamom.",
+      "Refined white flour \u2192 gram flour, mung bean flour, oats and less refined flours, or almond flour if the budget allows.",
       "A carb-heavy plate \u2192 half vegetables, a quarter protein, a quarter grain.",
       "No single food is automatically inflammatory. It is the overall pattern that counts.",
     ],
@@ -859,29 +859,29 @@ export const topics: Topic[] = [
         heading: "A better way to think about it",
         body: [
           "It is tempting to sort food into good and bad lists, but that is not really how this works. Very little is inflammatory on its own. What matters is the pattern: a lot of refined flour, added sugar, deep-fried food and heavily processed packets, eaten often, over years.",
-          "So read what follows as swaps worth making most of the time, not as a list of things you are now forbidden. A samosa at a wedding is not the problem. A samosa most afternoons is a different question.",
+          "So read what follows as swaps worth making most of the time, not as a list of things you are now forbidden. A fried snack at a wedding is not the problem. A fried snack most afternoons is a different question.",
         ],
       },
       {
         heading: "Flours and grains",
         body: [
-          "Maida is the one worth looking at first, because it turns up everywhere: naan, bhatura, biscuits, white bread, most bakery items. Besan and moong are excellent in its place, and a chilla made from either is quicker than most people expect. Oats and less refined flours work well for rotis.",
-          "Almond flour makes a very good roti too, low in starch and high in protein, and it is worth trying if you can afford it. It costs a good deal more than besan or moong, so treat it as a nice option rather than the one to aim for. Besan, moong and oats do the same job on an ordinary budget, and a swap you can keep up every week beats a better one you cannot.",
-          "Rice is not the villain it is sometimes made out to be. It is usually the portion rather than the grain. A smaller serving alongside plenty of vegetables and dal does a very different thing from a plate that is mostly rice. Hand-pounded and brown rice are worth trying if they suit you.",
+          "Refined white flour is the one worth looking at first, because it turns up everywhere: flatbreads, biscuits, white bread, most bakery items. Gram flour and mung bean flour are excellent in its place, and a savoury pancake made from either is quicker than most people expect. Oats and less refined flours work well for everyday flatbreads.",
+          "Almond flour makes a very good flatbread too, low in starch and high in protein, and it is worth trying if you can afford it. It costs a good deal more than gram flour or mung bean flour, so treat it as a nice option rather than the one to aim for. Gram flour, mung bean flour and oats do the same job on an ordinary budget, and a swap you can keep up every week beats a better one you cannot.",
+          "Rice is not the villain it is sometimes made out to be. It is usually the portion rather than the grain. A smaller serving alongside plenty of vegetables and lentils does a very different thing from a plate that is mostly rice. Hand-pounded and brown rice are worth trying if they suit you.",
         ],
       },
       {
         heading: "Snacks, which is where most of it happens",
         body: [
-          "This is the swap that changes the most for the least effort. Namkeen, sev, bhujia, chips and biscuits are the things that get eaten absent-mindedly with tea, and they add up quietly. Roasted chana, makhana, peanuts, almonds, walnuts and seeds do the same job for your hands and considerably more for the rest of you.",
-          "For fried snacks, the method matters more than the item. Samosa, kachori, puri and pakoda are fine occasionally, and baked or air-fried versions are genuinely good. Dhokla, idli and chilla are steamed rather than fried and belong in the regular rotation.",
+          "This is the swap that changes the most for the least effort. Savoury packet snacks, crisps and biscuits are the things that get eaten absent-mindedly with tea, and they add up quietly. Roasted chickpeas, puffed lotus seeds, peanuts, almonds, walnuts and seeds do the same job for your hands and considerably more for the rest of you.",
+          "For fried snacks, the method matters more than the item. Deep-fried pastries and fritters are fine occasionally, and baked or air-fried versions are genuinely good. Steamed savoury cakes, rice cakes and pancakes are steamed rather than fried and belong in the regular rotation.",
         ],
       },
       {
         heading: "Sweet things and what you drink",
         body: [
-          "Mithai, jalebi, gulab jamun and peda are for occasions, and India has plenty of occasions. On ordinary days, fruit with a few nuts does more than you would think: apple, guava, orange, papaya, or berries if you can get them.",
-          "Sweet chai is worth attention simply because of how often it is drunk. Cutting the sugar down gradually works better than stopping outright, and cinnamon, ginger, elaichi or clove give you flavour back. One thing worth saying plainly: jaggery and honey are still sugar. They are not anti-inflammatory alternatives, whatever you may have read.",
+          "Sweets and desserts are for occasions, and there are plenty of occasions. On ordinary days, fruit with a few nuts does more than you would think: apple, guava, orange, papaya, or berries if you can get them.",
+          "Sweet tea is worth attention simply because of how often it is drunk. Cutting the sugar down gradually works better than stopping outright, and cinnamon, ginger, cardamom or clove give you flavour back. One thing worth saying plainly: jaggery and honey are still sugar. They are not anti-inflammatory alternatives, whatever you may have read.",
           "Packaged juices and soft drinks are best treated as sweets rather than drinks. Whole fruit with water, or water with lemon, does the job.",
         ],
       },
@@ -889,16 +889,16 @@ export const topics: Topic[] = [
         heading: "Oils, gravies and the salt question",
         body: [
           "Ghee and butter are not poison, and a reasonable amount of ghee in Indian cooking is entirely fine. The issue is quantity. Mustard, groundnut and olive oil in moderate amounts, plus the fats that come naturally in nuts and seeds, are a sensible base.",
-          "Cream-heavy gravies are the bigger change. A tomato and onion base, or curd, or blended nuts and seeds, gives you a rich gravy without the cream. Full-fat cheese and large amounts of paneer are worth moderating, with dal, rajma, chole and tofu carrying more of the protein.",
-          "For salt, the packets are usually the problem rather than the salt cellar. Oily, salty pickles and packaged sauces are easy to replace with a fresh kachumber, a coriander or mint chutney, or a curd-based dip. Herbs, lemon, garlic, ginger, jeera, dhania and haldi do a great deal of the work that salt was doing.",
+          "Cream-heavy gravies are the bigger change. A tomato and onion base, or curd, or blended nuts and seeds, gives you a rich gravy without the cream. Full-fat cheese and large amounts of paneer are worth moderating, with lentils, kidney beans, chickpeas and tofu carrying more of the protein.",
+          "For salt, the packets are usually the problem rather than the salt cellar. Oily, salty pickles and packaged sauces are easy to replace with a fresh chopped salad, a coriander or mint chutney, or a curd-based dip. Herbs, lemon, garlic, ginger, cumin, coriander and turmeric do a great deal of the work that salt was doing.",
         ],
       },
       {
         heading: "What to build the kitchen around",
         body: [
-          "Rather than a list of things to avoid, it is easier to stock what you want to be eating. Leafy greens and methi, broccoli, cauliflower, cabbage, bhindi, baingan, lauki, tori, carrots, capsicum, tomatoes and mushrooms. Moong, masoor, chana, rajma, chole, sprouts, tofu, and curd and paneer in moderation. Walnuts, almonds, pistachios, chia, flaxseed, til and pumpkin seeds.",
-          "And the spice box you already own: haldi with a little black pepper, ginger, garlic, dalchini, jeera, dhania, laung and elaichi.",
-          "One caution about spices. Haldi and ginger belong in an anti-inflammatory way of eating, but they are not medicines and no single spice will undo the rest of the diet. The pattern is what does the work. This is general food guidance, not medical advice.",
+          "Rather than a list of things to avoid, it is easier to stock what you want to be eating. Leafy greens and fenugreek, broccoli, cauliflower, cabbage, okra, aubergine, bottle gourd, ridge gourd, carrots, peppers, tomatoes and mushrooms. Mung beans, red lentils, chickpeas, kidney beans, sprouts, tofu, and curd and paneer in moderation. Walnuts, almonds, pistachios, chia, flaxseed, sesame and pumpkin seeds.",
+          "And the spice box you already own: turmeric with a little black pepper, ginger, garlic, cinnamon, cumin, coriander, cloves and cardamom.",
+          "One caution about spices. Turmeric and ginger belong in an anti-inflammatory way of eating, but they are not medicines and no single spice will undo the rest of the diet. The pattern is what does the work. This is general food guidance, not medical advice.",
         ],
       },
     ],
