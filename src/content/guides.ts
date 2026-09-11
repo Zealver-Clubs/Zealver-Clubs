@@ -90,7 +90,7 @@ export const guides: Guide[] = [
       },
     ],
     topics: ["nutrition-basics", "movement-and-blood-sugar", "sleep-and-recovery"],
-    relatedGuides: ["anti-inflammatory-diet-guide"],
+    relatedGuides: ["anti-inflammatory-diet-guide", "diabetes-management-guide"],
   },
   {
     slug: "anti-inflammatory-diet-guide",
@@ -117,6 +117,66 @@ export const guides: Guide[] = [
     ],
     topics: ["anti-inflammatory-basics", "nutrition-basics"],
     relatedGuides: ["lower-your-blood-sugar-guide"],
+  },
+  {
+    slug: "diabetes-management-guide",
+    title: "Diabetes management guide for seniors",
+    meta: "6-step guide \u00b7 general lifestyle guidance",
+    intro:
+      "Everyday food, movement and rest habits that help women 60+ keep blood sugar steady, with chair-based movement at the centre. General lifestyle guidance, not medical advice.",
+    image: "/images/home-experience.jpg",
+    steps: [
+      {
+        n: 1,
+        heading: "Build a balanced plate",
+        text: "Fill half your plate with vegetables, a quarter with protein, and a quarter with roti or rice. Choose whole fruit over juice, apple, orange, pear, guava and papaya are all good everyday choices. Keep sugar, mithai, soft drinks, white bread and maida for occasions rather than every day.",
+        topicSlug: "nutrition-basics",
+        topicLabel: "Nutrition basics",
+      },
+      {
+        n: 2,
+        heading: "Put protein in every meal",
+        text: "Protein protects the muscle that burns glucose, and it keeps blood sugar steadier through the day. Dal, rajma, chole, paneer, tofu, soy and dahi all count, as do eggs, chicken and fish. Aim for some at breakfast, lunch and dinner rather than only at one meal.",
+        topicSlug: "nutrition-basics",
+        topicLabel: "Nutrition basics",
+      },
+      {
+        n: 3,
+        heading: "Walk for ten minutes after meals",
+        text: "A short walk after eating helps your body use the meal rather than store it. Ten to fifteen unhurried minutes after your main meal is enough, and seated marches work just as well on days you would rather stay indoors.",
+        topicSlug: "movement-and-blood-sugar",
+        topicLabel: "Movement & blood sugar",
+      },
+      {
+        n: 4,
+        heading: "Build muscle two or three days a week",
+        text: "Muscle is the body's largest user of glucose, so the more you keep, the better insulin works. Chair-based dance fitness builds strength, balance and mood together. Aim for about 150 minutes of movement across the week, with two or three of those days including strength work, which matters especially after menopause.",
+        topicSlug: "balance-exercises",
+        topicLabel: "Balance exercises for seniors",
+      },
+      {
+        n: 5,
+        heading: "Protect your sleep and ease stress",
+        text: "Short sleep and constant stress both push blood sugar up. Keep regular sleep and waking times, aim for seven to eight hours, get daylight in the morning, and drink water steadily through the day.",
+        topicSlug: "sleep-and-recovery",
+        topicLabel: "Sleep & recovery",
+      },
+      {
+        n: 6,
+        heading: "Choose your fats well, and keep up your checks",
+        text: "Nuts, seeds, olive oil, mustard oil and groundnut oil support steady energy, while deep-fried food, bakery items and packaged snacks are worth easing back on. Keep up your regular checks alongside, HbA1c, blood pressure, cholesterol, kidney function, eyes and feet, so you and your doctor can see what is working.",
+        topicSlug: "anti-inflammatory-basics",
+        topicLabel: "Anti-inflammatory basics",
+      },
+    ],
+    topics: [
+      "nutrition-basics",
+      "movement-and-blood-sugar",
+      "balance-exercises",
+      "sleep-and-recovery",
+      "anti-inflammatory-basics",
+    ],
+    relatedGuides: ["lower-your-blood-sugar-guide", "anti-inflammatory-diet-guide"],
   },
 ];
 
