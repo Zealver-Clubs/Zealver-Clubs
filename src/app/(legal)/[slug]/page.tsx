@@ -43,7 +43,7 @@ export default async function LegalPage({
       <SectionHeading
         as="h1"
         title={doc.title}
-        intro={`Zealver Clubs™, a brand operated by ${site.legalName}. Effective ${doc.effective}.`}
+        intro={`Zealver Clubs, a brand operated by ${site.legalName}. Effective ${doc.effective}.`}
       />
 
       <div className="mt-6 flex flex-col gap-4 text-lg leading-relaxed text-foreground">

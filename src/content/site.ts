@@ -56,7 +56,7 @@ export const parentOrg = {
   description:
     "Zealver is one of India's established SeniorCare brands, supporting older adults and their families through preventive health solutions, care ecosystems and age-appropriate engagement.",
   clubsLine:
-    "Zealver Clubs\u2122 is the community wellbeing vertical of Zealver, created to support healthy ageing through socialisation with a purpose, bringing seniors together regularly to move, connect and thrive in their neighbourhoods.",
+    "Zealver Clubs is the community wellbeing vertical of Zealver, created to support healthy ageing through socialisation with a purpose, bringing seniors together regularly to move, connect and thrive in their neighbourhoods.",
 } as const;
 
 export const vision = {
@@ -90,7 +90,7 @@ export const team = [
   },
   {
     name: "Dr Namrata Bagaria",
-    role: "President, Zealver Clubs\u2122",
+    role: "President, Zealver Clubs",
     credentials: "MBBS, MPH (Harvard University)",
     bio: "A physician and health-tech researcher with extensive international experience in ageing and longevity research, including several years of work in Canada. Namrata reviews every article and guide in the Knowledge Hub before it is published.",
     href: "/about/editorial-review",

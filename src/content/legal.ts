@@ -30,8 +30,8 @@ export const privacyPolicy: LegalDocument = {
   title: "Privacy Policy",
   effective: "January 2026",
   intro: [
-    `This website is owned and operated by ${OWNER}, which operates the brand Zealver Clubs™ (hereinafter referred to as "Zealver", "Zealver Clubs™", "we", "us", or "our").`,
-    "At Zealver Clubs™, one of our main priorities is the privacy and dignity of our visitors, members, and hosts. This Privacy Policy document describes the types of information that are collected and recorded by Zealver and how we use it.",
+    `This website is owned and operated by ${OWNER}, which operates the brand Zealver Clubs (hereinafter referred to as "Zealver", "Zealver Clubs", "we", "us", or "our").`,
+    "At Zealver Clubs, one of our main priorities is the privacy and dignity of our visitors, members, and hosts. This Privacy Policy document describes the types of information that are collected and recorded by Zealver and how we use it.",
     "If you have additional questions or require more information about our Privacy Policy, please contact us using the details provided below.",
     "This Privacy Policy applies only to our online activities and is valid for visitors to our website with regard to the information that they share and/or that we collect. This policy does not apply to any information collected offline or via channels other than this website.",
   ],
@@ -66,7 +66,7 @@ export const privacyPolicy: LegalDocument = {
       heading: "3. How We Use Your Information",
       paragraphs: ["We use the information we collect to:"],
       list: [
-        "Provide, operate, and manage Zealver Clubs™",
+        "Provide, operate, and manage Zealver Clubs",
         "Process registrations and payments",
         "Communicate with you about sessions, schedules, and updates",
         "Improve our services, programs, and website",
@@ -80,14 +80,14 @@ export const privacyPolicy: LegalDocument = {
     {
       heading: "4. Log Files",
       paragraphs: [
-        "Zealver Clubs™ follows a standard procedure of using log files. These files log visitors when they visit websites.",
+        "Zealver Clubs follows a standard procedure of using log files. These files log visitors when they visit websites.",
         "Information collected may include IP address, browser type, ISP, date and time stamp, referring/exit pages, and click data. These are not linked to personally identifiable information and are used only for analytics, site administration, usage trends, and improving user experience.",
       ],
     },
     {
       heading: "5. Cookies and Tracking Technologies",
       paragraphs: [
-        "Zealver Clubs™ uses cookies to store visitor preferences and to optimize the user experience. You can choose to disable cookies through your browser settings.",
+        "Zealver Clubs uses cookies to store visitor preferences and to optimize the user experience. You can choose to disable cookies through your browser settings.",
       ],
     },
     {
@@ -102,7 +102,7 @@ export const privacyPolicy: LegalDocument = {
     },
     {
       paragraphs: [
-        "These third parties have their own privacy policies. Zealver Clubs™ has no control over and assumes no responsibility for their practices.",
+        "These third parties have their own privacy policies. Zealver Clubs has no control over and assumes no responsibility for their practices.",
       ],
     },
     {
@@ -147,7 +147,7 @@ export const privacyPolicy: LegalDocument = {
     {
       heading: "11. Children's Information",
       paragraphs: [
-        "Zealver Clubs™ is intended primarily for seniors and their families. We do not knowingly collect personal information from children under the age of 13.",
+        "Zealver Clubs is intended primarily for seniors and their families. We do not knowingly collect personal information from children under the age of 13.",
       ],
     },
     {
@@ -160,7 +160,7 @@ export const privacyPolicy: LegalDocument = {
       heading: "13. Contact Us",
       paragraphs: [
         "If you have any questions about this Privacy Policy or your data, please contact:",
-        `Zealver Clubs™ (A brand of ${OWNER})`,
+        `Zealver Clubs (A brand of ${OWNER})`,
         "Email: info@zealverclubs.com",
         "Mumbai, India",
       ],
@@ -173,8 +173,8 @@ export const termsAndConditions: LegalDocument = {
   title: "Terms & Conditions",
   effective: "January 2026",
   intro: [
-    `This website ("Website") is owned and operated by ${OWNER}, which operates the brand Zealver Clubs™ (hereinafter referred to as "Zealver", "Zealver Clubs™", "we", "us", or "our").`,
-    'By accessing, browsing, registering, making a payment, or participating in any Zealver Clubs™ activity, you ("User", "Member", "Participant", "You") agree to be bound by these Terms & Conditions ("Agreement"). If you do not agree, please do not use the Website or our services.',
+    `This website ("Website") is owned and operated by ${OWNER}, which operates the brand Zealver Clubs (hereinafter referred to as "Zealver", "Zealver Clubs", "we", "us", or "our").`,
+    'By accessing, browsing, registering, making a payment, or participating in any Zealver Clubs activity, you ("User", "Member", "Participant", "You") agree to be bound by these Terms & Conditions ("Agreement"). If you do not agree, please do not use the Website or our services.',
   ],
   sections: [
     {
@@ -189,8 +189,8 @@ export const termsAndConditions: LegalDocument = {
     {
       heading: "2. Nature of Services",
       list: [
-        "2.1 Zealver Clubs™ provides community-based social, recreational, movement, and engagement activities for seniors.",
-        "2.2 Zealver Clubs™ is not a medical service, healthcare provider, physiotherapy centre, rehabilitation centre, or emergency service.",
+        "2.1 Zealver Clubs provides community-based social, recreational, movement, and engagement activities for seniors.",
+        "2.2 Zealver Clubs is not a medical service, healthcare provider, physiotherapy centre, rehabilitation centre, or emergency service.",
         "2.3 No medical advice, diagnosis, or treatment is provided.",
         "2.4 Participation is voluntary and entirely at the User's own discretion and risk.",
       ],
@@ -198,7 +198,7 @@ export const termsAndConditions: LegalDocument = {
     {
       heading: "3. Eligibility & Mandatory Registration",
       paragraphs: [
-        "3.1 The Website and all Zealver Clubs™ services are intended primarily for users in India, but may be accessed elsewhere.",
+        "3.1 The Website and all Zealver Clubs services are intended primarily for users in India, but may be accessed elsewhere.",
         "3.2 Registration is mandatory for all users and participants. No person may:",
       ],
       list: [
@@ -246,7 +246,7 @@ export const termsAndConditions: LegalDocument = {
       emphasis: true,
       paragraphs: [
         "ALL SALES ARE FINAL",
-        "By making any payment to Zealver Clubs™, you explicitly agree:",
+        "By making any payment to Zealver Clubs, you explicitly agree:",
       ],
       list: [
         "No refunds under any circumstances",
@@ -368,7 +368,7 @@ export const termsAndConditions: LegalDocument = {
     {
       heading: "22. Contact",
       paragraphs: [
-        `Zealver Clubs™ (A brand operated by ${OWNER})`,
+        `Zealver Clubs (A brand operated by ${OWNER})`,
         "Email: info@zealverclubs.com",
         "Mumbai, India",
       ],
@@ -381,7 +381,7 @@ export const participantAgreement: LegalDocument = {
   title: "Participant Agreement, Waiver of Liability and Informed Consent",
   effective: "January 2026",
   intro: [
-    `Zealver Clubs\u2122, operated by ${OWNER}.`,
+    `Zealver Clubs, operated by ${OWNER}.`,
     "This Agreement is entered into by each Participant on enrolment. Participant details, emergency contact details and the declarations below are completed and signed at registration.",
     "This is the agreement that governs participation in Sessions. It sits alongside, and should be read with, our Terms & Conditions and Privacy Policy.",
   ],
@@ -392,8 +392,8 @@ export const participantAgreement: LegalDocument = {
         "1.1 Definitions. For the purposes of this Agreement, the following terms shall have the meanings ascribed below:",
         "\"Agreement\" means this Participant Agreement, Waiver of Liability and Informed Consent, including all schedules, annexures and amendments executed from time to time.",
         "\"Participant\" means the individual enrolling in and participating in the Program, whose details are set forth in the execution clause of this Agreement.",
-        "\"Program\" means the wellness, social engagement and low-intensity physical activity sessions, classes, workshops and related activities organized, facilitated or offered by Zealver Clubs\u2122, whether conducted in-person, virtually or through hybrid formats.",
-        "\"Service Provider\" means Zealver Clubs\u2122, a wellness and social engagement platform for older adults, operating in India, including its proprietors, directors, officers, employees, agents, representatives, independent contractors, volunteers, instructors, hosts, facilitators and all affiliated persons or entities.",
+        "\"Program\" means the wellness, social engagement and low-intensity physical activity sessions, classes, workshops and related activities organized, facilitated or offered by Zealver Clubs, whether conducted in-person, virtually or through hybrid formats.",
+        "\"Service Provider\" means Zealver Clubs, a wellness and social engagement platform for older adults, operating in India, including its proprietors, directors, officers, employees, agents, representatives, independent contractors, volunteers, instructors, hosts, facilitators and all affiliated persons or entities.",
         "\"Session\" means any individual class, meeting, activity or event forming part of the Program, regardless of duration or format.",
         "\"Participant Data\" means all personal information, health-related information, emergency contact details and other data provided by the Participant to the Service Provider in connection with enrollment, participation or ongoing engagement with the Program.",
         "\"Force Majeure Event\" means any event or circumstance beyond the reasonable control of the Service Provider, including but not limited to acts of God, natural disasters, pandemics, epidemics, government orders, civil disturbances, terrorism, war or venue unavailability.",
@@ -412,7 +412,7 @@ export const participantAgreement: LegalDocument = {
     {
       heading: "Article 3: Participant representations and medical clearance",
       list: [
-        "3.1 Medical Consultation Requirement. The Participant represents and warrants that they have consulted with a qualified medical practitioner regarding their fitness to participate in physical activity programs of the nature offered by Zealver Clubs\u2122. The Participant acknowledges that it is their sole responsibility to obtain medical clearance before commencing participation and to consult their physician regarding any changes in health status that may affect their ability to participate safely.",
+        "3.1 Medical Consultation Requirement. The Participant represents and warrants that they have consulted with a qualified medical practitioner regarding their fitness to participate in physical activity programs of the nature offered by Zealver Clubs. The Participant acknowledges that it is their sole responsibility to obtain medical clearance before commencing participation and to consult their physician regarding any changes in health status that may affect their ability to participate safely.",
         "3.2 Health Status Disclosure. The Participant agrees to disclose to the Service Provider any medical conditions, physical limitations, mobility restrictions, chronic illnesses, recent surgeries, cardiovascular conditions, balance disorders, neurological conditions, musculoskeletal conditions or other health factors that may affect their safe participation in the Program. The Participant understands that failure to disclose relevant health information may increase the risk of injury or adverse health events and may affect the Service Provider's ability to provide appropriate modifications or accommodations.",
         "3.3 Ongoing Health Monitoring. The Participant acknowledges that they are solely responsible for monitoring their own health status and physical condition throughout their participation in the Program. The Participant agrees to immediately inform the Session facilitator if they experience any pain, discomfort, dizziness, shortness of breath, chest discomfort, unusual fatigue, numbness, loss of coordination or any other concerning symptoms during a Session.",
         "3.4 Medication and Medical Devices. The Participant is solely responsible for managing their own medications, medical devices, medical equipment and therapeutic interventions. The Service Provider assumes no responsibility for reminding Participants to take medications, monitoring medication compliance, storing medications or medical devices, or providing assistance with medical equipment.",
@@ -541,7 +541,7 @@ export const participantAgreement: LegalDocument = {
       heading: "Participant declarations",
       list: [
         "I hereby declare and confirm the following statements to be true and accurate to the best of my knowledge:",
-        "I am enrolling in Zealver Clubs\u2122 voluntarily and of my own free will, without coercion or undue influence from any person.",
+        "I am enrolling in Zealver Clubs voluntarily and of my own free will, without coercion or undue influence from any person.",
         "I have consulted with my physician regarding my fitness to participate in low-intensity physical activity programs, or I voluntarily choose to participate without such medical consultation and accept full responsibility for this decision.",
         "I am capable of walking independently or with the use of a mobility aid such as a cane, walker or rollator, and I am capable of navigating stairs consisting of three to four steps.",
         "I understand that the Program consists of light chair-based exercises, movement activities and creative and recreational pursuits designed for older adults, and that I may participate at my own comfort level and modify or decline any activity at any time.",

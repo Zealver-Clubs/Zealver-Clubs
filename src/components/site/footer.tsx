@@ -95,7 +95,7 @@ export function Footer() {
           <p>
             © {new Date().getFullYear()} {site.legalName} All rights reserved.
             <br />
-            Zealver Clubs™ is a brand operated by {site.legalName}
+            Zealver Clubs is a brand operated by {site.legalName}
           </p>
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
             <Link
