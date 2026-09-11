@@ -2249,6 +2249,62 @@ export const topics: Topic[] = [
     ],
     guides: ["diabetes-management-guide", "lower-your-blood-sugar-guide"],
   },
+  {
+    slug: "eating-before-and-after-exercise",
+    title: "Eating before and after a class",
+    category: "Food & energy",
+    youtubeId: null,
+    summary:
+      "Whether you need to eat first, what to have if you do, and the one meal that actually matters, which is the one afterwards.",
+    keyPoints: [
+      "For a gentle, chair-based session, most people do not need to eat beforehand at all.",
+      "If you want something, keep it small and have it about half an hour before.",
+      "A piece of fruit is ideal. Fruit with a few nuts is fine; a handful of nuts alone sits heavily.",
+      "Avoid starting straight after a large meal, and avoid going in light-headed on nothing.",
+      "The meal that matters most is the one after: protein within a couple of hours.",
+      "If you take medication for diabetes, exercise can lower blood sugar. Ask your doctor first.",
+    ],
+    sections: [
+      {
+        heading: "Do you need to eat first at all?",
+        body: [
+          "For a gentle, chair-based hour, usually not. This is not a two-hour training session and your body has plenty in reserve for it. Most people are perfectly comfortable coming as they are.",
+          "There are two situations where it matters. If you tend to feel light-headed or shaky when you have not eaten, do not go in on nothing. And if you have just finished a large meal, give it an hour or two, because moving about on a full stomach is uncomfortable and worse if you are prone to reflux.",
+        ],
+      },
+      {
+        heading: "If you do want something",
+        body: [
+          "Keep it small and have it around half an hour before, not five minutes before. A piece of fruit on its own is close to ideal: a banana, an apple, a couple of dates. It is easy to digest and gives you something to work with.",
+          "Fruit with a small handful of nuts is fine too. Nuts on their own, or a large quantity of them, are worth avoiding right before moving: the fat slows digestion and you feel it. A little curd or a boiled egg alongside the fruit works well if you want something more substantial.",
+          "And drink some water before you start rather than waiting until you are thirsty.",
+        ],
+      },
+      {
+        heading: "The meal that actually matters",
+        body: [
+          "Most attention goes on what to eat before, and the one that counts is the meal afterwards. Movement gives muscle the signal to rebuild; protein gives it the material. Without the second, the first achieves considerably less.",
+          "Aim for a proper protein-containing meal within about two hours of the session. Curd, dal, paneer, tofu, eggs, fish or chicken all do the job, and it does not need to be anything special or immediate. This matters more after 60 than it did at 40, because muscle is harder to hold on to and easier to lose.",
+        ],
+      },
+      {
+        heading: "One caution, if you take medication for diabetes",
+        body: [
+          "Exercise lowers blood sugar, which is mostly the point. If you take insulin or certain tablets for diabetes, that effect can combine with your medication and take your blood sugar lower than intended, sometimes during the session and sometimes hours afterwards.",
+          "This is not a reason to avoid exercise; it is one of the best things you can do. It is a reason to talk to your doctor about timing, about whether anything needs adjusting, and about whether you should carry something sugary with you. Tell whoever is leading the session too, so somebody else knows.",
+          "This is general guidance around activity and food, not medical advice, and anything involving your medication belongs with your doctor.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "muscle-as-your-bodys-engine",
+      "nutrition-basics",
+      "movement-and-blood-sugar",
+      "chair-dance-for-bone-and-muscle",
+    ],
+    guides: ["stay-strong-after-menopause-guide", "diabetes-management-guide"],
+  },
 ];
 
 /** Every paragraph of a topic, whichever shape it uses. */
