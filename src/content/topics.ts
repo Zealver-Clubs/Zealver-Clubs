@@ -731,7 +731,7 @@ export const topics: Topic[] = [
       "sleep-and-recovery",
       "dementia-friendly-movement",
     ],
-    guides: ["five-minutes-a-day-for-stress-guide"],
+    guides: ["five-things-you-can-do-for-stress-guide"],
   },
   {
     slug: "stop-breathe-notice-choose",
@@ -785,7 +785,7 @@ export const topics: Topic[] = [
       "sleep-and-recovery",
       "music-memory-and-mood",
     ],
-    guides: ["five-minutes-a-day-for-stress-guide"],
+    guides: ["five-things-you-can-do-for-stress-guide"],
   },
   {
     slug: "music-memory-and-mood",
@@ -837,7 +837,7 @@ export const topics: Topic[] = [
       "chair-dance-for-bone-and-muscle",
       "balance-exercises",
     ],
-    guides: ["five-minutes-a-day-for-stress-guide"],
+    guides: ["five-things-you-can-do-for-stress-guide"],
   },
   {
     slug: "anti-inflammatory-swaps-indian-kitchen",
