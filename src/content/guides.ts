@@ -34,7 +34,7 @@ export type Guide = {
 export const guides: Guide[] = [
   {
     slug: "fall-prevention-guide",
-    title: "Fall prevention guide",
+    title: "Falls: preventing them and staying steady",
     meta: "5-step guide",
     intro:
       "A gentle, practical plan to help you stay steady and confident on your feet, one small step at a time.",
@@ -88,7 +88,7 @@ export const guides: Guide[] = [
   },
   {
     slug: "lower-your-blood-sugar-guide",
-    title: "Lower your blood sugar guide",
+    title: "Blood sugar: everyday habits to keep it steady",
     meta: "3-step guide",
     intro:
       "Everyday habits around food, movement and rest that work together to help keep your blood sugar steady.",
@@ -121,7 +121,7 @@ export const guides: Guide[] = [
   },
   {
     slug: "anti-inflammatory-diet-guide",
-    title: "Anti-inflammatory diet guide",
+    title: "Anti-inflammatory eating: where to start",
     meta: "2-step guide",
     intro:
       "Simple, food-first swaps that help calm inflammation and support how you feel day to day.",
@@ -151,7 +151,7 @@ export const guides: Guide[] = [
   },
   {
     slug: "diabetes-management-guide",
-    title: "Diabetes management guide for seniors",
+    title: "Diabetes: managing it day to day",
     meta: "6-step guide",
     intro:
       "Everyday food, movement and rest habits that help women 60+ keep blood sugar steady, with chair-based movement at the centre. General lifestyle guidance, not medical advice.",
@@ -259,7 +259,7 @@ export const guides: Guide[] = [
   },
   {
     slug: "stay-strong-after-menopause-guide",
-    title: "Stay strong and steady after menopause",
+    title: "Bone and muscle strength after menopause",
     meta: "5-step guide",
     intro:
       "Bone, muscle and balance work as one system, and all three respond to what you do each week. A practical plan for women 60+ to stay strong enough to live independently.",
@@ -341,7 +341,7 @@ export const guides: Guide[] = [
   },
   {
     slug: "five-things-you-can-do-for-stress-guide",
-    title: "Five things you can do for stress",
+    title: "Stress: five things you can do",
     meta: "5-step guide",
     intro:
       "Move, breathe, play an old song, let it bring something back, and tell someone. Five simple things for women 60+ that work on the body and the mind together, and none of them take long.",
@@ -359,14 +359,14 @@ export const guides: Guide[] = [
         heading: "Slow your breathing",
         text: "Four or five slow breaths, and make the breath out longer than the breath in. That longer breath out is the part that settles things. If your mind is circling, this is also where the four-step pause fits: stop, breathe, notice what is actually going round, then ask whether you can do anything about it right now.",
         topicSlug: "stop-breathe-notice-choose",
-        topicLabel: "When your mind will not stop: a four-step pause",
+        topicLabel: "Worry: a four-step pause when your mind will not stop",
       },
       {
         n: 3,
         heading: "Put on an old song",
         text: "Put on a song from your younger years, not something new. The one that was playing when you were twenty, at a wedding, on the radio in your mother's kitchen. Let it play properly rather than in the background.",
         topicSlug: "music-memory-and-mood",
-        topicLabel: "Why an old song does so much",
+        topicLabel: "Music and memory: why an old song does so much",
       },
       {
         n: 4,
@@ -380,7 +380,7 @@ export const guides: Guide[] = [
         heading: "Tell someone",
         text: "Tell someone. A friend, a daughter, a neighbour, whoever is nearby or at the end of a phone. Share the memory the song brought back and ask what it brings back for them. A worry carried alone weighs more than the same worry spoken aloud, and this is the step people skip.",
         topicSlug: "understanding-stress",
-        topicLabel: "Understanding stress",
+        topicLabel: "Stress: what it is, and why not all of it is bad",
       },
     ],
     topics: [
@@ -395,7 +395,7 @@ export const guides: Guide[] = [
   },
   {
     slug: "arthritis-and-joint-comfort-guide",
-    title: "Living well with stiff and painful joints",
+    title: "Arthritis and joint pain: living well",
     meta: "5-step guide",
     intro:
       "Gentle, practical habits for women 60+ living with arthritis or everyday joint stiffness. Moving well rather than resting more.",
@@ -448,7 +448,7 @@ export const guides: Guide[] = [
   },
   {
     slug: "blood-pressure-guide",
-    title: "Everyday habits for steadier blood pressure",
+    title: "Blood pressure: everyday habits that help",
     meta: "5-step guide",
     intro:
       "The daily things that help keep blood pressure steady: salt, movement, sleep, stress and weight. Lifestyle guidance, not a substitute for your doctor.",
@@ -480,7 +480,7 @@ export const guides: Guide[] = [
         heading: "Take stress seriously",
         text: "Constant low-level stress and short sleep both push blood pressure up, and both are easy to treat as unavoidable when they are not. A few slow breaths with a longer breath out, a short pause when worry circles, and a settled sleep routine are small and they add up.",
         topicSlug: "stop-breathe-notice-choose",
-        topicLabel: "When your mind will not stop: a four-step pause",
+        topicLabel: "Worry: a four-step pause when your mind will not stop",
       },
       {
         n: 5,
@@ -501,7 +501,7 @@ export const guides: Guide[] = [
   },
   {
     slug: "cholesterol-guide",
-    title: "Eating and moving for healthier cholesterol",
+    title: "Cholesterol: eating and moving for healthier levels",
     meta: "5-step guide",
     intro:
       "Practical changes to fats, fibre and movement that support healthier cholesterol, using food already in an Indian kitchen.",
@@ -554,7 +554,7 @@ export const guides: Guide[] = [
   },
   {
     slug: "vitamin-d-guide",
-    title: "Getting Vitamin D right",
+    title: "Vitamin D: getting it right",
     meta: "4-step guide",
     intro:
       "What Vitamin D actually does, where it comes from, and why more is not better. A short, sensible guide for women 60+.",
@@ -599,7 +599,7 @@ export const guides: Guide[] = [
   },
   {
     slug: "dementia-engagement-guide",
-    title: "Staying engaged and connected with dementia",
+    title: "Dementia: staying engaged and connected",
     meta: "5-step guide",
     intro:
       "Practical ways to keep someone with dementia moving, joining in and enjoying company. For families, carers and clubs.",
@@ -610,7 +610,7 @@ export const guides: Guide[] = [
         heading: "Lead with music they grew up with",
         text: "Familiar songs from someone's youth reach further than almost anything else, and often keep working when other kinds of recall have faded. They arrive with the time attached: where they were, who they were with. Start there rather than with instructions, and you will often get participation you were not expecting.",
         topicSlug: "music-memory-and-mood",
-        topicLabel: "Why an old song does so much",
+        topicLabel: "Music and memory: why an old song does so much",
       },
       {
         n: 2,
@@ -624,21 +624,21 @@ export const guides: Guide[] = [
         heading: "Keep everything familiar",
         text: "The same room, the same faces, the same shape to the session, at the same time each week. Predictability lowers anxiety, and lower anxiety is what makes joining in possible at all. Novelty is rarely the gift it seems; familiarity is.",
         topicSlug: "memory-cognitive-health-seniors",
-        topicLabel: "How social clubs strengthen memory and cognition",
+        topicLabel: "Memory and cognition: how social clubs help",
       },
       {
         n: 4,
         heading: "Follow their energy on the day",
         text: "Some days will go better than others and that is not a failure of anything. Celebrate joining in rather than getting it right, let them set the pace, and let a quiet day be a quiet day. Correcting someone rarely helps; going along with where they are usually does.",
         topicSlug: "meaning-belonging-healthy-aging",
-        topicLabel: "Why meaning and belonging matter in healthy ageing",
+        topicLabel: "Meaning and belonging in healthy ageing",
       },
       {
         n: 5,
         heading: "Keep the company, and look after the carer",
         text: "Connection is doing as much work here as any activity. Keep them among people rather than apart. And if you are the carer, your own rest, company and support are not an indulgence; they are what makes it possible to keep going. This is a supportive activity approach for wellbeing and connection, not a medical therapy, and care decisions belong with your doctor.",
         topicSlug: "understanding-stress",
-        topicLabel: "Understanding stress",
+        topicLabel: "Stress: what it is, and why not all of it is bad",
       },
     ],
     topics: [
@@ -652,7 +652,7 @@ export const guides: Guide[] = [
   },
   {
     slug: "friendship-later-in-life-guide",
-    title: "Making friends later in life, and keeping the old ones",
+    title: "Friendship: making new friends and keeping the old",
     meta: "5-step guide",
     intro:
       "Friendship is not a luxury at 60+, it is one of the strongest things you can do for your health. How to build it when the old routes have closed.",
@@ -663,14 +663,14 @@ export const guides: Guide[] = [
         heading: "Take it as seriously as exercise",
         text: "Loneliness is not simply sad, it affects health in the way that smoking and inactivity do. Social connection supports motivation, self-worth, mood and the will to keep doing everything else on this list. If you would not skip your walk for a month, do not let a month go by without company either.",
         topicSlug: "meaning-belonging-healthy-aging",
-        topicLabel: "Why meaning and belonging matter in healthy ageing",
+        topicLabel: "Meaning and belonging in healthy ageing",
       },
       {
         n: 2,
         heading: "Understand why it got harder",
         text: "It is not you. Work, school gates and neighbourhoods used to supply friends without anyone having to try. Retirement, moving, widowhood and children living elsewhere all remove those routes at once. Friendship after 60 has to be arranged on purpose, and knowing that stops it feeling like a personal failing.",
         topicSlug: "understanding-stress",
-        topicLabel: "Understanding stress",
+        topicLabel: "Stress: what it is, and why not all of it is bad",
       },
       {
         n: 3,
@@ -684,14 +684,14 @@ export const guides: Guide[] = [
         heading: "Make the first small move",
         text: "Almost everybody in the room is waiting for somebody else to speak first. Ask a question and let them talk. Remember one thing and ask about it next week. Sit somewhere different. None of it is dramatic, and all of it works, because what people remember is being asked about, not being impressed.",
         topicSlug: "music-memory-and-mood",
-        topicLabel: "Why an old song does so much",
+        topicLabel: "Music and memory: why an old song does so much",
       },
       {
         n: 5,
         heading: "Tend the friendships you already have",
         text: "Old friends are easier to keep than new ones are to find, and they usually lapse through drift rather than falling out. A phone call rather than a message, on a day you decide in advance. Say the thing you were going to leave unsaid. Most people are delighted to hear from someone and were simply waiting too.",
         topicSlug: "10-essentials-healthy-aging-social-clubs",
-        topicLabel: "10 essentials of healthy ageing",
+        topicLabel: "Ten essentials of healthy ageing",
       },
     ],
     topics: [
@@ -705,7 +705,7 @@ export const guides: Guide[] = [
   },
   {
     slug: "acid-reflux-guide",
-    title: "Settling acid reflux and heartburn",
+    title: "Acidity and reflux: settling it",
     meta: "5-step guide",
     intro:
       "Everyday changes to when and how you eat that settle reflux, and the signs that mean you should see your doctor rather than manage it yourself.",
@@ -744,7 +744,7 @@ export const guides: Guide[] = [
         heading: "Know what is not ordinary heartburn",
         text: "Most reflux is a nuisance rather than a danger, but some things should be seen rather than managed. Difficulty or pain on swallowing, food sticking, vomiting blood, black stools, unexplained weight loss, or symptoms that are new and persistent after 50 all warrant a doctor. So does needing antacids most days. Chest pain with breathlessness or sweating is an emergency, not reflux until proven otherwise.",
         topicSlug: "understanding-stress",
-        topicLabel: "Understanding stress",
+        topicLabel: "Stress: what it is, and why not all of it is bad",
       },
     ],
     topics: [
@@ -790,7 +790,7 @@ export const guides: Guide[] = [
         heading: "Give it three months",
         text: "This is a muscle like any other, and muscles take time. Most women notice a difference at around six to twelve weeks, and stopping means losing it again, so it works best as something permanent rather than a course. Tie it to something you already do daily, which is what makes it stick.",
         topicSlug: "10-essentials-healthy-aging-social-clubs",
-        topicLabel: "10 essentials of healthy ageing",
+        topicLabel: "Ten essentials of healthy ageing",
       },
       {
         n: 5,
@@ -811,7 +811,7 @@ export const guides: Guide[] = [
   },
   {
     slug: "grief-and-loss-guide",
-    title: "Living through the loss of a husband or partner",
+    title: "Grief: living through the loss of a partner",
     meta: "5-step guide",
     intro:
       "There is no fixing grief and nothing here tries to. Some gentle, practical things that help in the months and years after losing a spouse.",
@@ -822,7 +822,7 @@ export const guides: Guide[] = [
         heading: "Let grief take the shape it takes",
         text: "There are no stages to work through in order and no timetable you are behind on. Grief comes in waves, often unannounced, and a good week followed by a terrible one is ordinary rather than a setback. Anniversaries, festivals and small domestic moments catch people hardest. None of this means you are doing it wrong.",
         topicSlug: "understanding-stress",
-        topicLabel: "Understanding stress",
+        topicLabel: "Stress: what it is, and why not all of it is bad",
       },
       {
         n: 2,
@@ -843,14 +843,14 @@ export const guides: Guide[] = [
         heading: "Let people in, even when you would rather not",
         text: "Widowhood is the single biggest cause of loneliness in later life, and the instinct to withdraw is strongest exactly when company helps most. You do not have to talk about it to benefit from being among people. A regular group with familiar faces asks very little of you and gives back more than an occasional visit does.",
         topicSlug: "meaning-belonging-healthy-aging",
-        topicLabel: "Why meaning and belonging matter in healthy ageing",
+        topicLabel: "Meaning and belonging in healthy ageing",
       },
       {
         n: 5,
         heading: "Know when grief has become something else",
         text: "Grief and depression overlap and are not the same. If months on you feel stuck rather than gradually changing, cannot function day to day, are drinking more, feel no pleasure in anything at all, or have thoughts of not wanting to be here, that needs a doctor, and asking is not weakness or disloyalty. Bereavement counselling exists and it helps. This page is companionship, not treatment.",
         topicSlug: "stop-breathe-notice-choose",
-        topicLabel: "When your mind will not stop: a four-step pause",
+        topicLabel: "Worry: a four-step pause when your mind will not stop",
       },
     ],
     topics: [
@@ -889,21 +889,21 @@ export const guides: Guide[] = [
         heading: "Interrupt the circling",
         text: "Worry loops: the same thought comes round heavier each time without anything new being added. Stop, take four or five slow breaths with a longer breath out, name what is actually going round, then ask whether you can do something about it right now. If yes, one small thing. If no, you may set it down for the moment.",
         topicSlug: "stop-breathe-notice-choose",
-        topicLabel: "When your mind will not stop: a four-step pause",
+        topicLabel: "Worry: a four-step pause when your mind will not stop",
       },
       {
         n: 4,
         heading: "Keep company in the diary, not in intention",
         text: "Low mood tells you to cancel, and cancelling makes it worse, which is why this needs to be arranged rather than left to how you feel on the day. Something regular, with familiar faces, that does not depend on being good company. Turning up is the whole of it.",
         topicSlug: "meaning-belonging-healthy-aging",
-        topicLabel: "Why meaning and belonging matter in healthy ageing",
+        topicLabel: "Meaning and belonging in healthy ageing",
       },
       {
         n: 5,
         heading: "Ask for help sooner than you think you should",
         text: "Please treat this as the most important step. Low mood that lasts more than two weeks, worry you cannot switch off, losing interest in everything, not eating or sleeping, or any thought of harming yourself or not wanting to be here, all need a doctor rather than a website. Depression and anxiety are common, treatable, and not a weakness of character. Nothing here is treatment for either. If you are in crisis, contact your doctor or a mental health helpline today.",
         topicSlug: "understanding-stress",
-        topicLabel: "Understanding stress",
+        topicLabel: "Stress: what it is, and why not all of it is bad",
       },
     ],
     topics: [
@@ -928,14 +928,14 @@ export const guides: Guide[] = [
         heading: "Take it as seriously as a physical symptom",
         text: "Persistent loneliness affects health in ways comparable to well-known physical risks, and it is associated with poorer sleep, low mood, and worse outcomes across the board. Naming it as a health matter rather than a private embarrassment is the first useful thing, because it makes it something to act on rather than hide.",
         topicSlug: "meaning-belonging-healthy-aging",
-        topicLabel: "Why meaning and belonging matter in healthy ageing",
+        topicLabel: "Meaning and belonging in healthy ageing",
       },
       {
         n: 2,
         heading: "Know that alone and lonely are different",
         text: "People can be content on their own and painfully lonely in a full house. What matters is not how many people are nearby but whether you feel known by any of them. That distinction matters, because the fix is rarely more company in general; it is a few connections with some depth.",
         topicSlug: "understanding-stress",
-        topicLabel: "Understanding stress",
+        topicLabel: "Stress: what it is, and why not all of it is bad",
       },
       {
         n: 3,
@@ -956,7 +956,7 @@ export const guides: Guide[] = [
         heading: "Have something to offer, not only to attend",
         text: "The strongest antidote is being needed rather than merely included. Teaching something, welcoming a newcomer, keeping the tea going, checking on someone who missed a week. Being useful to other people does more for loneliness than being entertained by them. If low mood persists alongside it, speak to your doctor as well.",
         topicSlug: "10-essentials-healthy-aging-social-clubs",
-        topicLabel: "10 essentials of healthy ageing",
+        topicLabel: "Ten essentials of healthy ageing",
       },
     ],
     topics: [
@@ -970,7 +970,7 @@ export const guides: Guide[] = [
   },
   {
     slug: "staying-active-through-cancer-treatment-guide",
-    title: "Staying active and connected through cancer treatment",
+    title: "Cancer: staying active and connected through treatment",
     meta: "5-step guide",
     intro:
       "Movement and company during and after treatment for breast or other cancers. About living alongside treatment, not about the treatment itself.",
@@ -1002,7 +1002,7 @@ export const guides: Guide[] = [
         heading: "Do not disappear from company",
         text: "People often withdraw during treatment, from tiredness, from appearance, from not wanting to be the ill one in the room. Company helps, and a group where nothing is expected of you is easier than seeing people one at a time. Turning up occasionally and sitting out most of it is entirely fine.",
         topicSlug: "meaning-belonging-healthy-aging",
-        topicLabel: "Why meaning and belonging matter in healthy ageing",
+        topicLabel: "Meaning and belonging in healthy ageing",
       },
       {
         n: 5,

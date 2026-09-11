@@ -691,7 +691,7 @@ export const topics: Topic[] = [
   },
   {
     slug: "understanding-stress",
-    title: "Understanding stress, and why not all of it is bad",
+    title: "Stress: what it is, and why not all of it is bad",
     category: "Rest",
     youtubeId: null,
     summary:
@@ -752,7 +752,7 @@ export const topics: Topic[] = [
   },
   {
     slug: "stop-breathe-notice-choose",
-    title: "When your mind will not stop: a four-step pause",
+    title: "Worry: a four-step pause when your mind will not stop",
     category: "Rest",
     youtubeId: null,
     summary:
@@ -806,7 +806,7 @@ export const topics: Topic[] = [
   },
   {
     slug: "music-memory-and-mood",
-    title: "Why an old song does so much",
+    title: "Music and memory: why an old song does so much",
     category: "Memory",
     youtubeId: null,
     summary:
@@ -948,7 +948,7 @@ export const topics: Topic[] = [
   },
   {
     slug: "4m-framework-healthy-aging",
-    title: "The 4Ms of healthy ageing",
+    title: "Four Ms of healthy ageing, the framework",
     category: "Healthy ageing",
     youtubeId: null,
     summary:
@@ -1090,7 +1090,7 @@ export const topics: Topic[] = [
   },
   {
     slug: "music-brain-health-seniors",
-    title: "How music supports brain health in seniors",
+    title: "Music and brain health in seniors",
     category: "Memory",
     youtubeId: null,
     summary:
@@ -1152,7 +1152,7 @@ export const topics: Topic[] = [
   },
   {
     slug: "memory-cognitive-health-seniors",
-    title: "How social clubs strengthen memory and cognition",
+    title: "Memory and cognition: how social clubs help",
     category: "Memory",
     youtubeId: null,
     summary:
@@ -1214,7 +1214,7 @@ export const topics: Topic[] = [
   },
   {
     slug: "meaning-belonging-healthy-aging",
-    title: "Why meaning and belonging matter in healthy ageing",
+    title: "Meaning and belonging in healthy ageing",
     category: "Healthy ageing",
     youtubeId: null,
     summary:
@@ -1355,7 +1355,7 @@ export const topics: Topic[] = [
   },
   {
     slug: "10-essentials-healthy-aging-social-clubs",
-    title: "10 essentials of healthy ageing, and how clubs make them stick",
+    title: "Ten essentials of healthy ageing",
     category: "Healthy ageing",
     youtubeId: null,
     summary:
