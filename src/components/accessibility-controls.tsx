@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Glasses, Type, Sun, Moon, Contrast, X, Check, Languages } from "lucide-react";
+import { Type, Sun, Moon, Contrast, X, Check, Languages, Globe } from "lucide-react";
 import { LANGUAGES, currentLanguage, setLanguage } from "@/components/translate";
 import { cn } from "@/lib/utils";
 
@@ -90,22 +90,31 @@ export function AccessibilityControls() {
         type="button"
         aria-haspopup="dialog"
         aria-expanded={open}
-        aria-label="Accessibility options"
+        aria-label="Text size, language and colour options"
         onClick={() => setOpen((v) => !v)}
-        className="inline-flex min-h-12 min-w-12 items-center justify-center rounded-full text-secondary hover:bg-secondary-soft"
+        title="Text size, language and colour"
+        className="inline-flex min-h-12 items-center gap-1.5 rounded-full border-2 border-border px-3 text-secondary transition-colors hover:border-primary hover:bg-secondary-soft"
       >
-        <Glasses className="h-7 w-7" aria-hidden />
+        {/* "A" for text size, globe for language: two things people recognise
+            faster than one symbol standing for everything. */}
+        <span className="text-lg font-extrabold leading-none" aria-hidden>
+          A
+        </span>
+        <Globe className="h-5 w-5 shrink-0" aria-hidden />
+        <span className="hidden whitespace-nowrap text-sm font-bold xl:inline">
+          Text &amp; language
+        </span>
       </button>
 
       {open && (
         <div
           ref={panelRef}
           role="dialog"
-          aria-label="Accessibility options"
+          aria-label="Text size, language and colour options"
           className="absolute right-0 z-50 mt-2 w-72 rounded-2xl border border-border bg-card p-4 shadow-lg"
         >
           <div className="flex items-center justify-between">
-            <h2 className="text-base font-extrabold text-heading">Accessibility</h2>
+            <h2 className="text-base font-extrabold text-heading">Text &amp; language</h2>
             <button
               type="button"
               aria-label="Close"
