@@ -2096,6 +2096,88 @@ export const topics: Topic[] = [
       },
     ],
   },
+  {
+    slug: "metabolism-and-the-weighing-scale",
+    title: "Metabolism: why the weighing scale is the wrong measure",
+    category: "Food & energy",
+    youtubeId: null,
+    summary:
+      "Two women at the same weight can be in completely different health. What the scale misses, where fat is stored, and the hormones behind it.",
+    keyPoints: [
+      "The scale tells you what you weigh, not what you are made of.",
+      "Muscle, fat under the skin, and fat around the organs are three different things.",
+      "Indian bodies commonly carry more fat and less muscle at any given weight.",
+      "Fat around the organs, in the liver and inside muscle is the fat that causes trouble.",
+      "Carbohydrate, insulin and fat burning sit in a chain: high insulin means storing rather than burning.",
+      "Muscle is the lever. Build it and the rest gets easier.",
+    ],
+    sections: [
+      {
+        heading: "What the scale cannot tell you",
+        body: [
+          "A weighing scale gives you one number, and that number cannot distinguish between muscle and fat, or tell you where the fat is sitting. Two women of identical weight and height can be in quite different health.",
+          "What is worth knowing instead is your body composition: roughly how much of you is muscle, how much is fat, and how much of that fat is packed around your organs rather than under your skin. Many gyms and clinics can measure this, and it is a far more useful conversation than the one the bathroom scale starts.",
+          "It also explains something that frustrates people. Someone doing strength work may see the scale barely move while their shape, strength and blood results all improve, because they are gaining muscle as they lose fat. That is progress, and the scale reports it as failure.",
+        ],
+      },
+      {
+        heading: "Why this matters particularly for Indian bodies",
+        body: [
+          "This is the part most worth knowing, and it is rarely said. At any given weight or body mass index, Indian bodies tend to carry more fat and less muscle than the European bodies those measurements were originally based on, and to carry more of that fat around the middle.",
+          "It is sometimes called the thin-fat pattern: someone who looks slim, whose weight is entirely unremarkable, and who nonetheless has a high proportion of body fat, little muscle, and a raised risk of diabetes and heart disease.",
+          "The practical consequence is simple. If you are Indian, being a normal weight is not by itself reassurance. What you are made of matters more than what you weigh.",
+        ],
+      },
+      {
+        heading: "Where fat gets stored, and why that matters more than how much",
+        body: [
+          "Fat under the skin, on hips, thighs and arms, is the least troublesome kind. It is doing roughly what fat is meant to do.",
+          "The fat that causes problems is elsewhere. Visceral fat packs in around the organs in the abdomen. Fat accumulates in the liver, which is what fatty liver means. It gathers inside muscle, where it interferes with how well muscle responds to insulin. And it collects in the pancreas, the organ making the insulin in the first place.",
+          "That is why a waist measurement tells you more than a weight does, and why two people carrying the same extra weight in different places face different risks.",
+        ],
+      },
+      {
+        heading: "The chain: carbohydrate, insulin, fat",
+        body: [
+          "These three are not separate subjects, they run in order. Carbohydrate is broken down to glucose, glucose in the blood prompts insulin, and insulin moves it into muscle and liver to be used or stored. Whatever exceeds what those stores can hold is converted to fat.",
+          "The part worth holding on to is what insulin does while it is high: the body is in storing mode rather than burning mode. Fat is released and burned most readily when insulin has come down and energy is needed.",
+          "So the order matters. If carbohydrate handling is working well, insulin does its job and settles, fat burning becomes easier, and muscle is preserved. If it is not, insulin stays up, fat burning is suppressed, and more of what you eat is directed into storage. That is the whole argument for eating three proper meals rather than grazing all day, and for a decent gap overnight.",
+        ],
+      },
+      {
+        heading: "Four hormones worth knowing by name",
+        body: [
+          "Insulin decides whether you are storing or burning. It responds most to refined carbohydrate, and it settles with protein at meals, fewer episodes of eating, and strength work.",
+          "Leptin is the signal that says you have had enough. In long-standing excess weight the brain can stop responding to it properly, which is why fullness stops registering. Protein, proper sleep and regular activity all help.",
+          "Ghrelin is the one that makes you hungry, and it rises sharply with poor sleep. A bad night genuinely makes you hungrier the next day; that is chemistry, not weak will.",
+          "Cortisol is the stress hormone, and sustained stress pushes fat towards the abdomen and worsens insulin resistance. Which is why stress and sleep belong in a conversation about weight at all.",
+        ],
+      },
+      {
+        heading: "What actually slows things down",
+        body: [
+          "Low muscle mass is the largest one, and the most fixable. Then insulin resistance, poor sleep, untreated sleep apnoea, long-running stress, sitting for most of the day, and a diet heavy in refined carbohydrate.",
+          "Two deficiencies are worth testing for rather than guessing at, vitamin B12 and vitamin D, both common and both correctable. Some medications slow things too, which is a conversation with your doctor rather than a reason to stop anything.",
+        ],
+      },
+      {
+        heading: "What to do with all this",
+        body: [
+          "Three balanced meals rather than constant grazing. Protein at each of them. A reasonable gap overnight, ten to twelve hours between dinner and breakfast, which most people manage without calling it fasting. Refined carbohydrate swapped for whole. Water. Strength work two or three times a week and movement most days. Seven to nine hours of sleep. Stress taken seriously.",
+          "And the change of target: stop chasing the number on the scale and chase what it is made of. Build muscle, reduce the fat around your middle, improve how your body handles sugar. Those are the things that decide how well you age, and the scale is nearly silent on all three.",
+          "This is general guidance on health and habits, not medical advice, and not a weight-loss programme. Body composition, blood tests and any medication are matters for your doctor.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "muscle-as-your-bodys-engine",
+      "diabetes-what-is-happening",
+      "which-kind-of-poor-sleeper",
+      "movement-and-blood-sugar",
+    ],
+    guides: ["diabetes-management-guide", "stay-strong-after-menopause-guide"],
+  },
 ];
 
 /** Every paragraph of a topic, whichever shape it uses. */
