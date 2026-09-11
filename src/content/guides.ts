@@ -116,7 +116,12 @@ export const guides: Guide[] = [
         topicLabel: "Sleep & recovery",
       },
     ],
-    topics: ["nutrition-basics", "movement-and-blood-sugar", "sleep-and-recovery"],
+    topics: [
+      "diabetes-what-is-happening",
+      "nutrition-basics",
+      "movement-and-blood-sugar",
+      "sleep-and-recovery",
+    ],
     relatedGuides: ["anti-inflammatory-diet-guide", "diabetes-management-guide"],
   },
   {
@@ -206,6 +211,7 @@ export const guides: Guide[] = [
       },
     ],
     topics: [
+      "diabetes-what-is-happening",
       "nutrition-basics",
       "movement-and-blood-sugar",
       "balance-exercises",

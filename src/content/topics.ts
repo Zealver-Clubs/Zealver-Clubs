@@ -1624,6 +1624,88 @@ export const topics: Topic[] = [
     ],
     guides: ["stay-strong-after-menopause-guide", "diabetes-management-guide"],
   },
+  {
+    slug: "diabetes-what-is-happening",
+    title: "Diabetes: what it is, and what is happening in the body",
+    category: "Food & energy",
+    youtubeId: null,
+    summary:
+      "Insulin as a key, the liver as a sugar bank, muscle as the biggest customer. The picture that makes the advice make sense.",
+    keyPoints: [
+      "Insulin is the key that lets sugar out of the blood and into your cells.",
+      "In type 2, the key still turns but the lock has stiffened, so sugar stays in the blood.",
+      "The liver is your sugar bank, and in diabetes it keeps paying out when it should not.",
+      "Muscle is the biggest customer for that sugar, which is why strength work matters.",
+      "It is rarely one cause. Family history, menopause, weight around the middle, inactivity, poor sleep and stress all contribute.",
+      "Losing five to ten per cent of body weight makes a real difference.",
+    ],
+    sections: [
+      {
+        heading: "The key and the lock",
+        body: [
+          "Everything you eat that contains carbohydrate is broken down into glucose, a sugar, which travels in the blood. It is useless there. It has to get inside your cells to be burnt for energy.",
+          "Insulin, made by the pancreas, is the key that opens the cell door and lets it in. Diabetes is what happens when that system stops working: either there is no key, or the key no longer turns easily. Either way the sugar stays in the blood instead of getting where it is needed, which is why blood sugar rises and why you can feel tired despite eating plenty.",
+        ],
+      },
+      {
+        heading: "The different kinds, plainly",
+        body: [
+          "In type 1, the body has stopped making insulin at all, because the immune system has attacked the cells that produce it. There is no key, so insulin has to be given. It is not caused by diet or weight.",
+          "Type 2 is by far the most common. The pancreas is still making insulin, but the body has stopped responding to it properly, which is called insulin resistance. The key still turns, but the lock has stiffened. Over years the pancreas tires from working harder, and may make less.",
+          "Prediabetes is the stage before: blood sugar higher than it should be, but not yet in the diabetes range. This is the most hopeful point on the whole path, because changes made here can genuinely prevent what comes next. There are other, less common kinds too, including diabetes caused by damage to the pancreas itself, and diabetes that appears during pregnancy.",
+        ],
+      },
+      {
+        heading: "Why type 2 arrives",
+        body: [
+          "It is almost never one thing. Family history matters a great deal, and so does getting older. For women, menopause changes the picture, and so can polycystic ovary syndrome earlier in life.",
+          "Then the everyday contributors: weight carried around the middle in particular, sitting a great deal, a diet heavy in refined carbohydrate, poor sleep, long-running stress, a fatty liver, and some medicines, steroids especially.",
+          "Reading that list is meant to be useful rather than accusing. Several of those are things you can work on, which is precisely why the advice exists.",
+        ],
+      },
+      {
+        heading: "The liver is your sugar bank",
+        body: [
+          "This is the part that explains something puzzling. People often find their blood sugar is high first thing in the morning, before they have eaten anything at all, and assume the reading must be wrong.",
+          "Your liver stores glucose after meals and releases it back out between them, so you do not run empty overnight. It is a bank: deposits after eating, withdrawals when needed. In diabetes, the bank keeps paying out even when there is plenty already in circulation, and a fatty liver makes that worse.",
+          "The good news about a fatty liver is that it responds. Weight loss, movement and better eating improve it, often considerably.",
+        ],
+      },
+      {
+        heading: "Muscle is the biggest customer",
+        body: [
+          "Of everywhere that glucose can go, muscle takes the most. It is the body's largest store for it, which makes muscle central to this rather than incidental.",
+          "Two things follow. More muscle means more room for the glucose in your blood to go, so blood sugar tends to be steadier. And exercise lets muscle take up glucose more readily even when insulin is not working well, which is why a walk after a meal has an effect you can measure.",
+          "That is the argument for strength work, and it matters especially after menopause, when muscle is being lost anyway.",
+        ],
+      },
+      {
+        heading: "What a day of eating can look like",
+        body: [
+          "The plate is the simplest rule: half vegetables, a quarter protein, a quarter carbohydrate, with some nuts or a sensible oil.",
+          "Vegetarian, that might be a gram flour or mung bean pancake with curd at breakfast; vegetables, lentils or kidney beans or chickpeas, paneer or tofu, a flatbread or a little rice, and salad at lunch; and vegetables with protein and a soup at night.",
+          "Non-vegetarian, an omelette and curd at breakfast; chicken or fish with vegetables and salad at lunch; a curry with vegetables and a flatbread or a little rice at night.",
+          "Fruit is allowed and often wrongly avoided. Eat it whole rather than drinking it as juice: apple, orange, pear, guava, papaya, and mango in modest quantity.",
+        ],
+      },
+      {
+        heading: "Six things worth remembering",
+        body: [
+          "Insulin is the key. The liver is the sugar bank. Muscle is the biggest customer and the biggest burner. Exercise works like medicine. Protein protects the muscle that does the work. And balance matters more than cutting every carbohydrate out.",
+          "One more that surprises people: losing five to ten per cent of body weight, where there is weight to lose, makes a real difference to all of this. Not a transformation, a tenth.",
+          "Diabetes is not only about a number on a meter. It affects the heart, kidneys, eyes, nerves and feet, which is why the regular checks matter as much as the daily habits. This is general guidance for understanding your condition, not medical advice, and your own treatment belongs with your doctor.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "movement-and-blood-sugar",
+      "muscle-as-your-bodys-engine",
+      "nutrition-basics",
+      "anti-inflammatory-swaps-indian-kitchen",
+    ],
+    guides: ["diabetes-management-guide", "lower-your-blood-sugar-guide"],
+  },
 ];
 
 /** Every paragraph of a topic, whichever shape it uses. */
