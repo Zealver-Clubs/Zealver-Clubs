@@ -28,7 +28,13 @@ export async function generateMetadata({
   const { slug } = await params;
   const guide = getGuide(slug);
   if (!guide) return { title: "Not found | Zealver Clubs" };
-  return { title: `${guide.title} | Knowledge Hub`, description: guide.intro };
+  // Search engines cut a description around 160 characters, so a long intro
+  // gets trimmed to its first sentence rather than truncated mid-word.
+  const description =
+    guide.intro.length > 160
+      ? (guide.intro.match(/^.*?[.!?](\s|$)/)?.[0] ?? guide.intro).trim()
+      : guide.intro;
+  return { title: `${guide.title} | Knowledge Hub`, description };
 }
 
 export default async function GuidePage({
@@ -46,6 +52,10 @@ export default async function GuidePage({
   const otherGuides = guide.relatedGuides
     .map((s) => getGuide(s))
     .filter((g): g is NonNullable<typeof g> => Boolean(g));
+
+  /** Everything a step says, for the structured data and the read-aloud. */
+  const stepText = (s: (typeof guide.steps)[number]) =>
+    [s.text, ...(s.bullets ?? []), ...(s.more ?? [])].join(" ");
 
   const url = `${site.url}/knowledge-hub/guides/${guide.slug}`;
   const howToSchema = {
@@ -81,7 +91,7 @@ export default async function GuidePage({
       "@type": "HowToStep",
       position: s.n,
       name: s.heading,
-      text: s.text,
+      text: stepText(s),
       url: `${site.url}/knowledge-hub/topics/${s.topicSlug}`,
     })),
   };
@@ -106,9 +116,15 @@ export default async function GuidePage({
           <Compass className="h-4 w-4" aria-hidden /> {guide.meta}
         </span>
         <ListenButton
-          text={`${guide.title}. ${guide.intro} ${guide.steps
-            .map((s) => `${s.heading}. ${s.text}`)
-            .join(" ")}`}
+          text={[
+            guide.title,
+            guide.intro,
+            ...(guide.introMore ?? []),
+            ...guide.steps.map((s) => `${s.heading}. ${stepText(s)}`),
+            ...(guide.sections ?? []).map((sec) =>
+              [sec.heading, ...sec.body, ...(sec.bullets ?? [])].join(" "),
+            ),
+          ].join(" ")}
         />
       </div>
 
@@ -130,6 +146,11 @@ export default async function GuidePage({
         </figure>
       </div>
       <p className="mt-5 text-xl text-foreground">{guide.intro}</p>
+      {guide.introMore?.map((para, i) => (
+        <p key={i} className="mt-4 text-lg leading-relaxed text-foreground">
+          {para}
+        </p>
+      ))}
 
       {/* Step-by-step sections */}
       <div className="mt-10">
@@ -151,6 +172,24 @@ export default async function GuidePage({
                       {step.heading}
                     </h3>
                     <p className="mt-2 text-foreground">{step.text}</p>
+                    {step.bullets?.length ? (
+                      <ul className="mt-3 flex flex-col gap-2.5 text-foreground">
+                        {step.bullets.map((b, i) => (
+                          <li key={i} className="flex gap-3">
+                            <span
+                              aria-hidden
+                              className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary"
+                            />
+                            <span>{b}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    ) : null}
+                    {step.more?.map((para, i) => (
+                      <p key={i} className="mt-3 text-foreground">
+                        {para}
+                      </p>
+                    ))}
                     <Link
                       href={`/knowledge-hub/topics/${step.topicSlug}`}
                       className="mt-3 inline-flex min-h-11 items-center gap-1 font-bold text-link hover:underline"
@@ -165,6 +204,31 @@ export default async function GuidePage({
           ))}
         </ol>
       </div>
+
+      {/* Closing sections, after the steps */}
+      {guide.sections?.map((sec) => (
+        <div key={sec.heading} className="mt-10">
+          <h2 className="text-2xl font-extrabold text-heading">{sec.heading}</h2>
+          {sec.body.map((para, i) => (
+            <p key={i} className="mt-3 text-lg leading-relaxed text-foreground">
+              {para}
+            </p>
+          ))}
+          {sec.bullets?.length ? (
+            <ul className="mt-4 flex flex-col gap-3 text-lg leading-relaxed text-foreground">
+              {sec.bullets.map((b, i) => (
+                <li key={i} className="flex gap-3">
+                  <span
+                    aria-hidden
+                    className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary"
+                  />
+                  <span>{b}</span>
+                </li>
+              ))}
+            </ul>
+          ) : null}
+        </div>
+      ))}
 
       {/* All topics in this guide */}
       {topicList.length > 0 && (

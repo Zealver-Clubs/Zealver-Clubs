@@ -9,7 +9,12 @@
 export type GuideStep = {
   n: number;
   heading: string;
+  /** Lead paragraph. A step needs nothing more than this. */
   text: string;
+  /** A list inside the step, for things that read badly as a sentence. */
+  bullets?: string[];
+  /** Paragraphs after the list, to close the step off. */
+  more?: string[];
   topicSlug: string;
   topicLabel: string;
 };
@@ -21,11 +26,18 @@ export type Guide = {
   title: string;
   meta: string;
   intro: string;
+  /** Further intro paragraphs, after the lead. */
+  introMore?: string[];
   image?: string; // real club photo; falls back to a placeholder if absent
   imageAlt?: string; // describe the image itself; defaults to the guide title
   imageCredit?: string; // visible credit / provenance line under the image
   imageRatio?: "16/9" | "4/3" | "3/2" | "1/1" | "6/5"; // hero aspect; defaults to 16/9
   steps: GuideStep[];
+  /**
+   * Sections after the steps. For closing advice that belongs in the guide
+   * but is not itself a step to work through.
+   */
+  sections?: { heading: string; body: string[]; bullets?: string[] }[];
   topics: string[]; // topic slugs covered
   relatedGuides: string[]; // guide slugs
   references?: Reference[];
@@ -129,28 +141,84 @@ export const guides: Guide[] = [
     title: "Anti-inflammatory eating: where to start",
     meta: "2-step guide",
     intro:
-      "Simple, food-first swaps that help calm inflammation and support how you feel day to day.",
+      "Eating to support lower inflammation does not mean following a strict diet or giving up everything you enjoy. It is mostly about what you eat regularly and often: more vegetables, fruit, whole grains, beans, nuts and seeds, and less highly processed and sugary food.",
+    introMore: [
+      "You do not need to change everything at once. A few simple swaps can make your everyday meals more nourishing.",
+    ],
     image: "/images/community-celebration.jpg",
     steps: [
       {
         n: 1,
-        heading: "Learn the basics",
-        text: "Lean towards whole, colourful foods, vegetables and fruit, whole grains, beans, nuts, olive oil, and gentle additions like turmeric and ginger, and ease back on packaged, sugary snacks.",
+        heading: "Learn what an anti-inflammatory eating pattern looks like",
+        text: "Think more whole foods, more variety, and less highly processed food. Build your meals around:",
+        bullets: [
+          "Vegetables: leafy greens, gourds, beans, carrots, tomatoes, cauliflower, cabbage and other seasonal vegetables",
+          "Fruit: whole fruit such as oranges, guava, berries, apples and papaya",
+          "Protein-rich foods: dal, beans, chana, rajma, curd, paneer, eggs, fish or other foods you eat",
+          "Whole grains and traditional staples: oats, brown rice, whole-wheat roti, millets and other minimally refined grains",
+          "Nuts and seeds: walnuts, almonds, peanuts, flaxseeds and chia seeds",
+          "Healthy fats: mainly unsaturated fats such as those found in nuts, seeds and olive oil",
+          "Flavour from herbs and spices: turmeric, ginger, garlic, cumin and other spices can make healthy food more enjoyable",
+        ],
+        more: [
+          "At the same time, try to eat less of foods that are easy to overconsume and provide little nutritional value, such as sugary drinks, sweets, packaged snacks and heavily processed foods.",
+          "This is not about labelling foods as \u201cgood\u201d or \u201cbad\u201d. Your overall eating pattern matters more than any single food.",
+        ],
         topicSlug: "anti-inflammatory-basics",
         topicLabel: "Anti-inflammatory basics",
       },
       {
         n: 2,
-        heading: "Build balanced plates",
-        text: "Put it into practice one meal at a time: half the plate vegetables and fruit, a quarter protein, a quarter whole grains. Changing one meal at a time makes the habit last.",
+        heading: "Build a balanced plate",
+        text: "You do not need a special recipe or expensive ingredients. Start with the meal in front of you. A simple guide is:",
+        bullets: [
+          "Half the plate: vegetables",
+          "A quarter of the plate: protein, such as dal, beans, paneer, curd, eggs or fish",
+          "A quarter of the plate: whole grains or other minimally refined carbohydrates such as roti, brown rice or millets",
+        ],
+        more: [
+          "Add a portion of whole fruit when it fits the meal, and use nuts or seeds regularly in sensible portions.",
+          "For an Indian meal, this could be as simple as vegetable sabzi, dal, roti, curd and a piece of fruit. Or vegetable pulao, raita, a side of beans or paneer, and fruit.",
+          "You do not have to make every meal perfect. Improving one meal at a time is a much easier habit to maintain.",
+        ],
         topicSlug: "nutrition-basics",
         topicLabel: "Nutrition basics",
+      },
+    ],
+    sections: [
+      {
+        heading: "A simple way to start this week",
+        body: ["Rather than changing your entire diet, try these swaps:"],
+        bullets: [
+          "Replace a biscuit or packaged snack with fruit and a few nuts.",
+          "Add one extra vegetable to lunch or dinner.",
+          "Choose dal, beans, curd, paneer, eggs or fish more regularly as your protein source.",
+          "Use whole fruit instead of juice most of the time.",
+          "Add walnuts, flaxseeds or chia seeds to meals you already eat.",
+          "Choose home-cooked food more often when possible.",
+        ],
+      },
+      {
+        heading:
+          "What about turmeric, ginger and other anti-inflammatory foods?",
+        body: [
+          "Turmeric, ginger, garlic, berries, nuts and other foods contain compounds that have been studied for their potential effects on inflammation. But no single food or spice can make an overall unhealthy diet anti-inflammatory.",
+          "Think of these foods as useful additions to a balanced eating pattern, not as treatments.",
+        ],
+      },
+      {
+        heading: "One thing to remember",
+        body: [
+          "You do not need to buy special anti-inflammatory products. The food already in an Indian kitchen can give you most of what you need: vegetables, fruit, dal, beans, whole grains, nuts, seeds, curd and spices.",
+          "The goal is not a perfect diet. It is a pattern of eating that you can enjoy and maintain.",
+        ],
       },
     ],
     topics: [
       "anti-inflammatory-basics",
       "anti-inflammatory-swaps-indian-kitchen",
       "nutrition-basics",
+      "protein-at-every-meal",
     ],
     relatedGuides: ["lower-your-blood-sugar-guide"],
   },
