@@ -483,18 +483,19 @@ export const topics: Topic[] = [
     guides: ["stay-strong-after-menopause-guide", "fall-prevention-guide"],
   },
   {
-    slug: "synbiotics-explained",
-    title: "Synbiotics: probiotics and prebiotics together",
+    slug: "prebiotics-and-probiotics",
+    title: "Prebiotics, probiotics and synbiotics: what is the difference",
     category: "Food & energy",
     youtubeId: null,
     summary:
-      "What the word means, how the two halves work together, and the everyday food pairings that do the same job.",
+      "Which one is the bacteria and which one is the food, what each does for you, and the everyday pairings that give you both.",
     keyPoints: [
-      "Probiotics are helpful bacteria. Prebiotics are the fibres that feed them. A synbiotic is both together.",
-      "Sending bacteria in with something to eat gives them a better chance of settling in.",
+      "Probiotics are the helpful bacteria themselves. Prebiotics are the fibre that feeds them. A synbiotic is both together.",
+      "Think of a garden: probiotics are the seeds, prebiotics are what makes them grow.",
+      "Prebiotics: oats, bananas, onions, garlic, apples, beans, lentils, flaxseed.",
+      "Probiotics: curd with live cultures, fermented batters, fermented vegetables.",
       "You do not need a product. Curd with banana, or a fermented rice cake with lentil broth, does the same job.",
       "Responses vary a lot between people, and these foods do not treat digestive illness.",
-      "Speak to your doctor first if you have a serious condition or are considering a supplement.",
     ],
     sections: [
       {
@@ -504,9 +505,23 @@ export const topics: Topic[] = [
         ],
       },
       {
-        heading: "How the two halves work together",
+        heading: "The easiest way to remember which is which",
         body: [
-          "The idea is straightforward once you picture it. Bacteria arrive in the gut, the fibre that came along with them gives them something to live on, and they are more likely to settle in and multiply rather than passing straight through. That is the whole of it, and it is why the two are often sold in one product.",
+          "Picture your gut as a garden. Probiotics are the seeds, the helpful bacteria themselves. Prebiotics are what makes them grow, the fibre they feed on. Neither does much alone, which is the whole point of the comparison.",
+          "There is a practical difference too. Prebiotics are ordinary fibre and survive cooking and storage without difficulty. Probiotics are alive, so heat and time can reduce them, which is why fermented food is usually eaten fresh rather than boiled.",
+        ],
+      },
+      {
+        heading: "What each one is doing",
+        body: [
+          "Prebiotics feed the bacteria already living in you, help digestion along, and in the process the bacteria produce compounds that appear to support blood sugar and heart health. Oats, bananas, onions, garlic, apples, beans, lentils and flaxseed all carry them.",
+          "Probiotics add more helpful bacteria to the mix. They are most useful after a course of antibiotics has thinned things out, and some people find they ease certain kinds of upset stomach or irritable bowel symptoms. Curd with live cultures, fermented batters and fermented vegetables all bring them.",
+        ],
+      },
+      {
+        heading: "How they work together",
+        body: [
+          "The idea is straightforward once you picture it. Bacteria arrive in the gut, the fibre that came along with them gives them something to live on, and they are more likely to settle in and multiply rather than passing straight through. That combination is what the word synbiotic describes, and it is why the two are often sold in one product.",
         ],
       },
       {
@@ -670,7 +685,7 @@ export const topics: Topic[] = [
       "muscle-strength-and-ageing",
       "bone-health-after-menopause",
       "nutrition-basics",
-      "synbiotics-explained",
+      "prebiotics-and-probiotics",
     ],
     guides: [],
   },
@@ -909,7 +924,7 @@ export const topics: Topic[] = [
       "anti-inflammatory-basics",
       "nutrition-basics",
       "movement-and-blood-sugar",
-      "synbiotics-explained",
+      "prebiotics-and-probiotics",
     ],
     guides: ["anti-inflammatory-diet-guide"],
     references: [
@@ -1407,6 +1422,62 @@ export const topics: Topic[] = [
       "monthly-activities-zealver-clubs",
     ],
     guides: [],
+  },
+  {
+    slug: "migraine-and-gut-health",
+    title: "Migraine and gut health",
+    category: "Food & energy",
+    youtubeId: null,
+    summary:
+      "The gut and the brain really do talk to each other. What that means for migraine, and why gut health is one piece of the puzzle rather than the whole of it.",
+    keyPoints: [
+      "The gut and brain communicate constantly, through nerves, hormones and the immune system.",
+      "People who get migraines do have higher rates of digestive problems.",
+      "Improving gut health helps some people, particularly those who also have digestive symptoms.",
+      "Migraine is a neurological condition with a strong family component. Gut health is not its main cause.",
+      "Hormones, sleep, stress, dehydration and individual triggers all matter too.",
+      "Any new, severe or changing pattern of headaches needs a doctor.",
+    ],
+    sections: [
+      {
+        heading: "The gut and the brain are genuinely connected",
+        body: [
+          "This is not a fringe idea. The gut and the brain are in constant communication through nerves, hormones and the immune system, and most of the body's serotonin is made in the gut rather than the head. That connection is real and well established.",
+          "It shows up in the numbers too. People who get migraines are more likely than others to also have irritable bowel syndrome, constipation, reflux, coeliac disease or inflammatory bowel disease. The two travel together often enough to be worth noticing.",
+        ],
+      },
+      {
+        heading: "What that means in practice",
+        body: [
+          "For some people, and particularly for those who have digestive symptoms alongside their headaches, looking after gut health does seem to reduce how often migraines come. Some studies on particular probiotic strains point the same way, though the findings are mixed and none of this is standard treatment.",
+          "So it is a reasonable thing to work on, especially if your stomach is troubling you anyway. It is not a cure and should not be treated as one.",
+        ],
+      },
+      {
+        heading: "Where the claim goes too far",
+        body: [
+          "You will see it said that migraine is largely a gut problem. That is stronger than the evidence supports, and believing it can lead people away from things that would help them more.",
+          "Migraine is a neurological condition with a strong family component. Hormonal changes, poor sleep, stress, dehydration, skipped meals, certain medicines, bright light and individual food triggers all play their part, and for many people one of those matters far more than digestion does.",
+          "The honest version is this: gut health is one piece of the migraine puzzle, not the whole puzzle. Worth attending to, unlikely to be the answer on its own.",
+        ],
+      },
+      {
+        heading: "What is worth doing anyway",
+        body: [
+          "The things that support gut health are things worth doing regardless: plenty of fibre from vegetables, fruit, beans, lentils and whole grains, a variety of plant foods across the week, fermented foods if they suit you, less ultra-processed food, regular movement, decent sleep and some handle on stress.",
+          "For migraine specifically, the unglamorous basics tend to do more than anything exotic. Eat regularly rather than leaving long gaps, keep hydrated, protect your sleep, and keep a simple diary for a few weeks to find your own patterns rather than working from someone else's trigger list.",
+          "This is general food and lifestyle guidance, not medical advice. Headaches that are new, severe, different from your usual pattern, or coming with other symptoms should be seen by a doctor rather than managed from a website.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "prebiotics-and-probiotics",
+      "nutrition-basics",
+      "sleep-and-recovery",
+      "understanding-stress",
+    ],
+    guides: ["acid-reflux-guide"],
   },
 ];
 
