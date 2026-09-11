@@ -2533,6 +2533,484 @@ export const topics: Topic[] = [
     ],
     guides: ["friendship-later-in-life-guide", "loneliness-guide"],
   },
+  {
+    slug: "inflammation-explained",
+    title: "Inflammation: the fire that never goes out",
+    category: "Bones & strength",
+    youtubeId: null,
+    summary:
+      "Short-term inflammation heals you. The long-running, low-level kind quietly damages blood vessels, joints and brain, and it responds to ordinary things.",
+    keyPoints: [
+      "Acute inflammation is healing. It arrives, does its work and leaves.",
+      "Chronic inflammation is low-level, silent and does not switch off.",
+      "It is implicated in heart disease, diabetes, arthritis and dementia risk.",
+      "Belly fat, poor sleep, inactivity, smoking and stress all keep it burning.",
+      "Movement, sleep, fibre and keeping muscle are what damp it down.",
+    ],
+    sections: [
+      {
+        heading: "Two very different things with one name",
+        body: [
+          "Cut your finger and the area goes red, warm and sore. That is inflammation doing exactly what it should: arriving, dealing with the problem, and then stopping. Without it nothing would heal.",
+          "The other kind is not like that at all. It is low-level, it produces no redness or pain you can point to, and it does not switch off. Think of a fire that never quite goes out, smouldering away for years.",
+        ],
+      },
+      {
+        heading: "Why it matters across so many conditions",
+        body: [
+          "Long-running inflammation turns up in the story of heart disease, type 2 diabetes, arthritis and dementia risk. That is why those subjects keep overlapping rather than being separate compartments.",
+          "It is also part of why one problem tends to bring others. Somebody with diabetes, extra weight round the middle and poor sleep is not unlucky three times over; the three share a good deal of the same machinery.",
+        ],
+      },
+      {
+        heading: "What keeps it burning",
+        body: [
+          "Fat carried around the organs is itself active, sending out inflammatory signals. So are smoking, long-running stress, broken sleep, sitting most of the day, and a diet heavy in refined carbohydrate and deep-fried food.",
+          "Gum disease belongs on this list too, which is why teeth are not a separate subject from the rest of your health.",
+        ],
+      },
+      {
+        heading: "What puts it down",
+        body: [
+          "Nothing exotic, which is either disappointing or encouraging depending on your mood. Regular movement, keeping muscle, sleeping properly, plenty of fibre and colourful vegetables, sensible oils, less packaged food, and taking stress seriously.",
+          "Working muscle deserves a particular mention, because contracting muscle releases messengers that actively calm inflammation. Exercise is not only burning something off; it is sending a signal.",
+          "This is general guidance, not medical advice, and inflammation that shows itself as a hot swollen joint, fever or persistent pain needs a doctor rather than a change of diet.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "anti-inflammatory-basics",
+      "muscle-as-your-bodys-engine",
+      "metabolism-and-the-weighing-scale",
+      "dementia-what-it-is-and-lowering-risk",
+    ],
+    guides: ["anti-inflammatory-diet-guide", "arthritis-and-joint-comfort-guide"],
+  },
+  {
+    slug: "joints-how-they-work",
+    title: "Joints: how one actually works, and what wears",
+    category: "Bones & strength",
+    youtubeId: null,
+    summary:
+      "Cartilage, fluid, ligament and muscle, and which part is usually the real problem when a joint hurts.",
+    keyPoints: [
+      "A joint is cartilage, lubricating fluid, a capsule, ligaments and the muscle around it.",
+      "Cartilage has no blood supply and is fed by movement, which is why rest stiffens it.",
+      "The fluid thins when a joint is still and thickens with use. Motion really is lotion.",
+      "Weak muscle around a joint means the joint carries load it was not meant to.",
+      "Most joint trouble after 60 involves several of these parts, not cartilage alone.",
+    ],
+    sections: [
+      {
+        heading: "What is actually in there",
+        body: [
+          "A joint is where two bones meet, and rather more is going on than the bones. The ends are capped with cartilage, a smooth, slippery surface that lets them glide. Around the whole thing is a capsule holding a small amount of thick fluid that lubricates and feeds it. Ligaments hold the bones in place, and muscle moves them and takes a good deal of the load.",
+          "When a joint hurts, any of those can be the source, which is why joint pain is rarely one simple thing.",
+        ],
+      },
+      {
+        heading: "Why movement is the food supply",
+        body: [
+          "Cartilage has no blood supply of its own. Nothing is delivered to it in the usual way. It is fed by the fluid in the joint, and that fluid only circulates through it when the joint moves and is loaded a little.",
+          "That is the whole reason resting a sore joint beyond a day or two backfires. A still joint is an underfed joint, and it stiffens. The old phrase that motion is lotion is a fair description of the mechanism: the fluid is thicker and works better when the joint has been used.",
+        ],
+      },
+      {
+        heading: "The part most often overlooked",
+        body: [
+          "Muscle. Strong muscle around a joint absorbs force that would otherwise pass through the cartilage, and it holds the joint in better alignment while it moves.",
+          "This is why leg strength matters so much for sore knees and hips, and why the most useful thing for many painful joints is not a treatment for the joint at all but work on the muscle around it.",
+        ],
+      },
+      {
+        heading: "What ageing actually changes",
+        body: [
+          "Cartilage thins gradually, the fluid becomes less effective, ligaments lose some elasticity, and muscle is lost unless it is used. Several small changes together, rather than one thing wearing out.",
+          "That matters because it means several of them can be worked on. This is general guidance on how joints work, not medical advice; persistent or severe joint pain deserves a proper diagnosis.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "arthritis-three-kinds",
+      "muscle-strength-and-ageing",
+      "chair-dance-fitness-benefits",
+      "bones-that-matter-most",
+    ],
+    guides: ["arthritis-and-joint-comfort-guide", "knee-pain-guide"],
+  },
+  {
+    slug: "kidneys-and-how-to-protect-them",
+    title: "Kidneys: quiet organs worth protecting",
+    category: "Food & energy",
+    youtubeId: null,
+    summary:
+      "They fail silently and slowly, the two commonest causes are blood pressure and diabetes, and much of the damage is preventable.",
+    keyPoints: [
+      "Kidneys filter your blood, balance salt and water, and help control blood pressure.",
+      "Damage is usually silent until a great deal of function is already lost.",
+      "Blood pressure and diabetes are by far the commonest causes.",
+      "Painkillers taken regularly, particularly anti-inflammatories, can harm them.",
+      "A simple blood and urine test catches problems early, which is when it matters.",
+    ],
+    sections: [
+      {
+        heading: "What they do all day",
+        body: [
+          "Your kidneys filter your entire blood volume many times a day, removing waste and keeping the balance of water, salt and minerals steady. They also help regulate blood pressure and prompt the making of red blood cells.",
+          "It is a considerable amount of work for two organs the size of a fist, and they do it without ever announcing themselves.",
+        ],
+      },
+      {
+        heading: "Why trouble goes unnoticed",
+        body: [
+          "This is the important part. Kidney function can decline a long way before anything is felt, because the remaining tissue compensates. By the time there is tiredness, swollen ankles, breathlessness or a change in passing water, a good deal may already have been lost.",
+          "Which is why this is one of the conditions found by testing rather than by noticing, and why the checks matter even when you feel perfectly well.",
+        ],
+      },
+      {
+        heading: "The two big causes, and one everyday one",
+        body: [
+          "High blood pressure and diabetes cause most kidney disease between them, both by damaging the small vessels doing the filtering. Keeping those two in hand is kidney protection, even though it never feels like it.",
+          "The everyday one is painkillers. Anti-inflammatory tablets taken regularly over long periods can harm kidneys, and they are easy to take for months for a sore knee without thinking of them as medicine. Worth asking your doctor or pharmacist if you use them often.",
+        ],
+      },
+      {
+        heading: "What helps",
+        body: [
+          "Blood pressure and blood sugar controlled. Less salt, mostly by cutting packaged food rather than the salt cellar. Enough water through the day. Not smoking. Care with regular painkillers.",
+          "And the tests: a blood test for kidney function and a urine test for protein, as often as your doctor advises. This is general guidance, not medical advice, and any concern about your kidneys belongs with your doctor.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "blood-pressure-in-women",
+      "diabetes-what-is-happening",
+      "anti-inflammatory-swaps-indian-kitchen",
+      "nutrition-basics",
+    ],
+    guides: ["blood-pressure-guide", "diabetes-management-guide"],
+  },
+  {
+    slug: "liver-your-sugar-bank",
+    title: "Liver: your sugar bank, and fatty liver",
+    category: "Food & energy",
+    youtubeId: null,
+    summary:
+      "It stores and releases glucose, and in diabetes it keeps paying out when it should not. Fatty liver is common and it improves.",
+    keyPoints: [
+      "The liver stores glucose after meals and releases it between them.",
+      "In diabetes it keeps releasing sugar even when there is plenty, which raises morning readings.",
+      "Fatty liver is very common, usually silent, and closely tied to weight round the middle.",
+      "It is not only about alcohol. Most fatty liver in India has nothing to do with drinking.",
+      "It responds well: weight loss, movement and better eating genuinely reverse it.",
+    ],
+    sections: [
+      {
+        heading: "The sugar bank",
+        body: [
+          "After a meal your liver takes up glucose and stores it. Between meals and overnight it releases it back out, so you do not run empty. Deposits and withdrawals, which is why calling it a bank is closer to the truth than calling it a filter.",
+          "In diabetes the bank stops reading the balance properly and keeps paying out even when there is plenty in circulation. That is why blood sugar can be high first thing in the morning, before you have eaten anything, which puzzles a great many people.",
+        ],
+      },
+      {
+        heading: "Fatty liver, and what it is not",
+        body: [
+          "Fat accumulating in the liver is now extremely common, and the assumption most people make is that it means drinking. For the majority it does not. It is much more closely tied to weight carried around the middle, insulin resistance and refined carbohydrate.",
+          "It usually causes no symptoms at all and is found incidentally on a scan or a blood test, which is why people are often surprised and sometimes offended by the diagnosis.",
+        ],
+      },
+      {
+        heading: "Why it matters, and why not to panic",
+        body: [
+          "Left alone over many years it can progress, and it travels with diabetes and heart risk, so it is worth taking seriously. But the outlook is genuinely good, because the liver is unusually willing to recover.",
+          "Losing five to ten per cent of body weight, moving regularly, cutting refined carbohydrate and sugary drinks: these reverse fatty liver in a way that few other conditions respond to.",
+        ],
+      },
+      {
+        heading: "How to look after it",
+        body: [
+          "Keep weight around the middle in check, move most days, keep muscle, go easy on refined carbohydrate and sweet drinks, and be sensible about alcohol even though it is not usually the cause.",
+          "Be careful with paracetamol doses and check with a pharmacist before adding supplements, since a good many herbal preparations are processed by the liver. This is general guidance, not medical advice.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "diabetes-what-is-happening",
+      "metabolism-and-the-weighing-scale",
+      "rice-and-roti",
+      "muscle-as-your-bodys-engine",
+    ],
+    guides: ["diabetes-management-guide", "lower-your-blood-sugar-guide"],
+  },
+  {
+    slug: "quiet-and-solitude",
+    title: "Quiet: solitude is not the same as loneliness",
+    category: "Healthy ageing",
+    youtubeId: null,
+    summary:
+      "Being alone can be restorative or painful, and the difference is whether you chose it. Why quiet deserves protecting.",
+    keyPoints: [
+      "Solitude is chosen and restorative. Loneliness is unwanted and painful.",
+      "The same afternoon alone can be either, depending entirely on whether it was your decision.",
+      "Constant company is not the goal, and it exhausts some people.",
+      "Quiet is where reflection, reading, prayer and rest actually happen.",
+      "The test is simple: do you feel restored afterwards, or emptier?",
+    ],
+    sections: [
+      {
+        heading: "Two things that look identical from outside",
+        body: [
+          "A woman sitting alone in her house on a Tuesday afternoon may be having one of the better hours of her week, or one of the worst. From the doorway they look the same.",
+          "The difference is not the situation, it is whether she chose it. Solitude is being alone and content with it. Loneliness is being alone and aching for something else, and it can happen in a crowded room.",
+        ],
+      },
+      {
+        heading: "Why this needs saying",
+        body: [
+          "A great deal of advice about later life is really advice to be busier, on the assumption that any time alone is a problem to be filled. For some people that is exhausting rather than helpful.",
+          "Quieter people are not failing at sociability. They may need less company and more depth in it, and pushing them into a crowded hall is not kindness.",
+        ],
+      },
+      {
+        heading: "What quiet is for",
+        body: [
+          "Reflection, reading, prayer, music, sitting with your own thoughts, doing something slowly because nobody is waiting. These are not gaps between the real activities. For many people they are where the meaning is.",
+          "Later life often offers more of this than any earlier stage did, which is worth treating as a gain rather than as empty time.",
+        ],
+      },
+      {
+        heading: "How to tell which one you are in",
+        body: [
+          "The honest test is how you feel afterwards. Solitude restores you and you return to people gladly. Loneliness leaves you emptier than it found you, and the emptiness does not lift when the phone eventually rings.",
+          "If it is the second, that is worth acting on rather than waiting out, and it is a health matter rather than a private embarrassment.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "meaning-belonging-healthy-aging",
+      "what-makes-life-worth-living-after-60",
+      "understanding-stress",
+      "memory-cognitive-health-seniors",
+    ],
+    guides: ["loneliness-guide", "friendship-later-in-life-guide"],
+  },
+  {
+    slug: "ultra-processed-food",
+    title: "Ultra-processed food: what the phrase actually means",
+    category: "Food & energy",
+    youtubeId: null,
+    summary:
+      "It is not simply packaged food, and it is not about being pure. A practical way to tell, and why it matters after 60.",
+    keyPoints: [
+      "Processing is not the problem. Dal is processed. Curd is processed.",
+      "Ultra-processed means industrially made from refined ingredients and additives.",
+      "A useful test: would this be made in a home kitchen, from things you recognise?",
+      "It tends to be low in protein and fibre and easy to overeat.",
+      "The aim is proportion, not purity. Most of your food home-cooked, some not.",
+    ],
+    sections: [
+      {
+        heading: "The word is doing a lot of work",
+        body: [
+          "Processing simply means something has been done to food, and almost everything has. Dal is processed. Curd is processed. Flour is processed. Cooking is processing. Treating all of it as suspect is neither accurate nor liveable.",
+          "Ultra-processed means something narrower: food made industrially from refined ingredients and substances you would not find in a kitchen, held together with additives, flavourings, emulsifiers and colours.",
+        ],
+      },
+      {
+        heading: "A test that works in a shop",
+        body: [
+          "Look at the list and ask whether this could be made in a home kitchen from things you recognise. Curd, paneer, roasted chana, plain biscuits made of flour, butter and sugar: broadly yes.",
+          "Packaged snacks with fifteen ingredients including several you cannot identify, instant noodles, sweetened drinks, most bakery items, ready sauces and mock meats: broadly no. You do not need to be precise. The rough sorting is enough.",
+        ],
+      },
+      {
+        heading: "Why it matters more after 60",
+        body: [
+          "Two reasons. These foods are usually low in protein and fibre and high in refined carbohydrate, salt and fat, so they crowd out the things you most need at this age and add the ones you need least.",
+          "And they are engineered to be easy to eat a lot of. That is not a moral failing on your part; it is the design working.",
+        ],
+      },
+      {
+        heading: "Proportion, not purity",
+        body: [
+          "Nobody eats perfectly and the attempt makes people miserable. What matters is what most of your food looks like most of the time: cooked at home, from things you recognise, with vegetables and protein in it.",
+          "A packet of namkeen at a wedding is not the problem. A packet most afternoons is a different question. This is general food guidance, not medical advice.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "anti-inflammatory-swaps-indian-kitchen",
+      "nutrition-basics",
+      "metabolism-and-the-weighing-scale",
+      "rice-and-roti",
+    ],
+    guides: ["anti-inflammatory-diet-guide", "cholesterol-guide"],
+  },
+  {
+    slug: "xerostomia-dry-mouth",
+    title: "Xerostomia: dry mouth, and why it is not trivial",
+    category: "Food & energy",
+    youtubeId: null,
+    summary:
+      "Very common after 60, usually caused by medication, and it quietly damages teeth, eating and speech.",
+    keyPoints: [
+      "Xerostomia is the medical word for a persistently dry mouth.",
+      "Medication is the commonest cause, and many ordinary tablets do it.",
+      "Saliva protects teeth, so a dry mouth means far more decay and gum trouble.",
+      "It makes chewing, swallowing, tasting and talking harder, and pushes people to softer, sweeter food.",
+      "It is usually manageable once somebody looks at what is causing it.",
+    ],
+    sections: [
+      {
+        heading: "What it is and how common",
+        body: [
+          "Xerostomia simply means a mouth that is persistently dry. It sounds minor and it is not, which is why it has a name of its own.",
+          "It becomes common after 60, and the usual cause is not ageing itself but medication. A great many ordinary prescriptions reduce saliva: tablets for blood pressure, for low mood, for allergies, for bladder problems, for pain. Taking several at once compounds it.",
+        ],
+      },
+      {
+        heading: "Why saliva matters more than anybody thinks",
+        body: [
+          "Saliva washes the mouth, neutralises acid and protects the surface of teeth. Without enough of it, decay accelerates sharply and gums suffer, which is how somebody with good teeth all their life starts losing them at 70.",
+          "It also carries taste. Food becomes bland, which is a large part of why appetite falls.",
+        ],
+      },
+      {
+        heading: "The quiet knock-on effect",
+        body: [
+          "Chewing and swallowing dry food becomes hard work, so people drift towards soft, moist, often sweet things. That means less protein and more sugar, at exactly the age when the reverse is wanted.",
+          "Dentures fit and hold less well without saliva too, which compounds the same problem. Speaking for long becomes tiring, and some people withdraw from conversation because of it.",
+        ],
+      },
+      {
+        heading: "What helps",
+        body: [
+          "Sip water through the day rather than in large amounts occasionally. Ease off caffeine and alcohol, both of which dry you further. Sugar-free chewing gum or lozenges prompt saliva. Saliva substitutes are available from a pharmacy.",
+          "Most importantly, ask your doctor or pharmacist whether anything you take is the cause, because sometimes there is an alternative. And tell your dentist, since a dry mouth needs closer watching. This is general guidance, not medical advice.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "nutrition-basics",
+      "muscle-as-your-bodys-engine",
+      "inflammation-explained",
+      "anti-inflammatory-basics",
+    ],
+    guides: ["oral-health-guide", "questions-for-your-doctor-guide"],
+  },
+  {
+    slug: "years-versus-healthspan",
+    title: "Years and healthspan: living longer, or living well",
+    category: "Healthy ageing",
+    youtubeId: null,
+    summary:
+      "Lifespan is how long you live. Healthspan is how long you live well. The gap between them is where most suffering sits.",
+    keyPoints: [
+      "Lifespan is years. Healthspan is years spent well and independent.",
+      "Medicine has added years faster than it has added good ones.",
+      "The gap at the end, lived with illness and dependence, is what most people fear.",
+      "Almost everything that extends healthspan is ordinary: movement, muscle, sleep, food, company.",
+      "The aim is not to live forever. It is to shorten the bad bit at the end.",
+    ],
+    sections: [
+      {
+        heading: "Two different numbers",
+        body: [
+          "Lifespan is how many years you get. Healthspan is how many of them you spend in reasonable health, doing what you want, without depending on other people for the basics.",
+          "They are not the same number, and the gap between them is usually several years. That gap is where almost all the fear about ageing actually lives. Very few people say they are afraid of being old. They say they are afraid of being dependent.",
+        ],
+      },
+      {
+        heading: "Medicine has been better at one than the other",
+        body: [
+          "Modern medicine has been remarkably good at adding years. It has been less good at adding good ones, which is why more people now live for a long time with conditions that would once have ended things sooner.",
+          "That is progress, and it is incomplete progress. Extending life without extending the quality of it is not the whole job.",
+        ],
+      },
+      {
+        heading: "What actually closes the gap",
+        body: [
+          "Nothing expensive or novel, which is the striking part. Keeping muscle. Moving most days. Sleeping properly. Eating enough protein and enough fibre. Keeping blood pressure and blood sugar in hand. Staying among people. Hearing and seeing well enough to take part.",
+          "Every one of those appears on this site somewhere else, because they are the same short list from different directions.",
+        ],
+      },
+      {
+        heading: "A better target than longevity",
+        body: [
+          "Living to a hundred is not most people's actual wish. What they want is to be walking, thinking clearly, managing their own home and enjoying company for as long as they get, and for the difficult part at the end to be short.",
+          "That is a far more achievable aim than adding years, and rather more within your influence. This is general guidance, not medical advice.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "what-makes-life-worth-living-after-60",
+      "muscle-as-your-bodys-engine",
+      "10-essentials-healthy-aging-social-clubs",
+      "4m-framework-healthy-aging",
+    ],
+    guides: ["stay-strong-after-menopause-guide", "independence-at-home-guide"],
+  },
+  {
+    slug: "zinc-and-minerals-after-60",
+    title: "Zinc, B12 and the deficiencies worth testing for",
+    category: "Food & energy",
+    youtubeId: null,
+    summary:
+      "A handful of common shortfalls cause tiredness, poor healing and low mood, and every one of them is correctable.",
+    keyPoints: [
+      "Vitamin B12 deficiency is common after 60 and causes tiredness, tingling and memory changes.",
+      "Absorption of B12 falls with age and with long-term acidity medication.",
+      "Vitamin D shortfall is very common in India despite the sunshine.",
+      "Zinc matters for immunity, healing and taste, and low intake is common in vegetarian diets.",
+      "Iron, calcium and magnesium round out the short list. All are testable and fixable.",
+    ],
+    sections: [
+      {
+        heading: "Why this short list and not a cabinet of supplements",
+        body: [
+          "Most people do not need most supplements. What is worth knowing is the handful of shortfalls that are genuinely common after 60, cause real symptoms, and are easily missed because the symptoms look like ageing.",
+          "Tiredness, poor concentration, low mood, slow healing, pins and needles: all of these get shrugged off as getting older, and several have a correctable cause behind them.",
+        ],
+      },
+      {
+        heading: "Vitamin B12, the one most often missed",
+        body: [
+          "Absorption of B12 falls naturally with age, and falls further with long-term use of medicines that reduce stomach acid, which a great many older people take for reflux. Vegetarian diets provide less of it to begin with, so in India this combination is common.",
+          "It causes tiredness, pins and needles in hands and feet, poor balance, and memory or mood changes that can look worryingly like early dementia. A blood test settles it, and treatment is straightforward.",
+        ],
+      },
+      {
+        heading: "Vitamin D, zinc and the rest",
+        body: [
+          "Vitamin D shortfall is widespread in India despite the sunshine, largely because of time spent indoors, covered clothing and air pollution. It matters for bone, muscle and more.",
+          "Zinc supports immunity, wound healing and taste, and intake tends to be lower on a vegetarian diet. Dal, chana, rajma, nuts, seeds, whole grains and curd all contribute. Iron, calcium and magnesium complete the short list worth thinking about.",
+        ],
+      },
+      {
+        heading: "Test rather than guess",
+        body: [
+          "The point of this page is not to send you to a chemist. Taking supplements blindly is wasteful at best, and some do harm in excess. Zinc taken long-term in high doses interferes with copper, and too much iron is dangerous.",
+          "If you have been tired for months, or have any of the symptoms above, ask your doctor for the relevant blood tests. Correct what is actually low. This is general guidance, not medical advice, and supplements belong in a conversation with your doctor.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "vitamin-d-what-it-does",
+      "nutrition-basics",
+      "soy-milk-and-plant-milks",
+      "muscle-as-your-bodys-engine",
+    ],
+    guides: ["vitamin-d-guide", "questions-for-your-doctor-guide"],
+  },
 ];
 
 /** Every paragraph of a topic, whichever shape it uses. */
