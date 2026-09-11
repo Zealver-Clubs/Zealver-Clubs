@@ -493,6 +493,7 @@ export const topics: Topic[] = [
     ],
     body: [],
     relatedTopics: [
+      "chair-dance-fitness-benefits",
       "muscle-strength-and-ageing",
       "balance-exercises",
       "bone-health-after-menopause",
@@ -2374,6 +2375,84 @@ export const topics: Topic[] = [
       "meaning-belonging-healthy-aging",
     ],
     guides: ["five-things-you-can-do-for-stress-guide"],
+  },
+  {
+    slug: "chair-dance-fitness-benefits",
+    title: "Chair dance fitness: what it actually does for you",
+    category: "Movement",
+    youtubeId: null,
+    summary:
+      "Five things a seated, music-led session gives you, why the chair is the reason it works, and what it does not do.",
+    keyPoints: [
+      "Strength and energy: the legs, arms and core all work, seated.",
+      "Balance: practised safely, with something solid within reach.",
+      "Joint comfort: movement feeds joints, and resting them makes stiffness worse.",
+      "Mood: music, company and moving all lift it, and they arrive together.",
+      "Independence: the point of all four, and the reason any of it matters.",
+      "Five to ten minutes most days does more than an hour once a fortnight.",
+    ],
+    sections: [
+      {
+        heading: "Why the chair is the reason it works",
+        body: [
+          "The chair is usually read as a limitation, something for people who cannot do the real thing. It is closer to the opposite: it is the feature that lets almost anybody take part.",
+          "Two fears stop older women exercising, and the chair answers both. The fear of falling goes, because you are seated or holding something solid. And the fear of being the one who cannot keep up goes, because everybody is doing the same session at their own depth, and nobody can tell who is finding it harder.",
+          "That is not a lesser form of exercise. It is what gets someone into the room who would never go to a gym, and the movement that happens is the movement that counts.",
+        ],
+      },
+      {
+        heading: "Strength and energy",
+        body: [
+          "A session works more than it looks like it does. Rising from the chair and sitting back down is the most functional leg exercise there is. Straightening and holding a knee works the thigh. Arms lifting and reaching work the shoulders through a range most people stop using. Holding yourself upright throughout is the core doing its job.",
+          "The energy part is what people notice first and doubt beforehand. Moving regularly makes you less tired rather than more, because strength makes ordinary tasks cost less. There is a deeper reason too: muscle is the body's largest metabolic organ, which is a subject in itself.",
+        ],
+      },
+      {
+        heading: "Balance, practised safely",
+        body: [
+          "Balance is a skill, and like any skill it fades when it is never used. The difficulty is that the people who most need to practise it are the ones for whom practising it feels dangerous.",
+          "A chair solves that. Weight shifting, heel raises, standing on one foot, stepping to the side, all done with something solid within reach. You can work at the edge of your balance without any real risk of going over, which is the only way anybody improves.",
+        ],
+      },
+      {
+        heading: "Joints that move more comfortably",
+        body: [
+          "The instinct with a sore knee or a stiff shoulder is to rest it, and beyond a day or two that usually makes it worse. Cartilage has no blood supply of its own and relies on gentle movement to stay nourished.",
+          "Seated movement lets you take a joint through its range without loading it with your whole body weight, which is why it suits stiff hips, sore knees and painful shoulders particularly well. Stronger muscle around a joint also carries load the joint would otherwise take.",
+        ],
+      },
+      {
+        heading: "Mood, and why it is not a soft benefit",
+        body: [
+          "Three things that reliably lift mood arrive at once here: movement, music you grew up with, and other people. Each works on its own, and together they do more than any of them would separately.",
+          "This is not the pleasant extra around the real business of exercise. Enjoyment is the mechanism, because it is what decides whether anyone comes back next week, and everything else on this page depends on coming back.",
+        ],
+      },
+      {
+        heading: "Independence, which is the point of the other four",
+        body: [
+          "Strength, balance, comfortable joints and decent spirits are not ends in themselves. What they add up to is getting out of a chair without help, managing the stairs, carrying your own shopping, going out without calculating the risk, and living in your own home on your own terms.",
+          "That is what is actually being protected, and it is worth naming, because five minutes of seated marching does not feel like it is protecting anything. It is.",
+        ],
+      },
+      {
+        heading: "What it does not do",
+        body: [
+          "Being honest about the limits is what makes the rest of it trustworthy. A gentle seated session is mobility, coordination and light endurance. It is not the same as asking your muscles to work against real resistance, and muscle grows stronger only when it is regularly asked for a bit more than it is comfortable with.",
+          "The answer is not to do something else instead. It is to build a little resistance into what you are already doing: rising without using your hands, rising more slowly, holding a leg out longer, heel raises at the chair back. Treat chair dance as the foundation and the habit, with strength work on top rather than instead.",
+          "Five to ten unhurried minutes most days does more than an hour once a fortnight. This is general activity guidance, not medical advice, and it is worth checking with your doctor before starting something new if you have a health condition.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "chair-dance-for-bone-and-muscle",
+      "muscle-as-your-bodys-engine",
+      "balance-exercises",
+      "garba-and-dandiya-for-seniors",
+    ],
+    guides: ["stay-strong-after-menopause-guide", "fall-prevention-guide"],
+    cta: { label: "See our classes, clubs and events", href: "/experience" },
   },
 ];
 
