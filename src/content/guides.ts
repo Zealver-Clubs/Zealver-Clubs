@@ -37,7 +37,7 @@ export type Guide = {
   image?: string; // real club photo; falls back to a placeholder if absent
   imageAlt?: string; // describe the image itself; defaults to the guide title
   imageCredit?: string; // visible credit / provenance line under the image
-  imageRatio?: "16/9" | "4/3" | "3/2" | "1/1" | "6/5"; // hero aspect; defaults to 16/9
+  imageRatio?: "16/9" | "4/3" | "3/2" | "1/1" | "6/5" | "4/5"; // hero aspect; defaults to 16/9
   steps: GuideStep[];
   /**
    * Sections after the steps. For closing advice that belongs in the guide
@@ -129,32 +129,41 @@ export const guides: Guide[] = [
     ],
     metaDescription:
       "Eat protein first, then vegetables, then healthy fats, and carbohydrates last. A simple change to meal order that can steady blood sugar, plus movement and sleep.",
-    image: "/images/class-seated-dance.jpg",
+    image: "/images/eating-order-blood-sugar.jpg",
+    imageAlt:
+      "Eating order that balances blood sugar. Four plates in sequence. One, protein first: paneer, tofu, eggs, chicken, fish, dal, beans or Greek yogurt, which keeps you full, supports muscles and reduces sugar spikes. Two, salad and vegetables second: leafy greens, cucumber, tomato, carrot or sprouts, whose fibre slows carbohydrate absorption and improves digestion. Three, healthy fats third: avocado, nuts and seeds, olive oil, ghee or olives, which keep you satisfied and help the body absorb nutrients. Four, carbohydrates later: brown rice, quinoa, millets, whole wheat roti or sweet potato. Why this order works: it helps reduce blood sugar spikes, improves digestion, and keeps you full while reducing cravings. The golden rule is protein, then salad, then healthy fats, then carbohydrates.",
+    imageRatio: "4/5",
+    imageCredit:
+      "Illustration created for Zealver Clubs with ChatGPT (OpenAI), reviewed by Dr Namrata Bagaria.",
     steps: [
       {
         n: 1,
         heading: "Start with protein",
         text: "Begin your meal with a protein-rich food such as dal, beans, eggs, paneer, tofu, fish, chicken or Greek yoghurt.",
-        more: ["Protein helps with fullness and supports muscle health."],
+        more: [
+          "Protein helps with fullness, supports muscle health, and starting with it also helps reduce the rise in blood sugar after the meal.",
+        ],
       },
       {
         n: 2,
         heading: "Next, eat vegetables",
         text: "Have your salad or non-starchy vegetables next: leafy greens, cucumber, tomato, carrots, cabbage, broccoli or sprouts.",
-        more: ["Their fibre can slow digestion and carbohydrate absorption."],
+        more: [
+          "Their fibre can slow digestion and carbohydrate absorption, and it supports digestion more generally.",
+        ],
       },
       {
         n: 3,
         heading: "Add healthy fats",
-        text: "Include foods such as nuts, seeds, avocado, olive oil or a little ghee.",
+        text: "Include foods such as nuts, seeds, avocado, olives, olive oil or a little ghee.",
         more: [
-          "These add staying power to the meal and make it more satisfying.",
+          "These add staying power to the meal and make it more satisfying. Fat also helps your body absorb the vitamins in the meal that need it, including vitamins A, D, E and K.",
         ],
       },
       {
         n: 4,
         heading: "Eat carbohydrates last",
-        text: "Have your roti, rice, quinoa, millet, potatoes or other carbohydrate foods after the protein and vegetables.",
+        text: "Have your carbohydrate foods after the protein and vegetables: whole wheat roti, brown rice, quinoa, millets or sweet potato. Complex carbohydrates suit this better than refined ones.",
         more: [
           "You do not need to eliminate carbohydrates. The goal is to choose sensible portions and change the order in which you eat them.",
           "The golden rule: protein, then vegetables, then healthy fats, then carbohydrates.",
@@ -162,6 +171,20 @@ export const guides: Guide[] = [
       },
     ],
     sections: [
+      {
+        heading: "Why this order works",
+        body: [
+          "Eating the same meal in a different order changes how quickly the carbohydrate in it reaches your bloodstream. Three things follow from that:",
+        ],
+        bullets: [
+          "It helps reduce the rise in blood sugar after eating.",
+          "It supports digestion.",
+          "It keeps you full for longer, which tends to reduce cravings later in the day.",
+        ],
+        more: [
+          "Done most days rather than occasionally, this supports steadier energy, and it makes a sensible portion of carbohydrate easier to stick to.",
+        ],
+      },
       {
         heading: "Three more everyday habits for steadier blood sugar",
         body: [],
@@ -190,6 +213,19 @@ export const guides: Guide[] = [
             topicSlug: "sleep-and-recovery",
             topicLabel: "Sleep & recovery",
           },
+        ],
+      },
+      {
+        heading: "Eating out",
+        body: [
+          "The order still works when someone else has cooked. Ask for the salad or a vegetable dish to come first, eat the paneer, dal or chicken before the rice or naan, and keep the bread to a sensible portion rather than refusing it.",
+          "Apple cider vinegar is often suggested here, taken diluted before a carbohydrate-rich meal. The studies behind it are small and short-term, and they do suggest a modest reduction in the rise in blood sugar after a meal. It is worth being clear about what that means: a small effect, alongside the meal order rather than instead of it, and nothing like the effect of medication.",
+        ],
+        bullets: [
+          "Always dilute it in water. Never drink it neat, and do not take it as a shot.",
+          "It is acidic, so it can worsen reflux and wear down tooth enamel. Rinse your mouth with water afterwards.",
+          "If you take medication for diabetes, ask your doctor before adding it, since the effects can add together.",
+          "If it does not suit you, you lose very little. The meal order is doing most of the work.",
         ],
       },
       {
