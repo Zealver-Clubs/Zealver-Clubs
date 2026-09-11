@@ -2305,6 +2305,75 @@ export const topics: Topic[] = [
     ],
     guides: ["stay-strong-after-menopause-guide", "diabetes-management-guide"],
   },
+  {
+    slug: "garba-and-dandiya-for-seniors",
+    title: "Garba and dandiya: dance that happens to be exercise",
+    category: "Movement",
+    youtubeId: null,
+    summary:
+      "Steps you already know, music you grew up with, and a circle where everybody faces everybody. Why it works so well after 60.",
+    keyPoints: [
+      "Nobody has to learn it. The steps and the songs are already in you.",
+      "Clapping to a beat trains timing, coordination and using both sides together.",
+      "Dandiya sticks add a target to hit, which sharpens reaction and attention.",
+      "Seated dandiya keeps people in the room who cannot stand for an hour.",
+      "The circle is the point: everybody faces everybody, and nobody is at the back.",
+      "It need not wait for Navratri. The benefit comes from doing it often.",
+    ],
+    sections: [
+      {
+        heading: "The advantage it starts with",
+        body: [
+          "Most exercise for older adults has to be taught before it can be done, and being taught something new in front of other people is exactly what puts people off.",
+          "Garba does not have that problem. The steps are already in you, the songs are ones you have known for fifty years, and nobody in the room feels like a beginner. That is a considerable head start, and it is why a Garba session gets people moving who would never come to an exercise class.",
+        ],
+      },
+      {
+        heading: "What the clapping is doing",
+        body: [
+          "The clap is not decoration. Keeping to a beat is timing. Clapping while stepping is doing two things at once with two halves of the body, which is coordination and attention working together.",
+          "Arms come up and out, which is shoulder range most people stop using. Turning through the circle asks for balance and for the small corrections that keep you upright. None of it announces itself as exercise, which is precisely why people keep doing it.",
+        ],
+      },
+      {
+        heading: "Why dandiya adds something",
+        body: [
+          "Sticks change the task. Now there is a target to meet, another person's timing to match, and a consequence if you are late. That sharpens reaction and attention in a way that moving alone does not.",
+          "It is also naturally partnered, so the movement carries a conversation with it. You are not performing beside somebody, you are doing something with them.",
+        ],
+      },
+      {
+        heading: "Seated dandiya, and who it keeps in the room",
+        body: [
+          "Not everybody can stand and turn for an hour, and the usual outcome is that those women sit at the edge and watch. Seated dandiya removes that.",
+          "The arms, the rhythm, the striking, the partner and the music are all intact. What has gone is the standing, which for many people is the only part that was ever the problem. Someone with poor balance, sore knees or low stamina does the same session as everybody else, and that changes how they feel about being there.",
+        ],
+      },
+      {
+        heading: "The circle is not incidental",
+        body: [
+          "Look at the shape. In a class everybody faces the front and the back row is anonymous. In a circle everybody faces everybody, there is no back, and you can see whether the woman opposite has come this week.",
+          "That is why these sessions build friendships faster than a class does. The formation is doing social work while the music is doing the movement.",
+        ],
+      },
+      {
+        heading: "It need not wait for Navratri",
+        body: [
+          "The obvious limitation is that Garba belongs to nine nights of the year. It does not have to. The benefit of any movement comes from doing it regularly, and there is nothing about the steps or the music that expires in October.",
+          "Dancing it in July is not a diminished version of the real thing. It is the same movement, the same music and the same company, available fifty-two weeks a year instead of one.",
+          "This is general activity guidance, not medical advice. Move at your own pace, sit out anything that does not feel right, and check with your doctor before starting something new if you have a health condition.",
+        ],
+      },
+    ],
+    body: [],
+    relatedTopics: [
+      "chair-dance-for-bone-and-muscle",
+      "music-memory-and-mood",
+      "balance-exercises",
+      "meaning-belonging-healthy-aging",
+    ],
+    guides: ["five-things-you-can-do-for-stress-guide"],
+  },
 ];
 
 /** Every paragraph of a topic, whichever shape it uses. */
