@@ -23,7 +23,11 @@ export async function generateMetadata({
   const { slug } = await params;
   const item = getExperienceItem(slug);
   if (!item) return { title: "Not found | Zealver Clubs" };
-  return { title: `${item.title} | Zealver Clubs`, description: item.blurb };
+  return {
+    title: `${item.title} | Zealver Clubs`,
+    description: item.blurb,
+    alternates: { canonical: `${site.url}/experience/${item.slug}` },
+  };
 }
 
 export default async function ClassDetailPage({

@@ -3,7 +3,7 @@ import { site } from "@/content/site";
 import { topics } from "@/content/topics";
 import { guides } from "@/content/guides";
 import { recipes } from "@/content/recipes";
-import { experienceItems } from "@/content/experience";
+import { experienceItems, experienceCategories } from "@/content/experience";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -28,6 +28,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ];
 
+  const experienceCategoryRoutes: MetadataRoute.Sitemap =
+    experienceCategories.map((c) => ({
+      url: u(`/experience/${c.slug}`),
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    }));
+
   const experienceRoutes: MetadataRoute.Sitemap = experienceItems.map((e) => ({
     url: u(`/experience/${e.slug}`),
     lastModified: now,
@@ -49,5 +57,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticRoutes, ...experienceRoutes, ...topicRoutes, ...guideRoutes];
+  return [
+    ...staticRoutes,
+    ...experienceCategoryRoutes,
+    ...experienceRoutes, ...topicRoutes, ...guideRoutes];
 }
