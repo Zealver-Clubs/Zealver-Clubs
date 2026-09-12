@@ -9,6 +9,11 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/experience/neighbourhood-club-meetup",
+        destination: "/experience/seated-dance-in-person-class",
+        permanent: true,
+      },
+      {
         source: "/knowledge-hub/recipes/walnut-and-orange-salad",
         destination: "/knowledge-hub/recipes/orange-cucumber-and-walnut-salad",
         permanent: true,

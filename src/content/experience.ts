@@ -1,6 +1,8 @@
 /**
  * Experience content: clubs, batches, events and instructors.
- * `mode` filters against the In-Person / Online chooser.
+ * The Experience chooser offers three categories: in-person classes, online
+ * classes, and events. An item's category is its `mode`, unless its `kind` is
+ * "event", which puts it under events wherever it is held.
  * Each item opens a class detail page by slug.
  */
 
@@ -51,17 +53,17 @@ export const experienceItems: ExperienceItem[] = [
     relatedTopics: ["sleep-and-recovery", "balance-exercises"],
   },
   {
-    slug: "neighbourhood-club-meetup",
+    slug: "seated-dance-in-person-class",
     kind: "club",
     mode: "in-person",
-    title: "Neighbourhood Club meet-up",
+    title: "Seated Dance Fitness · In-person class",
     meta: "In-person · Weekly",
     blurb:
-      "Meet your local Zealver community in person for seated dance, tea and friendship close to home.",
+      "The same chair-based, music-led session, in a room with other people. Seated dance, tea and friendship afterwards.",
     image: "/images/community-celebration.jpg",
     schedule: "Saturdays, 10:00–11:00 AM",
     price: "Free trial, then membership",
-    trainer: "Local club host",
+    trainer: "Zealver certified instructor",
     relatedTopics: ["fall-prevention", "balance-exercises"],
   },
   {

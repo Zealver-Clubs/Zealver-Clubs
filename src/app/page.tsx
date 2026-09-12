@@ -2,11 +2,12 @@ import { BookOpen, MessageSquareQuote, Film } from "lucide-react";
 import { InstagramIcon } from "@/components/icons/social";
 import { Section, SectionHeading } from "@/components/section";
 import { ButtonLink } from "@/components/ui/button";
+import { GuideCard } from "@/components/content-cards";
+import { featuredGuides } from "@/content/guides";
 import { Card, CardBody } from "@/components/ui/card";
 import { MediaImage } from "@/components/media-image";
 import { MediaEmbed } from "@/components/media-embed";
 import { Ticker } from "@/components/ticker";
-import { CategoryCarousel } from "@/components/category-carousel";
 import { VideoSlider } from "@/components/video-slider";
 import { InstagramFeed } from "@/components/instagram-feed";
 import { InView } from "@/components/in-view";
@@ -114,16 +115,25 @@ export default function HomePage() {
         </Card>
       </Section>
 
-      {/* From the Knowledge Hub, illustrated category carousel */}
+      {/* From the Knowledge Hub, the finished guides */}
       <Section id="approach" className="py-10">
         <SectionHeading
           eyebrow="From the Knowledge Hub"
           icon={BookOpen}
-          title="Explore by topic area"
-          intro="Trusted reading for healthy ageing, grouped into simple areas."
+          title="Explore our guides"
+          intro="Step-by-step guides for healthy ageing, written for women 60+ and reviewed before publishing."
         />
+        <ul className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {featuredGuides.map((guide) => (
+            <li key={guide.slug} className="relative">
+              <GuideCard guide={guide} />
+            </li>
+          ))}
+        </ul>
         <div className="mt-6">
-          <CategoryCarousel />
+          <ButtonLink href="/knowledge-hub" variant="secondary" size="lg">
+            See all guides
+          </ButtonLink>
         </div>
       </Section>
 

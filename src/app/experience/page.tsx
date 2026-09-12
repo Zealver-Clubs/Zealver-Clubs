@@ -7,7 +7,7 @@ import { experienceItems } from "@/content/experience";
 export const metadata: Metadata = {
   title: "Experience | Zealver Clubs",
   description:
-    "Choose in-person or online Zealver Seated Dance Fitness. Browse clubs, events and instructors made for women 60+.",
+    "In-person classes, online classes and events from Zealver Clubs. Seated dance fitness and community made for women 60+.",
 };
 
 export default function ExperiencePage() {

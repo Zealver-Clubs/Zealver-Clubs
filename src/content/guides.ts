@@ -2157,7 +2157,23 @@ export const guides: Guide[] = [
   },
 ];
 
+/**
+ * The guides shown on the home page, in this order. Kept explicit rather
+ * than taking the first few, so the home page always leads with finished
+ * guides: their own illustration, reviewed copy, and sources where needed.
+ */
+export const featuredGuideSlugs = [
+  "fall-prevention-guide",
+  "lower-your-blood-sugar-guide",
+  "anti-inflammatory-diet-guide",
+] as const;
+
 export const guidesBySlug = new Map(guides.map((g) => [g.slug, g]));
+
+/** The featured guides, skipping any slug that no longer exists. */
+export const featuredGuides = featuredGuideSlugs
+  .map((slug) => guidesBySlug.get(slug))
+  .filter((g): g is Guide => Boolean(g));
 
 export function getGuide(slug: string) {
   return guidesBySlug.get(slug) ?? null;
