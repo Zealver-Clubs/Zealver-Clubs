@@ -20,6 +20,15 @@ export type ExperienceItem = {
   schedule: string;
   price: string;
   trainer: string;
+  /**
+   * What is on, session by session. Written out month by month, so it needs
+   * replacing when the month turns rather than quietly going stale.
+   */
+  timetable?: {
+    heading: string;
+    note?: string;
+    sessions: { date: string; talk: string; dance: string }[];
+  };
   /** Where it happens. Absent for online sessions. */
   location?: {
     name: string;
@@ -71,6 +80,21 @@ export const experienceItems: ExperienceItem[] = [
     schedule: "Tuesdays & Thursdays, 11:00 AM – 1:00 PM",
     price: "Free trial. WhatsApp us for fees.",
     trainer: "Zealver certified instructor",
+    timetable: {
+      heading: "September 2026",
+      note: "Each session is a 15-minute health talk followed by 30 minutes of dance fitness.",
+      sessions: [
+        { date: "Tuesday 1 September", talk: "Stress management", dance: "Red theme" },
+        { date: "Thursday 3 September", talk: "Sleep", dance: "Krishna, for Janmashtami" },
+        { date: "Tuesday 8 September", talk: "Sunlight and vitamin D", dance: "Blue theme" },
+        { date: "Thursday 10 September", talk: "Strength training", dance: "Green theme" },
+        { date: "Tuesday 15 September", talk: "The importance of relationships", dance: "Ganesh Chaturthi special" },
+        { date: "Thursday 17 September", talk: "Smart eating", dance: "Madhuri Dixit" },
+        { date: "Tuesday 22 September", talk: "Insulin resistance", dance: "Govinda" },
+        { date: "Thursday 24 September", talk: "Karisma Kapoor", dance: "Orange theme" },
+        { date: "Tuesday 29 September", talk: "Madh Island picnic", dance: "Aqua theme" },
+      ],
+    },
     location: {
       name: "Yoga Room, The Classique Club, Andheri West",
       address:

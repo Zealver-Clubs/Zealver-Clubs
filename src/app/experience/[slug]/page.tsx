@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { CalendarDays, Tag, UserRound, ArrowRight, MapPin } from "lucide-react";
+import { InstagramIcon } from "@/components/icons/social";
 import { Section } from "@/components/section";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { Card, CardBody } from "@/components/ui/card";
@@ -90,6 +91,50 @@ export default async function ClassDetailPage({
         ))}
       </dl>
 
+      {item.timetable ? (
+        <div className="mt-10">
+          <h2 className="text-2xl font-extrabold text-heading">
+            What is on in {item.timetable.heading}
+          </h2>
+          {item.timetable.note ? (
+            <p className="mt-2 text-lg leading-relaxed text-muted-foreground">
+              {item.timetable.note}
+            </p>
+          ) : null}
+          <div className="mt-4 overflow-x-auto rounded-xl border border-border">
+            <table className="w-full min-w-[34rem] border-collapse text-left">
+              <caption className="sr-only">
+                {item.title}, sessions in {item.timetable.heading}
+              </caption>
+              <thead>
+                <tr className="bg-muted">
+                  <th scope="col" className="px-4 py-3 text-sm font-bold uppercase tracking-wide text-secondary">
+                    Date
+                  </th>
+                  <th scope="col" className="px-4 py-3 text-sm font-bold uppercase tracking-wide text-secondary">
+                    Health talk
+                  </th>
+                  <th scope="col" className="px-4 py-3 text-sm font-bold uppercase tracking-wide text-secondary">
+                    Dance fitness
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {item.timetable.sessions.map((sess) => (
+                  <tr key={sess.date} className="border-t border-border">
+                    <th scope="row" className="px-4 py-3 text-left font-bold text-heading">
+                      {sess.date}
+                    </th>
+                    <td className="px-4 py-3 text-foreground">{sess.talk}</td>
+                    <td className="px-4 py-3 text-foreground">{sess.dance}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      ) : null}
+
       {item.location ? (
         <div className="mt-6 rounded-xl border border-border bg-card p-5">
           <h2 className="flex items-center gap-2 text-sm font-bold uppercase tracking-wide text-secondary">
@@ -122,6 +167,28 @@ export default async function ClassDetailPage({
           Back to all options
         </ButtonLink>
       </div>
+
+      {/* Follow us, so people can see the classes between visits */}
+      <aside className="mt-12 rounded-2xl border border-border bg-muted p-6 text-center">
+        <h2 className="text-xl font-extrabold text-heading">
+          See what a session looks like
+        </h2>
+        <p className="mx-auto mt-2 max-w-xl text-lg leading-relaxed text-muted-foreground">
+          Photos and reels from our classes, clubs and celebrations go up on
+          Instagram as they happen.
+        </p>
+        <ButtonLink
+          href={site.social.instagram}
+          variant="secondary"
+          size="lg"
+          className="mt-4"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <InstagramIcon className="h-5 w-5 shrink-0" aria-hidden />
+          Follow @{site.instagramHandle}
+        </ButtonLink>
+      </aside>
 
       {/* Related reading -> Knowledge Hub */}
       {related.length > 0 && (
