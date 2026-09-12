@@ -20,9 +20,9 @@ import { WhatsAppIcon } from "@/components/icons/social";
 import { site } from "@/content/site";
 
 export const metadata: Metadata = {
-  title: "Become a Host | Zealver Clubs",
+  title: "Become an Instructor | Zealver Clubs",
   description:
-    "Help seniors connect, move and belong in your neighbourhood. No formal training required, and we support you every step of the way.",
+    "Train as a Zealver certified instructor and lead chair-based sessions for women 60+. No prior experience needed, and we train and support you throughout.",
 };
 
 const duties = [
@@ -35,7 +35,7 @@ const duties = [
 const support = [
   { Icon: BookOpen, title: "Training guides", text: "Clear, step-by-step guides, no prior experience needed." },
   { Icon: CalendarCheck, title: "Weekly session plans", text: "Ready-made plans so preparation stays simple." },
-  { Icon: Users, title: "Community support", text: "A team and fellow hosts to lean on." },
+  { Icon: Users, title: "Community support", text: "A team and fellow instructors to lean on." },
   { Icon: LifeBuoy, title: "Troubleshooting help", text: "Someone to call when you need a hand." },
 ];
 
@@ -50,31 +50,32 @@ const benefits = [
 const steps = [
   { n: 1, title: "Apply", text: "Send a quick message to start your application." },
   { n: 2, title: "We connect", text: "Our team reviews it and has a friendly chat with you." },
-  { n: 3, title: "Get set up", text: "Receive your resources, guides and training." },
-  { n: 4, title: "Start hosting", text: "Begin your sessions with our ongoing support." },
+  { n: 3, title: "Train and certify", text: "Complete our training and become a Zealver certified instructor." },
+  { n: 4, title: "Start teaching", text: "Begin your sessions with our ongoing support." },
 ];
 
-export default function BecomeAHostPage() {
+export default function BecomeAnInstructorPage() {
   return (
     <>
       <Section className="py-8">
-        <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Become a Host" }]} />
+        <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Become an Instructor" }]} />
         <div className="grid items-center gap-8 md:grid-cols-2">
           <div>
             <p className="mb-2 text-sm font-extrabold uppercase tracking-wide text-primary">
-              Become a Host
+              Become an Instructor
             </p>
             <h1 className="text-4xl font-extrabold text-heading sm:text-5xl">
-              Become a Zealver Clubs Host
+              Become a Zealver certified instructor
             </h1>
             <p className="mt-4 text-xl text-muted-foreground">
-              Help seniors connect, move and belong, right in your neighbourhood. No
-              formal training required, and we support you every step of the way.
+              Help seniors connect, move and belong, right in your
+              neighbourhood. No prior experience needed: we train you and you
+              qualify as a Zealver certified instructor.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <ButtonLink href={site.joinHref} size="lg" target="_blank" rel="noreferrer">
                 <WhatsAppIcon className="h-5 w-5" aria-hidden />
-                Apply to become a host
+                Apply to become an instructor
               </ButtonLink>
               <ButtonLink href="/experience" variant="outline" size="lg">
                 See the Experiences
@@ -92,12 +93,12 @@ export default function BecomeAHostPage() {
         </div>
       </Section>
 
-      {/* What a host does */}
+      {/* What an instructor does */}
       <Section className="py-8">
         <SectionHeading
           align="center"
           eyebrow="The role"
-          title="What does a host do?"
+          title="What does an instructor do?"
           intro="Four simple things, and none of them need a fitness or dance background."
         />
         <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -160,12 +161,12 @@ export default function BecomeAHostPage() {
         </div>
       </Section>
 
-      {/* Why host */}
+      {/* Why become an instructor */}
       <Section className="py-8">
         <div className="grid gap-8 md:grid-cols-2 md:items-center">
           <div>
             <h2 className="flex items-center gap-2 text-2xl font-extrabold text-heading sm:text-3xl">
-              <MessageCircleHeart className="h-7 w-7 text-primary" aria-hidden /> Why host?
+              <MessageCircleHeart className="h-7 w-7 text-primary" aria-hidden /> Why do it?
             </h2>
             <ul className="mt-5 flex flex-col gap-3">
               {benefits.map((b) => (
@@ -178,8 +179,8 @@ export default function BecomeAHostPage() {
           </div>
           <MediaImage
             src="/images/instructor-class.jpg"
-            alt="A host leading a warm, seated session"
-            label="Photo, host leading a session"
+            alt="A Zealver certified instructor leading a warm, seated session"
+            label="Photo, instructor leading a session"
             ratio="4/3"
             className="rounded-2xl border border-border"
           />
@@ -188,7 +189,7 @@ export default function BecomeAHostPage() {
 
       {/* Steps */}
       <Section className="py-8">
-        <SectionHeading align="center" eyebrow="Getting started" title="How to become a host" />
+        <SectionHeading align="center" eyebrow="Getting started" title="How to become an instructor" />
         <ol className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {steps.map((s) => (
             <li key={s.n}>
@@ -219,7 +220,7 @@ export default function BecomeAHostPage() {
           <div className="mt-6">
             <ButtonLink href={site.joinHref} size="lg" target="_blank" rel="noreferrer">
               <WhatsAppIcon className="h-5 w-5" aria-hidden />
-              Apply to become a host
+              Apply to become an instructor
             </ButtonLink>
           </div>
         </div>

@@ -152,6 +152,6 @@ export const nav = [
   { label: "Our Approach", href: "/our-approach" },
   { label: "Experience", href: "/experience" },
   { label: "Knowledge Hub", href: "/knowledge-hub" },
-  { label: "Become a Host", href: "/become-a-host" },
+  { label: "Become an Instructor", href: "/become-an-instructor" },
   { label: "About", href: "/about" },
 ] as const;

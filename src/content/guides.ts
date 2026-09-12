@@ -2133,7 +2133,7 @@ export const guides: Guide[] = [
       },
       {
         n: 4,
-        heading: "Tell the host what they should know",
+        heading: "Tell the instructor what they should know",
         text: "Anything that affects you: a sore knee, poor balance, a recent operation, a heart condition, diabetes medication, hearing difficulty. Not so you can be excluded, but so the session can be adjusted around you and somebody knows.",
         topicSlug: "eating-before-and-after-exercise",
         topicLabel: "Eating before and after a class",

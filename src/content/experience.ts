@@ -9,7 +9,7 @@
 import type { AspectRatio } from "@/lib/aspect-ratio";
 
 export type ExperienceMode = "in-person" | "online";
-export type ExperienceKind = "club" | "event" | "instructor";
+export type ExperienceKind = "club" | "event";
 
 export type ExperienceItem = {
   slug: string;
@@ -103,11 +103,15 @@ export const experienceItems: ExperienceItem[] = [
     meta: "In-person · Twice weekly",
     blurb:
       "Tuesdays and Thursdays at the Yoga Room, inside The Classique Club. A 15-minute health talk, then 30 minutes of seated dance.",
-    image: "/images/andheri-class-in-session.jpg",
+    image: "/images/community-celebration.jpg",
     imageAlt:
-      "Members of the Andheri West club in the Yoga Room at The Classique Club, some seated on chairs and some standing behind, smiling at the camera after a session.",
-    imageRatio: "4/3",
+      "Members of the Andheri West club gathered together holding their Zealver Clubs certificates, with marigold decorations behind them.",
     gallery: [
+      {
+        src: "/images/andheri-class-in-session.jpg",
+        alt: "Members of the Andheri West club in the Yoga Room at The Classique Club, some seated on chairs and some standing behind, smiling at the camera after a session.",
+        ratio: "4/3",
+      },
       {
         src: "/images/andheri-celebration.jpg",
         alt: "Members of the Andheri West club standing together in the Yoga Room wearing flower garlands and holding paper fans, at a themed session.",
@@ -138,8 +142,8 @@ export const experienceItems: ExperienceItem[] = [
         { date: "Tuesday 15 September", talk: "The importance of relationships", dance: "Ganesh Chaturthi special" },
         { date: "Thursday 17 September", talk: "Smart eating", dance: "Madhuri Dixit" },
         { date: "Tuesday 22 September", talk: "Insulin resistance", dance: "Govinda" },
-        { date: "Thursday 24 September", talk: "Karisma Kapoor", dance: "Orange theme" },
-        { date: "Tuesday 29 September", talk: "Madh Island picnic", dance: "Aqua theme" },
+        { date: "Thursday 24 September", talk: "Multivitamins", dance: "Karisma Kapoor, orange theme" },
+        { date: "Tuesday 29 September", talk: "No health talk, it is the Madh Island picnic", dance: "Aqua theme" },
       ],
       },
       {
@@ -197,20 +201,6 @@ export const experienceItems: ExperienceItem[] = [
     trainer: "Zealver community team",
     relatedTopics: ["dementia-friendly-movement"],
   },
-  {
-    slug: "meet-your-instructor",
-    kind: "instructor",
-    mode: "online",
-    title: "Meet your instructor",
-    meta: "Instructor spotlight",
-    blurb:
-      "Get to know the certified trainers who lead every session with warmth, patience and energy.",
-    image: "/images/instructor-class.jpg",
-    schedule: "Available in every session",
-    price: "-",
-    trainer: "Zealver certified instructors",
-    relatedTopics: ["balance-exercises"],
-  },
 ];
 
 export const experienceBySlug = new Map(
@@ -220,15 +210,10 @@ export const experienceBySlug = new Map(
 /** The three things the clubs run. Each has its own page under /experience. */
 export type ExperienceCategory = "in-person" | "online" | "events";
 
-/**
- * An event is an event wherever it is held, so `kind` is checked before
- * `mode`. Instructor spotlights are neither a class nor an event and belong
- * to no category.
- */
+/** An event is an event wherever it is held, so `kind` comes before `mode`. */
 export function experienceCategoryOf(
   item: ExperienceItem,
-): ExperienceCategory | null {
-  if (item.kind === "instructor") return null;
+): ExperienceCategory {
   return item.kind === "event" ? "events" : item.mode;
 }
 

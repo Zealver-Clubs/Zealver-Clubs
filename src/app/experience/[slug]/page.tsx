@@ -197,7 +197,7 @@ export default async function ClassDetailPage({
           <h2 className="text-2xl font-extrabold text-heading">
             From our sessions
           </h2>
-          <ul className="mt-4 grid gap-5 sm:grid-cols-2">
+          <ul className="mt-4 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {item.gallery.map((photo) => (
               <li key={photo.src}>
                 <MediaImage
@@ -206,7 +206,7 @@ export default async function ClassDetailPage({
                   label={`Photo, ${item.title}`}
                   ratio={photo.ratio}
                   className="rounded-xl"
-                  sizes="(max-width: 640px) 100vw, 50vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
               </li>
             ))}
