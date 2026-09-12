@@ -3,6 +3,9 @@ import { ArrowRight } from "lucide-react";
 import { Section, SectionHeading } from "@/components/section";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { ExperienceCard } from "@/components/content-cards";
+import { ButtonLink } from "@/components/ui/button";
+import { WhatsAppIcon } from "@/components/icons/social";
+import { whatsappEnquiry } from "@/content/site";
 import {
   experienceCategoryBySlug,
   experienceItemsIn,
@@ -46,6 +49,25 @@ export function ExperienceCategoryPage({ slug }: { slug: string }) {
           you know as soon as something is.
         </p>
       )}
+
+      <aside className="mt-12 rounded-2xl border-2 border-primary/30 bg-primary-soft/50 p-6 sm:p-8">
+        <h2 className="text-2xl font-extrabold text-heading">
+          {category.cta.heading}
+        </h2>
+        <p className="mt-2 text-lg leading-relaxed text-foreground">
+          {category.cta.blurb}
+        </p>
+        <ButtonLink
+          href={whatsappEnquiry(category.cta.message)}
+          size="lg"
+          className="mt-5"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <WhatsAppIcon className="h-6 w-6 shrink-0" aria-hidden />
+          {category.cta.label}
+        </ButtonLink>
+      </aside>
 
       <div className="mt-10">
         <h2 className="text-2xl font-extrabold text-heading">

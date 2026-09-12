@@ -20,8 +20,8 @@ export const site = {
     "Zealver Clubs is a community for women 60+ that blends chair-based Seated Dance Fitness with real friendship and a trusted Knowledge Hub, so healthy ageing happens together.",
   areaServed: ["Mumbai (Andheri)", "Online worldwide"],
   contact: {
-    whatsapp: "+91 91521 58933",
-    whatsappHref: "https://wa.me/919152158933",
+    whatsapp: "+91 91521 58893",
+    whatsappHref: "https://wa.me/919152158893",
     email: "info@zealverclubs.com",
   },
   /**
@@ -40,7 +40,7 @@ export const site = {
   },
   // "Join Our Club" opens WhatsApp with a friendly prefilled message.
   joinHref:
-    "https://wa.me/919152158933?text=Hi%2C%20tell%20me%20more%20about%20Zealver%20Clubs",
+    "https://wa.me/919152158893?text=Hi%2C%20tell%20me%20more%20about%20Zealver%20Clubs",
   social: {
     instagram: "https://www.instagram.com/zealverclubs/",
     facebook: "https://www.facebook.com/p/Zealver-Clubs-61586015622824/",
@@ -49,6 +49,15 @@ export const site = {
   },
   instagramHandle: "zealverclubs",
 } as const;
+
+/**
+ * A WhatsApp link that opens with a message already typed, so the reader
+ * only has to press send. Built from the one number in `site.contact`, so
+ * there is never a second number to keep in step.
+ */
+export function whatsappEnquiry(message: string): string {
+  return `${site.contact.whatsappHref}?text=${encodeURIComponent(message)}`;
+}
 
 /** The parent brand. Zealver Clubs is one vertical within it. */
 export const parentOrg = {

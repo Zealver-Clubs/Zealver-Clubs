@@ -10,7 +10,7 @@ import { ButtonLink } from "@/components/ui/button";
 import { MediaImage } from "@/components/media-image";
 import { experienceItems, getExperienceItem } from "@/content/experience";
 import { getTopic } from "@/content/topics";
-import { site } from "@/content/site";
+import { site, whatsappEnquiry } from "@/content/site";
 
 export function generateStaticParams() {
   return experienceItems.map((item) => ({ slug: item.slug }));
@@ -91,20 +91,25 @@ export default async function ClassDetailPage({
         ))}
       </dl>
 
-      {item.timetable ? (
-        <div className="mt-10">
+      {item.timetables?.map((tt) => (
+        <div key={tt.heading} className="mt-10">
           <h2 className="text-2xl font-extrabold text-heading">
-            What is on in {item.timetable.heading}
+            What is on in {tt.heading}
           </h2>
-          {item.timetable.note ? (
+          {tt.subheading ? (
+            <p className="mt-1 text-lg font-bold text-secondary">
+              {tt.subheading}
+            </p>
+          ) : null}
+          {tt.note ? (
             <p className="mt-2 text-lg leading-relaxed text-muted-foreground">
-              {item.timetable.note}
+              {tt.note}
             </p>
           ) : null}
           <div className="mt-4 overflow-x-auto rounded-xl border border-border">
-            <table className="w-full min-w-[34rem] border-collapse text-left">
+            <table className="w-full min-w-[38rem] border-collapse text-left">
               <caption className="sr-only">
-                {item.title}, sessions in {item.timetable.heading}
+                {item.title}, sessions in {tt.heading}
               </caption>
               <thead>
                 <tr className="bg-muted">
@@ -115,25 +120,35 @@ export default async function ClassDetailPage({
                     Health talk
                   </th>
                   <th scope="col" className="px-4 py-3 text-sm font-bold uppercase tracking-wide text-secondary">
-                    Dance fitness
+                    Dance theme
                   </th>
+                  {tt.sessions.some((x) => x.activity) ? (
+                    <th scope="col" className="px-4 py-3 text-sm font-bold uppercase tracking-wide text-secondary">
+                      Activity
+                    </th>
+                  ) : null}
                 </tr>
               </thead>
               <tbody>
-                {item.timetable.sessions.map((sess) => (
+                {tt.sessions.map((sess) => (
                   <tr key={sess.date} className="border-t border-border">
                     <th scope="row" className="px-4 py-3 text-left font-bold text-heading">
                       {sess.date}
                     </th>
                     <td className="px-4 py-3 text-foreground">{sess.talk}</td>
                     <td className="px-4 py-3 text-foreground">{sess.dance}</td>
+                    {tt.sessions.some((x) => x.activity) ? (
+                      <td className="px-4 py-3 text-foreground">
+                        {sess.activity ?? "\u2014"}
+                      </td>
+                    ) : null}
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
         </div>
-      ) : null}
+      ))}
 
       {item.location ? (
         <div className="mt-6 rounded-xl border border-border bg-card p-5">
@@ -160,8 +175,15 @@ export default async function ClassDetailPage({
       ) : null}
 
       <div className="mt-6 flex flex-wrap gap-3">
-        <ButtonLink href={site.contact.whatsappHref} size="lg">
-          Book on WhatsApp
+        <ButtonLink
+          href={
+            item.cta
+              ? whatsappEnquiry(item.cta.message)
+              : site.contact.whatsappHref
+          }
+          size="lg"
+        >
+          {item.cta ? item.cta.label : "Book on WhatsApp"}
         </ButtonLink>
         <ButtonLink href="/experience" variant="outline" size="lg">
           Back to all options

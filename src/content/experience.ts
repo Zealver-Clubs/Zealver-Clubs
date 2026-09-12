@@ -21,14 +21,26 @@ export type ExperienceItem = {
   price: string;
   trainer: string;
   /**
+   * The WhatsApp enquiry for this item. Its message names the thing the
+   * reader was looking at, so the reply does not have to start by asking
+   * which class they meant.
+   */
+  cta?: { label: string; message: string };
+  /**
    * What is on, session by session. Written out month by month, so it needs
    * replacing when the month turns rather than quietly going stale.
    */
-  timetable?: {
+  timetables?: {
     heading: string;
+    subheading?: string;
     note?: string;
-    sessions: { date: string; talk: string; dance: string }[];
-  };
+    sessions: {
+      date: string;
+      talk: string;
+      dance: string;
+      activity?: string;
+    }[];
+  }[];
   /** Where it happens. Absent for online sessions. */
   location?: {
     name: string;
@@ -80,7 +92,12 @@ export const experienceItems: ExperienceItem[] = [
     schedule: "Tuesdays & Thursdays, 11:00 AM – 1:00 PM",
     price: "Free trial. WhatsApp us for fees.",
     trainer: "Zealver certified instructor",
-    timetable: {
+    cta: {
+      label: "Ask about the Andheri class",
+      message: "Hi, tell me more about the Andheri classes.",
+    },
+    timetables: [
+      {
       heading: "September 2026",
       note: "Each session is a 15-minute health talk followed by 30 minutes of dance fitness.",
       sessions: [
@@ -94,7 +111,24 @@ export const experienceItems: ExperienceItem[] = [
         { date: "Thursday 24 September", talk: "Karisma Kapoor", dance: "Orange theme" },
         { date: "Tuesday 29 September", talk: "Madh Island picnic", dance: "Aqua theme" },
       ],
-    },
+      },
+      {
+        heading: "October 2026",
+        subheading: "Mental Health Awareness Month",
+        note: "A 15-minute health talk, 30 minutes of dance fitness, and an activity to finish.",
+        sessions: [
+          { date: "Thursday 1 October", talk: "Gratitude practice", dance: "Solah Shringar", activity: "Mandala art" },
+          { date: "Tuesday 6 October", talk: "Positive affirmations", dance: "Remix special", activity: "Canvas painting" },
+          { date: "Thursday 8 October", talk: "Breathing and relaxation", dance: "Anarkali theme", activity: "Origami" },
+          { date: "Tuesday 13 October", talk: "Mindfulness", dance: "Garba and dandiya", activity: "Jewellery making" },
+          { date: "Thursday 15 October", talk: "The importance of friendships", dance: "Garba and dandiya", activity: "Singing" },
+          { date: "Tuesday 20 October", talk: "Laughter and joy", dance: "Garba and dandiya, for Dussehra", activity: "Games and fun activities" },
+          { date: "Thursday 22 October", talk: "Purpose and meaning in life", dance: "70s retro", activity: "Mandala art" },
+          { date: "Tuesday 27 October", talk: "Coping with loneliness", dance: "80s retro", activity: "Canvas painting" },
+          { date: "Thursday 29 October", talk: "Self-care and daily happiness habits", dance: "90s retro", activity: "Birthday lunch celebration" },
+        ],
+      },
+    ],
     location: {
       name: "Yoga Room, The Classique Club, Andheri West",
       address:
@@ -161,6 +195,8 @@ export type ExperienceCategoryInfo = {
   blurb: string;
   intro: string;
   image: string;
+  /** The WhatsApp enquiry shown at the foot of the category page. */
+  cta: { heading: string; blurb: string; label: string; message: string };
 };
 
 export const experienceCategories: ExperienceCategoryInfo[] = [
@@ -173,6 +209,13 @@ export const experienceCategories: ExperienceCategoryInfo[] = [
     intro:
       "Chair-based, music-led sessions in a room with other people, twice a week in Andheri West. No experience needed, and the first one is free.",
     image: "/images/community-celebration.jpg",
+    cta: {
+      heading: "Come to a class in Andheri",
+      blurb:
+        "Your first session is free. Send us a message and we will tell you what to expect, what to wear and where to come.",
+      label: "Ask about the Andheri class",
+      message: "Hi, tell me more about the Andheri classes.",
+    },
   },
   {
     category: "online",
@@ -183,6 +226,13 @@ export const experienceCategories: ExperienceCategoryInfo[] = [
     intro:
       "The same sessions, live over Zoom, so you can join from your own chair at home. Twice a week, morning or evening.",
     image: "/images/class-seated-dance.jpg",
+    cta: {
+      heading: "Try an online class",
+      blurb:
+        "Your first session is free. Send us a message and we will share the joining link and the timings.",
+      label: "Ask about online classes",
+      message: "Hi, tell me more about the online classes.",
+    },
   },
   {
     category: "events",
@@ -193,6 +243,13 @@ export const experienceCategories: ExperienceCategoryInfo[] = [
     intro:
       "Celebrations through the year, with music, movement and company. Open to members and the people they bring along.",
     image: "/images/home-experience.jpg",
+    cta: {
+      heading: "Hear about the next one",
+      blurb:
+        "Send us a message and we will let you know what is coming up and how to join.",
+      label: "Ask about events",
+      message: "Hi, tell me more about Zealver Clubs events.",
+    },
   },
 ];
 
