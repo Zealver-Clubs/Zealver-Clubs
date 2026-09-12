@@ -12,6 +12,7 @@ export function MediaImage({
   alt,
   label,
   ratio = "16/9",
+  fit = "cover",
   className,
   priority = false,
   sizes = "(max-width: 768px) 100vw, 50vw",
@@ -20,6 +21,8 @@ export function MediaImage({
   alt?: string;
   label: string;
   ratio?: AspectRatio;
+  /** "contain" fits a whole image inside the box, for artwork that must not be cropped. */
+  fit?: "cover" | "contain";
   className?: string;
   priority?: boolean;
   sizes?: string;
@@ -38,7 +41,7 @@ export function MediaImage({
         fill
         sizes={sizes}
         priority={priority}
-        className="object-cover"
+        className={fit === "contain" ? "object-contain" : "object-cover"}
       />
     </div>
   );
