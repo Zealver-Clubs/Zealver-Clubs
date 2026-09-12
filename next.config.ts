@@ -10,7 +10,12 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/experience/neighbourhood-club-meetup",
-        destination: "/experience/seated-dance-in-person-class",
+        destination: "/experience/andheri-west",
+        permanent: true,
+      },
+      {
+        source: "/experience/seated-dance-in-person-class",
+        destination: "/experience/andheri-west",
         permanent: true,
       },
       {

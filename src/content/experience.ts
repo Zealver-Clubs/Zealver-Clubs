@@ -41,6 +41,11 @@ export type ExperienceItem = {
       activity?: string;
     }[];
   }[];
+  /**
+   * A branch that is announced but not running yet. It appears in the
+   * listing so people can see it is coming, and has no detail page to open.
+   */
+  comingSoon?: boolean;
   /** Where it happens. Absent for online sessions. */
   location?: {
     name: string;
@@ -81,13 +86,13 @@ export const experienceItems: ExperienceItem[] = [
     relatedTopics: ["sleep-and-recovery", "balance-exercises"],
   },
   {
-    slug: "seated-dance-in-person-class",
+    slug: "andheri-west",
     kind: "club",
     mode: "in-person",
-    title: "Seated Dance Fitness · In-person class",
-    meta: "In-person · Andheri West · Twice weekly",
+    title: "Andheri West",
+    meta: "In-person · Twice weekly",
     blurb:
-      "The same chair-based, music-led session, in a room with other people. Tuesdays and Thursdays at the Yoga Room in Andheri West.",
+      "Tuesdays and Thursdays at the Yoga Room, inside The Classique Club. A 15-minute health talk, then 30 minutes of seated dance.",
     image: "/images/community-celebration.jpg",
     schedule: "Tuesdays & Thursdays, 11:00 AM – 1:00 PM",
     price: "Free trial. WhatsApp us for fees.",
@@ -137,6 +142,21 @@ export const experienceItems: ExperienceItem[] = [
         "https://www.google.com/maps/search/?api=1&query=The%20Classique%20Club%2C%20Shastri%20Nagar%2C%20Andheri%20West%2C%20Mumbai",
     },
     relatedTopics: ["fall-prevention", "balance-exercises"],
+  },
+  {
+    slug: "south-mumbai-coming-soon",
+    kind: "club",
+    mode: "in-person",
+    comingSoon: true,
+    title: "South Mumbai",
+    meta: "In-person · Coming soon",
+    blurb:
+      "A second branch is on the way. Send us a message and we will tell you as soon as dates and a venue are set.",
+    image: "/images/instructor-class.jpg",
+    schedule: "Dates to be announced",
+    price: "To be announced",
+    trainer: "Zealver certified instructor",
+    relatedTopics: [],
   },
   {
     slug: "festival-celebration-event",
@@ -207,7 +227,7 @@ export const experienceCategories: ExperienceCategoryInfo[] = [
     blurb:
       "Meet face to face for seated dance, tea and friendship afterwards.",
     intro:
-      "Chair-based, music-led sessions in a room with other people, twice a week in Andheri West. No experience needed, and the first one is free.",
+      "Chair-based, music-led sessions in a room with other people. Choose your branch below. No experience needed, and the first session is free.",
     image: "/images/community-celebration.jpg",
     cta: {
       heading: "Come to a class in Andheri",

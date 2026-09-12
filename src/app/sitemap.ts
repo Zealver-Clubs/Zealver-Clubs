@@ -36,12 +36,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     }));
 
-  const experienceRoutes: MetadataRoute.Sitemap = experienceItems.map((e) => ({
-    url: u(`/experience/${e.slug}`),
-    lastModified: now,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  }));
+  const experienceRoutes: MetadataRoute.Sitemap = experienceItems
+    .filter((e) => !e.comingSoon)
+    .map((e) => ({
+      url: u(`/experience/${e.slug}`),
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    }));
 
   const topicRoutes: MetadataRoute.Sitemap = topics.map((t) => ({
     url: u(`/knowledge-hub/topics/${t.slug}`),

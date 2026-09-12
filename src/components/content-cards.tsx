@@ -82,17 +82,27 @@ export function ExperienceCard({ item }: { item: ExperienceItem }) {
           {item.meta}
         </p>
         <h3 className="mt-2 text-xl font-extrabold text-heading">
-          <Link
-            href={`/experience/${item.slug}`}
-            className="after:absolute after:inset-0"
-          >
-            {item.title}
-          </Link>
+          {item.comingSoon ? (
+            item.title
+          ) : (
+            <Link
+              href={`/experience/${item.slug}`}
+              className="after:absolute after:inset-0"
+            >
+              {item.title}
+            </Link>
+          )}
         </h3>
         <p className="mt-2 text-muted-foreground">{item.blurb}</p>
-        <span className="mt-4 inline-flex items-center gap-1 font-bold text-link">
-          View details <ArrowRight className="h-4 w-4" aria-hidden />
-        </span>
+        {item.comingSoon ? (
+          <span className="mt-4 inline-flex w-fit items-center rounded-full bg-muted px-3 py-1 text-sm font-bold text-muted-foreground">
+            Coming soon
+          </span>
+        ) : (
+          <span className="mt-4 inline-flex items-center gap-1 font-bold text-link">
+            View details <ArrowRight className="h-4 w-4" aria-hidden />
+          </span>
+        )}
       </CardBody>
     </Card>
   );

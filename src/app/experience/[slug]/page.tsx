@@ -13,7 +13,9 @@ import { getTopic } from "@/content/topics";
 import { site, whatsappEnquiry } from "@/content/site";
 
 export function generateStaticParams() {
-  return experienceItems.map((item) => ({ slug: item.slug }));
+  return experienceItems
+    .filter((item) => !item.comingSoon)
+    .map((item) => ({ slug: item.slug }));
 }
 
 export async function generateMetadata({
@@ -38,7 +40,7 @@ export default async function ClassDetailPage({
 }) {
   const { slug } = await params;
   const item = getExperienceItem(slug);
-  if (!item) notFound();
+  if (!item || item.comingSoon) notFound();
 
   const related = item.relatedTopics
     .map((s) => getTopic(s))
