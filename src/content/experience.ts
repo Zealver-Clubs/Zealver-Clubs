@@ -6,6 +6,8 @@
  * Each item opens a class detail page by slug.
  */
 
+import type { AspectRatio } from "@/lib/aspect-ratio";
+
 export type ExperienceMode = "in-person" | "online";
 export type ExperienceKind = "club" | "event" | "instructor";
 
@@ -17,6 +19,14 @@ export type ExperienceItem = {
   meta: string;
   blurb: string;
   image?: string; // real club photo; falls back to a placeholder if absent
+  imageAlt?: string; // describe the photo itself; defaults to the title
+  imageRatio?: AspectRatio; // hero aspect; defaults to 16/9
+  /**
+   * More photographs of this club. Each keeps its own proportions rather
+   * than being cropped to a common tile, because these are group photographs
+   * and a crop takes somebody out of the picture.
+   */
+  gallery?: { src: string; alt: string; ratio: AspectRatio }[];
   schedule: string;
   price: string;
   trainer: string;
@@ -93,7 +103,22 @@ export const experienceItems: ExperienceItem[] = [
     meta: "In-person · Twice weekly",
     blurb:
       "Tuesdays and Thursdays at the Yoga Room, inside The Classique Club. A 15-minute health talk, then 30 minutes of seated dance.",
-    image: "/images/community-celebration.jpg",
+    image: "/images/andheri-class-in-session.jpg",
+    imageAlt:
+      "Members of the Andheri West club in the Yoga Room at The Classique Club, some seated on chairs and some standing behind, smiling at the camera after a session.",
+    imageRatio: "4/3",
+    gallery: [
+      {
+        src: "/images/andheri-celebration.jpg",
+        alt: "Members of the Andheri West club standing together in the Yoga Room wearing flower garlands and holding paper fans, at a themed session.",
+        ratio: "1812/2000",
+      },
+      {
+        src: "/images/andheri-lunch-outing.jpg",
+        alt: "Members of the Andheri West club around a long table at a restaurant, dressed in yellow, on a group lunch outing.",
+        ratio: "1165/784",
+      },
+    ],
     schedule: "Tuesdays & Thursdays, 11:00 AM – 1:00 PM",
     price: "Free trial. WhatsApp us for fees.",
     trainer: "Zealver certified instructor",

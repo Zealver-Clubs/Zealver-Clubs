@@ -72,9 +72,9 @@ export default async function ClassDetailPage({
       <div className="mt-6 overflow-hidden rounded-xl">
         <MediaImage
           src={item.image}
-          alt={item.title}
+          alt={item.imageAlt ?? item.title}
           label={`Photo, ${item.title}`}
-          ratio="16/9"
+          ratio={item.imageRatio ?? "16/9"}
           sizes="(max-width: 768px) 100vw, 768px"
         />
       </div>
@@ -191,6 +191,28 @@ export default async function ClassDetailPage({
           Back to all options
         </ButtonLink>
       </div>
+
+      {item.gallery?.length ? (
+        <div className="mt-10">
+          <h2 className="text-2xl font-extrabold text-heading">
+            From our sessions
+          </h2>
+          <ul className="mt-4 grid gap-5 sm:grid-cols-2">
+            {item.gallery.map((photo) => (
+              <li key={photo.src}>
+                <MediaImage
+                  src={photo.src}
+                  alt={photo.alt}
+                  label={`Photo, ${item.title}`}
+                  ratio={photo.ratio}
+                  className="rounded-xl"
+                  sizes="(max-width: 640px) 100vw, 50vw"
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
 
       {/* Follow us, so people can see the classes between visits */}
       <aside className="mt-12 rounded-2xl border border-border bg-muted p-6 text-center">
