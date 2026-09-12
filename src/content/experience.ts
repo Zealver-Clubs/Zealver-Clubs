@@ -46,9 +46,11 @@ export type ExperienceItem = {
     note?: string;
     sessions: {
       date: string;
-      talk: string;
-      dance: string;
+      talk?: string;
+      dance?: string;
       activity?: string;
+      /** A day that is not a normal session, described across the row. */
+      special?: string;
     }[];
   }[];
   /**
@@ -142,8 +144,8 @@ export const experienceItems: ExperienceItem[] = [
         { date: "Tuesday 15 September", talk: "The importance of relationships", dance: "Ganesh Chaturthi special" },
         { date: "Thursday 17 September", talk: "Smart eating", dance: "Madhuri Dixit" },
         { date: "Tuesday 22 September", talk: "Insulin resistance", dance: "Govinda" },
-        { date: "Thursday 24 September", talk: "Multivitamins", dance: "Karisma Kapoor, orange theme" },
-        { date: "Tuesday 29 September", talk: "No health talk, it is the Madh Island picnic", dance: "Aqua theme" },
+        { date: "Thursday 24 September", talk: "Multivitamins", dance: "Karisma Kapoor" },
+        { date: "Tuesday 29 September", special: "Madh Island picnic. A day out rather than a session, so no health talk and no dance theme." },
       ],
       },
       {

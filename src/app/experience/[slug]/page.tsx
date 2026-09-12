@@ -132,20 +132,35 @@ export default async function ClassDetailPage({
                 </tr>
               </thead>
               <tbody>
-                {tt.sessions.map((sess) => (
-                  <tr key={sess.date} className="border-t border-border">
-                    <th scope="row" className="px-4 py-3 text-left font-bold text-heading">
-                      {sess.date}
-                    </th>
-                    <td className="px-4 py-3 text-foreground">{sess.talk}</td>
-                    <td className="px-4 py-3 text-foreground">{sess.dance}</td>
-                    {tt.sessions.some((x) => x.activity) ? (
-                      <td className="px-4 py-3 text-foreground">
-                        {sess.activity ?? "\u2014"}
-                      </td>
-                    ) : null}
-                  </tr>
-                ))}
+                {tt.sessions.map((sess) => {
+                  const cols = tt.sessions.some((x) => x.activity) ? 3 : 2;
+                  return (
+                    <tr key={sess.date} className="border-t border-border">
+                      <th scope="row" className="px-4 py-3 text-left font-bold text-heading">
+                        {sess.date}
+                      </th>
+                      {sess.special ? (
+                        <td className="px-4 py-3 text-foreground" colSpan={cols}>
+                          {sess.special}
+                        </td>
+                      ) : (
+                        <>
+                          <td className="px-4 py-3 text-foreground">
+                            {sess.talk ?? "\u2014"}
+                          </td>
+                          <td className="px-4 py-3 text-foreground">
+                            {sess.dance ?? "\u2014"}
+                          </td>
+                          {cols === 3 ? (
+                            <td className="px-4 py-3 text-foreground">
+                              {sess.activity ?? "\u2014"}
+                            </td>
+                          ) : null}
+                        </>
+                      )}
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </div>

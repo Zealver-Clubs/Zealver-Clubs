@@ -31,7 +31,7 @@ export const privacyPolicy: LegalDocument = {
   effective: "January 2026",
   intro: [
     `This website is owned and operated by ${OWNER}, which operates the brand Zealver Clubs (hereinafter referred to as "Zealver", "Zealver Clubs", "we", "us", or "our").`,
-    "At Zealver Clubs, one of our main priorities is the privacy and dignity of our visitors, members, and hosts. This Privacy Policy document describes the types of information that are collected and recorded by Zealver and how we use it.",
+    "At Zealver Clubs, one of our main priorities is the privacy and dignity of our visitors, members, hosts and instructors. This Privacy Policy document describes the types of information that are collected and recorded by Zealver and how we use it.",
     "If you have additional questions or require more information about our Privacy Policy, please contact us using the details provided below.",
     "This Privacy Policy applies only to our online activities and is valid for visitors to our website with regard to the information that they share and/or that we collect. This policy does not apply to any information collected offline or via channels other than this website.",
   ],
@@ -220,7 +220,7 @@ export const termsAndConditions: LegalDocument = {
         "4.1 You confirm that you are physically and mentally fit to participate or have consulted a doctor.",
         "4.2 You understand that activities may involve movement and physical exertion.",
         "4.3 You voluntarily assume all risks, including but not limited to injury, falls, illness, disability, or death.",
-        "4.4 Zealver, its directors, employees, hosts, venue partners, or affiliates shall not be liable for any injury, health incident, loss, or death.",
+        "4.4 Zealver, its directors, employees, hosts, instructors, venue partners, or affiliates shall not be liable for any injury, health incident, loss, or death.",
       ],
     },
     {
@@ -259,7 +259,7 @@ export const termsAndConditions: LegalDocument = {
       paragraphs: [
         "This applies including (but not limited to): illness, travel, schedule conflicts, dissatisfaction, or non-attendance.",
         "All purchases are final, non-refundable, non-transferable, and non-adjustable.",
-        "7.2 Zealver may change schedules, venues, hosts, or cancel/reschedule sessions for operational reasons. No cash refunds will be issued.",
+        "7.2 Zealver may change schedules, venues, hosts, instructors, or cancel/reschedule sessions for operational reasons. No cash refunds will be issued.",
       ],
     },
     {
@@ -275,7 +275,7 @@ export const termsAndConditions: LegalDocument = {
       list: [
         "Disruptive, unsafe, or inappropriate behaviour",
         "Harassment or misconduct",
-        "Non-cooperation with staff or hosts",
+        "Non-cooperation with staff, hosts or instructors",
       ],
     },
     {
