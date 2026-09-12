@@ -1,4 +1,5 @@
-import { BookOpen, MessageSquareQuote, Film } from "lucide-react";
+import Link from "next/link";
+import { MessageSquareQuote, Film } from "lucide-react";
 import { InstagramIcon } from "@/components/icons/social";
 import { Section, SectionHeading } from "@/components/section";
 import { ButtonLink } from "@/components/ui/button";
@@ -11,7 +12,7 @@ import { Ticker } from "@/components/ticker";
 import { VideoSlider } from "@/components/video-slider";
 import { InstagramFeed } from "@/components/instagram-feed";
 import { InView } from "@/components/in-view";
-import { site, parentOrg } from "@/content/site";
+import { site, parentOrg, reviewer } from "@/content/site";
 
 export default function HomePage() {
   return (
@@ -117,12 +118,28 @@ export default function HomePage() {
 
       {/* From the Knowledge Hub, the finished guides */}
       <Section id="approach" className="py-10">
-        <SectionHeading
-          eyebrow="From the Knowledge Hub"
-          icon={BookOpen}
-          title="Explore our guides"
-          intro="Step-by-step guides for healthy ageing, written for women 60+ and reviewed before publishing."
-        />
+        {/*
+          The badge does the job an eyebrow would, and says who reviews the
+          writing, so it links to the page that backs that claim up.
+        */}
+        <Link
+          href={reviewer.href}
+          className="block max-w-xl rounded-2xl focus-visible:outline-none"
+        >
+          <MediaImage
+            src="/images/knowledge-hub-reviewed-by.webp"
+            alt={`Zealver Knowledge Hub, reviewed by ${reviewer.fullName}`}
+            label="Zealver Knowledge Hub badge"
+            ratio="1813/868"
+            sizes="(max-width: 640px) 100vw, 576px"
+          />
+        </Link>
+        <div className="mt-6">
+          <SectionHeading
+            title="Explore our guides"
+            intro="Step-by-step guides for healthy ageing, written for women 60+ and reviewed before publishing."
+          />
+        </div>
         <ul className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {featuredGuides.map((guide) => (
             <li key={guide.slug} className="relative">
