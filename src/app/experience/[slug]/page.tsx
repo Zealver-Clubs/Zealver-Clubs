@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { CalendarDays, Tag, UserRound, ArrowRight } from "lucide-react";
+import { CalendarDays, Tag, UserRound, ArrowRight, MapPin } from "lucide-react";
 import { Section } from "@/components/section";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { Card, CardBody } from "@/components/ui/card";
@@ -89,6 +89,30 @@ export default async function ClassDetailPage({
           </div>
         ))}
       </dl>
+
+      {item.location ? (
+        <div className="mt-6 rounded-xl border border-border bg-card p-5">
+          <h2 className="flex items-center gap-2 text-sm font-bold uppercase tracking-wide text-secondary">
+            <MapPin className="h-5 w-5 shrink-0" aria-hidden /> Where
+          </h2>
+          <p className="mt-2 text-lg font-bold text-heading">
+            {item.location.name}
+          </p>
+          <p className="mt-1 text-lg leading-relaxed text-foreground">
+            {item.location.address}
+          </p>
+          <a
+            href={item.location.mapUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-3 inline-flex min-h-11 items-center gap-1.5 font-bold text-link hover:underline"
+          >
+            Open in Maps
+            <ArrowRight className="h-4 w-4 shrink-0" aria-hidden />
+            <span className="sr-only"> (opens in a new tab)</span>
+          </a>
+        </div>
+      ) : null}
 
       <div className="mt-6 flex flex-wrap gap-3">
         <ButtonLink href={site.contact.whatsappHref} size="lg">

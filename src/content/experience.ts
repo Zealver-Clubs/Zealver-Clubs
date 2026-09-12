@@ -20,6 +20,13 @@ export type ExperienceItem = {
   schedule: string;
   price: string;
   trainer: string;
+  /** Where it happens. Absent for online sessions. */
+  location?: {
+    name: string;
+    address: string;
+    /** Opens the Maps app on a phone, rather than a search results page. */
+    mapUrl: string;
+  };
   relatedTopics: string[]; // Knowledge Hub topic slugs
 };
 
@@ -57,13 +64,20 @@ export const experienceItems: ExperienceItem[] = [
     kind: "club",
     mode: "in-person",
     title: "Seated Dance Fitness · In-person class",
-    meta: "In-person · Weekly",
+    meta: "In-person · Andheri West · Twice weekly",
     blurb:
-      "The same chair-based, music-led session, in a room with other people. Seated dance, tea and friendship afterwards.",
+      "The same chair-based, music-led session, in a room with other people. Tuesdays and Thursdays at the Yoga Room in Andheri West.",
     image: "/images/community-celebration.jpg",
-    schedule: "Saturdays, 10:00–11:00 AM",
-    price: "Free trial, then membership",
+    schedule: "Tuesdays & Thursdays, 11:00 AM – 1:00 PM",
+    price: "Free trial. WhatsApp us for fees.",
     trainer: "Zealver certified instructor",
+    location: {
+      name: "Yoga Room, The Classique Club, Andheri West",
+      address:
+        "Inside The Classique Club, behind Infiniti Mall, Phase D, Shastri Nagar, Andheri West, Mumbai",
+      mapUrl:
+        "https://www.google.com/maps/search/?api=1&query=The%20Classique%20Club%2C%20Shastri%20Nagar%2C%20Andheri%20West%2C%20Mumbai",
+    },
     relatedTopics: ["fall-prevention", "balance-exercises"],
   },
   {
@@ -133,7 +147,7 @@ export const experienceCategories: ExperienceCategoryInfo[] = [
     blurb:
       "Meet face to face for seated dance, tea and friendship afterwards.",
     intro:
-      "Chair-based, music-led sessions in a room with other people, every week. No experience needed, and the first one is free.",
+      "Chair-based, music-led sessions in a room with other people, twice a week in Andheri West. No experience needed, and the first one is free.",
     image: "/images/community-celebration.jpg",
   },
   {
