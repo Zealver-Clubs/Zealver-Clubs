@@ -7,6 +7,7 @@
  */
 
 import type { AspectRatio } from "@/lib/aspect-ratio";
+import type { FaqItem } from "@/components/faq";
 
 export type ExperienceMode = "in-person" | "online";
 export type ExperienceKind = "club" | "event";
@@ -229,6 +230,8 @@ export type ExperienceCategoryInfo = {
   image: string;
   /** The WhatsApp enquiry shown at the foot of the category page. */
   cta: { heading: string; blurb: string; label: string; message: string };
+  /** Questions answered on the category page. */
+  faqs?: FaqItem[];
 };
 
 export const experienceCategories: ExperienceCategoryInfo[] = [
@@ -265,6 +268,62 @@ export const experienceCategories: ExperienceCategoryInfo[] = [
       label: "Ask about online classes",
       message: "Hi, tell me more about the online classes.",
     },
+    faqs: [
+      {
+        question: "What do I need to have ready before the class?",
+        answer: ["Very little, and nothing you have to buy."],
+        points: [
+          "A sturdy chair without wheels. If you use a wheelchair, lock the brakes before the class begins.",
+          "Comfortable clothes and closed-toe shoes.",
+          "A water bottle within reach.",
+          "A stable internet connection.",
+        ],
+      },
+      {
+        question: "How do I join, and when?",
+        answer: [
+          "The Zoom link is shared on WhatsApp twenty minutes before the class. Join five to ten minutes early so you are settled before we begin.",
+          "When you join, please rename yourself with your full name and your city, for example Meena Sharma \u2013 Jaipur.",
+        ],
+      },
+      {
+        question: "Do I have to keep my camera on?",
+        answer: [
+          "Yes, please keep your video on for the whole class. It is how the instructor can see you and check that you are moving comfortably.",
+          "Keep your microphone muted unless the instructor asks you to unmute.",
+        ],
+      },
+      {
+        question: "How should I set up my device and camera?",
+        answer: [
+          "The aim is simply that the instructor can see all of you while you are sitting down.",
+        ],
+        points: [
+          "Use a phone or tablet on a stand, or put a laptop on a table.",
+          "Place the camera a little away from your chair, so your whole body is visible while you are seated.",
+          "Position it directly in front of you, not off to one side.",
+          "Keep the device at about eye level.",
+          "Make sure the room is well lit.",
+          "Sit so that your arms and legs can move freely.",
+        ],
+      },
+      {
+        question: "What is expected of me during the class?",
+        answer: ["Nothing beyond moving at a pace that suits you."],
+        points: [
+          "Exercise at your own pace. This is not a competition.",
+          "Stop immediately if you feel pain, dizziness or discomfort.",
+          "Follow the instructor's directions.",
+          "Enjoy it. Moving together is most of the point.",
+        ],
+      },
+      {
+        question: "What if something goes wrong, or I need help?",
+        answer: [
+          "Call or message us on WhatsApp and we will help you get set up, before or during the class.",
+        ],
+      },
+    ],
   },
   {
     category: "events",

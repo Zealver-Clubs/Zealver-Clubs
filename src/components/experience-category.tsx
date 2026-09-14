@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { Section, SectionHeading } from "@/components/section";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { ExperienceCard } from "@/components/content-cards";
+import { Faq } from "@/components/faq";
 import { ButtonLink } from "@/components/ui/button";
 import { WhatsAppIcon } from "@/components/icons/social";
 import { whatsappEnquiry } from "@/content/site";
@@ -49,6 +50,14 @@ export function ExperienceCategoryPage({ slug }: { slug: string }) {
           you know as soon as something is.
         </p>
       )}
+
+      {category.faqs?.length ? (
+        <Faq
+          items={category.faqs}
+          heading="Common questions"
+          intro="Everything you need to know before your first session."
+        />
+      ) : null}
 
       <aside className="mt-12 rounded-2xl border-2 border-primary/30 bg-primary-soft/50 p-6 sm:p-8">
         <h2 className="text-2xl font-extrabold text-heading">
