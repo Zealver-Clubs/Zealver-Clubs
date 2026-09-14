@@ -22,6 +22,7 @@ export type GuideStep = {
 
 import type { AspectRatio } from "@/lib/aspect-ratio";
 import type { Reference } from "./references";
+import { sources } from "./references";
 
 export type Guide = {
   slug: string;
@@ -122,6 +123,10 @@ export const guides: Guide[] = [
       "bone-health-after-menopause",
     ],
     relatedGuides: ["stay-strong-after-menopause-guide", "arthritis-and-joint-comfort-guide"],
+    references: [
+      { ...sources.whoFalls, supports: "That falls are a leading cause of injury in older adults and are largely preventable." },
+      { ...sources.niaFalls, supports: "The home, footwear, strength and balance measures set out in these steps." },
+    ],
   },
   {
     slug: "lower-your-blood-sugar-guide",
@@ -256,6 +261,10 @@ export const guides: Guide[] = [
       "sleep-and-recovery",
     ],
     relatedGuides: ["anti-inflammatory-diet-guide", "diabetes-management-guide"],
+    references: [
+      { ...sources.harvardCarbsBloodSugar, supports: "How the carbohydrate in a meal raises blood sugar, and what slows that rise." },
+      { ...sources.nhsDiabetesFood, supports: "Food and activity for blood sugar, and the caution about diabetes medication." },
+    ],
   },
   {
     slug: "anti-inflammatory-diet-guide",
@@ -347,6 +356,10 @@ export const guides: Guide[] = [
       "protein-at-every-meal",
     ],
     relatedGuides: ["lower-your-blood-sugar-guide"],
+    references: [
+      { ...sources.whoHealthyDiet, supports: "The vegetable-led, whole-food pattern and the limits on sugar, salt and fats." },
+      { ...sources.ninDietaryGuidelines, supports: "The Indian food groups and portions the balanced plate is built from." },
+    ],
   },
   {
     slug: "diabetes-management-guide",
@@ -592,6 +605,10 @@ export const guides: Guide[] = [
       "sleep-and-recovery",
     ],
     relatedGuides: ["stay-strong-after-menopause-guide", "fall-prevention-guide"],
+    references: [
+      { ...sources.nhsStress, supports: "Everyday measures for stress and low mood, and when to seek help." },
+      { ...sources.niaMentalHealth, supports: "Sleep, activity and connection as supports for emotional health." },
+    ],
   },
   {
     slug: "arthritis-and-joint-comfort-guide",
@@ -719,6 +736,10 @@ export const guides: Guide[] = [
       "stay-strong-after-menopause-guide",
       "anti-inflammatory-diet-guide",
     ],
+    references: [
+      { ...sources.nhsOsteoarthritis, supports: "That movement and strength help osteoarthritis more than rest does." },
+      { ...sources.nhsRheumatoid, supports: "The signs that point to inflammatory arthritis rather than osteoarthritis." },
+    ],
   },
   {
     slug: "blood-pressure-guide",
@@ -774,6 +795,10 @@ export const guides: Guide[] = [
       "sleep-and-recovery",
     ],
     relatedGuides: ["diabetes-management-guide", "anti-inflammatory-diet-guide"],
+    references: [
+      { ...sources.whoHypertension, supports: "That high blood pressure usually has no symptoms and needs measuring." },
+      { ...sources.niaBloodPressure, supports: "The food, salt, activity and weight measures in these steps." },
+    ],
   },
   {
     slug: "cholesterol-guide",
@@ -827,6 +852,10 @@ export const guides: Guide[] = [
       "anti-inflammatory-basics",
     ],
     relatedGuides: ["anti-inflammatory-diet-guide", "diabetes-management-guide"],
+    references: [
+      { ...sources.nhsCholesterol, supports: "What cholesterol is, what raises it, and how it is lowered." },
+      { ...sources.whoCardiovascular, supports: "Why cholesterol matters for heart and stroke risk." },
+    ],
   },
   {
     slug: "vitamin-d-guide",
@@ -872,6 +901,10 @@ export const guides: Guide[] = [
       "muscle-strength-and-ageing",
     ],
     relatedGuides: ["stay-strong-after-menopause-guide"],
+    references: [
+      { ...sources.nhsVitaminD, supports: "Sunlight, food and supplement sources, and who is most likely to be short." },
+      { ...sources.niaVitamins, supports: "Vitamin D and calcium in older adults." },
+    ],
   },
   {
     slug: "dementia-engagement-guide",
@@ -925,6 +958,10 @@ export const guides: Guide[] = [
       "understanding-stress",
     ],
     relatedGuides: ["five-things-you-can-do-for-stress-guide"],
+    references: [
+      { ...sources.whoDementia, supports: "What dementia is and the factors that support brain health." },
+      { ...sources.niaCognitive, supports: "Activity, connection and engagement as supports for cognitive health." },
+    ],
   },
   {
     slug: "friendship-later-in-life-guide",
@@ -978,6 +1015,10 @@ export const guides: Guide[] = [
       "10-essentials-healthy-aging-social-clubs",
     ],
     relatedGuides: ["five-things-you-can-do-for-stress-guide", "dementia-engagement-guide"],
+    references: [
+      { ...sources.niaLoneliness, supports: "That social connection affects health, with practical ways to build it." },
+      { ...sources.whoAgeing, supports: "Participation and wellbeing as part of healthy ageing." },
+    ],
   },
   {
     slug: "acid-reflux-guide",
@@ -1036,6 +1077,10 @@ export const guides: Guide[] = [
       "understanding-stress",
     ],
     relatedGuides: ["anti-inflammatory-diet-guide"],
+    references: [
+      { ...sources.nhsReflux, supports: "Meal size and timing, staying upright, raising the bed head, and the warning signs." },
+      { ...sources.whoOralHealth, supports: "Why stomach acid reaching the mouth matters for teeth." },
+    ],
   },
   {
     slug: "bladder-leaks-and-pelvic-floor-guide",
@@ -1089,6 +1134,10 @@ export const guides: Guide[] = [
       "nutrition-basics",
     ],
     relatedGuides: ["stay-strong-after-menopause-guide"],
+    references: [
+      { ...sources.nhsIncontinence, supports: "That pelvic floor exercises are a first-line treatment for leaks." },
+      { ...sources.niaIncontinence, supports: "That incontinence is common in older women and treatable rather than inevitable." },
+    ],
   },
   {
     slug: "grief-and-loss-guide",
@@ -1142,6 +1191,10 @@ export const guides: Guide[] = [
       "stop-breathe-notice-choose",
     ],
     relatedGuides: ["friendship-later-in-life-guide", "loneliness-guide"],
+    references: [
+      { ...sources.nhsGrief, supports: "That grief has no timetable, and when it needs more than time." },
+      { ...sources.niaGrief, supports: "Living through the death of a spouse, and the practical side of it." },
+    ],
   },
   {
     slug: "low-mood-and-worry-guide",
@@ -1195,6 +1248,10 @@ export const guides: Guide[] = [
       "understanding-stress",
     ],
     relatedGuides: ["five-things-you-can-do-for-stress-guide", "loneliness-guide"],
+    references: [
+      { ...sources.whoDepression, supports: "That depression is common and treatable, not a weakness of character." },
+      { ...sources.nhsStress, supports: "Everyday measures, and the signs that need a doctor." },
+    ],
   },
   {
     slug: "loneliness-guide",
@@ -1248,6 +1305,10 @@ export const guides: Guide[] = [
       "10-essentials-healthy-aging-social-clubs",
     ],
     relatedGuides: ["friendship-later-in-life-guide", "grief-and-loss-guide"],
+    references: [
+      { ...sources.niaLoneliness, supports: "That loneliness affects physical health, and how regular contact helps." },
+      { ...sources.niaMentalHealth, supports: "Emotional health in later life." },
+    ],
   },
   {
     slug: "staying-active-through-cancer-treatment-guide",
@@ -1301,6 +1362,10 @@ export const guides: Guide[] = [
       "sleep-and-recovery",
     ],
     relatedGuides: ["low-mood-and-worry-guide", "loneliness-guide"],
+    references: [
+      { ...sources.nciFatigue, supports: "Cancer-related fatigue and the place of gentle activity in managing it." },
+      { ...sources.whoPhysicalActivity, supports: "That activity is recommended for adults living with chronic conditions." },
+    ],
   },
   {
     slug: "eyes-and-eyesight-guide",
@@ -1354,6 +1419,10 @@ export const guides: Guide[] = [
       "blood-pressure-in-women",
     ],
     relatedGuides: ["fall-prevention-guide", "blood-pressure-guide"],
+    references: [
+      { ...sources.whoVision, supports: "That much sight loss in later life is preventable or correctable." },
+      { ...sources.nhsCataracts, supports: "Cataracts, how they develop and how they are treated." },
+    ],
   },
   {
     slug: "hearing-guide",
@@ -1407,6 +1476,10 @@ export const guides: Guide[] = [
       "10-essentials-healthy-aging-social-clubs",
     ],
     relatedGuides: ["dementia-engagement-guide", "loneliness-guide"],
+    references: [
+      { ...sources.whoHearing, supports: "How common hearing loss is with age, and why it goes untreated so long." },
+      { ...sources.nhsHearingLoss, supports: "Signs of hearing loss and what to do about them." },
+    ],
   },
   {
     slug: "independence-at-home-guide",
@@ -1460,6 +1533,10 @@ export const guides: Guide[] = [
       "meaning-belonging-healthy-aging",
     ],
     relatedGuides: ["fall-prevention-guide", "stay-strong-after-menopause-guide"],
+    references: [
+      { ...sources.niaFalls, supports: "The home changes that keep people steady and independent." },
+      { ...sources.nhsSocialCare, supports: "The help available at home and how to ask for it." },
+    ],
   },
   {
     slug: "joint-replacement-guide",
@@ -1513,6 +1590,10 @@ export const guides: Guide[] = [
       "chair-dance-fitness-benefits",
     ],
     relatedGuides: ["arthritis-and-joint-comfort-guide", "stay-strong-after-menopause-guide"],
+    references: [
+      { ...sources.nhsKneeReplacement, supports: "What a knee replacement involves and what recovery looks like." },
+      { ...sources.nhsHipReplacement, supports: "What a hip replacement involves and the movement precautions afterwards." },
+    ],
   },
   {
     slug: "knee-pain-guide",
@@ -1566,6 +1647,10 @@ export const guides: Guide[] = [
       "chair-dance-fitness-benefits",
     ],
     relatedGuides: ["arthritis-and-joint-comfort-guide", "joint-replacement-guide"],
+    references: [
+      { ...sources.nhsKneePain, supports: "Common causes of knee pain and what helps." },
+      { ...sources.nhsOsteoarthritis, supports: "That strengthening the muscles around the joint reduces knee pain." },
+    ],
   },
   {
     slug: "menopause-guide",
@@ -1619,6 +1704,10 @@ export const guides: Guide[] = [
       "muscle-as-your-bodys-engine",
     ],
     relatedGuides: ["stay-strong-after-menopause-guide", "blood-pressure-guide"],
+    references: [
+      { ...sources.nhsMenopause, supports: "Symptoms, timing and treatment options." },
+      { ...sources.whoMenopause, supports: "Menopause and the health changes that follow it." },
+    ],
   },
   {
     slug: "neck-and-shoulder-guide",
@@ -1664,6 +1753,10 @@ export const guides: Guide[] = [
       "muscle-strength-and-ageing",
     ],
     relatedGuides: ["arthritis-and-joint-comfort-guide", "posture-and-back-guide"],
+    references: [
+      { ...sources.nhsNeckPain, supports: "Common causes of neck pain, what helps, and the signs to act on." },
+      { ...sources.whoMusculoskeletal, supports: "How common musculoskeletal pain is, and the place of movement in managing it." },
+    ],
   },
   {
     slug: "oral-health-guide",
@@ -1709,6 +1802,10 @@ export const guides: Guide[] = [
       "muscle-as-your-bodys-engine",
     ],
     relatedGuides: ["anti-inflammatory-diet-guide", "dementia-engagement-guide"],
+    references: [
+      { ...sources.nhsTeeth, supports: "Everyday cleaning, and looking after gums and dentures." },
+      { ...sources.whoOralHealth, supports: "Why oral health matters for general health." },
+    ],
   },
   {
     slug: "posture-and-back-guide",
@@ -1754,6 +1851,10 @@ export const guides: Guide[] = [
       "movement-healthy-aging",
     ],
     relatedGuides: ["stay-strong-after-menopause-guide", "neck-and-shoulder-guide"],
+    references: [
+      { ...sources.nhsBackPain, supports: "That most back pain improves with movement rather than rest, and the red flags." },
+      { ...sources.whoMusculoskeletal, supports: "Back pain as a leading cause of disability, and what helps." },
+    ],
   },
   {
     slug: "questions-for-your-doctor-guide",
@@ -1807,6 +1908,10 @@ export const guides: Guide[] = [
       "meaning-belonging-healthy-aging",
     ],
     relatedGuides: ["low-mood-and-worry-guide", "blood-pressure-guide"],
+    references: [
+      { ...sources.nhsSocialCare, supports: "Preparing for appointments and knowing what to ask." },
+      { ...sources.whoAgeing, supports: "Why continuity and communication matter in care for older adults." },
+    ],
   },
   {
     slug: "recovering-after-illness-guide",
@@ -1860,6 +1965,10 @@ export const guides: Guide[] = [
       "chair-dance-fitness-benefits",
     ],
     relatedGuides: ["stay-strong-after-menopause-guide", "fall-prevention-guide"],
+    references: [
+      { ...sources.medlineAgeingChanges, supports: "How quickly muscle is lost during bed rest and illness." },
+      { ...sources.espenProtein, supports: "The protein needed alongside movement to rebuild muscle." },
+    ],
   },
   {
     slug: "travel-after-60-guide",
@@ -1913,6 +2022,10 @@ export const guides: Guide[] = [
       "sleep-and-recovery",
     ],
     relatedGuides: ["diabetes-management-guide", "recovering-after-illness-guide"],
+    references: [
+      { ...sources.whoPhysicalActivity, supports: "Keeping moving while away, including on long journeys." },
+      { ...sources.nhsSocialCare, supports: "Planning for medication and support needs away from home." },
+    ],
   },
   {
     slug: "urine-infections-guide",
@@ -1958,6 +2071,10 @@ export const guides: Guide[] = [
       "muscle-strength-and-ageing",
     ],
     relatedGuides: ["bladder-leaks-and-pelvic-floor-guide", "dementia-engagement-guide"],
+    references: [
+      { ...sources.nhsUti, supports: "Symptoms, treatment, and when a urine infection needs urgent attention." },
+      { ...sources.niaIncontinence, supports: "Bladder health in older women." },
+    ],
   },
   {
     slug: "walking-well-guide",
@@ -2011,6 +2128,10 @@ export const guides: Guide[] = [
       "meaning-belonging-healthy-aging",
     ],
     relatedGuides: ["fall-prevention-guide", "friendship-later-in-life-guide"],
+    references: [
+      { ...sources.nhsActivityOlder, supports: "The weekly walking and strength targets for older adults." },
+      { ...sources.niaFourTypes, supports: "Balance and strength alongside walking, not instead of it." },
+    ],
   },
   {
     slug: "yoga-chair-guide",
@@ -2056,6 +2177,10 @@ export const guides: Guide[] = [
       "sleep-and-recovery",
     ],
     relatedGuides: ["five-things-you-can-do-for-stress-guide", "arthritis-and-joint-comfort-guide"],
+    references: [
+      { ...sources.whoActivityGuidelines, supports: "Flexibility and balance work within the recommended weekly activity." },
+      { ...sources.niaFourTypes, supports: "Flexibility as one of the four kinds of exercise that matter." },
+    ],
   },
   {
     slug: "xrays-and-scans-guide",
@@ -2101,6 +2226,10 @@ export const guides: Guide[] = [
       "bones-that-matter-most",
     ],
     relatedGuides: ["questions-for-your-doctor-guide", "arthritis-and-joint-comfort-guide"],
+    references: [
+      { ...sources.nhsXray, supports: "What an X-ray shows and what it does not." },
+      { ...sources.nhsMri, supports: "What an MRI scan shows, and why scan findings are not the whole picture." },
+    ],
   },
   {
     slug: "zealver-first-session-guide",
@@ -2154,6 +2283,10 @@ export const guides: Guide[] = [
       "meaning-belonging-healthy-aging",
     ],
     relatedGuides: ["friendship-later-in-life-guide", "fall-prevention-guide"],
+    references: [
+      { ...sources.nhsActivityOlder, supports: "The activity levels a weekly session contributes towards." },
+      { ...sources.whoPhysicalActivity, supports: "That some activity is better than none, whatever your starting point." },
+    ],
   },
 ];
 

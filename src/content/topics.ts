@@ -10,6 +10,7 @@
 
 import type { AspectRatio } from "@/lib/aspect-ratio";
 import type { Reference } from "./references";
+import { sources } from "./references";
 
 export type Topic = {
   slug: string;
@@ -58,6 +59,10 @@ export const topics: Topic[] = [
     ],
     relatedTopics: ["balance-exercises", "home-safety-checklist", "footwear-and-mobility"],
     guides: ["fall-prevention-guide"],
+    references: [
+      { ...sources.whoFalls, supports: "That falls are a leading cause of injury in older adults, and that most are preventable." },
+      { ...sources.niaFalls, supports: "The everyday causes of falls and the habits that reduce them." },
+    ],
   },
   {
     slug: "balance-exercises",
@@ -79,6 +84,10 @@ export const topics: Topic[] = [
     ],
     relatedTopics: ["fall-prevention", "footwear-and-mobility"],
     guides: ["fall-prevention-guide"],
+    references: [
+      { ...sources.nhsBalance, supports: "The kind of seated and standing balance moves described here." },
+      { ...sources.whoActivityGuidelines, supports: "That older adults should do balance training on three or more days a week." },
+    ],
   },
   {
     slug: "dementia-friendly-movement",
@@ -100,6 +109,10 @@ export const topics: Topic[] = [
     ],
     relatedTopics: ["balance-exercises", "sleep-and-recovery"],
     guides: [],
+    references: [
+      { ...sources.whoDementia, supports: "That physical activity is among the modifiable risk factors for dementia." },
+      { ...sources.niaCognitive, supports: "That movement and social activity support cognitive health." },
+    ],
   },
   {
     slug: "home-safety-checklist",
@@ -121,6 +134,10 @@ export const topics: Topic[] = [
     ],
     relatedTopics: ["fall-prevention", "footwear-and-mobility"],
     guides: ["fall-prevention-guide"],
+    references: [
+      { ...sources.niaFalls, supports: "The home hazards named here: loose rugs, poor lighting, cluttered walkways and missing rails." },
+      { ...sources.whoFalls, supports: "That environmental hazards are a major contributor to falls at home." },
+    ],
   },
   {
     slug: "footwear-and-mobility",
@@ -142,6 +159,10 @@ export const topics: Topic[] = [
     ],
     relatedTopics: ["fall-prevention", "balance-exercises"],
     guides: ["fall-prevention-guide"],
+    references: [
+      { ...sources.niaFalls, supports: "That poorly fitting footwear and slippers contribute to falls." },
+      { ...sources.whoFalls, supports: "That footwear is a modifiable fall risk factor." },
+    ],
   },
   {
     slug: "nutrition-basics",
@@ -167,6 +188,10 @@ export const topics: Topic[] = [
       "anti-inflammatory-basics",
     ],
     guides: ["lower-your-blood-sugar-guide", "anti-inflammatory-diet-guide"],
+    references: [
+      { ...sources.ninDietaryGuidelines, supports: "The Indian food group balance and portion guidance behind this page." },
+      { ...sources.niaMealPlanning, supports: "Building meals around protein and vegetables, and staying hydrated as thirst fades with age." },
+    ],
   },
   {
     slug: "movement-and-blood-sugar",
@@ -188,6 +213,10 @@ export const topics: Topic[] = [
     ],
     relatedTopics: ["nutrition-basics", "sleep-and-recovery"],
     guides: ["lower-your-blood-sugar-guide"],
+    references: [
+      { ...sources.nhsDiabetesFood, supports: "That activity after eating helps the body use glucose from the meal." },
+      { ...sources.harvardCarbsBloodSugar, supports: "How carbohydrate in a meal raises blood sugar, and what slows that rise." },
+    ],
   },
   {
     slug: "sleep-and-recovery",
@@ -211,6 +240,10 @@ export const topics: Topic[] = [
     relatedTopics: [
       "which-kind-of-poor-sleeper","nutrition-basics", "dementia-friendly-movement"],
     guides: ["lower-your-blood-sugar-guide"],
+    references: [
+      { ...sources.niaSleep, supports: "Regular sleep and waking times, morning daylight, and a calm wind-down." },
+      { ...sources.nhsInsomnia, supports: "That persistent trouble sleeping is worth taking to a doctor rather than treating alone." },
+    ],
   },
   {
     slug: "anti-inflammatory-basics",
@@ -232,6 +265,10 @@ export const topics: Topic[] = [
     ],
     relatedTopics: ["nutrition-basics", "movement-and-blood-sugar"],
     guides: ["anti-inflammatory-diet-guide"],
+    references: [
+      { ...sources.whoHealthyDiet, supports: "The whole-food, vegetable-led pattern described here." },
+      { ...sources.harvardProcessed, supports: "That heavily processed food is the part of the diet worth easing back on." },
+    ],
   },
   {
     slug: "bone-health-after-menopause",
@@ -280,6 +317,10 @@ export const topics: Topic[] = [
       "balance-exercises",
     ],
     guides: ["stay-strong-after-menopause-guide"],
+    references: [
+      { ...sources.niaOsteoporosis, supports: "That bone loss accelerates after menopause and what slows it." },
+      { ...sources.whoMenopause, supports: "The changes that follow menopause, including effects on bone." },
+    ],
   },
   {
     slug: "osteopenia-and-osteoporosis",
@@ -329,6 +370,10 @@ export const topics: Topic[] = [
       "footwear-and-mobility",
     ],
     guides: ["stay-strong-after-menopause-guide", "fall-prevention-guide"],
+    references: [
+      { ...sources.niaOsteoporosis, supports: "The difference between low bone density and osteoporosis, and what raises risk." },
+      { ...sources.medlineAgeingChanges, supports: "How bone mass changes with age." },
+    ],
   },
   {
     slug: "muscle-strength-and-ageing",
@@ -377,6 +422,10 @@ export const topics: Topic[] = [
       "nutrition-basics",
     ],
     guides: ["stay-strong-after-menopause-guide"],
+    references: [
+      { ...sources.medlineAgeingChanges, supports: "That muscle mass and strength decline with age." },
+      { ...sources.espenProtein, supports: "That older adults need more protein than younger adults to maintain muscle." },
+    ],
   },
   {
     slug: "vitamin-d-what-it-does",
@@ -433,6 +482,10 @@ export const topics: Topic[] = [
       "anti-inflammatory-basics",
     ],
     guides: ["stay-strong-after-menopause-guide"],
+    references: [
+      { ...sources.nhsVitaminD, supports: "What vitamin D does, who is short of it, and the everyday sources." },
+      { ...sources.niaVitamins, supports: "Vitamin D and calcium needs in older adults." },
+    ],
   },
   {
     slug: "chair-dance-for-bone-and-muscle",
@@ -505,6 +558,10 @@ export const topics: Topic[] = [
       "fall-prevention",
     ],
     guides: ["stay-strong-after-menopause-guide", "fall-prevention-guide"],
+    references: [
+      { ...sources.whoActivityGuidelines, supports: "That older adults need muscle-strengthening activity on two or more days a week." },
+      { ...sources.niaFourTypes, supports: "The four kinds of exercise, and why strength and balance both matter." },
+    ],
   },
   {
     slug: "prebiotics-and-probiotics",
@@ -647,6 +704,10 @@ export const topics: Topic[] = [
       "movement-and-blood-sugar",
     ],
     guides: [],
+    references: [
+      { ...sources.whoHealthyDiet, supports: "The everyday pattern to return to, rather than compensating with restriction." },
+      { ...sources.nhsHealthyWeight, supports: "That steady habits matter more than short corrections." },
+    ],
   },
   {
     slug: "soy-milk-and-plant-milks",
@@ -712,6 +773,10 @@ export const topics: Topic[] = [
       "prebiotics-and-probiotics",
     ],
     guides: [],
+    references: [
+      { ...sources.harvardProtein, supports: "That soy is the plant milk with protein comparable to dairy." },
+      { ...sources.whoHealthyDiet, supports: "The place of plant foods in an everyday diet." },
+    ],
   },
   {
     slug: "understanding-stress",
@@ -773,6 +838,10 @@ export const topics: Topic[] = [
       "dementia-friendly-movement",
     ],
     guides: ["five-things-you-can-do-for-stress-guide"],
+    references: [
+      { ...sources.nhsStress, supports: "What stress does day to day, and when it needs more than self-help." },
+      { ...sources.niaMentalHealth, supports: "Everyday habits that support emotional health in later life." },
+    ],
   },
   {
     slug: "stop-breathe-notice-choose",
@@ -827,6 +896,10 @@ export const topics: Topic[] = [
       "music-memory-and-mood",
     ],
     guides: ["five-things-you-can-do-for-stress-guide"],
+    references: [
+      { ...sources.nhsStress, supports: "Slow breathing and pausing as everyday ways to settle stress." },
+      { ...sources.niaMentalHealth, supports: "That simple daily practices support emotional wellbeing." },
+    ],
   },
   {
     slug: "music-memory-and-mood",
@@ -879,6 +952,10 @@ export const topics: Topic[] = [
       "balance-exercises",
     ],
     guides: ["five-things-you-can-do-for-stress-guide"],
+    references: [
+      { ...sources.niaCognitive, supports: "That mentally and socially engaging activity supports cognitive health." },
+      { ...sources.whoDementia, supports: "Activity and engagement among the things that support brain health." },
+    ],
   },
   {
     slug: "anti-inflammatory-swaps-indian-kitchen",
@@ -1050,6 +1127,10 @@ export const topics: Topic[] = [
       "monthly-activities-zealver-clubs",
     ],
     guides: [],
+    references: [
+      { ...sources.whoAgeing, supports: "The functional-ability view of healthy ageing this framework follows." },
+      { ...sources.whoActivityGuidelines, supports: "The activity levels the movement pillar is built on." },
+    ],
   },
   {
     slug: "movement-healthy-aging",
@@ -1111,6 +1192,10 @@ export const topics: Topic[] = [
       "monthly-activities-zealver-clubs",
     ],
     guides: ["stay-strong-after-menopause-guide"],
+    references: [
+      { ...sources.whoPhysicalActivity, supports: "The recommended weekly activity for adults over 65." },
+      { ...sources.niaExercise, supports: "That regular activity supports independence in later life." },
+    ],
   },
   {
     slug: "music-brain-health-seniors",
@@ -1173,6 +1258,10 @@ export const topics: Topic[] = [
       "monthly-activities-zealver-clubs",
     ],
     guides: ["five-things-you-can-do-for-stress-guide"],
+    references: [
+      { ...sources.niaCognitive, supports: "That engaging, social activity supports cognitive health." },
+      { ...sources.whoDementia, supports: "Brain health and the factors that support it." },
+    ],
   },
   {
     slug: "memory-cognitive-health-seniors",
@@ -1235,6 +1324,10 @@ export const topics: Topic[] = [
       "monthly-activities-zealver-clubs",
     ],
     guides: [],
+    references: [
+      { ...sources.niaMemory, supports: "The difference between ordinary forgetfulness and memory loss worth investigating." },
+      { ...sources.niaCognitive, supports: "What is known to support cognitive health." },
+    ],
   },
   {
     slug: "meaning-belonging-healthy-aging",
@@ -1297,6 +1390,10 @@ export const topics: Topic[] = [
       "10-essentials-healthy-aging-social-clubs",
     ],
     guides: [],
+    references: [
+      { ...sources.niaLoneliness, supports: "That social connection affects health, and practical ways to stay connected." },
+      { ...sources.whoAgeing, supports: "Wellbeing and participation as part of healthy ageing." },
+    ],
   },
   {
     slug: "monthly-activities-zealver-clubs",
@@ -1376,6 +1473,10 @@ export const topics: Topic[] = [
     ],
     guides: [],
     cta: { label: "See our classes, clubs and events", href: "/experience" },
+    references: [
+      { ...sources.whoActivityGuidelines, supports: "The weekly activity levels the programme is built around." },
+      { ...sources.niaLoneliness, supports: "That regular social contact supports health in later life." },
+    ],
   },
   {
     slug: "10-essentials-healthy-aging-social-clubs",
@@ -1446,6 +1547,10 @@ export const topics: Topic[] = [
       "monthly-activities-zealver-clubs",
     ],
     guides: [],
+    references: [
+      { ...sources.whoAgeing, supports: "The functional-ability framing of healthy ageing used here." },
+      { ...sources.niaLoneliness, supports: "That connection and regular contact matter for health." },
+    ],
   },
   {
     slug: "migraine-and-gut-health",
@@ -1502,6 +1607,10 @@ export const topics: Topic[] = [
       "understanding-stress",
     ],
     guides: ["acid-reflux-guide"],
+    references: [
+      { ...sources.nhsMigraine, supports: "What migraine is, common triggers, and when to see a doctor." },
+      { ...sources.nhsFibre, supports: "The role of fibre in digestive health." },
+    ],
   },
   {
     slug: "bones-that-matter-most",
@@ -1571,6 +1680,10 @@ export const topics: Topic[] = [
       "fall-prevention",
     ],
     guides: ["stay-strong-after-menopause-guide", "fall-prevention-guide"],
+    references: [
+      { ...sources.niaOsteoporosis, supports: "Which fractures matter most in later life and what reduces the risk." },
+      { ...sources.medlineAgeingChanges, supports: "How bone changes with age." },
+    ],
   },
   {
     slug: "muscle-as-your-bodys-engine",
@@ -1631,6 +1744,10 @@ export const topics: Topic[] = [
       "movement-and-blood-sugar",
     ],
     guides: ["stay-strong-after-menopause-guide", "diabetes-management-guide"],
+    references: [
+      { ...sources.medlineAgeingChanges, supports: "That muscle declines with age unless it is used." },
+      { ...sources.espenProtein, supports: "The protein needed to maintain muscle in older adults." },
+    ],
   },
   {
     slug: "diabetes-what-is-happening",
@@ -1713,6 +1830,10 @@ export const topics: Topic[] = [
       "anti-inflammatory-swaps-indian-kitchen",
     ],
     guides: ["diabetes-management-guide", "lower-your-blood-sugar-guide"],
+    references: [
+      { ...sources.whoDiabetes, supports: "What type 2 diabetes is and how common it has become." },
+      { ...sources.harvardCarbsBloodSugar, supports: "How carbohydrate raises blood sugar and what insulin does." },
+    ],
   },
   {
     slug: "blood-pressure-in-women",
@@ -1791,6 +1912,10 @@ export const topics: Topic[] = [
       "sleep-and-recovery",
     ],
     guides: ["blood-pressure-guide"],
+    references: [
+      { ...sources.whoHypertension, supports: "What high blood pressure is, and that it usually has no symptoms." },
+      { ...sources.niaBloodPressure, supports: "Blood pressure in older adults and what helps." },
+    ],
   },
   {
     slug: "heart-attack-signs-in-women",
@@ -1846,6 +1971,10 @@ export const topics: Topic[] = [
       "movement-healthy-aging",
     ],
     guides: ["blood-pressure-guide"],
+    references: [
+      { ...sources.whoCardiovascular, supports: "That cardiovascular disease is a leading cause of death in women." },
+      { ...sources.niaHeart, supports: "How heart symptoms can present differently with age." },
+    ],
   },
   {
     slug: "arthritis-three-kinds",
@@ -1924,6 +2053,10 @@ export const topics: Topic[] = [
       "anti-inflammatory-basics",
     ],
     guides: ["arthritis-and-joint-comfort-guide"],
+    references: [
+      { ...sources.nhsOsteoarthritis, supports: "What osteoarthritis is and how it is managed." },
+      { ...sources.nhsRheumatoid, supports: "That rheumatoid arthritis is a different, inflammatory condition needing early treatment." },
+    ],
   },
   {
     slug: "which-kind-of-poor-sleeper",
@@ -2007,6 +2140,10 @@ export const topics: Topic[] = [
       "blood-pressure-in-women",
     ],
     guides: ["five-things-you-can-do-for-stress-guide"],
+    references: [
+      { ...sources.nhsInsomnia, supports: "The different patterns of poor sleep and when to seek help." },
+      { ...sources.niaSleep, supports: "What supports sleep in later life." },
+    ],
   },
   {
     slug: "dementia-what-it-is-and-lowering-risk",
@@ -2184,6 +2321,10 @@ export const topics: Topic[] = [
       "movement-and-blood-sugar",
     ],
     guides: ["diabetes-management-guide", "stay-strong-after-menopause-guide"],
+    references: [
+      { ...sources.nhsHealthyWeight, supports: "That weight changes slowly and the scale is a poor day-to-day measure." },
+      { ...sources.whoObesity, supports: "How body weight relates to health risk." },
+    ],
   },
   {
     slug: "rice-and-roti",
@@ -2255,6 +2396,10 @@ export const topics: Topic[] = [
       "movement-and-blood-sugar",
     ],
     guides: ["diabetes-management-guide", "lower-your-blood-sugar-guide"],
+    references: [
+      { ...sources.harvardCarbsBloodSugar, supports: "How different carbohydrate foods affect blood sugar." },
+      { ...sources.ninDietaryGuidelines, supports: "The place of cereals in an Indian diet and sensible portions." },
+    ],
   },
   {
     slug: "eating-before-and-after-exercise",
@@ -2311,6 +2456,10 @@ export const topics: Topic[] = [
       "chair-dance-for-bone-and-muscle",
     ],
     guides: ["stay-strong-after-menopause-guide", "diabetes-management-guide"],
+    references: [
+      { ...sources.espenProtein, supports: "That protein after exercise supports muscle in older adults." },
+      { ...sources.nhsDiabetesFood, supports: "That exercise lowers blood sugar, which matters if you take medication for diabetes." },
+    ],
   },
   {
     slug: "garba-and-dandiya-for-seniors",
@@ -2380,6 +2529,10 @@ export const topics: Topic[] = [
       "meaning-belonging-healthy-aging",
     ],
     guides: ["five-things-you-can-do-for-stress-guide"],
+    references: [
+      { ...sources.whoPhysicalActivity, supports: "That activity counts whatever form it takes, including dance." },
+      { ...sources.niaFourTypes, supports: "Balance, coordination and strength as distinct benefits of movement." },
+    ],
   },
   {
     slug: "chair-dance-fitness-benefits",
@@ -2458,6 +2611,10 @@ export const topics: Topic[] = [
     ],
     guides: ["stay-strong-after-menopause-guide", "fall-prevention-guide"],
     cta: { label: "See our classes, clubs and events", href: "/experience" },
+    references: [
+      { ...sources.whoActivityGuidelines, supports: "The weekly activity and balance training recommended for older adults." },
+      { ...sources.niaFourTypes, supports: "The four kinds of exercise a seated session can cover." },
+    ],
   },
   {
     slug: "what-makes-life-worth-living-after-60",
@@ -2537,6 +2694,10 @@ export const topics: Topic[] = [
       "memory-cognitive-health-seniors",
     ],
     guides: ["friendship-later-in-life-guide", "loneliness-guide"],
+    references: [
+      { ...sources.niaLoneliness, supports: "That social connection and purpose affect health in later life." },
+      { ...sources.whoAgeing, supports: "Wellbeing and participation as part of healthy ageing." },
+    ],
   },
   {
     slug: "inflammation-explained",
@@ -2591,6 +2752,10 @@ export const topics: Topic[] = [
       "dementia-what-it-is-and-lowering-risk",
     ],
     guides: ["anti-inflammatory-diet-guide", "arthritis-and-joint-comfort-guide"],
+    references: [
+      { ...sources.whoHealthyDiet, supports: "The eating pattern associated with lower long-term disease risk." },
+      { ...sources.harvardProcessed, supports: "The place of heavily processed food in that pattern." },
+    ],
   },
   {
     slug: "joints-how-they-work",
@@ -2644,6 +2809,10 @@ export const topics: Topic[] = [
       "bones-that-matter-most",
     ],
     guides: ["arthritis-and-joint-comfort-guide", "knee-pain-guide"],
+    references: [
+      { ...sources.whoMusculoskeletal, supports: "How common joint conditions are, and what helps." },
+      { ...sources.medlineAgeingChanges, supports: "How cartilage and joints change with age." },
+    ],
   },
   {
     slug: "kidneys-and-how-to-protect-them",
@@ -2697,6 +2866,10 @@ export const topics: Topic[] = [
       "nutrition-basics",
     ],
     guides: ["blood-pressure-guide", "diabetes-management-guide"],
+    references: [
+      { ...sources.niddkKidney, supports: "What the kidneys do and what damages them." },
+      { ...sources.nhsKidney, supports: "That kidney disease is often silent until late, and who should be tested." },
+    ],
   },
   {
     slug: "liver-your-sugar-bank",
@@ -2750,6 +2923,10 @@ export const topics: Topic[] = [
       "muscle-as-your-bodys-engine",
     ],
     guides: ["diabetes-management-guide", "lower-your-blood-sugar-guide"],
+    references: [
+      { ...sources.niddkFattyLiver, supports: "Fatty liver disease, how it develops and what reverses it." },
+      { ...sources.harvardCarbsBloodSugar, supports: "How the body handles sugar and where it is stored." },
+    ],
   },
   {
     slug: "quiet-and-solitude",
@@ -2803,6 +2980,10 @@ export const topics: Topic[] = [
       "memory-cognitive-health-seniors",
     ],
     guides: ["loneliness-guide", "friendship-later-in-life-guide"],
+    references: [
+      { ...sources.niaLoneliness, supports: "The difference between being alone and being lonely." },
+      { ...sources.niaMentalHealth, supports: "Everyday habits that support emotional health." },
+    ],
   },
   {
     slug: "ultra-processed-food",
@@ -2856,6 +3037,10 @@ export const topics: Topic[] = [
       "rice-and-roti",
     ],
     guides: ["anti-inflammatory-diet-guide", "cholesterol-guide"],
+    references: [
+      { ...sources.harvardProcessed, supports: "What counts as processed and ultra-processed, and why it matters." },
+      { ...sources.whoHealthyDiet, supports: "The limits on free sugars, salt and fats behind this page." },
+    ],
   },
   {
     slug: "xerostomia-dry-mouth",
@@ -2909,6 +3094,10 @@ export const topics: Topic[] = [
       "anti-inflammatory-basics",
     ],
     guides: ["oral-health-guide", "questions-for-your-doctor-guide"],
+    references: [
+      { ...sources.nhsDryMouth, supports: "What causes a dry mouth, including medication, and what helps." },
+      { ...sources.whoOralHealth, supports: "Why oral health matters beyond the mouth." },
+    ],
   },
   {
     slug: "years-versus-healthspan",
@@ -2962,6 +3151,10 @@ export const topics: Topic[] = [
       "4m-framework-healthy-aging",
     ],
     guides: ["stay-strong-after-menopause-guide", "independence-at-home-guide"],
+    references: [
+      { ...sources.whoAgeing, supports: "Healthy ageing defined as functional ability rather than absence of disease." },
+      { ...sources.whoPhysicalActivity, supports: "Activity as one of the strongest levers on healthy years." },
+    ],
   },
   {
     slug: "zinc-and-minerals-after-60",
@@ -3015,6 +3208,10 @@ export const topics: Topic[] = [
       "muscle-as-your-bodys-engine",
     ],
     guides: ["vitamin-d-guide", "questions-for-your-doctor-guide"],
+    references: [
+      { ...sources.niaVitamins, supports: "Which vitamins and minerals older adults are most often short of." },
+      { ...sources.ninDietaryGuidelines, supports: "Indian food sources for those minerals." },
+    ],
   },
   {
     slug: "classic-indian-dishes-for-seniors",
