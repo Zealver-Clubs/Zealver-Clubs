@@ -106,7 +106,7 @@ export const experienceItems: ExperienceItem[] = [
     title: "Andheri West",
     meta: "In-person · Twice weekly",
     blurb:
-      "Tuesdays and Thursdays at the Yoga Room, inside The Classique Club. A 15-minute health talk, then 30 minutes of seated dance.",
+      "Tuesdays and Thursdays at the Yoga Room, inside The Classique Club.",
     image: "/images/community-celebration.jpg",
     imageAlt:
       "Members of the Andheri West club gathered together holding their Zealver Clubs certificates, with marigold decorations behind them.",
@@ -128,7 +128,7 @@ export const experienceItems: ExperienceItem[] = [
       },
     ],
     schedule: "Tuesdays & Thursdays, 11:00 AM – 1:00 PM",
-    price: "\u20b94000 per month. One free trial first.",
+    price: "\u20b94000 per month.",
     trainer: "Zealver certified instructor",
     cta: {
       label: "Ask about the Andheri class",
