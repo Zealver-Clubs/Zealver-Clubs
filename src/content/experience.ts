@@ -183,12 +183,12 @@ export const experienceItems: ExperienceItem[] = [
     title: "South Mumbai",
     meta: "In-person \u00b7 Tardeo \u00b7 Event series",
     blurb:
-      "Seated dance to retro Bollywood, in Tardeo. Nine events from October to December, then weekly classes from January 2027.",
+      "Seated dance to retro Bollywood, in Tardeo. Eight events from October to December, then weekly classes from January 2027.",
     image: "/images/instructor-class.jpg",
     imageAlt:
       "A Zealver certified instructor leading a seated dance session for a group of women.",
     schedule: "5:00 \u2013 6:00 PM on event days",
-    price: "\u20b9600 per event, including taxes. The launch on 12 October is free.",
+    price: "\u20b9600 per event, including taxes. One free trial per person.",
     trainer: "Zealver certified instructor",
     location: {
       name: "Assembly Hall, Sundatta High School, Tardeo",
@@ -205,7 +205,6 @@ export const experienceItems: ExperienceItem[] = [
         subheading: "Seated Garba",
         note: "Seated Garba and Dandiya-inspired movement, to music you already know.",
         sessions: [
-          { date: "Monday 12 October", special: "Seated Garba. Free launch event." },
           { date: "Wednesday 14 October", special: "Seated Garba." },
           { date: "Monday 19 October", special: "Seated Garba." },
         ],
@@ -239,7 +238,8 @@ export const experienceItems: ExperienceItem[] = [
       {
         question: "What does it cost?",
         answer: [
-          "\u20b9600 per event, including taxes. The launch event on Monday 12 October is free, and every participant can take one free trial class separately from that.",
+          "\u20b9600 per event, including taxes.",
+          "Every participant can take one free trial class. One only, per person.",
         ],
       },
       {
@@ -250,12 +250,6 @@ export const experienceItems: ExperienceItem[] = [
           "4 events: 10% off",
           "6 events: 15% off",
           "All 8 paid events: 20% off",
-        ],
-      },
-      {
-        question: "Does the free launch event count towards a package?",
-        answer: [
-          "No. The 12 October launch is free and sits outside the packages, which cover the eight paid events from 14 October onwards.",
         ],
       },
       {
