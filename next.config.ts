@@ -9,6 +9,21 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/experience/seated-dance-morning-batch",
+        destination: "/experience/online-classes",
+        permanent: true,
+      },
+      {
+        source: "/experience/seated-dance-online-class",
+        destination: "/experience/india-online-batch",
+        permanent: true,
+      },
+      {
+        source: "/experience/seated-dance-evening-batch",
+        destination: "/experience/india-online-batch",
+        permanent: true,
+      },
+      {
         source: "/experience/events",
         destination: "/experience",
         permanent: true,

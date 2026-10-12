@@ -72,31 +72,55 @@ export type ExperienceItem = {
 
 export const experienceItems: ExperienceItem[] = [
   {
-    slug: "seated-dance-morning-batch",
+    slug: "india-online-batch",
     kind: "club",
     mode: "online",
-    title: "Seated Dance Fitness · Morning batch",
-    meta: "Online · Zoom · Twice weekly",
+    title: "India online batch",
+    meta: "Online \u00b7 Zoom \u00b7 Twice weekly",
     blurb:
-      "Chair-based, music-led fitness to start your day with movement, music and a friendly community. No experience needed.",
-    image: "/images/class-seated-dance.jpg",
-    schedule: "Tuesdays & Thursdays, 9:00–9:45 AM IST",
-    price: "Free trial, then membership",
-    trainer: "Zealver certified instructor",
-    relatedTopics: ["balance-exercises", "movement-and-blood-sugar", "dementia-friendly-movement"],
-  },
-  {
-    slug: "seated-dance-evening-batch",
-    kind: "club",
-    mode: "online",
-    title: "Seated Dance Fitness · Evening batch",
-    meta: "Online · Zoom · Twice weekly",
-    blurb:
-      "The same joyful seated dance session, timed for the evening. Move to music, wind down and connect.",
+      "Chair-based, music-led fitness over Zoom, twice a week. A health talk, a workout and time for questions, without leaving home.",
     image: "/images/home-experience.jpg",
-    schedule: "Mondays & Wednesdays, 6:00–6:45 PM IST",
-    price: "Free trial, then membership",
+    schedule: "Tuesdays & Thursdays, 4:00 \u2013 5:00 PM IST",
+    price: "\u20b92,499 per month.",
     trainer: "Zealver certified instructor",
+    cta: {
+      label: "Ask about the online batch",
+      message: "Hi, tell me more about the India online batch.",
+    },
+    faqs: [
+      {
+        question: "What happens in the hour?",
+        answer: ["The class runs to the same shape every time:"],
+        points: [
+          "10 minutes: a health talk from Dr Namrata, on a new topic each class.",
+          "40 minutes: the chair dance workout, guided live, with corrections to posture, movement or technique as they are needed.",
+          "10 minutes: questions and answers.",
+        ],
+      },
+      {
+        question: "What does it cost?",
+        answer: ["\u20b92,499 per month."],
+      },
+      {
+        question: "Is it cheaper to commit for longer?",
+        answer: ["Yes. Taking a membership brings the monthly fee down:"],
+        points: [
+          "Monthly membership: 10% off",
+          "Three-month membership: 20% off",
+        ],
+      },
+      {
+        question: "Can I try it before I join?",
+        answer: ["Yes. Every participant can take one free trial class."],
+      },
+      {
+        question: "How does the Zoom link work?",
+        answer: [
+          "The link is sent twenty minutes before the class. Please keep it to yourself rather than passing it on, and join on time.",
+          "Everyone is muted during the session so the class runs smoothly. There is time for questions at the end.",
+        ],
+      },
+    ],
     relatedTopics: ["sleep-and-recovery", "balance-exercises"],
   },
   {
@@ -322,7 +346,7 @@ export const experienceCategories: ExperienceCategoryInfo[] = [
     blurb:
       "Join live sessions from home over Zoom, twice a week, with a friendly community.",
     intro:
-      "The same sessions, live over Zoom, so you can join from your own chair at home. Twice a week, morning or evening.",
+      "The same sessions, live over Zoom, so you can join from your own chair at home. Tuesdays and Thursdays, late afternoon.",
     image: "/images/class-seated-dance.jpg",
     cta: {
       heading: "Try an online class",
