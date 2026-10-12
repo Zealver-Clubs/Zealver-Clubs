@@ -185,7 +185,7 @@ export const experienceItems: ExperienceItem[] = [
     title: "South Mumbai",
     meta: "In-person \u00b7 Tardeo \u00b7 Event series",
     blurb:
-      "Seated dance to retro Bollywood, in Tardeo. Eight events from October to December, then weekly classes from January 2027.",
+      "Seated dance to retro Bollywood, in Tardeo. Seated Garba, Kishore Kumar and the hits of every decade since.",
     image: "/images/instructor-class.jpg",
     imageAlt:
       "A Zealver certified instructor leading a seated dance session for a group of women.",
@@ -207,6 +207,7 @@ export const experienceItems: ExperienceItem[] = [
         subheading: "Seated Garba",
         note: "Seated Garba and Dandiya-inspired movement, to music you already know.",
         sessions: [
+          { date: "Monday 12 October", special: "Seated Garba." },
           { date: "Wednesday 14 October", special: "Seated Garba." },
           { date: "Monday 19 October", special: "Seated Garba." },
         ],
@@ -251,7 +252,7 @@ export const experienceItems: ExperienceItem[] = [
           "2 events: 5% off",
           "4 events: 10% off",
           "6 events: 15% off",
-          "All 8 paid events: 20% off",
+          "All 8 events: 20% off",
         ],
       },
       {
