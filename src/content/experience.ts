@@ -252,7 +252,7 @@ export const experienceItems: ExperienceItem[] = [
           "2 events: 5% off",
           "4 events: 10% off",
           "6 events: 15% off",
-          "All 8 events: 20% off",
+          "8 events: 20% off",
         ],
       },
       {
