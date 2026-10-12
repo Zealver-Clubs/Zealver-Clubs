@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Accessibility, Type, Sun, Moon, Contrast, X, Check } from "lucide-react";
+import { ALargeSmall, Type, Sun, Moon, Contrast, X, Check } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 type Theme = "light" | "dark" | "contrast";
@@ -93,12 +93,13 @@ export function AccessibilityControls() {
         className="inline-flex min-h-12 w-12 items-center justify-center rounded-full border-2 border-border text-secondary transition-colors hover:border-primary hover:bg-secondary-soft"
       >
         {/*
-          The universal access symbol rather than a label. The panel sets
-          both text size and colour, so "Text size" named only half of it,
-          and the header has to stay short. The name is still on the button
-          for screen readers and in the tooltip on hover.
+          The large-and-small A, which is the usual mark for text size and
+          the one this audience is most likely to have met before. Not the
+          universal access symbol: that reads as disability, and this panel
+          is display settings anyone might want. The full name is on the
+          button for screen readers and in the tooltip on hover.
         */}
-        <Accessibility className="h-6 w-6 shrink-0" aria-hidden />
+        <ALargeSmall className="h-6 w-6 shrink-0" aria-hidden />
       </button>
 
       {open && (
