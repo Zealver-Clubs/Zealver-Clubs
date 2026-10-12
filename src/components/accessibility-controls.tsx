@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Type, Sun, Moon, Contrast, X, Check } from "lucide-react";
+import { Accessibility, Type, Sun, Moon, Contrast, X, Check } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 type Theme = "light" | "dark" | "contrast";
@@ -90,19 +90,15 @@ export function AccessibilityControls() {
         aria-label="Text size and colour options"
         onClick={() => setOpen((v) => !v)}
         title="Text size and colour"
-        className="inline-flex min-h-12 items-center gap-1.5 rounded-full border-2 border-border px-3 text-secondary transition-colors hover:border-primary hover:bg-secondary-soft"
+        className="inline-flex min-h-12 w-12 items-center justify-center rounded-full border-2 border-border text-secondary transition-colors hover:border-primary hover:bg-secondary-soft"
       >
-        {/* "A" for text size, globe for language: two things people recognise
-            faster than one symbol standing for everything. */}
-        <span className="text-lg font-extrabold leading-none" aria-hidden>
-          A
-        </span>
-        <span className="text-sm font-extrabold leading-none" aria-hidden>
-          A
-        </span>
-        <span className="hidden whitespace-nowrap text-sm font-bold xl:inline">
-          Text size
-        </span>
+        {/*
+          The universal access symbol rather than a label. The panel sets
+          both text size and colour, so "Text size" named only half of it,
+          and the header has to stay short. The name is still on the button
+          for screen readers and in the tooltip on hover.
+        */}
+        <Accessibility className="h-6 w-6 shrink-0" aria-hidden />
       </button>
 
       {open && (

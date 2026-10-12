@@ -147,11 +147,20 @@ export const contentPolicy = {
     "Written by the Zealver Clubs team with AI assistance, and reviewed before publishing.",
 } as const;
 
+/** The header. Kept short: every item here competes with the others. */
 export const nav = [
   { label: "Home", href: "/" },
-  { label: "Our Approach", href: "/our-approach" },
+  { label: "Approach", href: "/our-approach" },
   { label: "Experience", href: "/experience" },
   { label: "Knowledge Hub", href: "/knowledge-hub" },
-  { label: "Become an Instructor", href: "/become-an-instructor" },
   { label: "About", href: "/about" },
+] as const;
+
+/**
+ * The footer carries the header's links plus the ones with a narrower
+ * audience, which are better found deliberately than offered to everyone.
+ */
+export const footerNav = [
+  ...nav,
+  { label: "Become an Instructor", href: "/become-an-instructor" },
 ] as const;

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Mail } from "lucide-react";
-import { nav, site } from "@/content/site";
+import { footerNav, site } from "@/content/site";
 import { Logo } from "@/components/site/logo";
 import {
   InstagramIcon,
@@ -33,7 +33,7 @@ export function Footer() {
             Explore
           </h2>
           <ul className="mt-3 flex flex-col">
-            {nav.map((item) => (
+            {footerNav.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
