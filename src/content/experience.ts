@@ -150,7 +150,7 @@ export const experienceItems: ExperienceItem[] = [
       {
         question: "Can I try it before I join?",
         answer: [
-          "Yes. Every participant can take one free trial class. One only, per person.",
+          "Yes. Every participant can take one free trial class.",
         ],
       },
     ],
@@ -242,7 +242,7 @@ export const experienceItems: ExperienceItem[] = [
         question: "What does it cost?",
         answer: [
           "\u20b9600 per event, including taxes.",
-          "Every participant can take one free trial class. One only, per person.",
+          "Every participant can take one free trial class.",
         ],
       },
       {
