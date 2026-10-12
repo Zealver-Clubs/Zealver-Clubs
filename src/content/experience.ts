@@ -128,36 +128,38 @@ export const experienceItems: ExperienceItem[] = [
       },
     ],
     schedule: "Tuesdays & Thursdays, 11:00 AM – 1:00 PM",
-    price: "Free trial. WhatsApp us for fees.",
+    price: "\u20b94000 per month. One free trial first.",
     trainer: "Zealver certified instructor",
     cta: {
       label: "Ask about the Andheri class",
       message: "Hi, tell me more about the Andheri classes.",
     },
-    timetables: [
+    faqs: [
       {
-      heading: "September 2026",
-      note: "Each session is a 15-minute health talk followed by 30 minutes of dance fitness.",
-      sessions: [
-        { date: "Tuesday 1 September", talk: "Stress management", dance: "Red theme" },
-        { date: "Thursday 3 September", talk: "Sleep", dance: "Krishna, for Janmashtami" },
-        { date: "Tuesday 8 September", talk: "Sunlight and vitamin D", dance: "Blue theme" },
-        { date: "Thursday 10 September", talk: "Strength training", dance: "Green theme" },
-        { date: "Tuesday 15 September", talk: "The importance of relationships", dance: "Ganesh Chaturthi special" },
-        { date: "Thursday 17 September", talk: "Smart eating", dance: "Madhuri Dixit" },
-        { date: "Tuesday 22 September", talk: "Insulin resistance", dance: "Govinda" },
-        { date: "Thursday 24 September", talk: "Multivitamins", dance: "Karisma Kapoor" },
-        { date: "Tuesday 29 September", special: "Madh Island picnic. A day out rather than a session, so no health talk and no dance theme." },
-      ],
+        question: "What does it cost?",
+        answer: ["\u20b94000 per month."],
       },
+      {
+        question: "Is it cheaper to commit for longer?",
+        answer: ["Yes. Taking a membership brings the monthly fee down:"],
+        points: [
+          "Monthly membership: 10% off",
+          "Three-month membership: 20% off",
+        ],
+      },
+      {
+        question: "Can I try it before I join?",
+        answer: [
+          "Yes. Every participant can take one free trial class. One only, per person.",
+        ],
+      },
+    ],
+    timetables: [
       {
         heading: "October 2026",
         subheading: "Mental Health Awareness Month",
         note: "A 15-minute health talk, 30 minutes of dance fitness, and an activity to finish.",
         sessions: [
-          { date: "Thursday 1 October", talk: "Gratitude practice", dance: "Solah Shringar", activity: "Mandala art" },
-          { date: "Tuesday 6 October", talk: "Positive affirmations", dance: "Remix special", activity: "Canvas painting" },
-          { date: "Thursday 8 October", talk: "Breathing and relaxation", dance: "Anarkali theme", activity: "Origami" },
           { date: "Tuesday 13 October", talk: "Mindfulness", dance: "Garba and dandiya", activity: "Jewellery making" },
           { date: "Thursday 15 October", talk: "The importance of friendships", dance: "Garba and dandiya", activity: "Singing" },
           { date: "Tuesday 20 October", talk: "Laughter and joy", dance: "Garba and dandiya, for Dussehra", activity: "Games and fun activities" },
