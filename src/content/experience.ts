@@ -194,8 +194,7 @@ export const experienceItems: ExperienceItem[] = [
     location: {
       name: "Assembly Hall, Sundatta High School, Tardeo",
       address: "Sundatta High School, Tardeo, South Mumbai",
-      mapUrl:
-        "https://www.google.com/maps/search/?api=1&query=Sundatta%20High%20School%2C%20Tardeo%2C%20Mumbai",
+      mapUrl: "https://maps.app.goo.gl/bhjnQYKkRAMPAfrLA",
     },
     cta: {
       label: "Ask about South Mumbai",
