@@ -115,10 +115,7 @@ export const experienceItems: ExperienceItem[] = [
       },
       {
         question: "How does the Zoom link work?",
-        answer: [
-          "The link is sent twenty minutes before the class. Please keep it to yourself rather than passing it on, and join on time.",
-          "Everyone is muted during the session so the class runs smoothly. There is time for questions at the end.",
-        ],
+        answer: ["The link is sent twenty minutes before the class."],
       },
     ],
     relatedTopics: ["sleep-and-recovery", "balance-exercises"],
