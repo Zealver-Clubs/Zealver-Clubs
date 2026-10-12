@@ -3,7 +3,7 @@
 export const site = {
   name: "Zealver Clubs",
   legalName: "Zealver Living Pvt. Ltd.",
-  url: "https://zealver-clubs.vercel.app",
+  url: "https://zealverclubs.com",
   legal: {
     privacy: "/privacy-policy",
     terms: "/terms-conditions",

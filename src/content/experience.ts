@@ -327,7 +327,7 @@ export const experienceCategories: ExperienceCategoryInfo[] = [
     slug: "in-person-classes",
     title: "Weekly classes in person",
     blurb:
-      "Meet face to face for seated dance, tea and friendship afterwards.",
+      "Join live sessions in person, twice a week, with a friendly community.",
     intro:
       "Chair-based, music-led sessions in a room with other people. Choose your branch below. No experience needed, and the first session is free.",
     image: "/images/community-celebration.jpg",

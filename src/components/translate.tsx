@@ -16,6 +16,8 @@
  * translate.goog address while reading, and comes back here on English.
  */
 
+import { site } from "@/content/site";
+
 export const LANGUAGES = [
   { code: "en", label: "English", native: "English" },
   { code: "hi", label: "Hindi", native: "हिन्दी" },
@@ -23,8 +25,12 @@ export const LANGUAGES = [
   { code: "gu", label: "Gujarati", native: "ગુજરાતી" },
 ] as const;
 
-/** The site's own origin, used to get back from the translated proxy. */
-const CANONICAL_HOST = "zealver-clubs.vercel.app";
+/**
+ * The site's own host, used to get back from the translated proxy. Taken
+ * from site.url so it cannot drift from the domain the rest of the site
+ * declares to search engines.
+ */
+const CANONICAL_HOST = new URL(site.url).host;
 
 function onProxy() {
   return (
