@@ -1,8 +1,7 @@
 /**
  * Experience content: clubs, batches, events and instructors.
- * The Experience chooser offers three categories: in-person classes, online
- * classes, and events. An item's category is its `mode`, unless its `kind` is
- * "event", which puts it under events wherever it is held.
+ * The Experience chooser offers in-person classes and online classes. An
+ * item's category is its `mode`.
  * Each item opens a class detail page by slug.
  */
 
@@ -10,7 +9,7 @@ import type { AspectRatio } from "@/lib/aspect-ratio";
 import type { FaqItem } from "@/components/faq";
 
 export type ExperienceMode = "in-person" | "online";
-export type ExperienceKind = "club" | "event";
+export type ExperienceKind = "club";
 
 export type ExperienceItem = {
   slug: string;
@@ -272,34 +271,19 @@ export const experienceItems: ExperienceItem[] = [
       "chair-dance-fitness-benefits",
     ],
   },
-  {
-    slug: "festival-celebration-event",
-    kind: "event",
-    mode: "in-person",
-    title: "Festival celebration event",
-    meta: "In-person · Special event",
-    blurb:
-      "A themed celebration with music, movement and community. Open to members and their friends.",
-    image: "/images/home-experience.jpg",
-    schedule: "Next date announced monthly",
-    price: "Included with membership",
-    trainer: "Zealver community team",
-    relatedTopics: ["dementia-friendly-movement"],
-  },
 ];
 
 export const experienceBySlug = new Map(
   experienceItems.map((e) => [e.slug, e]),
 );
 
-/** The three things the clubs run. Each has its own page under /experience. */
-export type ExperienceCategory = "in-person" | "online" | "events";
+/** What the clubs run. Each has its own page under /experience. */
+export type ExperienceCategory = "in-person" | "online";
 
-/** An event is an event wherever it is held, so `kind` comes before `mode`. */
 export function experienceCategoryOf(
   item: ExperienceItem,
 ): ExperienceCategory {
-  return item.kind === "event" ? "events" : item.mode;
+  return item.mode;
 }
 
 export type ExperienceCategoryInfo = {
@@ -406,23 +390,6 @@ export const experienceCategories: ExperienceCategoryInfo[] = [
         ],
       },
     ],
-  },
-  {
-    category: "events",
-    slug: "events",
-    title: "Events",
-    blurb:
-      "Festival celebrations and get-togethers, open to members and their friends.",
-    intro:
-      "Celebrations through the year, with music, movement and company. Open to members and the people they bring along.",
-    image: "/images/home-experience.jpg",
-    cta: {
-      heading: "Hear about the next one",
-      blurb:
-        "Send us a message and we will let you know what is coming up and how to join.",
-      label: "Ask about events",
-      message: "Hi, tell me more about Zealver Clubs events.",
-    },
   },
 ];
 

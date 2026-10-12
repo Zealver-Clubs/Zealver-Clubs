@@ -9,6 +9,16 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/experience/events",
+        destination: "/experience",
+        permanent: true,
+      },
+      {
+        source: "/experience/festival-celebration-event",
+        destination: "/experience",
+        permanent: true,
+      },
+      {
         source: "/become-a-host",
         destination: "/become-an-instructor",
         permanent: true,
