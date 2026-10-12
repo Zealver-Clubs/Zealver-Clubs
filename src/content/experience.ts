@@ -37,6 +37,8 @@ export type ExperienceItem = {
    * which class they meant.
    */
   cta?: { label: string; message: string };
+  /** Questions answered on this item's own page. */
+  faqs?: FaqItem[];
   /**
    * What is on, session by session. Written out month by month, so it needs
    * replacing when the month turns rather than quietly going stale.
@@ -176,19 +178,100 @@ export const experienceItems: ExperienceItem[] = [
     relatedTopics: ["fall-prevention", "balance-exercises"],
   },
   {
-    slug: "south-mumbai-coming-soon",
+    slug: "south-mumbai",
     kind: "club",
     mode: "in-person",
-    comingSoon: true,
     title: "South Mumbai",
-    meta: "In-person · Coming soon",
+    meta: "In-person \u00b7 Tardeo \u00b7 Event series",
     blurb:
-      "A second branch is on the way. Send us a message and we will tell you as soon as dates and a venue are set.",
+      "Seated dance to retro Bollywood, in Tardeo. Nine events from October to December, then weekly classes from January 2027.",
     image: "/images/instructor-class.jpg",
-    schedule: "Dates to be announced",
-    price: "To be announced",
+    imageAlt:
+      "A Zealver certified instructor leading a seated dance session for a group of women.",
+    schedule: "5:00 \u2013 6:00 PM on event days",
+    price: "\u20b9600 per event, including taxes. The launch on 12 October is free.",
     trainer: "Zealver certified instructor",
-    relatedTopics: [],
+    location: {
+      name: "Assembly Hall, Sundatta High School, Tardeo",
+      address: "Sundatta High School, Tardeo, South Mumbai",
+      mapUrl:
+        "https://www.google.com/maps/search/?api=1&query=Sundatta%20High%20School%2C%20Tardeo%2C%20Mumbai",
+    },
+    cta: {
+      label: "Ask about South Mumbai",
+      message: "Hi, tell me more about the South Mumbai events.",
+    },
+    timetables: [
+      {
+        heading: "October 2026",
+        subheading: "Seated Garba",
+        note: "Seated Garba and Dandiya-inspired movement, to music you already know.",
+        sessions: [
+          { date: "Monday 12 October", special: "Seated Garba. Free launch event." },
+          { date: "Wednesday 14 October", special: "Seated Garba." },
+          { date: "Monday 19 October", special: "Seated Garba." },
+        ],
+      },
+      {
+        heading: "November 2026",
+        subheading: "Kishore Kumar and retro classics",
+        sessions: [
+          { date: "Monday 16 November", special: "Kishore Kumar hits." },
+          { date: "Wednesday 18 November", special: "1960s Bollywood hits." },
+          { date: "Monday 23 November", special: "1970s Bollywood hits." },
+        ],
+      },
+      {
+        heading: "December 2026",
+        subheading: "Bollywood through the decades",
+        sessions: [
+          { date: "Wednesday 9 December", special: "1980s Bollywood hits." },
+          { date: "Monday 14 December", special: "1990s Bollywood hits." },
+          { date: "Wednesday 16 December", special: "2000s Bollywood hits." },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Who are these events for?",
+        answer: [
+          "Women 60 and over. Everything is done sitting down, to music most people in the room grew up with, so no experience and no particular fitness is needed.",
+        ],
+      },
+      {
+        question: "What does it cost?",
+        answer: [
+          "\u20b9600 per event, including taxes. The launch event on Monday 12 October is free, and every participant can take one free trial class separately from that.",
+        ],
+      },
+      {
+        question: "Is it cheaper to book several?",
+        answer: ["Yes. Booking more than one event brings the price down:"],
+        points: [
+          "2 events: 5% off",
+          "4 events: 10% off",
+          "6 events: 15% off",
+          "All 8 paid events: 20% off",
+        ],
+      },
+      {
+        question: "Does the free launch event count towards a package?",
+        answer: [
+          "No. The 12 October launch is free and sits outside the packages, which cover the eight paid events from 14 October onwards.",
+        ],
+      },
+      {
+        question: "Will there be regular weekly classes?",
+        answer: [
+          "Yes, from January 2027, on Mondays and Wednesdays from 5:00 to 6:00 PM at the same venue. Message us and we will tell you when booking opens.",
+        ],
+      },
+    ],
+    relatedTopics: [
+      "garba-and-dandiya-for-seniors",
+      "music-memory-and-mood",
+      "chair-dance-fitness-benefits",
+    ],
   },
   {
     slug: "festival-celebration-event",

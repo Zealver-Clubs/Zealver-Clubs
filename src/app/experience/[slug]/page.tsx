@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { CalendarDays, Tag, UserRound, ArrowRight, MapPin } from "lucide-react";
 import { InstagramIcon } from "@/components/icons/social";
+import { Faq } from "@/components/faq";
 import { Section } from "@/components/section";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { Card, CardBody } from "@/components/ui/card";
@@ -109,7 +110,7 @@ export default async function ClassDetailPage({
             </p>
           ) : null}
           <div className="mt-4 overflow-x-auto rounded-xl border border-border">
-            <table className="w-full min-w-[38rem] border-collapse text-left">
+            <table className={`w-full border-collapse text-left ${tt.sessions.every((x) => x.special) ? "min-w-[22rem]" : "min-w-[38rem]"}`}>
               <caption className="sr-only">
                 {item.title}, sessions in {tt.heading}
               </caption>
@@ -118,17 +119,25 @@ export default async function ClassDetailPage({
                   <th scope="col" className="px-4 py-3 text-sm font-bold uppercase tracking-wide text-secondary">
                     Date
                   </th>
-                  <th scope="col" className="px-4 py-3 text-sm font-bold uppercase tracking-wide text-secondary">
-                    Health talk
-                  </th>
-                  <th scope="col" className="px-4 py-3 text-sm font-bold uppercase tracking-wide text-secondary">
-                    Dance theme
-                  </th>
-                  {tt.sessions.some((x) => x.activity) ? (
+                  {tt.sessions.every((x) => x.special) ? (
                     <th scope="col" className="px-4 py-3 text-sm font-bold uppercase tracking-wide text-secondary">
-                      Activity
+                      What is on
                     </th>
-                  ) : null}
+                  ) : (
+                    <>
+                      <th scope="col" className="px-4 py-3 text-sm font-bold uppercase tracking-wide text-secondary">
+                        Health talk
+                      </th>
+                      <th scope="col" className="px-4 py-3 text-sm font-bold uppercase tracking-wide text-secondary">
+                        Dance theme
+                      </th>
+                      {tt.sessions.some((x) => x.activity) ? (
+                        <th scope="col" className="px-4 py-3 text-sm font-bold uppercase tracking-wide text-secondary">
+                          Activity
+                        </th>
+                      ) : null}
+                    </>
+                  )}
                 </tr>
               </thead>
               <tbody>
@@ -228,6 +237,8 @@ export default async function ClassDetailPage({
           </ul>
         </div>
       ) : null}
+
+      {item.faqs?.length ? <Faq items={item.faqs} /> : null}
 
       {/* Follow us, so people can see the classes between visits */}
       <aside className="mt-12 rounded-2xl border border-border bg-muted p-6 text-center">
