@@ -7,13 +7,15 @@ import { Breadcrumb } from "@/components/breadcrumb";
 import { Card, CardBody } from "@/components/ui/card";
 import { JsonLd } from "@/components/json-ld";
 import { site, parentOrg, vision, mission, values, team } from "@/content/site";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "About Zealver Clubs | Zealver Clubs",
+export const metadata: Metadata = pageMeta({
+  title: "About us",
   description:
-    "Zealver Clubs is the community wellbeing vertical of Zealver, one of India's established SeniorCare brands. Our vision, mission, values and the team behind the clubs.",
-  alternates: { canonical: `${site.url}/about` },
-};
+    "Zealver Clubs is the community wellbeing arm of Zealver, an established Indian SeniorCare brand. Our vision, mission, values and team.",
+  path: "/about",
+  kicker: "About",
+});
 
 export default function AboutPage() {
   const schema = {

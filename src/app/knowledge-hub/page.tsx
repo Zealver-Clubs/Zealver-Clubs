@@ -6,13 +6,15 @@ import { topics } from "@/content/topics";
 import { guides } from "@/content/guides";
 import { recipes } from "@/content/recipes";
 import { site } from "@/content/site";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Knowledge Hub | Zealver Clubs",
+export const metadata: Metadata = pageMeta({
+  title: "Knowledge Hub",
   description:
-    "Trusted health topics and step-by-step guides for healthy ageing. Browse A–Z or search for what matters to you.",
-  alternates: { canonical: `${site.url}/knowledge-hub` },
-};
+    "Health topics, step-by-step guides and Indian recipes for women 60+, reviewed by a doctor before publishing. Browse A–Z or search.",
+  path: "/knowledge-hub",
+  kicker: "Knowledge Hub",
+});
 
 export default function KnowledgeHubPage() {
   return (

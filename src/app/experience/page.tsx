@@ -7,13 +7,17 @@ import { Card, CardBody } from "@/components/ui/card";
 import { MediaImage } from "@/components/media-image";
 import { experienceCategories, experienceItemsIn } from "@/content/experience";
 import { site } from "@/content/site";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Experience | Zealver Clubs",
+export const metadata: Metadata = pageMeta({
+  title: "Classes for women 60+, in person and online",
   description:
-    "Weekly seated dance fitness classes in person and online, plus events, from Zealver Clubs. Made for women 60+.",
-  alternates: { canonical: `${site.url}/experience` },
-};
+    "Weekly seated dance fitness in Mumbai and live over Zoom. Chair-based, music-led, no experience needed, and the first class is free.",
+  path: "/experience",
+  image: "/images/andheri-class-in-session.jpg",
+  imageAlt:
+    "Members of the Andheri West club in the Yoga Room after a seated dance session.",
+});
 
 export default function ExperiencePage() {
   return (

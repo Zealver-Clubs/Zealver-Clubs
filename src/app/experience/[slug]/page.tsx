@@ -12,6 +12,7 @@ import { MediaImage } from "@/components/media-image";
 import { experienceItems, getExperienceItem } from "@/content/experience";
 import { getTopic } from "@/content/topics";
 import { site, whatsappEnquiry } from "@/content/site";
+import { pageMeta } from "@/lib/seo";
 
 export function generateStaticParams() {
   return experienceItems
@@ -27,11 +28,14 @@ export async function generateMetadata({
   const { slug } = await params;
   const item = getExperienceItem(slug);
   if (!item) return { title: "Not found | Zealver Clubs" };
-  return {
-    title: `${item.title} | Zealver Clubs`,
+  return pageMeta({
+    title: item.title,
     description: item.blurb,
-    alternates: { canonical: `${site.url}/experience/${item.slug}` },
-  };
+    path: `/experience/${item.slug}`,
+    image: item.image,
+    imageAlt: item.imageAlt,
+    kicker: item.meta,
+  });
 }
 
 export default async function ClassDetailPage({

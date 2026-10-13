@@ -2,15 +2,18 @@ import type { Metadata } from "next";
 import { ExperienceCategoryPage } from "@/components/experience-category";
 import { experienceCategoryBySlug } from "@/content/experience";
 import { site } from "@/content/site";
+import { pageMeta } from "@/lib/seo";
 
 const SLUG = "online-classes";
 const category = experienceCategoryBySlug.get(SLUG)!;
 
-export const metadata: Metadata = {
-  title: `${category.title} | Zealver Clubs`,
+export const metadata: Metadata = pageMeta({
+  title: category.title,
   description: category.intro,
-  alternates: { canonical: `${site.url}/experience/${SLUG}` },
-};
+  path: `/experience/${SLUG}`,
+  image: category.image,
+  imageAlt: `${category.title} at Zealver Clubs`,
+});
 
 export default function Page() {
   return <ExperienceCategoryPage slug={SLUG} />;

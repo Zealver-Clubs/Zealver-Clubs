@@ -17,12 +17,15 @@ import { Card, CardBody } from "@/components/ui/card";
 import { ButtonLink } from "@/components/ui/button";
 import { MediaImage } from "@/components/media-image";
 import { site } from "@/content/site";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Our Approach | Zealver Clubs",
+export const metadata: Metadata = pageMeta({
+  title: "Our approach: the 4Ms of healthy ageing",
   description:
-    "A simple, human framework for healthy ageing built around the 4Ms: Movement, Music, Memory and Meaning, delivered together, consistently and with dignity.",
-};
+    "Movement, Music, Memory and Meaning, delivered together each week. The framework behind every Zealver Clubs session, and why all four matter.",
+  path: "/our-approach",
+  kicker: "Our approach",
+});
 
 const pillars = [
   {

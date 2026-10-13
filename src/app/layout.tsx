@@ -25,10 +25,19 @@ const body = Public_Sans({
   display: "swap",
 });
 
+/**
+ * The home page's own card, and the fallback for anything without one.
+ * site.description runs to 184 characters, which a search result cuts off
+ * mid-sentence, so this says the same thing inside the snippet.
+ */
+const HOME_DESCRIPTION =
+  "Chair-based, music-led dance fitness for women 60+, in Mumbai and live online. Weekly classes, a free trial, and a Knowledge Hub reviewed by a doctor.";
+
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
-  title: "Zealver Clubs | Healthy Ageing, Done Together",
-  description: site.description,
+  // Keyword first, brand second: this is what a stranger searches for.
+  title: "Seated Dance Fitness for Women 60+ | Zealver Clubs",
+  description: HOME_DESCRIPTION,
   applicationName: site.name,
   alternates: { canonical: "/" },
   keywords: [
@@ -44,8 +53,8 @@ export const metadata: Metadata = {
     type: "website",
     url: site.url,
     siteName: site.name,
-    title: "Zealver Clubs | Healthy Ageing, Done Together",
-    description: site.description,
+    title: "Seated Dance Fitness for Women 60+ | Zealver Clubs",
+    description: HOME_DESCRIPTION,
     locale: "en_IN",
     images: [
       {
@@ -58,8 +67,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Zealver Clubs | Healthy Ageing, Done Together",
-    description: site.description,
+    title: "Seated Dance Fitness for Women 60+ | Zealver Clubs",
+    description: HOME_DESCRIPTION,
     images: ["/og.png"],
   },
 };

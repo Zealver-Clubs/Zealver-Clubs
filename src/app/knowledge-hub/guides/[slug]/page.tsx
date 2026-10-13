@@ -9,6 +9,7 @@ import { MediaImage } from "@/components/media-image";
 import { ListenButton } from "@/components/listen-button";
 import { JsonLd } from "@/components/json-ld";
 import { site, reviewer } from "@/content/site";
+import { pageMeta } from "@/lib/seo";
 import { ReviewedBy } from "@/components/reviewed-by";
 import { ContentDisclaimer } from "@/components/content-disclaimer";
 import { ReferencesList } from "@/components/references-list";
@@ -35,13 +36,17 @@ export async function generateMetadata({
     (guide.intro.length > 160
       ? (guide.intro.match(/^.*?[.!?](\s|$)/)?.[0] ?? guide.intro).trim()
       : guide.intro);
-  return {
-    title: `${guide.title} | Knowledge Hub`,
+  return pageMeta({
+    title: guide.title,
     description,
-    alternates: {
-      canonical: `${site.url}/knowledge-hub/guides/${guide.slug}`,
-    },
-  };
+    path: `/knowledge-hub/guides/${guide.slug}`,
+    image: guide.image,
+    imageAlt: guide.imageAlt,
+    kicker: guide.meta,
+    type: "article",
+    publishedTime: reviewer.lastReviewed,
+    modifiedTime: reviewer.lastReviewed,
+  });
 }
 
 export default async function GuidePage({

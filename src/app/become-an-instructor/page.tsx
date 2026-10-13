@@ -18,12 +18,15 @@ import { ButtonLink } from "@/components/ui/button";
 import { MediaImage } from "@/components/media-image";
 import { WhatsAppIcon } from "@/components/icons/social";
 import { site } from "@/content/site";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Become an Instructor | Zealver Clubs",
+export const metadata: Metadata = pageMeta({
+  title: "Become a Zealver certified instructor",
   description:
-    "Train as a Zealver certified instructor and lead chair-based sessions for women 60+. No prior experience needed, and we train and support you throughout.",
-};
+    "Train with us and lead chair-based sessions for women 60+ in your neighbourhood. No prior experience needed; we train and support you throughout.",
+  path: "/become-an-instructor",
+  kicker: "Join the team",
+});
 
 const duties = [
   { Icon: Users, title: "Welcome members", text: "Greet everyone warmly and help them feel at home." },

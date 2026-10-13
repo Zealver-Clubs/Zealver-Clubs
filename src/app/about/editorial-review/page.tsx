@@ -7,12 +7,15 @@ import { JsonLd } from "@/components/json-ld";
 import { site, reviewer, contentPolicy } from "@/content/site";
 import { topics } from "@/content/topics";
 import { guides } from "@/content/guides";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: `How we write and review | Zealver Clubs`,
-  description: `Knowledge Hub articles and guides are reviewed by ${reviewer.fullName}, ${reviewer.credentials}, before publishing. How our health content is written, reviewed and kept up to date.`,
-  alternates: { canonical: `${site.url}${reviewer.href}` },
-};
+export const metadata: Metadata = pageMeta({
+  title: "How we write and review",
+  description: `Every Knowledge Hub article is reviewed by ${reviewer.fullName}, ${reviewer.credentials}, before publishing. How our health content is written and kept current.`,
+  path: reviewer.href,
+  image: "/images/knowledge-hub-reviewed-by.webp",
+  imageAlt: `Zealver Knowledge Hub, reviewed by ${reviewer.fullName}`,
+});
 
 export default function EditorialReviewPage() {
   const personSchema = {

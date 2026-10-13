@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Section, SectionHeading } from "@/components/section";
 import { Breadcrumb } from "@/components/breadcrumb";
+import { pageMeta } from "@/lib/seo";
 import { site } from "@/content/site";
 import { legalDocuments } from "@/content/legal";
 
@@ -21,11 +22,12 @@ export async function generateMetadata({
   const { slug } = await params;
   const doc = getDoc(slug);
   if (!doc) return { title: "Not found | Zealver Clubs" };
-  return {
-    title: `${doc.title} | Zealver Clubs`,
+  return pageMeta({
+    title: doc.title,
     description: `${doc.title} for Zealver Clubs, a brand operated by ${site.legalName}. Effective ${doc.effective}.`,
-    alternates: { canonical: `${site.url}/${doc.slug}` },
-  };
+    path: `/${doc.slug}`,
+    kicker: "Legal",
+  });
 }
 
 export default async function LegalPage({

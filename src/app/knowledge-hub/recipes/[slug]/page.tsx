@@ -12,6 +12,7 @@ import { ContentDisclaimer } from "@/components/content-disclaimer";
 import { ReferencesList } from "@/components/references-list";
 import { HubCta } from "@/components/hub-cta";
 import { site, reviewer } from "@/content/site";
+import { pageMeta } from "@/lib/seo";
 import { recipes, getRecipe } from "@/content/recipes";
 import { getTopic } from "@/content/topics";
 
@@ -27,11 +28,17 @@ export async function generateMetadata({
   const { slug } = await params;
   const recipe = getRecipe(slug);
   if (!recipe) return { title: "Not found | Zealver Clubs" };
-  return {
-    title: `${recipe.title} | Knowledge Hub`,
+  return pageMeta({
+    title: recipe.title,
     description: recipe.summary,
-    alternates: { canonical: `${site.url}/knowledge-hub/recipes/${recipe.slug}` },
-  };
+    path: `/knowledge-hub/recipes/${recipe.slug}`,
+    image: recipe.image,
+    imageAlt: recipe.imageAlt,
+    kicker: `Recipe \u00b7 ${recipe.tag}`,
+    type: "article",
+    publishedTime: reviewer.lastReviewed,
+    modifiedTime: reviewer.lastReviewed,
+  });
 }
 
 export default async function RecipePage({

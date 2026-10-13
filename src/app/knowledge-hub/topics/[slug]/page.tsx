@@ -11,6 +11,7 @@ import { categoryArt } from "@/components/category-art";
 import { ListenButton } from "@/components/listen-button";
 import { JsonLd } from "@/components/json-ld";
 import { site, reviewer } from "@/content/site";
+import { pageMeta } from "@/lib/seo";
 import { ReviewedBy } from "@/components/reviewed-by";
 import { ContentDisclaimer } from "@/components/content-disclaimer";
 import { ReferencesList } from "@/components/references-list";
@@ -30,11 +31,17 @@ export async function generateMetadata({
   const { slug } = await params;
   const topic = getTopic(slug);
   if (!topic) return { title: "Not found | Zealver Clubs" };
-  return {
-    title: `${topic.title} | Knowledge Hub`,
+  return pageMeta({
+    title: topic.title,
     description: topic.summary,
-    alternates: { canonical: `${site.url}/knowledge-hub/topics/${topic.slug}` },
-  };
+    path: `/knowledge-hub/topics/${topic.slug}`,
+    image: topic.image,
+    imageAlt: topic.imageAlt,
+    kicker: topic.category,
+    type: "article",
+    publishedTime: reviewer.lastReviewed,
+    modifiedTime: reviewer.lastReviewed,
+  });
 }
 
 export default async function TopicPage({
