@@ -28,6 +28,11 @@ export type Guide = {
   slug: string;
   title: string;
   meta: string;
+  /**
+   * A shorter title for search results and share cards, where anything past
+   * about sixty characters is cut off. The page keeps its full heading.
+   */
+  seoTitle?: string;
   intro: string;
   /** Further intro paragraphs, after the lead. */
   introMore?: string[];

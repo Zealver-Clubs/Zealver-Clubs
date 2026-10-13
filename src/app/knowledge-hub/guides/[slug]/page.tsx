@@ -37,7 +37,7 @@ export async function generateMetadata({
       ? (guide.intro.match(/^.*?[.!?](\s|$)/)?.[0] ?? guide.intro).trim()
       : guide.intro);
   return pageMeta({
-    title: guide.title,
+    title: guide.seoTitle ?? guide.title,
     description,
     path: `/knowledge-hub/guides/${guide.slug}`,
     image: guide.image,

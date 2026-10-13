@@ -32,7 +32,7 @@ export async function generateMetadata({
   const topic = getTopic(slug);
   if (!topic) return { title: "Not found | Zealver Clubs" };
   return pageMeta({
-    title: topic.title,
+    title: topic.seoTitle ?? topic.title,
     description: topic.summary,
     path: `/knowledge-hub/topics/${topic.slug}`,
     image: topic.image,

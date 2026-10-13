@@ -16,6 +16,11 @@ export type Topic = {
   slug: string;
   title: string;
   category: string;
+  /**
+   * A shorter title for search results and share cards, where anything past
+   * about sixty characters is cut off. The page keeps its full heading.
+   */
+  seoTitle?: string;
   youtubeId: string | null;
   image?: string; // used when there is no video; can be a web/CC photo
   imageAlt?: string; // describe the image itself; defaults to the topic title
@@ -565,6 +570,7 @@ export const topics: Topic[] = [
   },
   {
     slug: "prebiotics-and-probiotics",
+    seoTitle: "Prebiotics, probiotics and synbiotics",
     title: "Prebiotics, probiotics and synbiotics: what is the difference",
     category: "Food & energy",
     youtubeId: null,
@@ -1751,6 +1757,7 @@ export const topics: Topic[] = [
   },
   {
     slug: "diabetes-what-is-happening",
+    seoTitle: "Diabetes: what happens in the body",
     title: "Diabetes: what it is, and what is happening in the body",
     category: "Food & energy",
     youtubeId: null,
@@ -1978,6 +1985,7 @@ export const topics: Topic[] = [
   },
   {
     slug: "arthritis-three-kinds",
+    seoTitle: "Arthritis: the three common kinds",
     title: "Arthritis: the three common kinds, and telling them apart",
     category: "Bones & strength",
     youtubeId: null,
@@ -2242,6 +2250,7 @@ export const topics: Topic[] = [
   },
   {
     slug: "metabolism-and-the-weighing-scale",
+    seoTitle: "Metabolism and the weighing scale",
     title: "Metabolism: why the weighing scale is the wrong measure",
     category: "Food & energy",
     youtubeId: null,
@@ -2618,6 +2627,7 @@ export const topics: Topic[] = [
   },
   {
     slug: "what-makes-life-worth-living-after-60",
+    seoTitle: "Purpose and belonging after 60",
     title: "Purpose, belonging and what makes life worth living after 60",
     category: "Healthy ageing",
     youtubeId: null,
@@ -3215,6 +3225,7 @@ export const topics: Topic[] = [
   },
   {
     slug: "classic-indian-dishes-for-seniors",
+    seoTitle: "Classic Indian dishes after 60",
     title: "Classic Indian dishes: which suit you at 60+, and which need a change",
     category: "Food & energy",
     youtubeId: null,

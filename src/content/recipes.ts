@@ -11,6 +11,11 @@ import type { Reference } from "./references";
 export type Recipe = {
   slug: string;
   title: string;
+  /**
+   * A shorter title for search results and share cards, where anything past
+   * about sixty characters is cut off. The page keeps its full heading.
+   */
+  seoTitle?: string;
   /** Dish type, e.g. "Salad". Also gives the recipe a second letter in the A-Z. */
   tag: string;
   category: string;

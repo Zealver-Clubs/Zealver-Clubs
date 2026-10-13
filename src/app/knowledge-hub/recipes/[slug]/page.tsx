@@ -29,7 +29,7 @@ export async function generateMetadata({
   const recipe = getRecipe(slug);
   if (!recipe) return { title: "Not found | Zealver Clubs" };
   return pageMeta({
-    title: recipe.title,
+    title: recipe.seoTitle ?? recipe.title,
     description: recipe.summary,
     path: `/knowledge-hub/recipes/${recipe.slug}`,
     image: recipe.image,

@@ -23,7 +23,7 @@ export async function generateMetadata({
   const doc = getDoc(slug);
   if (!doc) return { title: "Not found | Zealver Clubs" };
   return pageMeta({
-    title: doc.title,
+    title: doc.seoTitle ?? doc.title,
     description: `${doc.title} for Zealver Clubs, a brand operated by ${site.legalName}. Effective ${doc.effective}.`,
     path: `/${doc.slug}`,
     kicker: "Legal",

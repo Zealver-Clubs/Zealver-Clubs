@@ -19,6 +19,11 @@ export type LegalDocument = {
   slug: string;
   title: string;
   effective: string;
+  /**
+   * A shorter title for search results and share cards, where anything past
+   * about sixty characters is cut off. The page keeps its full heading.
+   */
+  seoTitle?: string;
   intro: string[];
   sections: LegalSection[];
 };
@@ -378,6 +383,7 @@ export const termsAndConditions: LegalDocument = {
 
 export const participantAgreement: LegalDocument = {
   slug: "participant-agreement",
+    seoTitle: "Participant Agreement",
   title: "Participant Agreement, Waiver of Liability and Informed Consent",
   effective: "January 2026",
   intro: [
