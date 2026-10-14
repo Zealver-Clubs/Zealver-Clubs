@@ -99,9 +99,9 @@ export default function OurApproachPage() {
             </p>
           </div>
           <MediaImage
-            src="/images/instructor-class.jpg"
-            alt="A Zealver instructor leading a warm, seated session"
-            label="Photo, Zealver session"
+            src="/images/home-experience.jpg"
+            alt="Women taking part in a joyful seated dance session, arms raised"
+            label="Photo, seated dance session"
             ratio="4/3"
             priority
             className="rounded-2xl border border-border"
@@ -186,9 +186,9 @@ export default function OurApproachPage() {
       <Section className="py-8">
         <div className="grid gap-8 md:grid-cols-2 md:items-center">
           <MediaImage
-            src="/images/home-experience.jpg"
-            alt="Women taking part in a joyful seated dance session"
-            label="Photo, seated dance session"
+            src="/images/instructor-class.jpg"
+            alt="A Zealver instructor leading a seated session, with members in chairs and a wheelchair user taking part"
+            label="Photo, Zealver session"
             ratio="4/3"
             className="rounded-2xl border border-border"
           />
