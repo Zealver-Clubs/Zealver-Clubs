@@ -3311,9 +3311,9 @@ export const topics: Topic[] = [
     category: "Food & energy",
     youtubeId: null,
     summary:
-      "Most people eat nearly all their protein at dinner and almost none at breakfast. Here is how to spread it out, and why dal on its own does not count for as much as you think.",
+      "How to get some protein into every meal rather than most of it into one, and why dal on its own does not count for as much as you think.",
     keyPoints: [
-      "Spread protein across all three meals rather than saving it for dinner.",
+      "Aim for some protein at every meal, rather than a large amount at one.",
       "Rajma, chole and dal contain more carbohydrate than protein. Pair them with paneer, tofu or curd.",
       "Breakfast is where most people fall shortest, and it is the easiest meal to fix.",
       "Eat one whole fruit with nuts, cheese or curd rather than a bowl of fruit salad alone.",
@@ -3325,7 +3325,7 @@ export const topics: Topic[] = [
         heading: "Why this matters more after 60",
         body: [
           "Muscle gets harder to hold on to with age, and protein is the material it is rebuilt from. Eating the same amount you always did is often no longer enough, and a lot of people are eating considerably less than they think.",
-          "The other half of the problem is timing. A typical day has almost no protein at breakfast, a little at lunch and most of it at dinner. The body can only use so much at once, so protein loaded into one meal does less good than the same amount spread across three.",
+          "The other half of it is timing. The body can only use so much protein at once, so the same amount spread across three meals builds and holds more muscle than one large serving does. Whichever of your meals is lightest on protein is the one worth changing first.",
         ],
       },
       {
