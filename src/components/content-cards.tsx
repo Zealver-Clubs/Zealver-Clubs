@@ -36,14 +36,6 @@ export function TopicCard({ topic }: { topic: Topic }) {
 export function GuideCard({ guide }: { guide: Guide }) {
   return (
     <Card className="relative h-full transition-colors hover:border-secondary/40">
-      <MediaImage
-        src={guide.image}
-        alt={guide.imageAlt ?? guide.title}
-        label={`Photo, ${guide.title}`}
-        ratio="3/2"
-        className="border-b"
-        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-      />
       <CardBody className="flex h-full flex-col">
         <span className="inline-flex w-fit items-center gap-1.5 rounded-full bg-primary-soft px-3 py-1 text-sm font-bold text-primary">
           <Compass className="h-4 w-4" aria-hidden /> Guide
@@ -111,14 +103,6 @@ export function ExperienceCard({ item }: { item: ExperienceItem }) {
 export function RecipeCard({ recipe }: { recipe: Recipe }) {
   return (
     <Card className="relative h-full transition-colors hover:border-secondary/40">
-      <MediaImage
-        src={recipe.image}
-        alt={recipe.imageAlt ?? recipe.title}
-        label={`Photo, ${recipe.title}`}
-        ratio="3/2"
-        className="border-b"
-        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-      />
       <CardBody className="flex h-full flex-col">
         <span className="inline-flex w-fit items-center gap-1.5 rounded-full bg-primary-soft px-3 py-1 text-sm font-bold text-primary">
           <CookingPot className="h-4 w-4" aria-hidden /> {recipe.tag}

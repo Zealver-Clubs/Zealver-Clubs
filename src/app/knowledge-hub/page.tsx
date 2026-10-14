@@ -5,7 +5,6 @@ import { HubBrowser } from "@/components/hub-browser";
 import { topics } from "@/content/topics";
 import { guides } from "@/content/guides";
 import { recipes } from "@/content/recipes";
-import { site } from "@/content/site";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata: Metadata = pageMeta({

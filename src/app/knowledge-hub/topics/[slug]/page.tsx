@@ -5,9 +5,6 @@ import { ArrowRight, Check, Compass } from "lucide-react";
 import { Section } from "@/components/section";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { Card, CardBody } from "@/components/ui/card";
-import { MediaEmbed } from "@/components/media-embed";
-import { MediaImage } from "@/components/media-image";
-import { categoryArt } from "@/components/category-art";
 import { ListenButton } from "@/components/listen-button";
 import { JsonLd } from "@/components/json-ld";
 import { site, reviewer } from "@/content/site";
@@ -59,7 +56,6 @@ export default async function TopicPage({
   const inGuides = topic.guides
     .map((s) => getGuide(s))
     .filter((g): g is NonNullable<typeof g> => Boolean(g));
-  const Art = categoryArt(topic.category);
 
   const url = `${site.url}/knowledge-hub/topics/${topic.slug}`;
   const articleSchema: Record<string, unknown> = {
@@ -131,37 +127,15 @@ export default async function TopicPage({
         />
       </div>
 
-      {/* Video first, full width. Falls back to a photo, category art, then a placeholder. */}
-      <div className="mt-6">
-        {topic.youtubeId ? (
-          <MediaEmbed
-            youtubeId={topic.youtubeId}
-            title={topic.title}
-            label={`Video, ${topic.title} (Zealver channel)`}
-          />
-        ) : !topic.image && Art ? (
-          <Art className="rounded-xl" />
-        ) : (
-          <figure>
-            <MediaImage
-              src={topic.image}
-              alt={topic.imageAlt ?? topic.title}
-              label={`Video, ${topic.title} (Zealver channel)`}
-              ratio={topic.imageRatio ?? "16/9"}
-              className="rounded-xl"
-              sizes="(max-width: 768px) 100vw, 768px"
-            />
-            {topic.image && topic.imageCredit ? (
-              <figcaption className="mt-2 text-sm text-muted-foreground">
-                {topic.imageCredit}
-              </figcaption>
-            ) : null}
-          </figure>
-        )}
-      </div>
-
-      {/* Summary directly under the video */}
-      <p className="mt-5 text-xl text-foreground">{topic.summary}</p>
+      {/*
+       * No picture for now. Most topics had none of their own, and the
+       * ones that did sat beside category artwork, so the Knowledge Hub
+       * read inconsistently. Topics open on their words until each has an
+       * image. The content still carries any image it has, which is what
+       * makes the share card.
+       */}
+      {/* Summary first */}
+      <p className="mt-8 text-xl text-foreground">{topic.summary}</p>
 
       {/* Scannable takeaways, and a snippet target for search */}
       {topic.keyPoints && topic.keyPoints.length > 0 ? (

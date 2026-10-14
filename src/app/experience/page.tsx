@@ -6,7 +6,6 @@ import { Breadcrumb } from "@/components/breadcrumb";
 import { Card, CardBody } from "@/components/ui/card";
 import { MediaImage } from "@/components/media-image";
 import { experienceCategories, experienceItemsIn } from "@/content/experience";
-import { site } from "@/content/site";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata: Metadata = pageMeta({

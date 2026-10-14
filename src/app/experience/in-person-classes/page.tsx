@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { ExperienceCategoryPage } from "@/components/experience-category";
 import { experienceCategoryBySlug } from "@/content/experience";
-import { site } from "@/content/site";
 import { pageMeta } from "@/lib/seo";
 
 const SLUG = "in-person-classes";

@@ -4,7 +4,6 @@ import Link from "next/link";
 import { ArrowRight, Check, Clock, Users } from "lucide-react";
 import { Section } from "@/components/section";
 import { Breadcrumb } from "@/components/breadcrumb";
-import { MediaImage } from "@/components/media-image";
 import { ListenButton } from "@/components/listen-button";
 import { JsonLd } from "@/components/json-ld";
 import { ReviewedBy } from "@/components/reviewed-by";
@@ -118,24 +117,6 @@ export default async function RecipePage({
             .join(". ")}. Method. ${recipe.method.join(" ")}`}
         />
       </div>
-
-      {recipe.image ? (
-        <figure className="mt-6">
-          <MediaImage
-            src={recipe.image}
-            alt={recipe.imageAlt ?? recipe.title}
-            label={`Photo, ${recipe.title}`}
-            ratio={recipe.imageRatio ?? "16/9"}
-            className="rounded-xl"
-            sizes="(max-width: 768px) 100vw, 768px"
-          />
-          {recipe.imageCredit ? (
-            <figcaption className="mt-2 text-sm text-muted-foreground">
-              {recipe.imageCredit}
-            </figcaption>
-          ) : null}
-        </figure>
-      ) : null}
 
       <div className="mt-6 flex flex-col gap-4 text-lg leading-relaxed text-foreground">
         {recipe.intro.map((p, i) => (
