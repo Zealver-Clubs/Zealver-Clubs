@@ -165,7 +165,7 @@ export default function HomePage() {
           align="center"
           eyebrow="Follow our journey"
           icon={InstagramIcon}
-          title="Fresh from Instagram"
+          title="A sneak peek at our Instagram"
           intro={`Reels and moments from @${site.instagramHandle}, classes, clubs and celebrations.`}
         />
         <div className="mt-5 flex justify-center">
