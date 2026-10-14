@@ -66,7 +66,16 @@ export function setLanguage(code: string) {
     return;
   }
 
-  window.location.href = `https://translate.google.com/translate?sl=en&tl=${encodeURIComponent(
-    code,
-  )}&u=${encodeURIComponent(target)}`;
+  /*
+   * Straight to the proxy. The older translate.google.com/translate?u=
+   * address still works, but only by redirecting here, and that extra hop
+   * made an already slow page slower.
+   */
+  const { pathname, search } = new URL(target);
+  const proxyHost = `${CANONICAL_HOST.replace(/\./g, "-")}.translate.goog`;
+  const params = new URLSearchParams(search);
+  params.set("_x_tr_sl", "en");
+  params.set("_x_tr_tl", code);
+  params.set("_x_tr_hl", "en");
+  window.location.href = `https://${proxyHost}${pathname}?${params.toString()}`;
 }
