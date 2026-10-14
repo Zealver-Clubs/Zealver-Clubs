@@ -65,7 +65,18 @@ export function ListenButton({
   const PrimaryIcon = state === "playing" ? Pause : state === "paused" ? Play : Volume2;
 
   return (
-    <div className={cn("inline-flex items-center gap-2", className)}>
+    /*
+     * Marked notranslate on purpose. Google's translation proxy rewrites
+     * the text inside this control, which detaches it from React and left
+     * the button dead on translated pages: it did nothing, and sometimes
+     * took the page down with it. Left alone, it keeps working. The label
+     * stays English, which costs little beside a speaker icon, and the
+     * speech is English either way because it reads the original text.
+     */
+    <div
+      translate="no"
+      className={cn("notranslate inline-flex items-center gap-2", className)}
+    >
       <button
         type="button"
         onClick={toggle}
