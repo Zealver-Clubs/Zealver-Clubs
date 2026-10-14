@@ -5,7 +5,6 @@ import { ArrowRight, Compass } from "lucide-react";
 import { Section } from "@/components/section";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { Card, CardBody } from "@/components/ui/card";
-import { MediaImage } from "@/components/media-image";
 import { ListenButton } from "@/components/listen-button";
 import { JsonLd } from "@/components/json-ld";
 import { site, reviewer } from "@/content/site";
@@ -148,24 +147,14 @@ export default async function GuidePage({
         />
       </div>
 
-      {/* Intro photo above the text */}
-      <div className="mt-6 overflow-hidden rounded-xl">
-        <figure>
-          <MediaImage
-            src={guide.image}
-            alt={guide.imageAlt ?? guide.title}
-            label={`Photo, ${guide.title}`}
-            ratio={guide.imageRatio ?? "16/9"}
-            sizes="(max-width: 768px) 100vw, 768px"
-          />
-          {guide.image && guide.imageCredit ? (
-            <figcaption className="mt-2 text-sm text-muted-foreground">
-              {guide.imageCredit}
-            </figcaption>
-          ) : null}
-        </figure>
-      </div>
-      <p className="mt-5 text-xl text-foreground">{guide.intro}</p>
+      {/*
+       * No hero image for now. Twenty-nine of the thirty-five guides wore
+       * the same stock class photograph, which told the reader nothing, so
+       * the guides open on their own words until each has a picture of its
+       * own. The images are still in the content and still make the share
+       * card, so nothing has been thrown away.
+       */}
+      <p className="mt-8 text-xl text-foreground">{guide.intro}</p>
       {guide.introMore?.map((para, i) => (
         <p key={i} className="mt-4 text-lg leading-relaxed text-foreground">
           {para}
@@ -318,14 +307,6 @@ export default async function GuidePage({
             {otherGuides.map((g) => (
               <li key={g.slug}>
                 <Card className="relative h-full transition-colors hover:border-secondary/40">
-                  <MediaImage
-                    src={g.image}
-                    alt={g.imageAlt ?? g.title}
-                    label={`Photo, ${g.title}`}
-                    ratio="3/2"
-                    className="border-b"
-                    sizes="(max-width: 640px) 100vw, 50vw"
-                  />
                   <CardBody>
                     <h3 className="text-lg font-extrabold text-heading">
                       <Link
