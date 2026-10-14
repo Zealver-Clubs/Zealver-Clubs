@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { ImagePlaceholder } from "./image-placeholder";
 import { cn } from "@/lib/utils";
 import { type AspectRatio, aspectRatioValue } from "@/lib/aspect-ratio";
 
@@ -27,9 +26,13 @@ export function MediaImage({
   priority?: boolean;
   sizes?: string;
 }) {
-  if (!src) {
-    return <ImagePlaceholder label={label} ratio={ratio} className={className} />;
-  }
+  /*
+   * Nothing to show, so show nothing. A dashed "photo goes here" box is
+   * useful while a site is being built and looks unfinished once it is
+   * live, so a card or an article without a picture is simply text until
+   * one is added.
+   */
+  if (!src) return null;
   return (
     <div
       className={cn("relative overflow-hidden bg-muted", className)}
