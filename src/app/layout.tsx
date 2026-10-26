@@ -6,6 +6,7 @@ import { Footer } from "@/components/site/footer";
 import { JsonLd } from "@/components/json-ld";
 import { WhatsAppFab } from "@/components/whatsapp-fab";
 import { site, parentOrg } from "@/content/site";
+import { shareImage } from "@/lib/seo";
 
 // Type pairing adopted from weenable.org: Manrope for confident display
 // headings, Public Sans for highly legible body text.
@@ -33,6 +34,10 @@ const body = Public_Sans({
 const HOME_DESCRIPTION =
   "Chair-based, music-led dance fitness for women 60+, in Mumbai and live online. Weekly classes, a free trial, and a Knowledge Hub reviewed by a doctor.";
 
+const HOME_SHARE_IMAGE = shareImage({
+  title: "Seated Dance Fitness for Women 60+",
+});
+
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   // Keyword first, brand second: this is what a stranger searches for.
@@ -56,20 +61,13 @@ export const metadata: Metadata = {
     title: "Seated Dance Fitness for Women 60+ | Zealver Clubs",
     description: HOME_DESCRIPTION,
     locale: "en_IN",
-    images: [
-      {
-        url: "/og.png",
-        width: 1200,
-        height: 630,
-        alt: "Zealver Clubs seated dance fitness class for women 60+",
-      },
-    ],
+    images: [HOME_SHARE_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
     title: "Seated Dance Fitness for Women 60+ | Zealver Clubs",
     description: HOME_DESCRIPTION,
-    images: ["/og.png"],
+    images: [HOME_SHARE_IMAGE.url],
   },
 };
 

@@ -33,24 +33,17 @@ export function absolute(path: string): string {
 }
 
 /**
- * The share image. A page with a photograph or illustration of its own uses
- * it; anything else gets a card generated from its title, so fifty topics do
- * not all share one stock photograph.
+ * The share image: a card drawn from the page's title, for every page.
+ *
+ * Pages used to share their own photograph, but most guides and topics
+ * reuse the same few class photos, so every link pasted into WhatsApp
+ * looked identical. The title card tells the reader which page they have
+ * been sent. The page's photograph still appears on the page itself.
  */
 export function shareImage(opts: {
-  image?: string;
-  imageAlt?: string;
   title: string;
   kicker?: string;
 }): { url: string; width: number; height: number; alt: string } {
-  if (opts.image) {
-    return {
-      url: absolute(opts.image),
-      width: 1200,
-      height: 630,
-      alt: opts.imageAlt ?? opts.title,
-    };
-  }
   const params = new URLSearchParams({ title: opts.title });
   if (opts.kicker) params.set("kicker", opts.kicker);
   return {
@@ -67,6 +60,7 @@ export function pageMeta(opts: {
   description: string;
   /** Path from the site root, e.g. "/knowledge-hub". */
   path: string;
+  /** Accepted for callers' convenience; the share card is always drawn. */
   image?: string;
   imageAlt?: string;
   /** A short label on the generated share card, e.g. "Guide". */
