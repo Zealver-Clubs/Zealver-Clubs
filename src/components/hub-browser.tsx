@@ -10,6 +10,26 @@ import type { Recipe } from "@/content/recipes";
 
 const firstLetter = (s: string) => s.trim().charAt(0).toUpperCase();
 
+/**
+ * Trim a plural, -ing or -tion ending, so "falls" finds "Fall prevention" and
+ * "prevention" finds "preventing". Never cuts a word below four letters.
+ */
+const stem = (w: string) => {
+  const cut = w.replace(/(tion|ing|es|s)$/, "");
+  return cut.length >= 4 ? cut : w;
+};
+
+const words = (s: string) =>
+  s.toLowerCase().split(/[^a-z0-9]+/).filter(Boolean).map(stem);
+
+/**
+ * Every word typed has to start a word somewhere in the item, in any order,
+ * rather than the whole query appearing as one exact phrase.
+ */
+function matches(haystack: string[], query: string[]) {
+  return query.every((q) => haystack.some((w) => w.startsWith(q)));
+}
+
 /** Cards shown initially, and added each time the reader asks for more. */
 const STEP = 3;
 
@@ -79,7 +99,35 @@ export function HubBrowser({
   const [topicCount, setTopicCount] = useState(STEP);
   const [recipeCount, setRecipeCount] = useState(STEP);
 
-  const q = query.trim().toLowerCase();
+  const q = words(query);
+
+  const topicText = useMemo(
+    () =>
+      new Map(
+        topics.map((t) => [
+          t.slug,
+          words([t.title, t.summary, t.category, ...(t.keyPoints ?? [])].join(" ")),
+        ]),
+      ),
+    [topics],
+  );
+  const guideText = useMemo(
+    () =>
+      new Map(
+        guides.map((g) => [
+          g.slug,
+          words([g.title, g.intro, ...g.steps.map((s) => s.heading)].join(" ")),
+        ]),
+      ),
+    [guides],
+  );
+  const recipeText = useMemo(
+    () =>
+      new Map(
+        recipes.map((r) => [r.slug, words([r.title, r.summary, r.tag].join(" "))]),
+      ),
+    [recipes],
+  );
 
   const topicLetters = useMemo(
     () => new Set(topics.map((t) => firstLetter(t.title))),
@@ -100,11 +148,7 @@ export function HubBrowser({
   );
 
   const filteredRecipes = recipes.filter((r) => {
-    const matchesQuery =
-      !q ||
-      r.title.toLowerCase().includes(q) ||
-      r.summary.toLowerCase().includes(q) ||
-      r.tag.toLowerCase().includes(q);
+    const matchesQuery = matches(recipeText.get(r.slug)!, q);
     const matchesLetter =
       !recipeLetter ||
       firstLetter(r.title) === recipeLetter ||
@@ -113,20 +157,13 @@ export function HubBrowser({
   });
 
   const filteredTopics = topics.filter((t) => {
-    const matchesQuery =
-      !q ||
-      t.title.toLowerCase().includes(q) ||
-      t.summary.toLowerCase().includes(q) ||
-      t.category.toLowerCase().includes(q);
+    const matchesQuery = matches(topicText.get(t.slug)!, q);
     const matchesLetter = !topicLetter || firstLetter(t.title) === topicLetter;
     return matchesQuery && matchesLetter;
   });
 
   const filteredGuides = guides.filter((g) => {
-    const matchesQuery =
-      !q ||
-      g.title.toLowerCase().includes(q) ||
-      g.intro.toLowerCase().includes(q);
+    const matchesQuery = matches(guideText.get(g.slug)!, q);
     const matchesLetter = !guideLetter || firstLetter(g.title) === guideLetter;
     return matchesQuery && matchesLetter;
   });
