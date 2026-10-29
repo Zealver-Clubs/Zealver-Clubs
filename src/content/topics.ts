@@ -122,7 +122,7 @@ export const topics: Topic[] = [
       { ...sources.whoDementia, supports: "That physical activity is among the modifiable risk factors for dementia." },
       { ...sources.niaCognitive, supports: "That movement and social activity support cognitive health." },
     ],
-    products: ["bt-speaker", "echo-dot"],
+    products: ["bt-speaker", "smart-speaker"],
   },
   {
     slug: "home-safety-checklist",
@@ -148,7 +148,7 @@ export const topics: Topic[] = [
       { ...sources.niaFalls, supports: "The home hazards named here: loose rugs, poor lighting, cluttered walkways and missing rails." },
       { ...sources.whoFalls, supports: "That environmental hazards are a major contributor to falls at home." },
     ],
-    products: ["fall-detection-watch", "anti-slip-bath-mat", "grab-bar", "night-light"],
+    products: ["fall-detection-watch", "anti-slip-bath-mat", "grab-bar", "night-light", "bed-rail", "sos-button"],
   },
   {
     slug: "footwear-and-mobility",
@@ -174,7 +174,7 @@ export const topics: Topic[] = [
       { ...sources.niaFalls, supports: "That poorly fitting footwear and slippers contribute to falls." },
       { ...sources.whoFalls, supports: "That footwear is a modifiable fall risk factor." },
     ],
-    products: ["shoe-horn", "walking-stick"],
+    products: ["shoe-horn", "walking-stick", "walker"],
   },
   {
     slug: "nutrition-basics",
@@ -978,7 +978,7 @@ export const topics: Topic[] = [
       { ...sources.niaCognitive, supports: "That mentally and socially engaging activity supports cognitive health." },
       { ...sources.whoDementia, supports: "Activity and engagement among the things that support brain health." },
     ],
-    products: ["bt-speaker", "echo-dot"],
+    products: ["bt-speaker", "smart-speaker"],
   },
   {
     slug: "anti-inflammatory-swaps-indian-kitchen",
@@ -1287,7 +1287,7 @@ export const topics: Topic[] = [
       { ...sources.niaCognitive, supports: "That engaging, social activity supports cognitive health." },
       { ...sources.whoDementia, supports: "Brain health and the factors that support it." },
     ],
-    products: ["bt-speaker", "echo-dot"],
+    products: ["bt-speaker", "smart-speaker"],
   },
   {
     slug: "memory-cognitive-health-seniors",
@@ -2089,7 +2089,7 @@ export const topics: Topic[] = [
       { ...sources.nhsOsteoarthritis, supports: "What osteoarthritis is and how it is managed." },
       { ...sources.nhsRheumatoid, supports: "That rheumatoid arthritis is a different, inflammatory condition needing early treatment." },
     ],
-    products: ["heating-pad", "jar-opener"],
+    products: ["heating-pad", "jar-opener", "adaptive-utensils", "dressing-aids"],
   },
   {
     slug: "which-kind-of-poor-sleeper",

@@ -67,9 +67,68 @@ export const products: Product[] = [
   },
   {
     id: "walking-stick",
-    name: "Rehand folding walking stick",
-    asin: "B09BJ7MY7Q",
-    why: "Height-adjustable, stands up on its own when you let go, and folds into a bag. Set the handle at wrist height when your arm hangs by your side.",
+    name: "Walking sticks",
+    why: "Set the handle at wrist height with your arm hanging by your side, and hold it in the hand opposite the sorer leg. A four-legged stick stands on its own and is steadier; one with a seat gives you somewhere to rest on longer walks.",
+    options: [
+      { label: "Rehand folding stick", asin: "B09BJ7MY7Q" },
+      { label: "Vissco four-legged stick", asin: "B077KPNR6B" },
+      { label: "AGEasy four-legged stick", asin: "B0DW3MBLRQ" },
+      { label: "AGEasy stick with seat", asin: "B0DZXD9F1R" },
+    ],
+  },
+  {
+    id: "walker",
+    name: "Walkers and rollators",
+    why: "A frame walker gives the most support indoors and after an operation. A rollator has wheels, brakes and a seat, for people who can walk further but need to stop and rest. Have a physiotherapist set the height if you can.",
+    options: [
+      { label: "KosmoCare lightweight folding walker", asin: "B00HYADMI6" },
+      { label: "KosmoCare folding walker with wheels", asin: "B00HYADQQO" },
+      { label: "KosmoCare rollator with seat", asin: "B00HYADTQQ" },
+      { label: "Amazon Basics rollator", asin: "B0G5331KNF" },
+    ],
+  },
+  {
+    id: "travel-wheelchair",
+    name: "Lightweight travel wheelchairs",
+    why: "Folds into a car boot, for airports, long days out and the weeks after an operation, so a trip does not depend on how far you can walk that day. These are pushed by a companion.",
+    options: [
+      { label: "KosmoCare EcoGlide", asin: "B0D7SJXCDB" },
+      { label: "VMS Careline Airlite", asin: "B0FF538XJ7" },
+      { label: "Frido foldable", asin: "B0DW8NKRRM" },
+    ],
+  },
+  {
+    id: "bed-rail",
+    name: "Bed assist rails",
+    why: "A firm handle at the side of the bed to push up on when sitting up and standing, the moment many night-time falls happen. It slides under the mattress; no tools needed.",
+    options: [
+      { label: "FOVERA bed safety rail", asin: "B0CBQHZXQM" },
+      { label: "DIALDRCARE foldable bed rail", asin: "B0CF2H62XX" },
+    ],
+  },
+  {
+    id: "dressing-aids",
+    name: "Dressing and washing aids",
+    why: "A sock aid puts socks on without bending to your feet, and a long-handled scrubber reaches your back and legs in the shower. Small things that keep you doing it yourself.",
+    options: [
+      { label: "DIALDRCARE sock aid", asin: "B08TBNHCS7" },
+      { label: "Long-handled back scrubber", asin: "B0G2GN8LYS" },
+    ],
+  },
+  {
+    id: "sos-button",
+    name: "Wireless call buttons",
+    why: "Press the button, worn or kept by the bed, and it rings a receiver elsewhere in the house so family know you need them. It does not call anyone outside the home.",
+    options: [
+      { label: "CallToU caregiver pager", asin: "B078BQKT23" },
+      { label: "PANCA wireless call button", asin: "B0FT32F5WW" },
+    ],
+  },
+  {
+    id: "adaptive-utensils",
+    name: "Nourislif easy-grip cutlery",
+    asin: "B0C5CYGZDY",
+    why: "Thick, soft handles that stiff, sore or shaky hands can hold without gripping hard, so meals stay independent.",
   },
   {
     id: "magnifier",
@@ -124,13 +183,17 @@ export const products: Product[] = [
   },
   {
     id: "step-counter",
-    name: "Fitness bands that count steps and sleep",
-    why: "Count your steps, track heart rate and sleep, and show the time in clear numbers. Seeing today's count is often what gets people out for a second walk.",
+    name: "Fitness bands and simple smartwatches",
+    why: "Count your steps, track heart rate and sleep, and show the time in clear numbers. Seeing today's count is often what gets people out for a second walk. Bands are lighter and cheaper; watches have bigger screens.",
     options: [
       { label: "Fitbit Inspire 3", asin: "B0B75RC9C3" },
       { label: "Samsung Galaxy Fit3", asin: "B0CVN3NK42" },
       { label: "Huawei Band 11", asin: "B0GKRGHNQ1" },
       { label: "Noise ColorFit Pulse Air", asin: "B0H3BM7WP6" },
+      { label: "Fitbit Versa 4", asin: "B0B75TVZZZ" },
+      { label: "Amazfit Bip Max", asin: "B0GY26RL13" },
+      { label: "Apple Watch SE 3 (iPhone)", asin: "B0FQFH9P4T" },
+      { label: "Google Pixel Watch 3 (Android)", asin: "B0D91268TH" },
     ],
   },
   {
@@ -169,9 +232,12 @@ export const products: Product[] = [
   },
   {
     id: "pill-organiser",
-    name: "PharmEasy 7 day weekly pill box",
-    asin: "B08NXZWDMV",
+    name: "Weekly pill boxes",
     why: "Fill it once a week and you can see at a glance whether today's tablets have been taken. Take it to appointments too.",
+    options: [
+      { label: "PharmEasy 7 day pill box", asin: "B08NXZWDMV" },
+      { label: "POPCUBE weekly organiser", asin: "B0BLCD9T5B" },
+    ],
   },
 
   // Moving and strength
@@ -296,10 +362,40 @@ export const products: Product[] = [
     why: "Small, loud and simple, so you can play the old songs properly from your phone wherever you sit.",
   },
   {
-    id: "echo-dot",
-    name: "Amazon Echo Dot smart speaker",
-    asin: "B09B917Z8D",
-    why: "Ask out loud for an old song, a bhajan or the radio, with no phone or buttons. Very easy for someone who finds a screen difficult.",
+    id: "smart-speaker",
+    name: "Alexa smart speakers and displays",
+    why: "Ask out loud for an old song, the news, a reminder to take tablets, or to call your daughter, with no buttons. The Echo Show models add a screen for video calls. Google's speakers are not sold on Amazon.in.",
+    options: [
+      { label: "Echo Pop", asin: "B09WWT8HFH" },
+      { label: "Echo Dot", asin: "B09B917Z8D" },
+      { label: "Echo Show 5 (video calls)", asin: "B09B2VNNCS" },
+      { label: "Echo Show 8 (video calls)", asin: "B0DYBZF1LL" },
+    ],
+  },
+  {
+    id: "senior-phone",
+    name: "Big-button phones for seniors",
+    why: "Large keys, loud sound and an SOS button that calls your chosen contacts. Simpler than a smartphone, and family can set it up for you.",
+    options: [
+      { label: "Easyfone Royale 4G flip", asin: "B078YQFXFR" },
+      { label: "Easyfone Elite 4G", asin: "B078YQKP58" },
+      { label: "Easyfone Udaan2", asin: "B08CN97G7T" },
+    ],
+  },
+  {
+    id: "big-remote",
+    name: "EasyMote big button TV remote",
+    asin: "B01M1UV2T2",
+    why: "Only the buttons you actually use, large and lit, so there is no hunting for the volume. Set it up once to your TV.",
+  },
+  {
+    id: "tv-headphones",
+    name: "Wireless headphones for the TV",
+    why: "Hear the TV clearly at your own volume without turning it up for everyone. Your TV needs Bluetooth. Not a substitute for a hearing test or hearing aids.",
+    options: [
+      { label: "Sony WH-CH520", asin: "B0BS1RT9S2" },
+      { label: "boAt Rockerz 411", asin: "B0FC2Y8XYF" },
+    ],
   },
   {
     id: "journal",

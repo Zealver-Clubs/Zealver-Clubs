@@ -134,7 +134,7 @@ export const guides: Guide[] = [
       { ...sources.whoFalls, supports: "That falls are a leading cause of injury in older adults and are largely preventable." },
       { ...sources.niaFalls, supports: "The home, footwear, strength and balance measures set out in these steps." },
     ],
-    products: ["fall-detection-watch", "anti-slip-bath-mat", "grab-bar", "night-light"],
+    products: ["fall-detection-watch", "anti-slip-bath-mat", "grab-bar", "night-light", "sos-button", "senior-phone"],
   },
   {
     slug: "lower-your-blood-sugar-guide",
@@ -753,7 +753,7 @@ export const guides: Guide[] = [
       { ...sources.nhsOsteoarthritis, supports: "That movement and strength help osteoarthritis more than rest does." },
       { ...sources.nhsRheumatoid, supports: "The signs that point to inflammatory arthritis rather than osteoarthritis." },
     ],
-    products: ["heating-pad", "jar-opener", "resistance-bands-set"],
+    products: ["heating-pad", "jar-opener", "resistance-bands-set", "adaptive-utensils", "dressing-aids", "walking-stick"],
   },
   {
     slug: "blood-pressure-guide",
@@ -978,7 +978,7 @@ export const guides: Guide[] = [
       { ...sources.whoDementia, supports: "What dementia is and the factors that support brain health." },
       { ...sources.niaCognitive, supports: "Activity, connection and engagement as supports for cognitive health." },
     ],
-    products: ["day-clock", "bt-speaker", "echo-dot"],
+    products: ["day-clock", "bt-speaker", "smart-speaker", "sos-button", "big-remote", "adaptive-utensils"],
   },
   {
     slug: "friendship-later-in-life-guide",
@@ -1328,6 +1328,7 @@ export const guides: Guide[] = [
       { ...sources.niaLoneliness, supports: "That loneliness affects physical health, and how regular contact helps." },
       { ...sources.niaMentalHealth, supports: "Emotional health in later life." },
     ],
+    products: ["smart-speaker", "senior-phone"],
   },
   {
     slug: "staying-active-through-cancer-treatment-guide",
@@ -1442,7 +1443,7 @@ export const guides: Guide[] = [
       { ...sources.whoVision, supports: "That much sight loss in later life is preventable or correctable." },
       { ...sources.nhsCataracts, supports: "Cataracts, how they develop and how they are treated." },
     ],
-    products: ["magnifier", "night-light"],
+    products: ["magnifier", "night-light", "smart-speaker", "senior-phone", "big-remote"],
   },
   {
     slug: "hearing-guide",
@@ -1500,6 +1501,7 @@ export const guides: Guide[] = [
       { ...sources.whoHearing, supports: "How common hearing loss is with age, and why it goes untreated so long." },
       { ...sources.nhsHearingLoss, supports: "Signs of hearing loss and what to do about them." },
     ],
+    products: ["tv-headphones", "senior-phone"],
   },
   {
     slug: "independence-at-home-guide",
@@ -1557,7 +1559,7 @@ export const guides: Guide[] = [
       { ...sources.niaFalls, supports: "The home changes that keep people steady and independent." },
       { ...sources.nhsSocialCare, supports: "The help available at home and how to ask for it." },
     ],
-    products: ["fall-detection-watch", "grab-bar", "reacher-grabber", "shower-chair"],
+    products: ["fall-detection-watch", "sos-button", "grab-bar", "walker", "bed-rail", "reacher-grabber", "shower-chair", "dressing-aids", "senior-phone", "smart-speaker", "big-remote"],
   },
   {
     slug: "joint-replacement-guide",
@@ -1615,7 +1617,7 @@ export const guides: Guide[] = [
       { ...sources.nhsKneeReplacement, supports: "What a knee replacement involves and what recovery looks like." },
       { ...sources.nhsHipReplacement, supports: "What a hip replacement involves and the movement precautions afterwards." },
     ],
-    products: ["raised-toilet-seat", "reacher-grabber", "shoe-horn"],
+    products: ["raised-toilet-seat", "reacher-grabber", "shoe-horn", "walker", "bed-rail", "dressing-aids"],
   },
   {
     slug: "knee-pain-guide",
@@ -1673,7 +1675,7 @@ export const guides: Guide[] = [
       { ...sources.nhsKneePain, supports: "Common causes of knee pain and what helps." },
       { ...sources.nhsOsteoarthritis, supports: "That strengthening the muscles around the joint reduces knee pain." },
     ],
-    products: ["heating-pad", "ankle-weights"],
+    products: ["heating-pad", "ankle-weights", "walking-stick"],
   },
   {
     slug: "menopause-guide",
@@ -1997,7 +1999,7 @@ export const guides: Guide[] = [
       { ...sources.medlineAgeingChanges, supports: "How quickly muscle is lost during bed rest and illness." },
       { ...sources.espenProtein, supports: "The protein needed alongside movement to rebuild muscle." },
     ],
-    products: ["step-counter", "resistance-bands-set", "ankle-weights"],
+    products: ["step-counter", "resistance-bands-set", "ankle-weights", "walker", "bed-rail"],
   },
   {
     slug: "travel-after-60-guide",
@@ -2055,7 +2057,7 @@ export const guides: Guide[] = [
       { ...sources.whoPhysicalActivity, supports: "Keeping moving while away, including on long journeys." },
       { ...sources.nhsSocialCare, supports: "Planning for medication and support needs away from home." },
     ],
-    products: ["neck-pillow", "pill-organiser"],
+    products: ["neck-pillow", "pill-organiser", "travel-wheelchair", "walking-stick"],
   },
   {
     slug: "urine-infections-guide",
@@ -2163,7 +2165,7 @@ export const guides: Guide[] = [
       { ...sources.nhsActivityOlder, supports: "The weekly walking and strength targets for older adults." },
       { ...sources.niaFourTypes, supports: "Balance and strength alongside walking, not instead of it." },
     ],
-    products: ["step-counter", "walking-stick"],
+    products: ["step-counter", "walking-stick", "walker"],
   },
   {
     slug: "yoga-chair-guide",
