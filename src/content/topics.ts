@@ -70,7 +70,7 @@ export const topics: Topic[] = [
       { ...sources.whoFalls, supports: "That falls are a leading cause of injury in older adults, and that most are preventable." },
       { ...sources.niaFalls, supports: "The everyday causes of falls and the habits that reduce them." },
     ],
-    products: ["grab-bar", "night-light", "anti-slip-bath-mat"],
+    products: ["fall-detection-watch", "grab-bar", "night-light", "anti-slip-bath-mat"],
   },
   {
     slug: "balance-exercises",
@@ -148,7 +148,7 @@ export const topics: Topic[] = [
       { ...sources.niaFalls, supports: "The home hazards named here: loose rugs, poor lighting, cluttered walkways and missing rails." },
       { ...sources.whoFalls, supports: "That environmental hazards are a major contributor to falls at home." },
     ],
-    products: ["anti-slip-bath-mat", "grab-bar", "night-light"],
+    products: ["fall-detection-watch", "anti-slip-bath-mat", "grab-bar", "night-light"],
   },
   {
     slug: "footwear-and-mobility",
@@ -229,7 +229,7 @@ export const topics: Topic[] = [
       { ...sources.nhsDiabetesFood, supports: "That activity after eating helps the body use glucose from the meal." },
       { ...sources.harvardCarbsBloodSugar, supports: "How carbohydrate in a meal raises blood sugar, and what slows that rise." },
     ],
-    products: ["glucometer", "resistance-bands-set"],
+    products: ["cgm", "step-counter", "glucometer", "resistance-bands-set"],
   },
   {
     slug: "sleep-and-recovery",
@@ -257,7 +257,7 @@ export const topics: Topic[] = [
       { ...sources.niaSleep, supports: "Regular sleep and waking times, morning daylight, and a calm wind-down." },
       { ...sources.nhsInsomnia, supports: "That persistent trouble sleeping is worth taking to a doctor rather than treating alone." },
     ],
-    products: ["eye-mask", "earplugs"],
+    products: ["sleep-ring", "step-counter", "eye-mask", "earplugs"],
   },
   {
     slug: "anti-inflammatory-basics",
@@ -390,7 +390,7 @@ export const topics: Topic[] = [
       { ...sources.niaOsteoporosis, supports: "The difference between low bone density and osteoporosis, and what raises risk." },
       { ...sources.medlineAgeingChanges, supports: "How bone mass changes with age." },
     ],
-    products: ["dumbbells", "grab-bar", "night-light"],
+    products: ["fall-detection-watch", "dumbbells", "grab-bar", "night-light"],
   },
   {
     slug: "muscle-strength-and-ageing",
@@ -1220,7 +1220,7 @@ export const topics: Topic[] = [
       { ...sources.whoPhysicalActivity, supports: "The recommended weekly activity for adults over 65." },
       { ...sources.niaExercise, supports: "That regular activity supports independence in later life." },
     ],
-    products: ["resistance-bands-set", "dumbbells"],
+    products: ["step-counter", "resistance-bands-set", "dumbbells"],
   },
   {
     slug: "music-brain-health-seniors",
@@ -1710,7 +1710,7 @@ export const topics: Topic[] = [
       { ...sources.niaOsteoporosis, supports: "Which fractures matter most in later life and what reduces the risk." },
       { ...sources.medlineAgeingChanges, supports: "How bone changes with age." },
     ],
-    products: ["grab-bar", "night-light", "dumbbells"],
+    products: ["fall-detection-watch", "grab-bar", "night-light", "dumbbells"],
   },
   {
     slug: "muscle-as-your-bodys-engine",
@@ -1863,7 +1863,7 @@ export const topics: Topic[] = [
       { ...sources.whoDiabetes, supports: "What type 2 diabetes is and how common it has become." },
       { ...sources.harvardCarbsBloodSugar, supports: "How carbohydrate raises blood sugar and what insulin does." },
     ],
-    products: ["glucometer"],
+    products: ["cgm", "glucometer"],
   },
   {
     slug: "blood-pressure-in-women",
@@ -2177,7 +2177,7 @@ export const topics: Topic[] = [
       { ...sources.nhsInsomnia, supports: "The different patterns of poor sleep and when to seek help." },
       { ...sources.niaSleep, supports: "What supports sleep in later life." },
     ],
-    products: ["eye-mask", "earplugs"],
+    products: ["sleep-ring", "step-counter", "eye-mask", "earplugs"],
   },
   {
     slug: "dementia-what-it-is-and-lowering-risk",
@@ -2360,7 +2360,7 @@ export const topics: Topic[] = [
       { ...sources.nhsHealthyWeight, supports: "That weight changes slowly and the scale is a poor day-to-day measure." },
       { ...sources.whoObesity, supports: "How body weight relates to health risk." },
     ],
-    products: ["weighing-scale", "dumbbells"],
+    products: ["step-counter", "weighing-scale", "dumbbells"],
   },
   {
     slug: "rice-and-roti",
@@ -2436,6 +2436,7 @@ export const topics: Topic[] = [
       { ...sources.harvardCarbsBloodSugar, supports: "How different carbohydrate foods affect blood sugar." },
       { ...sources.ninDietaryGuidelines, supports: "The place of cereals in an Indian diet and sensible portions." },
     ],
+    products: ["cgm"],
   },
   {
     slug: "eating-before-and-after-exercise",
@@ -2969,6 +2970,7 @@ export const topics: Topic[] = [
       { ...sources.niddkFattyLiver, supports: "Fatty liver disease, how it develops and what reverses it." },
       { ...sources.harvardCarbsBloodSugar, supports: "How the body handles sugar and where it is stored." },
     ],
+    products: ["cgm"],
   },
   {
     slug: "quiet-and-solitude",
@@ -3198,6 +3200,7 @@ export const topics: Topic[] = [
       { ...sources.whoAgeing, supports: "Healthy ageing defined as functional ability rather than absence of disease." },
       { ...sources.whoPhysicalActivity, supports: "Activity as one of the strongest levers on healthy years." },
     ],
+    products: ["step-counter"],
   },
   {
     slug: "zinc-and-minerals-after-60",

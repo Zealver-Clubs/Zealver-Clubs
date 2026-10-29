@@ -134,7 +134,7 @@ export const guides: Guide[] = [
       { ...sources.whoFalls, supports: "That falls are a leading cause of injury in older adults and are largely preventable." },
       { ...sources.niaFalls, supports: "The home, footwear, strength and balance measures set out in these steps." },
     ],
-    products: ["anti-slip-bath-mat", "grab-bar", "night-light"],
+    products: ["fall-detection-watch", "anti-slip-bath-mat", "grab-bar", "night-light"],
   },
   {
     slug: "lower-your-blood-sugar-guide",
@@ -273,7 +273,7 @@ export const guides: Guide[] = [
       { ...sources.harvardCarbsBloodSugar, supports: "How the carbohydrate in a meal raises blood sugar, and what slows that rise." },
       { ...sources.nhsDiabetesFood, supports: "Food and activity for blood sugar, and the caution about diabetes medication." },
     ],
-    products: ["glucometer", "resistance-bands-set"],
+    products: ["cgm", "step-counter", "glucometer", "resistance-bands-set"],
   },
   {
     slug: "anti-inflammatory-diet-guide",
@@ -479,7 +479,7 @@ export const guides: Guide[] = [
           "Walking shortly after eating, rather than at any time of day, in step 3.",
       },
     ],
-    products: ["glucometer", "pill-organiser", "resistance-bands-set"],
+    products: ["cgm", "step-counter", "glucometer", "pill-organiser", "resistance-bands-set"],
   },
   {
     slug: "stay-strong-after-menopause-guide",
@@ -813,7 +813,7 @@ export const guides: Guide[] = [
       { ...sources.whoHypertension, supports: "That high blood pressure usually has no symptoms and needs measuring." },
       { ...sources.niaBloodPressure, supports: "The food, salt, activity and weight measures in these steps." },
     ],
-    products: ["bp-monitor-omron-7120", "resistance-bands-set"],
+    products: ["step-counter", "bp-monitor-omron-7120", "resistance-bands-set"],
   },
   {
     slug: "cholesterol-guide",
@@ -1557,7 +1557,7 @@ export const guides: Guide[] = [
       { ...sources.niaFalls, supports: "The home changes that keep people steady and independent." },
       { ...sources.nhsSocialCare, supports: "The help available at home and how to ask for it." },
     ],
-    products: ["grab-bar", "reacher-grabber", "shower-chair"],
+    products: ["fall-detection-watch", "grab-bar", "reacher-grabber", "shower-chair"],
   },
   {
     slug: "joint-replacement-guide",
@@ -1731,7 +1731,7 @@ export const guides: Guide[] = [
       { ...sources.nhsMenopause, supports: "Symptoms, timing and treatment options." },
       { ...sources.whoMenopause, supports: "Menopause and the health changes that follow it." },
     ],
-    products: ["dumbbells", "resistance-bands-set", "eye-mask"],
+    products: ["sleep-ring", "dumbbells", "resistance-bands-set", "eye-mask"],
   },
   {
     slug: "neck-and-shoulder-guide",
@@ -1997,7 +1997,7 @@ export const guides: Guide[] = [
       { ...sources.medlineAgeingChanges, supports: "How quickly muscle is lost during bed rest and illness." },
       { ...sources.espenProtein, supports: "The protein needed alongside movement to rebuild muscle." },
     ],
-    products: ["resistance-bands-set", "ankle-weights"],
+    products: ["step-counter", "resistance-bands-set", "ankle-weights"],
   },
   {
     slug: "travel-after-60-guide",
@@ -2163,7 +2163,7 @@ export const guides: Guide[] = [
       { ...sources.nhsActivityOlder, supports: "The weekly walking and strength targets for older adults." },
       { ...sources.niaFourTypes, supports: "Balance and strength alongside walking, not instead of it." },
     ],
-    products: ["walking-stick"],
+    products: ["step-counter", "walking-stick"],
   },
   {
     slug: "yoga-chair-guide",

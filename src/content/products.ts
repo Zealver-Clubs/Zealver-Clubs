@@ -13,10 +13,13 @@ export const amazonTag = "zealverclubs-21";
 export type Product = {
   id: string;
   name: string;
-  /** Amazon.in product ID, the ten characters after /dp/ in the address. */
-  asin: string;
   why: string;
-};
+} & (
+  /** Amazon.in product ID, the ten characters after /dp/ in the address. */
+  | { asin: string; options?: never }
+  /** Several brands to choose between, each its own Amazon.in product ID. */
+  | { asin?: never; options: { label: string; asin: string }[] }
+);
 
 export const products: Product[] = [
   // Safety at home
@@ -84,15 +87,73 @@ export const products: Product[] = [
   // Checking your numbers
   {
     id: "bp-monitor-omron-7120",
-    name: "Omron HEM 7120 upper arm blood pressure monitor",
-    asin: "B00F38B3NW",
-    why: "A simple one-button upper arm monitor, the kind doctors prefer to wrist models. Fits arms 22 to 32 cm.",
+    name: "Upper arm blood pressure monitors",
+    why: "One-button upper arm monitors, the kind doctors prefer to wrist models. Check the cuff fits your arm before you buy.",
+    options: [
+      { label: "Omron HEM 7120", asin: "B00F38B3NW" },
+      { label: "Dr. Morepen BP-02", asin: "B01N14XN87" },
+      { label: "Dr Trust 101", asin: "B08CHH9YD8" },
+      { label: "Beurer BM 32", asin: "B0FBGVR44Q" },
+    ],
   },
   {
     id: "glucometer",
-    name: "Accu-Chek Active glucometer kit",
-    asin: "B01GO0HBF6",
-    why: "A straightforward home blood sugar meter with strips widely sold in India. Check with your doctor how often you need to test.",
+    name: "Glucometers for finger-prick checks",
+    why: "Straightforward home blood sugar meters. Before choosing, check the price and local availability of the test strips, which cost more over time than the meter. Ask your doctor how often to test.",
+    options: [
+      { label: "Accu-Chek Active", asin: "B01GO0HBF6" },
+      { label: "OneTouch Select Plus Simple", asin: "B07M7NN54C" },
+      { label: "Dr. Morepen BG-03", asin: "B07DHTQRFY" },
+      { label: "Dr Trust", asin: "B0D66VGNST" },
+      { label: "Contour Plus", asin: "B00JIRT9VM" },
+    ],
+  },
+
+  // Wearables
+  {
+    id: "cgm",
+    name: "Continuous glucose monitors (CGM)",
+    why: "A small sensor on the back of your arm reads your sugar every few minutes for about two weeks, so you can see what each meal, walk and night's sleep actually does. Talk to your doctor first, especially if you take insulin or tablets that can cause lows.",
+    options: [
+      { label: "Abbott FreeStyle Libre", asin: "B0849WHJQN" },
+      { label: "Abbott FreeStyle Libre 2", asin: "B0FHGQDT6H" },
+      { label: "Ultrahuman M1", asin: "B0FVT21PSM" },
+      { label: "BeatO CGM", asin: "B0FKBKBRPS" },
+      { label: "Sugar.fit CGM", asin: "B0DPL2Z6V3" },
+    ],
+  },
+  {
+    id: "step-counter",
+    name: "Fitness bands that count steps and sleep",
+    why: "Count your steps, track heart rate and sleep, and show the time in clear numbers. Seeing today's count is often what gets people out for a second walk.",
+    options: [
+      { label: "Fitbit Inspire 3", asin: "B0B75RC9C3" },
+      { label: "Samsung Galaxy Fit3", asin: "B0CVN3NK42" },
+      { label: "Huawei Band 11", asin: "B0GKRGHNQ1" },
+      { label: "Noise ColorFit Pulse Air", asin: "B0H3BM7WP6" },
+    ],
+  },
+  {
+    id: "sleep-ring",
+    name: "Smart rings for sleep tracking",
+    why: "Worn on a finger, so there is nothing bulky on your wrist at night. They track how long and how deeply you sleep, how often you wake, and your resting heart rate. Each link opens one size; get the brand's sizing kit first and pick your size on the page.",
+    options: [
+      { label: "Ultrahuman Ring Air", asin: "B0D97QWFD4" },
+      { label: "Oura Ring 4", asin: "B0D9WT1S2T" },
+      { label: "Samsung Galaxy Ring", asin: "B0DTQ25996" },
+      { label: "Amazfit Helio Ring", asin: "B0D5LPZHLB" },
+    ],
+  },
+  {
+    id: "fall-detection-watch",
+    name: "Smartwatches with fall detection",
+    why: "If you fall hard and do not respond, the watch can call a family member or emergency services. Switch fall detection on in its settings, as it is not always on by default. Apple Watch needs an iPhone; Samsung and Pixel need an Android phone; Garmin's detection works during walks and workouts.",
+    options: [
+      { label: "Apple Watch SE 3", asin: "B0FQFH9P4T" },
+      { label: "Samsung Galaxy Watch8 LTE", asin: "B0FDQK5KSZ" },
+      { label: "Google Pixel Watch 3", asin: "B0D91268TH" },
+      { label: "Garmin Vivoactive 5", asin: "B0CKVTGBG1" },
+    ],
   },
   {
     id: "weighing-scale",
