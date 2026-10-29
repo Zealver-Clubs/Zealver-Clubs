@@ -137,22 +137,16 @@ export function HubBrowser({
     () => new Set(guides.map((g) => firstLetter(g.title))),
     [guides],
   );
-  // Two letters per recipe: the dish name, and the tag, so every salad is
-  // reachable from S whatever the dish happens to be called.
+  // Filed by dish name only. Filing by tag too put every "Main" under M,
+  // which read as the A-Z being wrong; searching "salad" finds the salads.
   const recipeLetters = useMemo(
-    () =>
-      new Set(
-        recipes.flatMap((r) => [firstLetter(r.title), firstLetter(r.tag)]),
-      ),
+    () => new Set(recipes.map((r) => firstLetter(r.title))),
     [recipes],
   );
 
   const filteredRecipes = recipes.filter((r) => {
     const matchesQuery = matches(recipeText.get(r.slug)!, q);
-    const matchesLetter =
-      !recipeLetter ||
-      firstLetter(r.title) === recipeLetter ||
-      firstLetter(r.tag) === recipeLetter;
+    const matchesLetter = !recipeLetter || firstLetter(r.title) === recipeLetter;
     return matchesQuery && matchesLetter;
   });
 

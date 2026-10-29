@@ -4,9 +4,8 @@ import type { Reference } from "./references";
 /**
  * Knowledge Hub recipes.
  *
- * Each recipe files under its own dish name in the A-Z, and also under the
- * first letter of its `tag`, so every salad is reachable from S whatever it
- * is called.
+ * Each recipe files under the first letter of its dish name in the A-Z.
+ * Search covers the `tag`, so "salad" finds every salad whatever it is called.
  */
 export type Recipe = {
   slug: string;
@@ -16,7 +15,7 @@ export type Recipe = {
    * about sixty characters is cut off. The page keeps its full heading.
    */
   seoTitle?: string;
-  /** Dish type, e.g. "Salad". Also gives the recipe a second letter in the A-Z. */
+  /** Dish type, e.g. "Salad". Searchable, but not used for the A-Z. */
   tag: string;
   category: string;
   summary: string;
