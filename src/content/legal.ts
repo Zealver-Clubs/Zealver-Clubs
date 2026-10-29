@@ -102,7 +102,19 @@ export const privacyPolicy: LegalDocument = {
         "Payment gateways",
         "WhatsApp, email, and SMS providers",
         "Analytics tools",
-        "Form and CRM tools (e.g., Zoho)",
+        "Zoho, for our forms, customer records (CRM) and related communication",
+        "AI tools, such as Claude (Anthropic), ChatGPT (OpenAI) and other relevant AI services, where needed",
+        "The Amazon Associates Programme, for product links on Knowledge Hub pages",
+      ],
+    },
+    {
+      paragraphs: [
+        "We use AI tools to help us draft and review content, respond to enquiries, and organise our work. Where a task involves personal information, we share only what that task needs, we do not share health details unless you have asked us to help with something that requires them, and we use business accounts or settings that do not allow the provider to train its models on what we share, where the provider offers this. A person at Zealver Clubs remains responsible for any decision or message about you.",
+      ],
+    },
+    {
+      paragraphs: [
+        "Zealver Clubs is a participant in the Amazon Associates Programme, an affiliate advertising programme that lets sites earn advertising fees by linking to Amazon.in. Some Knowledge Hub pages suggest products and link to them on Amazon.in. If you follow one of those links, Amazon may set cookies to record that you came from our website, and we may earn a small fee on qualifying purchases at no extra cost to you. Amazon does not share your name, contact details or what you bought with us.",
       ],
     },
     {
