@@ -2,9 +2,10 @@ import { ExternalLink } from "lucide-react";
 import { getProduct, amazonUrl } from "@/content/products";
 
 /**
- * "Useful to have" picks for a topic or recipe, linked through our Amazon
- * Associates store. The disclosure line is required by the Associates
- * agreement and must sit next to the links, not only in the footer.
+ * "Recommended purchases" for a topic, recipe or guide, linked through our
+ * Amazon Associates store. It sits straight after the article, where people
+ * still are. The disclosure is required by the Associates agreement and must
+ * sit next to the links, so it goes under the heading.
  */
 export function ProductPicks({ ids }: { ids?: string[] }) {
   const picks = (ids ?? [])
@@ -18,8 +19,12 @@ export function ProductPicks({ ids }: { ids?: string[] }) {
         id="product-picks-heading"
         className="text-2xl font-extrabold text-heading"
       >
-        Useful to have
+        Recommended purchases
       </h2>
+      <p className="mt-1 text-muted-foreground">
+        From our Amazon store. As an Amazon Associate, Zealver Clubs earns from
+        qualifying purchases, at no extra cost to you.
+      </p>
       <ul className="mt-4 flex flex-col gap-3">
         {picks.map((p) => (
           <li
@@ -40,10 +45,6 @@ export function ProductPicks({ ids }: { ids?: string[] }) {
           </li>
         ))}
       </ul>
-      <p className="mt-3 text-sm text-muted-foreground">
-        As an Amazon Associate, Zealver Clubs earns from qualifying purchases.
-        It costs you nothing extra.
-      </p>
     </section>
   );
 }

@@ -39,7 +39,7 @@ export type Topic = {
   relatedTopics: string[]; // slugs
   guides: string[]; // guide slugs this topic appears in
   references?: Reference[];
-  /** Product ids from products.ts, shown as "Useful to have". */
+  /** Product ids from products.ts, shown as "Recommended purchases". */
   products?: string[];
   /** Optional next step, shown after the write-up. */
   cta?: { label: string; href: string };

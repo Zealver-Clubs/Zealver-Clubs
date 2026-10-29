@@ -36,7 +36,7 @@ export type Recipe = {
   relatedTopics: string[];
   guides: string[];
   references?: Reference[];
-  /** Product ids from products.ts, shown as "Useful to have". */
+  /** Product ids from products.ts, shown as "Recommended purchases". */
   products?: string[];
 };
 

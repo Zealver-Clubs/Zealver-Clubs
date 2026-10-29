@@ -67,7 +67,7 @@ export type Guide = {
   topics: string[]; // topic slugs covered
   relatedGuides: string[]; // guide slugs
   references?: Reference[];
-  /** Product ids from products.ts, shown as "Useful to have". */
+  /** Product ids from products.ts, shown as "Recommended purchases". */
   products?: string[];
 };
 

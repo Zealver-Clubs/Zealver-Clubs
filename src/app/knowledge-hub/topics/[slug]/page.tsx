@@ -176,6 +176,8 @@ export default async function TopicPage({
         </div>
       )}
 
+      <ProductPicks ids={topic.products} />
+
       {/* Related topics */}
       {related.length > 0 && (
         <div className="mt-10">
@@ -225,7 +227,6 @@ export default async function TopicPage({
           </ul>
         </div>
       )}
-      <ProductPicks ids={topic.products} />
       <HubCta />
       {topic.cta ? (
         <div className="mt-10">

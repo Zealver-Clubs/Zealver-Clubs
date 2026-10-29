@@ -276,6 +276,8 @@ export default async function GuidePage({
         </div>
       ))}
 
+      <ProductPicks ids={guide.products} />
+
       {/* All topics in this guide */}
       {topicList.length > 0 && (
         <div className="mt-10">
@@ -325,7 +327,6 @@ export default async function GuidePage({
           </ul>
         </div>
       )}
-      <ProductPicks ids={guide.products} />
       <HubCta />
       <ReferencesList references={guide.references} />
       <ContentDisclaimer />
