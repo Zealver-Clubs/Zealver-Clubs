@@ -13,6 +13,7 @@ import { ReviewedBy } from "@/components/reviewed-by";
 import { ContentDisclaimer } from "@/components/content-disclaimer";
 import { ReferencesList } from "@/components/references-list";
 import { HubCta } from "@/components/hub-cta";
+import { ProductPicks } from "@/components/product-picks";
 import { topics, getTopic, topicParagraphs } from "@/content/topics";
 import { getGuide } from "@/content/guides";
 
@@ -224,6 +225,7 @@ export default async function TopicPage({
           </ul>
         </div>
       )}
+      <ProductPicks ids={topic.products} />
       <HubCta />
       {topic.cta ? (
         <div className="mt-10">

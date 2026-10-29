@@ -10,6 +10,7 @@ import { ReviewedBy } from "@/components/reviewed-by";
 import { ContentDisclaimer } from "@/components/content-disclaimer";
 import { ReferencesList } from "@/components/references-list";
 import { HubCta } from "@/components/hub-cta";
+import { ProductPicks } from "@/components/product-picks";
 import { site, reviewer } from "@/content/site";
 import { pageMeta } from "@/lib/seo";
 import { recipes, getRecipe } from "@/content/recipes";
@@ -190,6 +191,8 @@ export default async function RecipePage({
           </ul>
         </div>
       ) : null}
+
+      <ProductPicks ids={recipe.products} />
 
       {related.length > 0 && (
         <div className="mt-10">

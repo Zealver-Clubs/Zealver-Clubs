@@ -36,6 +36,8 @@ export type Recipe = {
   relatedTopics: string[];
   guides: string[];
   references?: Reference[];
+  /** Product ids from products.ts, shown as "Useful to have". */
+  products?: string[];
 };
 
 export const recipes: Recipe[] = [
@@ -278,6 +280,7 @@ export const recipes: Recipe[] = [
       "xerostomia-dry-mouth",
     ],
     guides: [],
+    products: ["idli-steamer-steel"],
   },
   {
     slug: "ragi-and-moong-porridge",
@@ -408,6 +411,7 @@ export const recipes: Recipe[] = [
       "rice-and-roti",
     ],
     guides: [],
+    products: ["sprout-maker-steel"],
   },
   {
     slug: "paneer-bhurji",
@@ -955,6 +959,7 @@ export const recipes: Recipe[] = [
       "nutrition-basics",
     ],
     guides: [],
+    products: ["idli-steamer-steel"],
   },
   {
     slug: "lobia-curry",

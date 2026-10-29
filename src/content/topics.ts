@@ -39,6 +39,8 @@ export type Topic = {
   relatedTopics: string[]; // slugs
   guides: string[]; // guide slugs this topic appears in
   references?: Reference[];
+  /** Product ids from products.ts, shown as "Useful to have". */
+  products?: string[];
   /** Optional next step, shown after the write-up. */
   cta?: { label: string; href: string };
 };
@@ -139,6 +141,7 @@ export const topics: Topic[] = [
     ],
     relatedTopics: ["fall-prevention", "footwear-and-mobility"],
     guides: ["fall-prevention-guide"],
+    products: ["anti-slip-bath-mat"],
     references: [
       { ...sources.niaFalls, supports: "The home hazards named here: loose rugs, poor lighting, cluttered walkways and missing rails." },
       { ...sources.whoFalls, supports: "That environmental hazards are a major contributor to falls at home." },
@@ -427,6 +430,7 @@ export const topics: Topic[] = [
       "nutrition-basics",
     ],
     guides: ["stay-strong-after-menopause-guide"],
+    products: ["resistance-bands-set"],
     references: [
       { ...sources.medlineAgeingChanges, supports: "That muscle mass and strength decline with age." },
       { ...sources.espenProtein, supports: "That older adults need more protein than younger adults to maintain muscle." },
@@ -1750,6 +1754,7 @@ export const topics: Topic[] = [
       "movement-and-blood-sugar",
     ],
     guides: ["stay-strong-after-menopause-guide", "diabetes-management-guide"],
+    products: ["resistance-bands-set"],
     references: [
       { ...sources.medlineAgeingChanges, supports: "That muscle declines with age unless it is used." },
       { ...sources.espenProtein, supports: "The protein needed to maintain muscle in older adults." },
@@ -1919,6 +1924,7 @@ export const topics: Topic[] = [
       "sleep-and-recovery",
     ],
     guides: ["blood-pressure-guide"],
+    products: ["bp-monitor-omron-7120"],
     references: [
       { ...sources.whoHypertension, supports: "What high blood pressure is, and that it usually has no symptoms." },
       { ...sources.niaBloodPressure, supports: "Blood pressure in older adults and what helps." },

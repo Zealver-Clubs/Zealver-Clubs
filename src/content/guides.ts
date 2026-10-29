@@ -67,6 +67,8 @@ export type Guide = {
   topics: string[]; // topic slugs covered
   relatedGuides: string[]; // guide slugs
   references?: Reference[];
+  /** Product ids from products.ts, shown as "Useful to have". */
+  products?: string[];
 };
 
 export const guides: Guide[] = [
@@ -800,6 +802,7 @@ export const guides: Guide[] = [
       "sleep-and-recovery",
     ],
     relatedGuides: ["diabetes-management-guide", "anti-inflammatory-diet-guide"],
+    products: ["bp-monitor-omron-7120"],
     references: [
       { ...sources.whoHypertension, supports: "That high blood pressure usually has no symptoms and needs measuring." },
       { ...sources.niaBloodPressure, supports: "The food, salt, activity and weight measures in these steps." },
