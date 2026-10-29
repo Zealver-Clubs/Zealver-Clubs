@@ -149,7 +149,7 @@ export const experienceItems: ExperienceItem[] = [
       },
     ],
     schedule: "Tuesdays & Thursdays, 11:00 AM – 1:00 PM",
-    price: "\u20b94000 per month.",
+    price: "\u20b94000 per month, or \u20b96,000 for a 10-session Class Pass.",
     trainer: "Zealver certified instructor",
     cta: {
       label: "Ask about the Andheri class",
@@ -158,14 +158,28 @@ export const experienceItems: ExperienceItem[] = [
     faqs: [
       {
         question: "What does it cost?",
-        answer: ["\u20b94000 per month."],
-      },
-      {
-        question: "Is it cheaper to commit for longer?",
-        answer: ["Yes. Taking a membership brings the monthly fee down:"],
+        answer: ["\u20b94000 per month. There are three ways to join:"],
         points: [
           "Monthly membership: 10% off",
           "Three-month membership: 20% off",
+          "Class Pass: 10 sessions for \u20b96,000, to use on the days that suit you",
+        ],
+      },
+      {
+        question: "What is the Class Pass?",
+        answer: [
+          "Ten sessions, bought upfront for \u20b96,000, that you can use on any class day within three months of buying the pass.",
+          "It suits members who travel often, or who would rather come once a week than twice.",
+        ],
+      },
+      {
+        question: "What are the terms of the Class Pass?",
+        answer: ["The pass is valid for three months from the date of purchase."],
+        points: [
+          "All 10 sessions must be used within the three months.",
+          "It is non-transferable.",
+          "No discounts apply to it.",
+          "No refunds or exchanges.",
         ],
       },
       {
