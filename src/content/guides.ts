@@ -134,6 +134,7 @@ export const guides: Guide[] = [
       { ...sources.whoFalls, supports: "That falls are a leading cause of injury in older adults and are largely preventable." },
       { ...sources.niaFalls, supports: "The home, footwear, strength and balance measures set out in these steps." },
     ],
+    products: ["anti-slip-bath-mat", "grab-bar", "night-light"],
   },
   {
     slug: "lower-your-blood-sugar-guide",
@@ -272,6 +273,7 @@ export const guides: Guide[] = [
       { ...sources.harvardCarbsBloodSugar, supports: "How the carbohydrate in a meal raises blood sugar, and what slows that rise." },
       { ...sources.nhsDiabetesFood, supports: "Food and activity for blood sugar, and the caution about diabetes medication." },
     ],
+    products: ["glucometer", "resistance-bands-set"],
   },
   {
     slug: "anti-inflammatory-diet-guide",
@@ -367,6 +369,7 @@ export const guides: Guide[] = [
       { ...sources.whoHealthyDiet, supports: "The vegetable-led, whole-food pattern and the limits on sugar, salt and fats." },
       { ...sources.ninDietaryGuidelines, supports: "The Indian food groups and portions the balanced plate is built from." },
     ],
+    products: ["flaxseed", "walnuts", "mustard-oil"],
   },
   {
     slug: "diabetes-management-guide",
@@ -476,6 +479,7 @@ export const guides: Guide[] = [
           "Walking shortly after eating, rather than at any time of day, in step 3.",
       },
     ],
+    products: ["glucometer", "pill-organiser", "resistance-bands-set"],
   },
   {
     slug: "stay-strong-after-menopause-guide",
@@ -558,6 +562,7 @@ export const guides: Guide[] = [
           "Why supplementation is not assumed to prevent fractures in healthy adults without deficiency, in step 5.",
       },
     ],
+    products: ["resistance-bands-set", "dumbbells", "ankle-weights"],
   },
   {
     slug: "five-things-you-can-do-for-stress-guide",
@@ -616,6 +621,7 @@ export const guides: Guide[] = [
       { ...sources.nhsStress, supports: "Everyday measures for stress and low mood, and when to seek help." },
       { ...sources.niaMentalHealth, supports: "Sleep, activity and connection as supports for emotional health." },
     ],
+    products: ["bt-speaker"],
   },
   {
     slug: "arthritis-and-joint-comfort-guide",
@@ -747,6 +753,7 @@ export const guides: Guide[] = [
       { ...sources.nhsOsteoarthritis, supports: "That movement and strength help osteoarthritis more than rest does." },
       { ...sources.nhsRheumatoid, supports: "The signs that point to inflammatory arthritis rather than osteoarthritis." },
     ],
+    products: ["heating-pad", "jar-opener", "resistance-bands-set"],
   },
   {
     slug: "blood-pressure-guide",
@@ -802,11 +809,11 @@ export const guides: Guide[] = [
       "sleep-and-recovery",
     ],
     relatedGuides: ["diabetes-management-guide", "anti-inflammatory-diet-guide"],
-    products: ["bp-monitor-omron-7120"],
     references: [
       { ...sources.whoHypertension, supports: "That high blood pressure usually has no symptoms and needs measuring." },
       { ...sources.niaBloodPressure, supports: "The food, salt, activity and weight measures in these steps." },
     ],
+    products: ["bp-monitor-omron-7120", "resistance-bands-set"],
   },
   {
     slug: "cholesterol-guide",
@@ -864,6 +871,7 @@ export const guides: Guide[] = [
       { ...sources.nhsCholesterol, supports: "What cholesterol is, what raises it, and how it is lowered." },
       { ...sources.whoCardiovascular, supports: "Why cholesterol matters for heart and stroke risk." },
     ],
+    products: ["oats", "flaxseed", "walnuts"],
   },
   {
     slug: "vitamin-d-guide",
@@ -970,6 +978,7 @@ export const guides: Guide[] = [
       { ...sources.whoDementia, supports: "What dementia is and the factors that support brain health." },
       { ...sources.niaCognitive, supports: "Activity, connection and engagement as supports for cognitive health." },
     ],
+    products: ["day-clock", "bt-speaker", "echo-dot"],
   },
   {
     slug: "friendship-later-in-life-guide",
@@ -1089,6 +1098,7 @@ export const guides: Guide[] = [
       { ...sources.nhsReflux, supports: "Meal size and timing, staying upright, raising the bed head, and the warning signs." },
       { ...sources.whoOralHealth, supports: "Why stomach acid reaching the mouth matters for teeth." },
     ],
+    products: ["wedge-pillow"],
   },
   {
     slug: "bladder-leaks-and-pelvic-floor-guide",
@@ -1146,6 +1156,7 @@ export const guides: Guide[] = [
       { ...sources.nhsIncontinence, supports: "That pelvic floor exercises are a first-line treatment for leaks." },
       { ...sources.niaIncontinence, supports: "That incontinence is common in older women and treatable rather than inevitable." },
     ],
+    products: ["bladder-pads"],
   },
   {
     slug: "grief-and-loss-guide",
@@ -1431,6 +1442,7 @@ export const guides: Guide[] = [
       { ...sources.whoVision, supports: "That much sight loss in later life is preventable or correctable." },
       { ...sources.nhsCataracts, supports: "Cataracts, how they develop and how they are treated." },
     ],
+    products: ["magnifier", "night-light"],
   },
   {
     slug: "hearing-guide",
@@ -1545,6 +1557,7 @@ export const guides: Guide[] = [
       { ...sources.niaFalls, supports: "The home changes that keep people steady and independent." },
       { ...sources.nhsSocialCare, supports: "The help available at home and how to ask for it." },
     ],
+    products: ["grab-bar", "reacher-grabber", "shower-chair"],
   },
   {
     slug: "joint-replacement-guide",
@@ -1602,6 +1615,7 @@ export const guides: Guide[] = [
       { ...sources.nhsKneeReplacement, supports: "What a knee replacement involves and what recovery looks like." },
       { ...sources.nhsHipReplacement, supports: "What a hip replacement involves and the movement precautions afterwards." },
     ],
+    products: ["raised-toilet-seat", "reacher-grabber", "shoe-horn"],
   },
   {
     slug: "knee-pain-guide",
@@ -1659,6 +1673,7 @@ export const guides: Guide[] = [
       { ...sources.nhsKneePain, supports: "Common causes of knee pain and what helps." },
       { ...sources.nhsOsteoarthritis, supports: "That strengthening the muscles around the joint reduces knee pain." },
     ],
+    products: ["heating-pad", "ankle-weights"],
   },
   {
     slug: "menopause-guide",
@@ -1716,6 +1731,7 @@ export const guides: Guide[] = [
       { ...sources.nhsMenopause, supports: "Symptoms, timing and treatment options." },
       { ...sources.whoMenopause, supports: "Menopause and the health changes that follow it." },
     ],
+    products: ["dumbbells", "resistance-bands-set", "eye-mask"],
   },
   {
     slug: "neck-and-shoulder-guide",
@@ -1765,6 +1781,7 @@ export const guides: Guide[] = [
       { ...sources.nhsNeckPain, supports: "Common causes of neck pain, what helps, and the signs to act on." },
       { ...sources.whoMusculoskeletal, supports: "How common musculoskeletal pain is, and the place of movement in managing it." },
     ],
+    products: ["cervical-pillow", "heating-pad", "resistance-bands-set"],
   },
   {
     slug: "oral-health-guide",
@@ -1814,6 +1831,7 @@ export const guides: Guide[] = [
       { ...sources.nhsTeeth, supports: "Everyday cleaning, and looking after gums and dentures." },
       { ...sources.whoOralHealth, supports: "Why oral health matters for general health." },
     ],
+    products: ["electric-toothbrush", "interdental-brush"],
   },
   {
     slug: "posture-and-back-guide",
@@ -1863,6 +1881,7 @@ export const guides: Guide[] = [
       { ...sources.nhsBackPain, supports: "That most back pain improves with movement rather than rest, and the red flags." },
       { ...sources.whoMusculoskeletal, supports: "Back pain as a leading cause of disability, and what helps." },
     ],
+    products: ["lumbar-cushion", "resistance-bands-set", "yoga-mat"],
   },
   {
     slug: "questions-for-your-doctor-guide",
@@ -1920,6 +1939,7 @@ export const guides: Guide[] = [
       { ...sources.nhsSocialCare, supports: "Preparing for appointments and knowing what to ask." },
       { ...sources.whoAgeing, supports: "Why continuity and communication matter in care for older adults." },
     ],
+    products: ["pill-organiser"],
   },
   {
     slug: "recovering-after-illness-guide",
@@ -1977,6 +1997,7 @@ export const guides: Guide[] = [
       { ...sources.medlineAgeingChanges, supports: "How quickly muscle is lost during bed rest and illness." },
       { ...sources.espenProtein, supports: "The protein needed alongside movement to rebuild muscle." },
     ],
+    products: ["resistance-bands-set", "ankle-weights"],
   },
   {
     slug: "travel-after-60-guide",
@@ -2034,6 +2055,7 @@ export const guides: Guide[] = [
       { ...sources.whoPhysicalActivity, supports: "Keeping moving while away, including on long journeys." },
       { ...sources.nhsSocialCare, supports: "Planning for medication and support needs away from home." },
     ],
+    products: ["neck-pillow", "pill-organiser"],
   },
   {
     slug: "urine-infections-guide",
@@ -2083,6 +2105,7 @@ export const guides: Guide[] = [
       { ...sources.nhsUti, supports: "Symptoms, treatment, and when a urine infection needs urgent attention." },
       { ...sources.niaIncontinence, supports: "Bladder health in older women." },
     ],
+    products: ["water-bottle", "thermometer"],
   },
   {
     slug: "walking-well-guide",
@@ -2140,6 +2163,7 @@ export const guides: Guide[] = [
       { ...sources.nhsActivityOlder, supports: "The weekly walking and strength targets for older adults." },
       { ...sources.niaFourTypes, supports: "Balance and strength alongside walking, not instead of it." },
     ],
+    products: ["walking-stick"],
   },
   {
     slug: "yoga-chair-guide",
@@ -2189,6 +2213,7 @@ export const guides: Guide[] = [
       { ...sources.whoActivityGuidelines, supports: "Flexibility and balance work within the recommended weekly activity." },
       { ...sources.niaFourTypes, supports: "Flexibility as one of the four kinds of exercise that matter." },
     ],
+    products: ["yoga-strap-block", "yoga-mat"],
   },
   {
     slug: "xrays-and-scans-guide",
@@ -2295,6 +2320,7 @@ export const guides: Guide[] = [
       { ...sources.nhsActivityOlder, supports: "The activity levels a weekly session contributes towards." },
       { ...sources.whoPhysicalActivity, supports: "That some activity is better than none, whatever your starting point." },
     ],
+    products: ["water-bottle"],
   },
 ];
 

@@ -102,6 +102,7 @@ export const recipes: Recipe[] = [
       "prebiotics-and-probiotics",
     ],
     guides: [],
+    products: ["veg-chopper", "measuring-set"],
   },
   {
     slug: "coffee-chocolate-mug-cake",
@@ -159,6 +160,7 @@ export const recipes: Recipe[] = [
       "diabetes-what-is-happening",
     ],
     guides: [],
+    products: ["mug", "cocoa", "measuring-set"],
   },
   {
     slug: "besan-chilla",
@@ -216,6 +218,7 @@ export const recipes: Recipe[] = [
       "diabetes-what-is-happening",
     ],
     guides: [],
+    products: ["tawa", "spatula"],
   },
   {
     slug: "moong-dal-dhokla",
@@ -280,7 +283,7 @@ export const recipes: Recipe[] = [
       "xerostomia-dry-mouth",
     ],
     guides: [],
-    products: ["idli-steamer-steel"],
+    products: ["idli-steamer-steel", "measuring-set"],
   },
   {
     slug: "ragi-and-moong-porridge",
@@ -348,6 +351,7 @@ export const recipes: Recipe[] = [
       "rice-and-roti",
     ],
     guides: [],
+    products: ["ragi-flour", "flaxseed"],
   },
   {
     slug: "sprouted-moong-salad",
@@ -411,7 +415,7 @@ export const recipes: Recipe[] = [
       "rice-and-roti",
     ],
     guides: [],
-    products: ["sprout-maker-steel"],
+    products: ["sprout-maker-steel", "veg-chopper"],
   },
   {
     slug: "paneer-bhurji",
@@ -470,6 +474,7 @@ export const recipes: Recipe[] = [
       "nutrition-basics",
     ],
     guides: [],
+    products: ["kadai", "veg-chopper"],
   },
   {
     slug: "oats-and-moong-chilla",
@@ -527,6 +532,7 @@ export const recipes: Recipe[] = [
       "diabetes-what-is-happening",
     ],
     guides: [],
+    products: ["oats", "tawa", "spatula"],
   },
   {
     slug: "khichdi-with-extra-dal",
@@ -592,6 +598,7 @@ export const recipes: Recipe[] = [
       "xerostomia-dry-mouth",
     ],
     guides: [],
+    products: ["pressure-cooker"],
   },
   {
     slug: "tofu-and-vegetable-stir-fry",
@@ -650,6 +657,7 @@ export const recipes: Recipe[] = [
       "rice-and-roti",
     ],
     guides: [],
+    products: ["kadai", "spatula"],
   },
   {
     slug: "chana-chaat",
@@ -708,6 +716,7 @@ export const recipes: Recipe[] = [
       "prebiotics-and-probiotics",
     ],
     guides: [],
+    products: ["pressure-cooker", "veg-chopper"],
   },
   {
     slug: "arbi-with-chana-dal",
@@ -767,6 +776,7 @@ export const recipes: Recipe[] = [
       "muscle-as-your-bodys-engine",
     ],
     guides: [],
+    products: ["pressure-cooker", "kadai"],
   },
   {
     slug: "gatte-ki-sabzi",
@@ -837,6 +847,7 @@ export const recipes: Recipe[] = [
       "prebiotics-and-probiotics",
     ],
     guides: [],
+    products: ["kadai", "measuring-set"],
   },
   {
     slug: "handvo",
@@ -906,6 +917,7 @@ export const recipes: Recipe[] = [
       "nutrition-basics",
     ],
     guides: [],
+    products: ["kadai", "sesame"],
   },
   {
     slug: "moong-dal-idli",
@@ -1018,6 +1030,7 @@ export const recipes: Recipe[] = [
       "rice-and-roti",
     ],
     guides: [],
+    products: ["pressure-cooker", "kadai"],
   },
   {
     slug: "soya-chunk-curry",
@@ -1077,6 +1090,7 @@ export const recipes: Recipe[] = [
       "nutrition-basics",
     ],
     guides: [],
+    products: ["soya-chunks", "kadai"],
   },
   {
     slug: "mixed-sprouts-usal",
@@ -1138,6 +1152,7 @@ export const recipes: Recipe[] = [
       "prebiotics-and-probiotics",
     ],
     guides: [],
+    products: ["sprout-maker-steel"],
   },
   {
     slug: "steamed-moong-dal-vada",
@@ -1195,6 +1210,7 @@ export const recipes: Recipe[] = [
       "nutrition-basics",
     ],
     guides: [],
+    products: ["idli-steamer-steel"],
   },
   {
     slug: "egg-bhurji",
@@ -1252,6 +1268,7 @@ export const recipes: Recipe[] = [
       "eating-before-and-after-exercise",
     ],
     guides: [],
+    products: ["kadai", "spatula"],
   },
   {
     slug: "fish-curry-light",
@@ -1312,6 +1329,7 @@ export const recipes: Recipe[] = [
       "dementia-what-it-is-and-lowering-risk",
     ],
     guides: [],
+    products: ["kadai", "mustard-oil"],
   },
   {
     slug: "jackfruit-kathal-with-chana-dal",
@@ -1371,6 +1389,7 @@ export const recipes: Recipe[] = [
       "rice-and-roti",
     ],
     guides: [],
+    products: ["pressure-cooker"],
   },
   {
     slug: "vegetable-and-tofu-soup",
@@ -1440,6 +1459,7 @@ export const recipes: Recipe[] = [
       "nutrition-basics",
     ],
     guides: [],
+    products: ["kadai", "sesame"],
   },
   {
     slug: "orange-cucumber-and-walnut-salad",
@@ -1510,6 +1530,7 @@ export const recipes: Recipe[] = [
       "anti-inflammatory-basics",
     ],
     guides: [],
+    products: ["walnuts", "veg-chopper"],
   },
   {
     slug: "cucumber-salad-with-peanuts-and-sesame",
@@ -1566,6 +1587,7 @@ export const recipes: Recipe[] = [
       "classic-indian-dishes-for-seniors",
     ],
     guides: [],
+    products: ["sesame"],
   },
   {
     slug: "avocado-chocolate-mousse",
@@ -1621,6 +1643,7 @@ export const recipes: Recipe[] = [
       "xerostomia-dry-mouth",
     ],
     guides: [],
+    products: ["hand-blender", "cocoa"],
   },
 ];
 
